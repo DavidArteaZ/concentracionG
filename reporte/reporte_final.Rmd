@@ -1,0 +1,48 @@
+---
+title: "Complejidad Económica y Movilidad Social en México"
+author:
+  - "Andoni Garritz Ayala, Andrés Felipe Gutiérrez"
+  - "David Arteaga Zumaya, Elid Sebastián López Pineda"
+abstract: |
+  TODO: Resumen de 120-150 palabras. Se escribe al final, cuando ya esté todo listo.
+output:
+  bookdown::pdf_document2:
+    number_sections: true
+    fig_caption: true
+fontsize: 11pt
+geometry: margin=2.5cm
+lang: es
+bibliography: referencias.bib
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(
+  echo = FALSE,
+  message = FALSE, warning = FALSE,
+  fig.pos = "H",
+  fig.align = "center",
+  out.width = "85%", fig.width = 7, fig.height = 4.2
+)
+```
+
+# Objetivos
+
+Los puntos del índice son preliminares. Aún no sé cómo se debe ordenar nuestra entrega final
+
+## Revisión de literatura
+
+Hace falta refinar la pregunta de investigación y añadir la literatura que nos comentó Marco
+
+# Las bases de datos
+
+Posiblemente quieran describir un poco de cómo se trabajaron los datos. Igual es preliminar, no para el documento final.
+
+# La muestra final
+
+Cómo se ve nuestra base "final"
+
+# Hallazgos y lo que falta
+
+Podemos mostrar algunos hallazgos relevantes.
+
+# Referencias
