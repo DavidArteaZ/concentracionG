@@ -79,8 +79,30 @@ mca_por_cohorte <- function(datos, activos, cohorte, peso) {
       graph = FALSE
     )
     
-    # El .do cambia siempre el signo; no aplica una regla adaptativa posterior.
-    indice[muestra] <- -ajuste$ind$coord[, 1]
+    # CORRECCIÓN DE SIGNO (se aparta deliberadamente del .do):
+    # El .do multiplica siempre por -1, pero ese -1 corrige el signo que
+    # arroja Stata (mca, method(burt)). En un MCA el signo de la primera
+    # dimensión es arbitrario y FactoMineR no garantiza el mismo que Stata
+    # ni el mismo entre cohortes. Con el -1 fijo, el índice quedaba invertido
+    # en las cohortes 2-4 (actual) y 2-3 (origen): correlación de ~ -0.99
+    # con el número de activos.
+    # Regla: se orienta el índice para que su correlación ponderada con el
+    # número de activos que posee la persona sea positiva (más activos =
+    # más recursos). Todas las variables activas están codificadas con
+    # 1 = más recursos (incluido hac/hac_or, donde 1 = sin hacinamiento).
+    coord <- ajuste$ind$coord[, 1]
+    n_activos <- rowSums(datos[muestra, activos, drop = FALSE])
+    r_signo <- cov.wt(
+      cbind(coord, n_activos),
+      wt = datos[[peso]][muestra], cor = TRUE
+    )$cor[1, 2]
+    signo <- if (r_signo < 0) -1 else 1
+    indice[muestra] <- signo * coord
+
+    message(sprintf(
+      "Cohorte %d: n = %d, r(coord, n_activos) = %.3f, signo aplicado = %+d",
+      grupo, sum(muestra), r_signo, signo
+    ))
   }
   
   indice
@@ -246,6 +268,21 @@ stopifnot(
   all(esru_ire$quintilecomp_or %in% 1:5),
   all(esru_ire$quintilecomp_act %in% 1:5)
 )
+
+# Verificación de signo: en cada cohorte, ambos índices deben correlacionar
+# positivamente con el número de activos. Si falla, el script se detiene.
+chequeo_signo <- esru_ire %>%
+  mutate(
+    n_act    = rowSums(across(all_of(activos_actual))),
+    n_act_or = rowSums(across(all_of(activos_origen)))
+  ) %>%
+  group_by(cohorte) %>%
+  summarise(
+    r_act = cor(ireccomp_act, n_act),
+    r_or  = cor(ireccomp_or, n_act_or)
+  )
+print(chequeo_signo)
+stopifnot(all(chequeo_signo$r_act > 0), all(chequeo_signo$r_or > 0))
 
 print(
   esru_ire %>%
