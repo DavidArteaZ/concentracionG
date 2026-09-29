@@ -1,7 +1,7 @@
 # Decisiones metodológicas
 
 **Proyecto:** Movilidad social y complejidad económica: un estudio de las características económicas regionales que influyen en la movilidad inesperada en México.
-**Última actualización:** 26 de septiembre de 2026.
+**Última actualización:** 28 de septiembre de 2026. Se agregaron D14–D18 (antes "pendientes"), las tareas T16–T18 y la verificación pendiente V1; se modificaron D6, D13, 4.1 y T14.
 **Estado:** decisiones adoptadas por el equipo. Cada una indica qué se decidió, qué alternativas se descartaron y por qué, para poder defenderla ante revisores.
 
 **Fuentes revisadas:**
@@ -127,7 +127,7 @@ DML corrige esto (teorema de Frisch–Waugh–Lovell con funciones auxiliares es
 - **Principal:** $X$ incluye:
   - Circunstancias del hogar de origen: activos (D10), hacinamiento (D12), IRE de origen como una variable más.
   - Circunstancias de la familia: D13.
-  - Características individuales predeterminadas: sexo y características étnico-raciales.
+  - Características individuales predeterminadas: sexo, **edad** (tarea T16) y características étnico-raciales según D13 y D17.
   - `region_14`.
   - Tipo de localidad a los 14 años (p21).
 - **Robustez:** se agregan los servicios de la vivienda de origen (p26a agua, p26b electricidad, p26c baño) y los servicios del barrio a los 14 años (p33a–i).
@@ -233,17 +233,18 @@ Los servicios p26a, b, c siguen la regla de D6.
 | Escolaridad de los padres | `educp` y `educm` por separado; p41–p44 |
 | Ocupación de los padres a los 14 | `clasep`, `clasem`, p46, p49, p51, p55; p50 y p56 (afiliación a seguridad social) |
 | Estructura del hogar | p39, p40, p57, p58, p45 |
-| Características personales y étnico-raciales | `sexo`, p111, p112, p113* (colorímetro) |
+| Características personales y étnico-raciales | `sexo`, `edad`, p111 (lengua indígena), p113* (colorímetro) |
 | Territorio | `region_14`, p21 |
 
-- **p110** queda pendiente hasta revisar sus categorías.
+- **p110 (autoadscripción) y p112 (color de piel autopercibido)** no entran en la especificación principal; solo en robustez (ver D17). *Modificado el 28/09/2026: p112 estaba originalmente en la principal.*
 - p19 y p20_COD se usan solo para unir con el ICE y para formar los pliegues. No son predictores.
 
 **Por qué:**
 - Son circunstancias predeterminadas que la literatura de desigualdad de oportunidades identifica como transmisoras de ventaja (Vélez-Grajales et al., 2018; Krozer y Estrada Aguilar, 2025).
 - Separar `educp` y `educm` en lugar de usar solo el máximo conserva información.
 - p50 y p56 aproximan la formalidad laboral de los padres, que es el contrafactual natural del mecanismo laboral.
-- El colorímetro se mide en 2023, pero es una característica prácticamente fija, por lo que se trata como circunstancia.
+- El colorímetro se mide en 2023, pero es una medición objetiva de una característica prácticamente fija, por lo que se trata como circunstancia. En cambio, las medidas autorreportadas (p110, p112) pueden responder al estatus actual (D17).
+- La edad es necesaria por el efecto de ciclo de vida dentro de la cohorte y porque el año del ICE de origen depende de ella (D15).
 
 ---
 
@@ -254,7 +255,7 @@ Los servicios p26a, b, c siguen la regla de D6.
 $$\tilde{Y}_i = \beta\,\tilde{E}_i + \varepsilon_i$$
 
 - Se estima con los residuos de DML (D5).
-- Errores estándar del cross-fitting de DML, **agrupados por municipio de origen**. El ICE varía solo entre municipios, así que las observaciones de un mismo municipio no son independientes.
+- Errores estándar del cross-fitting de DML con **agrupación en dos dimensiones: municipio de origen × UPM** (D16).
 - Se reporta $\hat{\beta}$ con la especificación principal de $X$ y con la de robustez (D6).
 
 ### 4.2 Heterogeneidad (central para la pregunta de los "pisos pegajosos")
@@ -274,8 +275,9 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 | Escolaridad alcanzada | `educ`, p9–p10 | Canal principal esperado |
 | Empleo formal propio | p18_1–3 (IMSS, ISSSTE, Pemex/Defensa/Marina), p65 | La afiliación puede ser como beneficiario de un familiar. Hay que buscar en el diccionario una pregunta sobre prestaciones del propio empleo antes de usarla |
 | Ocupación | `clase`, `cmo` | Solo existe para quien trabaja |
-| Formalidad del municipio de origen | Fuente externa (por ejemplo, puestos registrados en el IMSS por municipio) | Hay que confirmar disponibilidad municipal para 2003–2012 |
-| Migración a un municipio más complejo | Diferencia entre ICE de destino y de origen | Es un mediador y a la vez parte del resultado; se interpreta con cautela |
+| Formalidad del municipio de origen | Derechohabiencia IMSS/ISSSTE/Pemex de Censos y Conteo (D18) | Contemporánea al ICE; la dirección de la relación es ambigua, por eso la lectura es contable |
+| Premio a la especialización | Remuneración por trabajador y proporción de personal remunerado (Censos Económicos, D18) | Misma fuente que el ICE: parte de la correlación es mecánica |
+| Migración a un municipio más complejo | 1 si el ICE del municipio de destino es mayor que el de origen, o el cambio en ICE (D14) | Es un mediador y a la vez parte del resultado; se interpreta con cautela |
 
 **Regla que no se negocia:** los mediadores **nunca** entran en $X$ ni en las funciones auxiliares $\hat{m}$ y $\hat{e}$. Son variables posteriores al tratamiento ("bad controls"): incluirlas absorbe el efecto que se quiere medir y puede introducir sesgo por colisionador.
 
@@ -324,22 +326,121 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
   - Estimar un modelo solo con escolaridad y ocupación de los padres, que son menos sensibles al recuerdo.
 - **T12.** Reportar que los dos índices de hacinamiento no son comparables: el de destino divide entre cuartos para dormir (p89) y el de origen entre cuartos totales contando la cocina (p23).
 - **T13.** Interpretar la importancia de las variables con permutación o SHAP agrupados, no con la importancia nativa del algoritmo.
-- **T14.** Errores estándar agrupados por municipio de origen en todas las estimaciones de la etapa 2.
+- **T14.** Errores estándar agrupados en dos dimensiones (municipio de origen × UPM) en todas las estimaciones de la etapa 2 (D16).
 - **T15.** Mantener un lenguaje asociativo, no causal, en todo el texto.
+- **T16.** Incluir `edad` en $X$ (D13, D15). Dentro de la cohorte de 25–34 hay un efecto de ciclo de vida sobre los activos, y el año del ICE de origen depende de la edad. Sin ella, $\tilde{E}$ absorbería diferencias de edad.
+- **T17.** Homologar los códigos municipales (`p20_COD` y el municipio actual de `ESRU_mun.dta`) al mismo marco geoestadístico de los ICE antes de unir, considerando los municipios creados entre 2003 y 2023. Reportar cuántas observaciones no se pudieron unir y cómo se resolvió cada caso.
+- **T18.** Excluir a quienes a los 14 años vivían en el extranjero o no especificaron municipio (`p20_COD` = 33333 o 99999; 37 casos en la cohorte 1). No tienen ICE de origen. Se reportan en el flujo de la muestra (T6).
 
 ---
 
-## Decisiones pendientes (aún no discutidas)
+## Bloque 5. Decisiones adoptadas el 28/09/2026
 
-- **P1.** Especificación de la migración: si se incluye la interacción ICE de origen × migrante o ICE de destino × migrante, y cómo tratar la selección de quienes migran.
-- **P2.** Asignación del año del ICE de origen: el año censal más cercano a cuando la persona tenía 14 años, interpolación, o promedio del periodo de la infancia.
-- **P3.** Nivel de agrupación de los errores si se incluye el ICE de destino (municipio de origen, de destino o agrupación en dos dimensiones).
-- **P4.** Revisar las categorías de p110 y decidir si se incluye.
-- **P5.** Confirmar la fuente de formalidad municipal para 2003–2012.
+### D14. Migración
+
+**Datos:** `ESRU_mun.dta` contiene el municipio de residencia actual. En la cohorte 1, 1,545 de 5,559 personas con municipio de origen válido (27.8%; 30.1% ponderado) viven hoy en un municipio distinto al de los 14 años; 524 cambiaron de estado.
+
+**Decisión:**
+- **Principal:** el tratamiento es solo el ICE del municipio de origen, independientemente de mudanzas posteriores (estimando de "exposición en la infancia"). La migración **no** se controla en $X$.
+- **Mecanismo:** la migración entra como mediador en la descomposición de Gelbach (sección 4.3): 1 si la persona vive hoy en un municipio con mayor ICE que el de origen, o el cambio en ICE.
+- **Robustez:** estimación en la submuestra de quienes no migraron, reportada explícitamente como condicionada a una variable posterior al tratamiento.
+- **ICE de destino:** solo descriptivo. No se usa como tratamiento ni en interacciones.
+
+**Por qué:**
+- El ICE a los 14 años es anterior a cualquier decisión de mudarse, así que su asociación con el destino tiene una interpretación limpia (análoga al enfoque de "lugar en la infancia" de Chetty et al., 2014).
+- Controlar por migración, o interactuar el ICE con ser migrante, condiciona a un resultado posterior al tratamiento. Quienes migran difieren por selección (ambición, redes, habilidad), así que esos coeficientes no tienen interpretación limpia.
+- El ICE de destino es elegido por la persona y puede haber causalidad inversa (quien consigue un buen empleo se muda a un municipio más complejo). El "premio de migrar hacia mayor complejidad" planteado en el documento de contexto **no se identifica** con este diseño, y así se declara en el paper.
+
+**Amenaza a la validez externa:** la muestra se levantó en los lugares de residencia actual dentro de México. Quienes emigraron al extranjero no están, y probablemente provienen desproporcionadamente de municipios de bajo ICE. Se discute en el paper.
+
+### D15. Año del ICE de origen
+
+**Datos:** la cohorte (25–34 años en 2023) cumplió 14 años entre 2003 y 2012. El año exacto es $2023 - \text{edad} + 14$, con ±1 según la fecha de nacimiento. Los ICE disponibles son 2003, 2008 y 2013.
+
+**Decisión:**
+- **Principal:** interpolación lineal del ICE al año exacto en que la persona tenía 14: $ICE_{t} = ICE_{t_0} + \frac{t - t_0}{t_1 - t_0}(ICE_{t_1} - ICE_{t_0})$ entre los años censales adyacentes.
+- **Robustez:** (a) ICE del año censal más cercano; (b) ICE de 2003 para todos.
+- Esta decisión está **sujeta a la verificación V1**.
+
+**Por qué:**
+- Asignar el año más cercano introduce un error de medición en escalones de hasta 2.5 años, que tiende a subestimar el efecto. La interpolación lo reduce y no requiere extrapolar, porque todos los años caen dentro de 2003–2013.
+- El ICE está estandarizado cada año, así que la interpolación opera sobre posiciones relativas, lo cual es coherente.
+- El ICE de 2003 para todos es anterior al tratamiento para toda la cohorte, pero para los más jóvenes se mide hasta 9 años antes de que cumplieran 14. Tiene más error y por eso queda como robustez.
+- Como el año del ICE depende de la edad, la edad debe estar en $X$ (T16).
+
+### D16. Agrupación de los errores estándar
+
+**Datos:** en la cohorte 1 hay 688 municipios de origen (mediana de 4 personas por municipio; 182 municipios con una sola persona). El diseño muestral tiene 1,322 UPM y 5 estratos, ubicados en 503 municipios de residencia actual.
+
+**Decisión:**
+- **Principal:** agrupación en dos dimensiones, municipio de origen × UPM (Cameron, Gelbach y Miller, 2011), con la estructura de datos agrupados de `DoubleML`.
+- **Robustez:** (a) solo municipio de origen; (b) estado de origen (32 grupos) con wild cluster bootstrap.
+- Los pliegues de la validación cruzada (D8) usan la misma estructura de grupos.
+
+**Por qué:**
+- Según Abadie et al. (2023), se agrupa al nivel donde se asigna el tratamiento (el ICE, asignado por municipio de origen) y al nivel del diseño muestral (UPM). Aquí aplican ambos y no están anidados, porque los migrantes cruzan de un municipio de origen a una UPM en otro municipio.
+- Con 688 y 1,322 grupos hay suficientes para la agrupación en dos dimensiones.
+- La agrupación por estado capta la correlación espacial entre municipios vecinos. Con solo 32 grupos requiere wild cluster bootstrap.
+
+### D17. Autoadscripción étnico-racial (p110) y color de piel autopercibido (p112)
+
+**Datos:** categorías de p110 en la cohorte 1: Negra (61), Indígena (386), Blanca (371), Mestiza (3,099), Ninguna (1,679).
+
+**Decisión:**
+- **Principal:** solo medidas menos sensibles al estatus actual: p113* (colorímetro) y p111 (habla lengua indígena).
+- **Robustez:** se agregan p110 y p112. En p110, la categoría "Negra" (61 casos) se agrupa con otra por su tamaño, y se documenta con cuál.
+- Esto modifica D13, donde p112 estaba en la especificación principal.
+
+**Por qué:**
+- p110 y p112 se preguntan hoy, y la autoidentificación étnico-racial en México responde al nivel socioeconómico: las personas de mayor estatus tienden menos a identificarse como indígenas o de piel oscura (Villarreal, 2014).
+- Usarlas como circunstancias de origen puede introducir el destino como predictor.
+- El colorímetro es una medición objetiva, y hablar una lengua indígena es poco sensible al estatus actual.
+
+### D18. Fuente de formalidad municipal
+
+**Decisión:**
+- **Principal:** porcentaje de población derechohabiente de IMSS, ISSSTE y Pemex/Defensa/Marina por municipio, del Censo 2000, Conteo 2005 y Censo 2010 (en 2010 se excluye el Seguro Popular), interpolado al año en que la persona tenía 14, igual que en D15.
+- **Robustez:** trabajadores asegurados en el IMSS por municipio (disponibles a nivel municipal desde 1998), divididos entre la población del municipio.
+- **Mecanismo aparte ("premio a la especialización"):** remuneración por trabajador y proporción de personal remunerado de los Censos Económicos.
+
+**Por qué:**
+- La derechohabiencia se mide por lugar de residencia, que coincide con dónde creció la persona, y cubre el periodo 2003–2012 con interpolación. Su limitación es que incluye a familiares beneficiarios.
+- En los datos del IMSS hay que verificar si el municipio corresponde a donde está registrado el patrón y no al lugar de trabajo o residencia. Si es así, las empresas registradas en otro municipio distorsionan el dato. Por eso queda como robustez.
+- La medida de los Censos Económicos comparte fuente con el ICE, así que parte de su correlación con el ICE es mecánica. Se declara al reportarla.
+
+---
+
+## Verificaciones pendientes
+
+### V1. Homologación del SCIAN entre años del ICE
+
+**Qué hay que verificar:** si las ramas de los Censos Económicos se homologaron entre las versiones del SCIAN (2002, 2007, 2013, 2018, 2023) antes de calcular el ICE de cada año.
+
+**Por qué importa:**
+- Si no se homologaron, cada año del ICE se calcula sobre un conjunto distinto de actividades.
+- El ICE de cada año, visto por separado, sigue siendo válido como posición relativa dentro de ese año.
+- Lo que deja de estar bien definido es la **interpolación entre años** (D15, principal) y cualquier comparación entre años, como la matriz de transición municipal 2003–2023 del primer avance.
+
+**Diagnóstico rápido:** listar los códigos de rama usados en cada año y comparar los conjuntos. Si difieren en número o en códigos, no hubo homologación.
+
+**Protocolo mientras tanto:**
+1. Se continúa con el código y los modelos asumiendo que la homologación está bien hecha.
+2. El ICE se lee desde **un solo archivo**, generado por un solo script. Ningún script posterior calcula ni modifica el ICE, y ningún resultado depende de valores copiados a mano.
+3. Todo el proceso (unión con ICE → funciones auxiliares de DML con ajuste de hiperparámetros → etapa 2 → mecanismos → tablas y figuras) se puede volver a correr de principio a fin con un solo comando y semillas fijas (T8).
+4. **Ningún resultado se redacta como definitivo** en el paper hasta cerrar V1.
+
+**Si resulta que no se homologó:**
+1. Se homologan las ramas con las tablas de correspondencia SCIAN del INEGI, se recalcula el ICE y se vuelve a correr todo el proceso sin cambios.
+2. Si la homologación no es factible, la especificación principal de D15 pasa a ser la **robustez (a)**: ICE del año censal más cercano. Como cada persona recibe el ICE de un solo año, no mezcla clasificaciones distintas.
+3. Se documenta el cambio y la razón en este archivo.
 
 ---
 
 ## Referencias
+
+- Abadie, A., Athey, S., Imbens, G. W., & Wooldridge, J. M. (2023). When should you adjust standard errors for clustering? *Quarterly Journal of Economics*, 138(1), 1–35.
+- Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2011). Robust inference with multiway clustering. *Journal of Business & Economic Statistics*, 29(2), 238–249.
+- Villarreal, A. (2014). Ethnic identification and its consequences for measuring inequality in Mexico. *American Sociological Review*, 79(4), 775–806.
 
 - Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., & Robins, J. (2018). Double/debiased machine learning for treatment and structural parameters. *The Econometrics Journal*, 21(1), C1–C68.
 - Chetty, R., Hendren, N., Kline, P., & Saez, E. (2014). Where is the land of opportunity? The geography of intergenerational mobility in the United States. *Quarterly Journal of Economics*, 129(4), 1553–1623.
