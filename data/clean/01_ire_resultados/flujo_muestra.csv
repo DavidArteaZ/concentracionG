@@ -1,0 +1,10 @@
+"paso","n_total","n_cohorte_analisis"
+"0. Base original",17843,5596
+"1. Con educ (filtro CEEY, secuencial)",17551,5458
+"2. Con padres_edu (filtro CEEY, secuencial)",16304,5109
+"3. Con region_14 = muestra CEEY previa al MCA",16258,5090
+"4. Con IRE actual",16258,5090
+"5a. Con IRE de origen, regla CEEY",14924,4655
+"5b. Con IRE de origen, regla principal (NS -> NA)",14392,4461
+"5c. Con IRE de origen imputado (solo cohorte de análisis)",5090,5090
+"6. Muestra T3 (IRE origen CEEY y actual no faltantes)",14924,4655

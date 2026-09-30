@@ -1,7 +1,7 @@
 # Decisiones metodológicas
 
 **Proyecto:** Movilidad social y complejidad económica: un estudio de las características económicas regionales que influyen en la movilidad inesperada en México.
-**Última actualización:** 28 de septiembre de 2026. Se agregaron D14–D18 (antes "pendientes"), las tareas T16–T18 y la verificación pendiente V1; se modificaron D6, D13, 4.1 y T14.
+**Última actualización:** 29 de septiembre de 2026. Se precisó el orden de D2 (T18 después de los cortes), se corrigieron los conteos de D11, se cerró T5, se cerró T3 y se adoptó D19 (antes P1: el quintil de origen para la heterogeneidad se calcula con el IRE imputado). *(28/09/2026: se agregaron D14–D18, T16–T18 y V1; se modificaron D6, D13, 4.1 y T14.)*
 **Estado:** decisiones adoptadas por el equipo. Cada una indica qué se decidió, qué alternativas se descartaron y por qué, para poder defenderla ante revisores.
 
 **Fuentes revisadas:**
@@ -63,6 +63,8 @@ El análisis es **asociativo, no causal**, y así se redacta en todo el paper.
 1. El IRE se calcula con la muestra del CEEY. Filtrar la edad antes o después del MCA da exactamente el mismo IRE para la cohorte 1, porque el MCA se estima por cohorte.
 2. Los quintiles y percentiles siempre se calculan después del IRE.
 3. Cualquier eliminación de observaciones posterior al cálculo de los cortes se reporta, porque deja de cumplirse que cada quintil contenga el 20% de la población.
+4. *(29/09/2026)* Los cortes de destino se calculan sobre **toda** la cohorte 1 de la muestra CEEY, que es la población de referencia. La exclusión de quienes vivían en el extranjero o sin municipio a los 14 (T18, 37 casos) se hace **después**, en el script de la muestra de análisis, y se reporta la desviación del 20% por quintil.
+5. Pesos: los MCA y todo lo que replica al CEEY (T3) usan `factor_ceey = round(factor)*10`; los percentiles y quintiles propios del proyecto usan `factor` sin redondear (T9).
 
 ### D3. Forma de la variable a predecir
 
@@ -74,7 +76,7 @@ El análisis es **asociativo, no causal**, y así se redacta en todo el paper.
 - El percentil conserva información que el quintil desecha. Por ejemplo, las personas en los percentiles 39 y 41 quedan en quintiles distintos aunque están prácticamente en la misma posición.
 - Conecta con la literatura de regresión rango-rango (Chetty et al., 2014; Delajara et al., 2020).
 - Reduce el problema de que el desvío esté mecánicamente acotado en los extremos. Con quintiles, alguien de Q5 casi no puede superar su pronóstico.
-- Los empates se manejan con el promedio porque el IRE se construye con variables binarias y tiene pocos valores distintos.
+- Los empates se manejan con el promedio porque el IRE se construye con variables binarias y puede tener valores repetidos. *(Nota 29/09/2026: en la cohorte 1 el IRE actual tiene 4,789 valores distintos entre 5,090 personas, así que los empates son pocos; la regla se mantiene por completitud.)*
 - Si se usa un clasificador, el pronóstico debe ser el valor esperado y no la clase más probable (argmax). El residuo requiere una esperanza condicional.
 
 ### D4. Réplica del MCA del CEEY
@@ -201,7 +203,9 @@ Los servicios p26a, b, c siguen la regla de D6.
 - Las 435 personas de la cohorte 1 sin IRE de origen **se conservan**, con IRE de origen = `NA`.
 - **Robustez:** IRE de origen imputado con `missMDA::imputeMCA` (Josse y Husson, 2016).
 - El IRE de destino y los filtros previos al MCA siguen la muestra del CEEY (D4):
-  - Se excluyen 138 casos sin `educ`, 387 sin educación de los padres y 21 sin `region_14`.
+  - Se excluyen 138 casos sin `educ`, 387 sin educación de los padres y 21 sin `region_14`. *(Corrección 29/09/2026: esos conteos no son secuenciales. Aplicados en el orden del .do, en la cohorte 1 se pierden 138, 349 y 19; en la base completa, 292, 1,247 y 46. El flujo oficial es el que genera el script 01 en `data/clean/01_ire_resultados/flujo_muestra.csv`.)*
+  - *(29/09/2026)* Con la regla principal ("no sabe" → `NA` en tarjeta y ahorro de origen), **629** de las 5,090 personas de la cohorte 1 no tienen IRE de origen, contra 435 con la regla del CEEY. Los faltantes se concentran en la cuenta de ahorro (362) y la tarjeta (274). Su percentil medio de destino es 55.7, contra 49.4 del resto, lo que confirma que no son una pérdida aleatoria. `p30` (autos de origen) no tiene código de "no sabe" (rango 0–20), así que la regla del automóvil no cambia nada.
+  - *(29/09/2026)* El script 01 genera tres versiones del IRE de origen: `irec_or_ceey` (solo para T3), `irec_or_na` (principal) e `irec_or_imp` (robustez, solo cohorte 1).
   - Robustez: estimar el MCA sin los dos primeros filtros y conservar a esas personas con `NA`, reportando la correlación entre ambas versiones del índice.
 
 **Por qué:**
@@ -223,6 +227,7 @@ Los servicios p26a, b, c siguen la regla de D6.
 **Por qué:**
 - El corte en 2.5 desecha información, y los árboles encuentran sus propios cortes.
 - Hay 2 casos con p22 = 999 que tanto el .do como el script original clasifican como hacinados. Es un error de codificación heredado.
+- *(29/09/2026)* p22 = 999 también se recodifica como `NA` **dentro** del IRE de origen principal (desviación del .do que se reporta en T2). En la muestra CEEY solo hay 2 casos, en las cohortes 3 y 4; ninguno en la cohorte 1. La versión `irec_or_ceey` conserva la regla del .do.
 
 ### D13. Variables adicionales de origen
 
@@ -262,7 +267,7 @@ $$\tilde{Y}_i = \beta\,\tilde{E}_i + \varepsilon_i$$
 
 $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz}) + \varepsilon_i$$
 
-- $Z$ es una característica **predeterminada** que también forma parte de $X$: quintil de origen (principal), sexo, región de origen y si la localidad de origen era rural.
+- $Z$ es una característica **predeterminada** que también forma parte de $X$: quintil de origen (principal; calculado con el IRE imputado, D19), sexo, región de origen y si la localidad de origen era rural.
 - Equivale a la proyección lineal del efecto heterogéneo sobre $Z$ (Semenova y Chernozhukov, 2021).
 - **Por qué es central:** la pregunta de investigación es si la complejidad ayuda a romper los "pisos pegajosos". La prueba directa es si la asociación con el ICE es mayor para quienes vienen de Q1–Q2.
 
@@ -308,6 +313,7 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 - **T1.** Volver a correr `01_generar_quintiles_ires_emovi.R` con la corrección de signo, regenerar el `.rds` y rehacer todo lo que dependa de él (incluido `02_limpieza_esru.R`).
 - **T2.** Documentar en el paper las desviaciones respecto al .do del CEEY (D4).
 - **T3.** Validación externa: con el quintil nacional de las 4 cohortes, replicar la matriz de transición nacional publicada por el CEEY (Q1→Q1 ≈ 50%, Q5→Q5 ≈ 51%). Si no se replica, no se avanza.
+  - **Cerrada 29/09/2026.** El script 01 en R (n = 14,924) da la fila Q1 = 50.3 / 27.3 / 13.9 / 6.4 / 2.1 y Q5→Q5 = 50.7. Lo publicado por el CEEY (presentación del Informe 2025) es 50 / 28 / 14 / 7 / 2. Por sexo, la réplica da Q1→Q1 = 48.8 en hombres y 51.3 en mujeres (publicado: 49 y 51); Q5→Q5 = 53.5 y 47.1 (publicado: 53 y 47); Q1→Q5 = 3.3 y 1.3 (publicado: 3 y 1). Las diferencias de hasta 0.7 pp en Q1→Q2 y Q1→Q4 son compatibles con el redondeo y con la diferencia de escala indicadora/Burt (D4). Una réplica independiente en Python coincide con el R hasta el decimal 12.
 - **T4.** Auditar que no haya fuga de información. Ninguna de estas variables puede entrar en $X$:
   - Activos y vivienda actuales: `ac1–ac16`, `hac`, p89, p94–p99, `tamhog`.
   - Características actuales de la persona: `educ`, p8–p18, p59 en adelante, `clase`, `cmo`, `ocup`, `ingc_pc`, p102, p103.
@@ -315,7 +321,7 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
   - Hogar y ubicación actuales: `jefe_hogar`, `region`, `entidad`, `rururb`.
 
   La lista queda escrita en el código como exclusión explícita.
-- **T5.** Recodificar p22 = 999 como `NA`. Verificar si p99 = 8 automóviles (12 casos) es un código de no respuesta.
+- **T5.** Recodificar p22 = 999 como `NA`. Verificar si p99 = 8 automóviles (12 casos) es un código de no respuesta. **Cerrada 29/09/2026:** según el diccionario, p99 va de 0 a 13 sin código de no respuesta, así que p99 = 8 es un conteo válido. p22 = 999 se recodifica como `NA` (ver D12).
 - **T6.** Reportar el flujo de la muestra: n después de cada filtro, pérdida por casos incompletos en el MCA y tasas de "no sabe" por cohorte y por posición de destino.
 - **T7.** Si se usa un clasificador: $\hat{Y} = \sum_k k\,\hat{p}_k$, no la clase más probable.
 - **T8.** Validación cruzada anidada si se ajustan hiperparámetros. Fijar semillas y registrar versiones (`sessionInfo()`, `renv.lock` o `requirements.txt`).
@@ -407,6 +413,39 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 - La derechohabiencia se mide por lugar de residencia, que coincide con dónde creció la persona, y cubre el periodo 2003–2012 con interpolación. Su limitación es que incluye a familiares beneficiarios.
 - En los datos del IMSS hay que verificar si el municipio corresponde a donde está registrado el patrón y no al lugar de trabajo o residencia. Si es así, las empresas registradas en otro municipio distorsionan el dato. Por eso queda como robustez.
 - La medida de los Censos Económicos comparte fuente con el ICE, así que parte de su correlación con el ICE es mecánica. Se declara al reportarla.
+
+---
+
+## Bloque 6. Decisiones adoptadas el 29/09/2026
+
+### D19. Quintil de origen para la heterogeneidad (antes P1)
+
+**Decisión:**
+- **Principal:** $Z$ = quintil de origen dentro de la cohorte 1 calculado con el IRE de origen imputado (`q_or_c1_imp`, a partir de `irec_or_imp`). Nadie queda fuera del análisis de heterogeneidad.
+- **Robustez:** el mismo análisis con `q_or_c1_na` (629 personas fuera) y con `q_or_c1_ceey` (435 fuera).
+- **Qué se imputa:** solo las respuestas faltantes ("no sabe") de los activos de origen, con `missMDA::imputeMCA`. Cada respuesta faltante se sustituye por una probabilidad estimada a partir de las respuestas observadas de la persona y de la estructura de asociación entre activos en la cohorte. El índice se estima después sobre la tabla completa. La mayoría de las 629 personas tiene un solo activo faltante (cuenta de ahorro o tarjeta de crédito de los padres).
+- **Implicación para $X$:** la sección 4.2 exige que $Z$ forme parte de $X$. Por eso $X$ incluye `q_or_c1_imp`. Los activos de origen siguen entrando con `NA` (D10, D11), y el IRE de origen que entra como una variable más sigue siendo `irec_or_na` (D11).
+- **Requisito previo:** volver a correr el script 01 con `NCP_MAX_CV = 10`. En la primera corrida, `estim_ncpMCA` eligió ncp = 5, que era el tope de búsqueda.
+
+**Por qué:**
+- La tasa de "no sabe" crece con la posición de destino (7.0% en Q1 contra 14.5% en Q5). Excluir a esas personas eliminaría de forma desproporcionada a quienes ascendieron y sesgaría la interacción de "pisos pegajosos".
+- La imputación afecta solo a la pieza faltante del índice. El resto sale de respuestas observadas.
+
+**Antecedentes (texto original de P1):**
+
+
+**Problema que resolvía:** con la regla principal de D11, 629 personas de la cohorte 1 (12.4%) no tienen IRE de origen y, por lo tanto, tampoco quintil de origen. Si $Z$ = quintil de origen usa `irec_or_na`, la interacción principal de los "pisos pegajosos" se estima sin ellas, y ya se sabe que no son aleatorias (percentil medio de destino 55.7 contra 49.4).
+
+**Opciones consideradas:**
+- (a) $Z$ a partir de `irec_or_imp` (nadie queda fuera); `irec_or_na` y `irec_or_ceey` como robustez.
+- (b) $Z$ a partir de `irec_or_ceey` (435 fuera).
+- (c) Una categoría propia "sin quintil de origen" en $Z$.
+
+**Dato relevante (29/09/2026, corrida del script 01):** la tasa de "no sabe" en algún activo de origen crece con la posición de destino: 7.0% en Q1, 8.7% en Q2, 11.7% en Q3, 11.2% en Q4 y 14.5% en Q5 (cohorte 1, ponderado). La falta de IRE de origen sigue el mismo patrón (7.0% en Q1 contra 12.3% en Q5). Excluir a estas personas de $Z$ elimina de forma desproporcionada a quienes ascendieron, lo que refuerza la opción (a). También es evidencia relevante para T11: el "no sabe" se concentra en productos financieros de los padres (cuenta de ahorro y tarjeta), cuya tenencia probablemente desconocía el hijo a los 14 años.
+
+**Nota sobre la versión imputada:** en la primera corrida, `estim_ncpMCA` eligió ncp = 5, que era el tope de búsqueda. El tope se subió a 10 (`NCP_MAX_CV`); hay que volver a correr el script antes de usar `irec_or_imp`.
+
+**Dato relevante:** entre quienes tienen ambas versiones, la correlación entre `irec_or_ceey` e `irec_or_na` es de 0.99999, así que la elección decide quién entra y no cómo se ordena a las personas.
 
 ---
 
