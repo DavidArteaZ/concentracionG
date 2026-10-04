@@ -1,0 +1,100 @@
+GID_2,NAME_1,NAME_2,cve_nombre,cve_espacial,cve_mun,metodo,tipo_relacion,share_pob_gadm_final,share_pob_inegi_final,inegi_contenidos,discrepancia_nombre_espacial,NOMGEO
+MEX.3.1_2,Baja California,Ensenada,02001,02001,02001,exacto,1:n,0.7893696175391016,1.0,"['02001', '02006']",False,Ensenada
+MEX.3.2_2,Baja California,Mexicali,02002,02002,02002,exacto,1:n,0.9811036999269451,1.0,"['02002', '02007']",False,Mexicali
+MEX.4.2_2,Campeche,Calkiní,04001,04001,04001,exacto,1:n,0.721249767905069,1.0,"['04001', '04013']",False,Calkiní
+MEX.4.6_2,Campeche,Champotón,04004,04004,04004,exacto,1:n,0.8365221654923948,1.0,"['04004', '04012']",False,Champotón
+MEX.5.2_2,Chiapas,Acala,07002,07002,07002,exacto,1:n,0.6613873047359285,1.0,"['07002', '07123']",False,Acala
+MEX.5.28_2,Chiapas,Cintalapa,07017,07017,07017,prefijo,1:1,1.0,1.0,['07017'],False,Cintalapa de Figueroa
+MEX.5.78_2,Chiapas,Pueblo Nuevo Solistahuacán,07072,07072,07072,exacto,1:n,0.7730240058258993,1.0,"['07072', '07121']",False,Pueblo Nuevo Solistahuacán
+MEX.5.89_2,Chiapas,Siltepec,07080,07080,07080,exacto,1:n,0.6182405165456013,1.0,"['07080', '07120', '07125']",False,Siltepec
+MEX.5.101_2,Chiapas,Tecpatán,07092,07124,07092,exacto,1:n,0.4686797509942936,1.0,"['07092', '07124']",True,Tecpatán
+MEX.5.115_2,Chiapas,Villa Corzo,07107,07107,07107,exacto,1:n,0.8112041922573046,1.0,"['07107', '07122']",False,Villa Corzo
+MEX.6.8_2,Chihuahua,Batopilas,08008,08008,08008,prefijo,1:1,1.0,1.0,['08008'],False,Batopilas de Manuel Gómez Morín
+MEX.11.12_2,Guanajuato,Dolores Hidalgo Cuna de la Indep,11014,11014,11014,prefijo,1:1,1.0,1.0,['11014'],False,Dolores Hidalgo Cuna de la Independencia Nacional
+MEX.12.2_2,Guerrero,Acatepec,12076,12076,12076,exacto,n:1,0.9498780738607986,0.8011051092720155,['12076'],False,Acatepec
+MEX.12.10_2,Guerrero,Atlamajalcingo del Monte,12009,12009,12009,exacto,ambiguo,0.5654724491933795,0.9418949572500436,['12009'],False,Atlamajalcingo del Monte
+MEX.12.13_2,Guerrero,Ayutla de los Libres,12012,12012,12012,exacto,1:n,0.8319978750719377,0.970630767111968,"['12012', '12083']",False,Ayutla de los Libres
+MEX.12.19_2,Guerrero,Coahuayutla de José María Izazag,12016,12016,12016,prefijo,1:1,0.99731713090823,1.0,['12016'],False,Coahuayutla de José María Izazaga
+MEX.12.27_2,Guerrero,Cuajinicuilapa,12023,12023,12023,exacto,1:n,0.7346500320379933,0.9865863535128568,"['12023', '12085']",False,Cuajinicuilapa
+MEX.12.39_2,Guerrero,Igualapa,12036,12036,12036,exacto,n:1,1.0,0.879666638319585,['12036'],False,Igualapa
+MEX.12.43_2,Guerrero,Juan R. Escudero,12039,12039,12039,exacto,n:1,0.9803287064634251,0.880896812947163,['12039'],False,Juan R. Escudero
+MEX.12.45_2,Guerrero,La Unión de Isidoro Montes de Oc,12068,12068,12068,prefijo,1:1,1.0,0.998716496791242,['12068'],False,La Unión de Isidoro Montes de Oca
+MEX.12.47_2,Guerrero,Malinaltepec,12041,12041,12041,exacto,1:n,0.7555882654982371,0.977286814841052,"['12041', '12084']",False,Malinaltepec
+MEX.12.50_2,Guerrero,Metlatónoc,12043,12043,12043,exacto,ambiguo,0.8912545350391445,0.9957333333333334,['12043'],False,Metlatónoc
+MEX.12.60_2,Guerrero,San Marcos,12053,12053,12053,exacto,1:n,0.7424306643324426,1.0,"['12053', '12082']",False,San Marcos
+MEX.12.70_2,Guerrero,Tlacoapa,12063,12063,12063,exacto,ambiguo,0.725393127548049,1.0,['12063'],False,Tlacoapa
+MEX.12.75_2,Guerrero,Xalpatláhuac,12069,12069,12069,exacto,ambiguo,0.8946580876851713,0.9969153814089203,['12069'],False,Xalpatláhuac
+MEX.12.78_2,Guerrero,Zapotitlán Tablas,12072,12072,12072,exacto,ambiguo,0.7021150542093726,0.9828329739591972,['12072'],False,Zapotitlán Tablas
+MEX.13.56_2,Hidalgo,Santiago Tulantepec de Lugo Guer,13056,13056,13056,prefijo,1:1,1.0,1.0,['13056'],False,Santiago Tulantepec de Lugo Guerrero
+MEX.14.21_2,Jalisco,Chimaltitán,14031,14031,14031,exacto,ambiguo,0.8970070422535211,0.9967394848386045,['14031'],False,Chimaltitán
+MEX.17.13_2,Morelos,Jonacatepec,17013,17013,17013,prefijo,1:1,1.0,1.0,['17013'],False,Jonacatepec de Leandro Valle
+MEX.17.15_2,Morelos,Miacatlán,17015,17015,17015,exacto,1:n,0.5823468862583634,1.0,"['17015', '17034']",False,Miacatlán
+MEX.17.17_2,Morelos,Puente de Ixtla,17017,17017,17017,exacto,1:n,0.5742278922490937,1.0,"['17017', '17035']",False,Puente de Ixtla
+MEX.17.23_2,Morelos,Tetela del Volcán,17022,17022,17022,exacto,1:n,0.9661820070102557,1.0,"['17022', '17036']",False,Tetela del Volcán
+MEX.17.33_2,Morelos,Zacualpan,17032,17032,17032,prefijo,1:1,1.0,1.0,['17032'],False,Zacualpan de Amilpas
+MEX.20.11_2,Oaxaca,Ayotzintepec,20009,20009,20009,exacto,n:1,1.0,0.8996212121212122,['20009'],False,Ayotzintepec
+MEX.20.20_2,Oaxaca,Coatecas Altas,20015,20015,20015,exacto,ambiguo,0.7319166326113609,1.0,['20015'],False,Coatecas Altas
+MEX.20.37_2,Oaxaca,Heroica Ciudad de Ejutla de Cres,20028,20028,20028,prefijo,1:1,1.0,0.9670648164412436,['20028'],False,Heroica Ciudad de Ejutla de Crespo
+MEX.20.38_2,Oaxaca,Heroica Ciudad de Huajuapan de L,20039,20039,20039,prefijo,1:1,1.0,0.9743776238053312,['20039'],False,Heroica Ciudad de Huajuapan de León
+MEX.20.39_2,Oaxaca,Heroica Ciudad de Juchitán de Za,20043,20043,20043,prefijo,1:1,1.0,0.9674978436446326,['20043'],False,Heroica Ciudad de Juchitán de Zaragoza
+MEX.20.41_2,Oaxaca,Heroica Villa Tezoatlán de Segur,20549,20549,20549,prefijo,1:1,1.0,1.0,['20549'],False,"Heroica Villa Tezoatlán de Segura y Luna, Cuna de la Independencia de Oaxaca"
+MEX.20.59_2,Oaxaca,Magdalena Yodocono de Porfirio D,20562,20562,20562,prefijo,1:1,1.0,1.0,['20562'],False,Magdalena Yodocono de Porfirio Díaz
+MEX.20.68_2,Oaxaca,Monjas,20061,20061,20061,exacto,n:1,1.0,0.5798551224560193,['20061'],False,Monjas
+MEX.20.110_2,Oaxaca,San Antonio Huitepec,20108,20108,20108,exacto,ambiguo,0.6128834355828221,1.0,['20108'],False,San Antonio Huitepec
+MEX.20.125_2,Oaxaca,San Bernardo Mixtepec,20123,20123,20123,exacto,n:1,1.0,0.8632840028188865,['20123'],False,San Bernardo Mixtepec
+MEX.20.126_2,Oaxaca,San Blas Atempa,,20124,20124,espacial,1:1,1.0,1.0,['20124'],False,Heroica Villa de San Blas Atempa
+MEX.20.130_2,Oaxaca,San Cristóbal Lachirioag,20128,20128,20128,exacto,ambiguo,0.8989966555183947,1.0,['20128'],False,San Cristóbal Lachirioag
+MEX.20.142_2,Oaxaca,San Francisco Chindúa,20140,20140,20140,exacto,ambiguo,0.8995584988962473,1.0,['20140'],False,San Francisco Chindúa
+MEX.20.143_2,Oaxaca,San Francisco del Mar,20141,20141,20141,exacto,n:1,0.9932135728542915,0.8495333485089915,['20141'],False,San Francisco del Mar
+MEX.20.145_2,Oaxaca,San Francisco Ixhuatán,20143,20143,20143,exacto,ambiguo,0.8641315519013361,0.9939709185482918,['20143'],False,San Francisco Ixhuatán
+MEX.20.156_2,Oaxaca,San Ildefonso Amatlán,20154,20154,20154,exacto,n:1,0.9430939226519337,0.730423620025674,['20154'],False,San Ildefonso Amatlán
+MEX.20.162_2,Oaxaca,San Jerónimo Silacayoapilla,20160,20160,20160,exacto,ambiguo,0.7243297926150734,1.0,['20160'],False,San Jerónimo Silacayoapilla
+MEX.20.186_2,Oaxaca,San Juan Bautista Tlacoatzintepe,20182,20182,20182,prefijo,1:1,1.0,1.0,['20182'],False,San Juan Bautista Tlacoatzintepec
+MEX.20.195_2,Oaxaca,San Juan Comaltepec,20189,20189,20189,exacto,n:1,1.0,0.8609865470852018,['20189'],False,San Juan Comaltepec
+MEX.20.206_2,Oaxaca,San Juan Juquila Vijanos,20201,20201,20201,exacto,n:1,1.0,0.8097509273979863,['20201'],False,San Juan Juquila Vijanos
+MEX.20.211_2,Oaxaca,San Juan Mazatlán,20207,20207,20207,exacto,n:1,0.9604104749621488,0.8975944656988627,['20207'],False,San Juan Mazatlán
+MEX.20.212_2,Oaxaca,San Juan Mixtepec -Dto. 08 -,,20208,20208,espacial,1:1,0.9604055350047952,1.0,['20208'],False,San Juan Mixtepec
+MEX.20.213_2,Oaxaca,San Juan Mixtepec -Dto. 26 -,,20209,20209,espacial,1:1,1.0,1.0,['20209'],False,San Juan Mixtepec
+MEX.20.235_2,Oaxaca,San Lucas Camotlán,20231,20231,20231,exacto,ambiguo,0.7760758570386579,1.0,['20231'],False,San Lucas Camotlán
+MEX.20.241_2,Oaxaca,San Marcos Arteaga,20237,20237,20237,exacto,ambiguo,0.5895343254920787,1.0,['20237'],False,San Marcos Arteaga
+MEX.20.242_2,Oaxaca,San Martín de los Cansecos,,20238,20238,espacial,1:1,1.0,1.0,['20238'],False,Heroico San Martín de los Cansecos
+MEX.20.255_2,Oaxaca,San Mateo Piñas,20253,20253,20253,exacto,ambiguo,0.8424045491470349,1.0,['20253'],False,San Mateo Piñas
+MEX.20.260_2,Oaxaca,San Mateo Yucutindó,20566,20566,20566,prefijo,1:1,1.0,1.0,['20566'],False,San Mateo Yucutindoo
+MEX.20.279_2,Oaxaca,San Miguel Quetzaltepec,20275,20275,20275,exacto,n:1,1.0,0.8742474001094691,['20275'],False,San Miguel Quetzaltepec
+MEX.20.294_2,Oaxaca,San Pablo Cuatro Venados,20292,20292,20292,exacto,ambiguo,0.6993135011441648,1.0,['20292'],False,San Pablo Cuatro Venados
+MEX.20.299_2,Oaxaca,San Pablo Tijaltepec,20297,20297,20297,exacto,ambiguo,0.8416565164433617,1.0,['20297'],False,San Pablo Tijaltepec
+MEX.20.308_2,Oaxaca,San Pedro el Alto,20306,20306,20306,exacto,ambiguo,0.8518173345759553,1.0,['20306'],False,San Pedro el Alto
+MEX.20.309_2,Oaxaca,San Pedro Huamelula,20307,20307,20307,exacto,ambiguo,0.8880800727934486,1.0,['20307'],False,San Pedro Huamelula
+MEX.20.312_2,Oaxaca,San Pedro Ixtlahuaca,20310,20310,20310,exacto,n:1,1.0,0.77915799368831,['20310'],False,San Pedro Ixtlahuaca
+MEX.20.320_2,Oaxaca,San Pedro Mixtepec -Dto. 22 -,,20318,20318,espacial,1:1,1.0,1.0,['20318'],False,San Pedro Mixtepec
+MEX.20.321_2,Oaxaca,San Pedro Mixtepec -Dto. 26 -,,20319,20319,espacial,1:1,1.0,1.0,['20319'],False,San Pedro Mixtepec
+MEX.20.337_2,Oaxaca,San Pedro y San Pablo Teposcolul,20339,20339,20339,prefijo,1:1,1.0,0.9780934039480019,['20339'],False,San Pedro y San Pablo Teposcolula
+MEX.20.338_2,Oaxaca,San Pedro y San Pablo Tequixtepe,20340,20340,20340,prefijo,1:1,1.0,1.0,['20340'],False,San Pedro y San Pablo Tequixtepec
+MEX.20.347_2,Oaxaca,San Sebastián Río Hondo,20347,20347,20347,exacto,ambiguo,0.8365079365079365,1.0,['20347'],False,San Sebastián Río Hondo
+MEX.20.354_2,Oaxaca,San Vicente Lachixío,20535,20535,20535,exacto,ambiguo,0.8846679420606723,1.0,['20535'],False,San Vicente Lachixío
+MEX.20.391_2,Oaxaca,Santa Gertrudis,20387,20387,20387,exacto,ambiguo,0.8502202643171806,1.0,['20387'],False,Santa Gertrudis
+MEX.20.423_2,Oaxaca,Santa María Lachixío,20420,20420,20420,exacto,n:1,1.0,0.7498518079430943,['20420'],False,Santa María Lachixío
+MEX.20.456_2,Oaxaca,Santiago Astata,20453,20453,20453,exacto,n:1,1.0,0.6868635437881874,['20453'],False,Santiago Astata
+MEX.20.461_2,Oaxaca,Santiago Chazumba,,20459,20459,espacial,1:1,1.0,1.0,['20459'],False,Villa de Santiago Chazumba
+MEX.20.465_2,Oaxaca,Santiago Huajolotitlán,20462,20462,20462,exacto,ambiguo,0.8836808876984886,1.0,['20462'],False,Santiago Huajolotitlán
+MEX.20.473_2,Oaxaca,Santiago Lachiguiri,20470,20470,20470,exacto,ambiguo,0.861304012345679,1.0,['20470'],False,Santiago Lachiguiri
+MEX.20.485_2,Oaxaca,Santiago Nuyoó,20481,20481,20481,exacto,ambiguo,0.8358078602620087,1.0,['20481'],False,Santiago Nuyoó
+MEX.20.497_2,Oaxaca,Santiago Tlazoyaltepec,20494,20494,20494,exacto,n:1,1.0,0.7089880578252671,['20494'],False,Santiago Tlazoyaltepec
+MEX.20.535_2,Oaxaca,Santos Reyes Yucuná,20529,20529,20529,exacto,ambiguo,0.8969072164948454,1.0,['20529'],False,Santos Reyes Yucuná
+MEX.20.557_2,Oaxaca,Villa de Tamazulápam del Progres,20540,20540,20540,prefijo,1:1,1.0,1.0,['20540'],False,Villa de Tamazulápam del Progreso
+MEX.20.558_2,Oaxaca,Villa de Tututepec de Melchor Oc,,20334,20334,espacial,1:1,1.0,1.0,['20334'],False,Villa de Tututepec
+MEX.20.561_2,Oaxaca,Villa Hidalgo,20038,20038,20038,prefijo,1:1,1.0,1.0,['20038'],False,Villa Hidalgo Yalálag
+MEX.20.563_2,Oaxaca,Villa Talea de Castro,20280,20280,20280,exacto,ambiguo,0.8487784330244313,1.0,['20280'],False,Villa Talea de Castro
+MEX.23.2_2,Quintana Roo,Benito Juárez,23005,23005,23005,exacto,1:n,0.9708661568244111,1.0,"['23005', '23011']",False,Benito Juárez
+MEX.24.1_2,San Luis Potosí,Ahualulco,24001,24001,24001,prefijo,1:1,1.0,1.0,['24001'],False,Ahualulco del Sonido 13
+MEX.29.7_2,Tlaxcala,Benito Juárez,29045,29045,29045,exacto,n:1,1.0,0.8773745392685002,['29045'],False,Benito Juárez
+MEX.29.22_2,Tlaxcala,Mazatecochco de José María Morel,29017,29017,29017,prefijo,1:1,1.0,1.0,['29017'],False,Mazatecochco de José María Morelos
+MEX.29.60_2,Tlaxcala,Ziltlaltépec de Trinidad Sánchez,29037,29037,29037,prefijo,1:1,1.0,1.0,['29037'],False,Ziltlaltépec de Trinidad Sánchez Santos
+MEX.30.111_2,Veracruz,Medellín,30105,30105,30105,prefijo,1:1,1.0,1.0,['30105'],False,Medellín de Bravo
+MEX.30.117_2,Veracruz,Nanchital de Lázaro Cárdenas del,30206,30206,30206,prefijo,1:1,1.0,1.0,['30206'],False,Nanchital de Lázaro Cárdenas del Río
+MEX.31.19_2,Yucatán,Chikindzonot,31022,31022,31022,exacto,ambiguo,0.7147054023176106,1.0,['31022'],False,Chikindzonot
+MEX.31.45_2,Yucatán,Kopomá,31045,31045,31045,exacto,ambiguo,0.8901715039577837,1.0,['31045'],False,Kopomá
+MEX.31.72_2,Yucatán,Suma,31072,31072,31072,exacto,ambiguo,0.8978906999041227,1.0,['31072'],False,Suma
+MEX.31.74_2,Yucatán,Tahmek,31074,31074,31074,exacto,ambiguo,0.8621236133122029,1.0,['31074'],False,Tahmek
+MEX.31.92_2,Yucatán,Tixcacalcupul,31092,31092,31092,exacto,n:1,1.0,0.7960418504979201,['31092'],False,Tixcacalcupul
+MEX.31.94_2,Yucatán,Tixmehuac,31094,31094,31094,exacto,n:1,1.0,0.8711208470244615,['31094'],False,Tixméhuac

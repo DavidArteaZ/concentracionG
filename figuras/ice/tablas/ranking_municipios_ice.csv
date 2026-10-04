@@ -1,0 +1,101 @@
+clave_municipio,nom_municipio,eci,diversity,en_nucleo,grupo,año
+09016,Miguel Hidalgo,3.54273,156,True,top,2003
+19039,Monterrey,3.52884,174,True,top,2003
+09014,Benito Juárez,3.44603,153,True,top,2003
+09010,Álvaro Obregón,3.43127,121,True,top,2003
+28032,Reynosa,3.40976,105,True,top,2003
+19006,Apodaca,3.39033,87,True,top,2003
+02004,Tijuana,3.36271,128,True,top,2003
+09002,Azcapotzalco,3.35554,109,True,top,2003
+08037,Juárez,3.34282,101,True,top,2003
+15104,Tlalnepantla de Baz,3.33635,116,True,top,2003
+21159,Teopantlán,-1.93905,2,True,bottom,2003
+20240,San Martín Itunyoso,-1.88977,2,False,bottom,2003
+20332,San Pedro Topiltepec,-1.88977,2,False,bottom,2003
+20335,San Pedro Yaneri,-1.88977,2,False,bottom,2003
+20264,San Miguel Chicahua,-1.88977,2,False,bottom,2003
+20281,San Miguel Tecomatlán,-1.88977,2,False,bottom,2003
+07119,Santiago el Pinar,-1.88977,2,False,bottom,2003
+20155,San Ildefonso Sola,-1.88977,2,False,bottom,2003
+20480,Santiago Nundiche,-1.88977,2,False,bottom,2003
+20408,Santa María del Rosario,-1.88977,2,False,bottom,2003
+09014,Benito Juárez,3.69219,156,True,top,2008
+09016,Miguel Hidalgo,3.56603,165,True,top,2008
+09010,Álvaro Obregón,3.5233,126,True,top,2008
+08037,Juárez,3.50911,107,True,top,2008
+19039,Monterrey,3.45576,178,True,top,2008
+15104,Tlalnepantla de Baz,3.44206,119,True,top,2008
+19046,San Nicolás de los Garza,3.4087,137,True,top,2008
+14039,Guadalajara,3.4012,169,True,top,2008
+02004,Tijuana,3.34023,138,True,top,2008
+09015,Cuauhtémoc,3.33283,131,True,top,2008
+20395,Santa María Apazco,-2.08991,3,True,bottom,2008
+20313,San Pedro Jocotipac,-2.04415,4,True,bottom,2008
+21159,Teopantlán,-2.00956,4,True,bottom,2008
+20311,San Pedro Jaltepetongo,-1.94728,4,True,bottom,2008
+20384,Santa Cruz Xitla,-1.94056,5,True,bottom,2008
+31010,Cantamayec,-1.93866,4,True,bottom,2008
+20218,San Juan Teita,-1.89721,6,True,bottom,2008
+20093,San Andrés Lagunas,-1.89434,6,False,bottom,2008
+20448,Santa María Zaniza,-1.88361,2,False,bottom,2008
+21193,Tzicatlacoyan,-1.85574,4,True,bottom,2008
+09010,Álvaro Obregón,3.65157,113,True,top,2013
+09016,Miguel Hidalgo,3.58082,164,True,top,2013
+09014,Benito Juárez,3.52897,151,True,top,2013
+08037,Juárez,3.48642,108,True,top,2013
+19006,Apodaca,3.44276,105,True,top,2013
+15104,Tlalnepantla de Baz,3.44196,113,True,top,2013
+19039,Monterrey,3.43175,175,True,top,2013
+02004,Tijuana,3.42867,140,True,top,2013
+19046,San Nicolás de los Garza,3.39196,138,True,top,2013
+28032,Reynosa,3.33155,105,True,top,2013
+20146,San Francisco Logueche,-3.8026,1,True,bottom,2013
+20436,Santa María Texcatitlán,-2.97363,2,True,bottom,2013
+20126,San Cristóbal Amatlán,-2.97363,2,True,bottom,2013
+20524,Santo Domingo Yodohino,-2.97363,2,True,bottom,2013
+20416,Santa María Ixcatlán,-2.97363,2,False,bottom,2013
+20093,San Andrés Lagunas,-2.54693,3,False,bottom,2013
+20313,San Pedro Jocotipac,-2.3963,3,True,bottom,2013
+21193,Tzicatlacoyan,-2.38337,3,True,bottom,2013
+20127,San Cristóbal Amoltepec,-2.23707,3,False,bottom,2013
+20151,San Francisco Teopan,-2.23707,3,True,bottom,2013
+09010,Álvaro Obregón,3.42488,120,True,top,2018
+08037,Juárez,3.39569,112,True,top,2018
+09016,Miguel Hidalgo,3.3889,163,True,top,2018
+19006,Apodaca,3.33562,120,True,top,2018
+19039,Monterrey,3.28543,184,True,top,2018
+15104,Tlalnepantla de Baz,3.27485,125,True,top,2018
+09015,Cuauhtémoc,3.26935,125,True,top,2018
+02004,Tijuana,3.2329,150,True,top,2018
+14039,Guadalajara,3.22072,158,True,top,2018
+28032,Reynosa,3.21909,105,True,top,2018
+20146,San Francisco Logueche,-3.06986,2,True,bottom,2018
+20311,San Pedro Jaltepetongo,-3.06986,2,True,bottom,2018
+20524,Santo Domingo Yodohino,-2.96963,3,True,bottom,2018
+20529,Santos Reyes Yucuná,-2.61444,3,False,bottom,2018
+20126,San Cristóbal Amatlán,-2.59723,3,True,bottom,2018
+20436,Santa María Texcatitlán,-2.54431,3,True,bottom,2018
+20151,San Francisco Teopan,-2.54431,3,True,bottom,2018
+20127,San Cristóbal Amoltepec,-2.54431,3,True,bottom,2018
+21193,Tzicatlacoyan,-2.51288,3,True,bottom,2018
+20384,Santa Cruz Xitla,-2.51288,3,True,bottom,2018
+19006,Apodaca,3.35551,128,True,top,2023
+09010,Álvaro Obregón,3.32974,115,True,top,2023
+22014,Querétaro,3.32673,160,True,top,2023
+09016,Miguel Hidalgo,3.26668,159,True,top,2023
+28032,Reynosa,3.24945,93,True,top,2023
+08037,Juárez,3.24503,112,True,top,2023
+09014,Benito Juárez,3.2357,142,True,top,2023
+19039,Monterrey,3.23055,188,True,top,2023
+19019,San Pedro Garza García,3.22801,141,True,top,2023
+15104,Tlalnepantla de Baz,3.18723,130,True,top,2023
+20146,San Francisco Logueche,-3.03322,3,True,bottom,2023
+20311,San Pedro Jaltepetongo,-2.99076,2,True,bottom,2023
+20524,Santo Domingo Yodohino,-2.99076,2,False,bottom,2023
+20568,Zapotitlán Palmas,-2.50971,3,True,bottom,2023
+20151,San Francisco Teopan,-2.50971,3,True,bottom,2023
+20529,Santos Reyes Yucuná,-2.31349,4,False,bottom,2023
+20093,San Andrés Lagunas,-2.31349,4,False,bottom,2023
+20436,Santa María Texcatitlán,-2.20895,4,True,bottom,2023
+20270,San Miguel Huautla,-2.17827,4,True,bottom,2023
+20373,Santa Catarina Zapoquila,-2.1753,7,True,bottom,2023

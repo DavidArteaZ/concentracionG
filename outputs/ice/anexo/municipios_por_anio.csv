@@ -1,0 +1,6 @@
+anio,municipios_con_ue,en_nucleo,fuera_nucleo_con_ice_proyectado,sin_ice,fuera_por_ue_menor_30,fuera_por_menos_de_5_ramas_(con_ue>=30),catalogo_cucg_2003,en_catalogo_sin_ue,con_ue_fuera_de_catalogo,catalogo_cucg_2023
+2003,2447,2085,362,0,361,1,2446.0,1.0,2.0,
+2008,2455,2205,250,0,250,0,,,,
+2013,2456,2266,190,0,188,2,,,,
+2018,2465,2320,145,0,145,0,,,,
+2023,2469,2337,132,0,131,1,,6.0,0.0,2475.0

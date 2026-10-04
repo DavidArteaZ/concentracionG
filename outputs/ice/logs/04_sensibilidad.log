@@ -1,0 +1,72 @@
+# 04_sensibilidad | 2026-10-04T12:27:12
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+Cohorte 1 ESRU-EMOVI con municipio a los 14 válido: 5,559 (por año ICE: {2003: 1336, 2008: 2340, 2013: 1883})
+[2003] 34 especificaciones calculadas
+[2008] 34 especificaciones calculadas
+[2013] 34 especificaciones calculadas
+[2018] 34 especificaciones calculadas
+[2023] 34 especificaciones calculadas
+
+Malla de umbrales (27 combinaciones x 5 años): Spearman con la base min 0.9918, mediana 0.9991; % cambia quintil max 10.5
+Combinaciones más alejadas de la base:
+ anio     especificacion  spearman_base  pct_cambia_quintil  mun_fuera_nucleo
+ 2003  umbral_U100_D3_P5         0.9918             10.4209               877
+ 2003  umbral_U100_D5_P5         0.9918             10.4209               877
+ 2003 umbral_U100_D10_P5         0.9919             10.2575               884
+ 2008  umbral_U100_D3_P5         0.9922             10.3870               706
+ 2008  umbral_U100_D5_P5         0.9922             10.3870               706
+Spearman con la base según P_MIN:
+       min  median
+0                 
+5   0.9918  0.9989
+10  0.9936  0.9995
+20  0.9935  0.9992
+
+Otras alternativas:
+anio              2003    2008    2013    2018    2023
+especificacion                                        
+clase           0.9679  0.9711  0.9714  0.9699  0.9711
+excluye_R1      1.0000  1.0000  0.9998  1.0000  1.0000
+excluye_R2      0.9969  0.9975  0.9978  0.9982  0.9981
+excluye_R3      0.9992  0.9993  0.9994  0.9988  0.9997
+excluye_R4      0.9964  0.9970  0.9974  0.9974  0.9978
+fitness         0.9577  0.9493  0.9471  0.9454  0.9497
+ramas_comunes   1.0000  0.9997  0.9997  0.9996  0.9995
+
+% de municipios que cambian de quintil:
+anio            2003  2008  2013  2018  2023
+especificacion                              
+clase           23.8  21.8  22.2  24.0  22.7
+excluye_R1       0.1   0.2   0.2   0.2   0.1
+excluye_R2       6.5   5.2   5.1   3.8   4.9
+excluye_R3       1.8   2.0   1.4   1.5   0.8
+excluye_R4       6.7   5.7   5.2   4.0   5.2
+fitness         28.0  29.7  29.8  27.9  27.7
+ramas_comunes    0.0   0.7   0.4   0.9   1.5
+
+Especificación base — entrevistados de la cohorte 1 afectados (según su año ICE):
+ anio  mun_fuera_nucleo  emovi_n  emovi_fuera_nucleo  emovi_fuera_nucleo_pct_pond  emovi_sin_ice
+ 2003               362     1336                  14                         1.05              5
+ 2008               250     2340                  10                         0.65              3
+ 2013               190     1883                   8                         0.59              7
+ 2018               145        0                   0                          NaN              0
+ 2023               132        0                   0                          NaN              0
+
+Redundancia de las reglas con P_MIN:
+ anio regla                                   ramas_excluidas  n_excluidas ya_fuera_del_nucleo_por_P_MIN
+ 2003    R1                                         2111 5211            2                          5211
+ 2003    R2                                    2211 2212 2213            3                              
+ 2003    R3                          2111 2121 2122 2123 2131            5                          2121
+ 2003    R4      2111 2121 2122 2123 2131 2211 2212 2213 5211            9                     2121 5211
+ 2023    R1                                    2111 5211 5232            3                     5211 5232
+ 2023    R2                                    2211 2212 2213            3                          2212
+ 2023    R3                          2111 2121 2122 2123 2131            5                          2121
+ 2023    R4 2111 2121 2122 2123 2131 2211 2212 2213 5211 5232           10           2121 2212 5211 5232
+
+Convergencia Fitness (ranking estable 200 iteraciones):
+ anio  fitness_iteraciones fitness_ranking_estable
+ 2003               1086.0                    True
+ 2008               1121.0                    True
+ 2013               1345.0                    True
+ 2018                586.0                    True
+ 2023                572.0                    True

@@ -1,0 +1,161 @@
+# 09_anexo_tablas | 2026-10-04T14:20:38
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+Municipios por año:
+ anio  municipios_con_ue  en_nucleo  fuera_nucleo_con_ice_proyectado  sin_ice  fuera_por_ue_menor_30  fuera_por_menos_de_5_ramas_(con_ue>=30)  catalogo_cucg_2003  en_catalogo_sin_ue  con_ue_fuera_de_catalogo  catalogo_cucg_2023
+ 2003               2447       2085                              362        0                    361                                        1              2446.0                 1.0                       2.0                 NaN
+ 2008               2455       2205                              250        0                    250                                        0                 NaN                 NaN                       NaN                 NaN
+ 2013               2456       2266                              190        0                    188                                        2                 NaN                 NaN                       NaN                 NaN
+ 2018               2465       2320                              145        0                    145                                        0                 NaN                 NaN                       NaN                 NaN
+ 2023               2469       2337                              132        0                    131                                        1                 NaN                 6.0                       0.0              2475.0
+
+Altas, bajas y diferencias con catálogo:
+ anio cve_mun                    nombre                            tipo                                                              motivo
+ 2003   07058              Nicolás Ruíz     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2003   12079   José Joaquín de Herrera      con UE, fuera del catálogo                  creado entre el catálogo y el levantamiento censal
+ 2003   15125                 Tonanitla      con UE, fuera del catálogo                  creado entre el catálogo y el levantamiento censal
+ 2008   12078        Cochoapa el Grande alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   12080                  Juchitán alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   12081                 Iliatenco alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   14125   San Ignacio Cerro Gordo alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   23009                     Tulum alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   30211                San Rafael alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   30212        Santiago Sochiapan alta respecto al censo anterior                                         municipio de nueva creación
+ 2008   32058     Santa María de la Paz alta respecto al censo anterior                                         municipio de nueva creación
+ 2013   23010                   Bacalar alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   07058              Nicolás Ruíz alta respecto al censo anterior reaparece con UE registradas (existía; sin UE en el censo anterior)
+ 2018   07120  Capitán Luis Ángel Vidal alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   07121  Rincón Chamula San Pedro alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   07122                 El Parral alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   07123           Emiliano Zapata alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   07124                 Mezcalapa alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   17034                Coatetelco alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   17035                 Xoxocotla alta respecto al censo anterior                                         municipio de nueva creación
+ 2018   23011            Puerto Morelos alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   07006 Amatenango de la Frontera     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2023   07010         Bejucal de Ocampo     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2023   07011               Bella Vista     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2023   07036               La Grandeza     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2023   07120  Capitán Luis Ángel Vidal     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2023   07125     Honduras de la Sierra     en catálogo, sin UE en SAIC                     sin unidades económicas registradas en el censo
+ 2023   02006               San Quintín alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   02007                San Felipe alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   04012                Seybaplaya alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   04013                Dzitbalché alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   12082                 Las Vigas alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   12083                  Ñuu Savi alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   12084     Santa Cruz del Rincón alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   12085               San Nicolás alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   17036                  Hueyapan alta respecto al censo anterior                                         municipio de nueva creación
+ 2023   07006 Amatenango de la Frontera baja respecto al censo anterior                   sin unidades económicas registradas en este censo
+ 2023   07010         Bejucal de Ocampo baja respecto al censo anterior                   sin unidades económicas registradas en este censo
+ 2023   07011               Bella Vista baja respecto al censo anterior                   sin unidades económicas registradas en este censo
+ 2023   07036               La Grandeza baja respecto al censo anterior                   sin unidades económicas registradas en este censo
+ 2023   07120  Capitán Luis Ángel Vidal baja respecto al censo anterior                   sin unidades económicas registradas en este censo
+
+Ramas por año:
+ anio  ramas_presentes  ramas_en_nucleo  ramas_fuera_nucleo  ramas_ausentes_vs_union_279
+ 2003              272              261                  11                            7
+ 2008              277              269                   8                            2
+ 2013              276              267                   9                            3
+ 2018              278              269                   9                            1
+ 2023              278              271                   7                            1
+
+Ramas excluidas:
+ anio rama                                                                          nombre  municipios_con_ue                                     motivo
+ 2003 2121                                                       Minería de carbón mineral                 11 presente en menos de 10 municipios (P_MIN)
+ 2003 3365                                               Fabricación de equipo ferroviario                  9 presente en menos de 10 municipios (P_MIN)
+ 2003 4811                                                        Transporte aéreo regular                  8 presente en menos de 10 municipios (P_MIN)
+ 2003 4821                                                      Transporte por ferrocarril                  5 presente en menos de 10 municipios (P_MIN)
+ 2003 4853                                                   Servicio de taxis y limusinas                  8 presente en menos de 10 municipios (P_MIN)
+ 2003 4862                                            Transporte de gas natural por ductos                  9 presente en menos de 10 municipios (P_MIN)
+ 2003 4869                                        Transporte por ductos de otros productos                  1 presente en menos de 10 municipios (P_MIN)
+ 2003 4879                                                       Otro transporte turístico                  2 presente en menos de 10 municipios (P_MIN)
+ 2003 5174                      Operadores de servicios de telecomunicaciones vía satélite                  9 presente en menos de 10 municipios (P_MIN)
+ 2003 5211                                                                   Banca central                  1 presente en menos de 10 municipios (P_MIN)
+ 2003 5222                                  Instituciones financieras de fomento económico                  7 presente en menos de 10 municipios (P_MIN)
+ 2003 1151                                       Servicios relacionados con la agricultura                  0       sin cobertura en el censo de ese año
+ 2003 1152                    Servicios relacionados con la cría y explotación de animales                  0       sin cobertura en el censo de ese año
+ 2003 1153                          Servicios relacionados con el aprovechamiento forestal                  0       sin cobertura en el censo de ese año
+ 2003 4861                                         Transporte de petróleo crudo por ductos                  0       sin cobertura en el censo de ese año
+ 2003 5232                                                                Bolsa de valores                  0       sin cobertura en el censo de ese año
+ 2003 5622                                     Tratamiento y disposición final de residuos                  0       sin cobertura en el censo de ese año
+ 2003 5629 Servicios de remediación, recuperación, y otros servicios de manejo de residuos                  0       sin cobertura en el censo de ese año
+ 2008 2121                                                       Minería de carbón mineral                 10 presente en menos de 10 municipios (P_MIN)
+ 2008 2212                        Suministro de gas natural por ductos al consumidor final                  6 presente en menos de 10 municipios (P_MIN)
+ 2008 4821                                                      Transporte por ferrocarril                  5 presente en menos de 10 municipios (P_MIN)
+ 2008 4861                                         Transporte de petróleo crudo por ductos                  5 presente en menos de 10 municipios (P_MIN)
+ 2008 4879                                                       Otro transporte turístico                  2 presente en menos de 10 municipios (P_MIN)
+ 2008 5211                                                                   Banca central                  1 presente en menos de 10 municipios (P_MIN)
+ 2008 5222                                  Instituciones financieras de fomento económico                  6 presente en menos de 10 municipios (P_MIN)
+ 2008 5232                                                                Bolsa de valores                  1 presente en menos de 10 municipios (P_MIN)
+ 2008 5622                                     Tratamiento y disposición final de residuos                  0       sin cobertura en el censo de ese año
+ 2008 5629 Servicios de remediación, recuperación, y otros servicios de manejo de residuos                  0       sin cobertura en el censo de ese año
+ 2013 2121                                                       Minería de carbón mineral                 10 presente en menos de 10 municipios (P_MIN)
+ 2013 2211   Generación, transmisión, distribución y comercialización de energía eléctrica                  7 presente en menos de 10 municipios (P_MIN)
+ 2013 2212                        Suministro de gas natural por ductos al consumidor final                  9 presente en menos de 10 municipios (P_MIN)
+ 2013 4821                                                      Transporte por ferrocarril                  4 presente en menos de 10 municipios (P_MIN)
+ 2013 4869                                        Transporte por ductos de otros productos                  5 presente en menos de 10 municipios (P_MIN)
+ 2013 4879                                                       Otro transporte turístico                  3 presente en menos de 10 municipios (P_MIN)
+ 2013 5211                                                                   Banca central                  1 presente en menos de 10 municipios (P_MIN)
+ 2013 5222                                  Instituciones financieras de fomento económico                  6 presente en menos de 10 municipios (P_MIN)
+ 2013 5232                                                                Bolsa de valores                  1 presente en menos de 10 municipios (P_MIN)
+ 2013 4861                                         Transporte de petróleo crudo por ductos                  0       sin cobertura en el censo de ese año
+ 2013 5622                                     Tratamiento y disposición final de residuos                  0       sin cobertura en el censo de ese año
+ 2013 5629 Servicios de remediación, recuperación, y otros servicios de manejo de residuos                  0       sin cobertura en el censo de ese año
+ 2018 2212                        Suministro de gas natural por ductos al consumidor final                  6 presente en menos de 10 municipios (P_MIN)
+ 2018 3346                       Fabricación y reproducción de medios magnéticos y ópticos                  9 presente en menos de 10 municipios (P_MIN)
+ 2018 4821                                                      Transporte por ferrocarril                  5 presente en menos de 10 municipios (P_MIN)
+ 2018 4869                                        Transporte por ductos de otros productos                  6 presente en menos de 10 municipios (P_MIN)
+ 2018 4879                                                       Otro transporte turístico                  7 presente en menos de 10 municipios (P_MIN)
+ 2018 5211                                                                   Banca central                  1 presente en menos de 10 municipios (P_MIN)
+ 2018 5222                                  Instituciones financieras de fomento económico                  5 presente en menos de 10 municipios (P_MIN)
+ 2018 5225             Servicios relacionados con la intermediación crediticia no bursátil                  9 presente en menos de 10 municipios (P_MIN)
+ 2018 5232                                                                Bolsa de valores                  2 presente en menos de 10 municipios (P_MIN)
+ 2018 4861                                         Transporte de petróleo crudo por ductos                  0       sin cobertura en el censo de ese año
+ 2023 2121                                                       Minería de carbón mineral                  8 presente en menos de 10 municipios (P_MIN)
+ 2023 2212                        Suministro de gas natural por ductos al consumidor final                  9 presente en menos de 10 municipios (P_MIN)
+ 2023 3346                       Fabricación y reproducción de medios magnéticos y ópticos                  9 presente en menos de 10 municipios (P_MIN)
+ 2023 4821                                                      Transporte por ferrocarril                  6 presente en menos de 10 municipios (P_MIN)
+ 2023 4869                                        Transporte por ductos de otros productos                  8 presente en menos de 10 municipios (P_MIN)
+ 2023 5211                                                                   Banca central                  1 presente en menos de 10 municipios (P_MIN)
+ 2023 5232                                                                Bolsa de valores                  2 presente en menos de 10 municipios (P_MIN)
+ 2023 4861                                         Transporte de petróleo crudo por ductos                  0       sin cobertura en el censo de ese año
+
+Escala y varianza del ICE:
+ anio    n  r2_log_pob  r2_log_pob+log_ue  r2_+diversidad  r2_+FE_estado  r2_categorias_tamano  pearson_ice_logrem  spearman_ice_logrem  sd_ice_15-50 mil  sd_ice_50-350 mil  sd_ice_<15 mil  sd_ice_>=350 mil  n_15-50 mil  n_50-350 mil  n_<15 mil  n_>=350 mil
+ 2003 2447       0.693              0.796           0.878          0.902                 0.680               0.572                0.609             0.594              0.797           0.525             0.446          668           307       1412           60
+ 2008 2455       0.693              0.774           0.865          0.886                 0.686               0.592                0.616             0.560              0.786           0.512             0.490          696           329       1366           64
+ 2013 2456       0.704              0.764           0.860          0.884                 0.675               0.583                0.600             0.532              0.773           0.549             0.527          730           354       1303           69
+ 2018 2465       0.716              0.758           0.853          0.883                 0.668               0.608                0.638             0.527              0.766           0.564             0.489          730           366       1294           75
+ 2023 2469       0.715              0.754           0.848          0.880                 0.663               0.603                0.665             0.544              0.789           0.557             0.478          722           373       1297           77
+
+Validación con categorías de tamaño (log remuneración media relativa):
+ anio                                                   especificacion  beta_ice  se_crv1  p_wild_cluster  r2_parcial_ice    n
+ 2003                                   (A) ICE + categorías de tamaño    0.3932   0.0315          0.0000          0.1894 2272
+ 2003                                 (B) ICE + categorías + FE estado    0.3335   0.0369          0.0000          0.1258 2272
+ 2003 (C) ICE + categorías + log pob + log UE + diversidad + FE estado    0.3977   0.0445          0.0000          0.0742 2272
+ 2008                                   (A) ICE + categorías de tamaño    0.4082   0.0283          0.0000          0.1883 2355
+ 2008                                 (B) ICE + categorías + FE estado    0.3497   0.0285          0.0000          0.1333 2355
+ 2008 (C) ICE + categorías + log pob + log UE + diversidad + FE estado    0.3608   0.0362          0.0000          0.0628 2355
+ 2013                                   (A) ICE + categorías de tamaño    0.3372   0.0246          0.0000          0.1686 2361
+ 2013                                 (B) ICE + categorías + FE estado    0.2777   0.0195          0.0000          0.1080 2361
+ 2013 (C) ICE + categorías + log pob + log UE + diversidad + FE estado    0.3190   0.0423          0.0000          0.0621 2361
+ 2018                                   (A) ICE + categorías de tamaño    0.3319   0.0200          0.0000          0.2111 2410
+ 2018                                 (B) ICE + categorías + FE estado    0.2722   0.0112          0.0000          0.1347 2410
+ 2018 (C) ICE + categorías + log pob + log UE + diversidad + FE estado    0.3160   0.0351          0.0001          0.0842 2410
+ 2023                                   (A) ICE + categorías de tamaño    0.2764   0.0196          0.0000          0.2010 2432
+ 2023                                 (B) ICE + categorías + FE estado    0.2284   0.0163          0.0000          0.1265 2432
+ 2023 (C) ICE + categorías + log pob + log UE + diversidad + FE estado    0.2494   0.0290          0.0000          0.0714 2432
+
+Concentración (PBT observado sumando ramas no suprimidas; UE completas):
+ anio variable  municipios  pct_top1  pct_top5  pct_municipios_valor_cero
+ 2003       ue        2447      28.6      61.4                        0.0
+ 2003      pbt        2447      63.4      92.3                       21.3
+ 2008       ue        2455      27.1      59.7                        0.0
+ 2008      pbt        2455      60.8      93.3                       16.4
+ 2013       ue        2456      26.2      58.3                        0.0
+ 2013      pbt        2456      59.2      91.9                       12.5
+ 2018       ue        2465      24.8      56.7                        0.0
+ 2018      pbt        2465      52.9      89.4                       10.3
+ 2023       ue        2469      23.9      54.9                        0.0
+ 2023      pbt        2469      51.4      87.2                        9.4

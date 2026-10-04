@@ -1,0 +1,2458 @@
+GID_2,NAME_1,NAME_2,cve_mun,metodo,tipo_relacion,share_pob_gadm,share_pob_inegi,discrepancia_nombre_espacial
+MEX.1.1_2,Aguascalientes,Aguascalientes,01001,exacto,1:1,1.0,1.0,False
+MEX.1.2_2,Aguascalientes,Asientos,01002,exacto,1:1,1.0,1.0,False
+MEX.1.3_2,Aguascalientes,Calvillo,01003,exacto,1:1,1.0,1.0,False
+MEX.1.4_2,Aguascalientes,Cosío,01004,exacto,1:1,1.0,1.0,False
+MEX.1.5_2,Aguascalientes,El Llano,01010,exacto,1:1,1.0,1.0,False
+MEX.1.6_2,Aguascalientes,Jesús María,01005,exacto,1:1,1.0,1.0,False
+MEX.1.7_2,Aguascalientes,Pabellón de Arteaga,01006,exacto,1:1,1.0,1.0,False
+MEX.1.8_2,Aguascalientes,Rincón de Romos,01007,exacto,1:1,1.0,1.0,False
+MEX.1.9_2,Aguascalientes,San Francisco de los Romo,01011,exacto,1:1,1.0,1.0,False
+MEX.1.10_2,Aguascalientes,San José de Gracia,01008,exacto,1:1,1.0,1.0,False
+MEX.1.11_2,Aguascalientes,Tepezalá,01009,exacto,1:1,1.0,1.0,False
+MEX.3.1_2,Baja California,Ensenada,02001,exacto,1:n,0.7893696175391016,1.0,False
+MEX.3.2_2,Baja California,Mexicali,02002,exacto,1:n,0.9811036999269451,1.0,False
+MEX.3.3_2,Baja California,Playas de Rosarito,02005,exacto,1:1,1.0,0.9986709657124883,False
+MEX.3.4_2,Baja California,Tecate,02003,exacto,1:1,1.0,0.9912340160480709,False
+MEX.3.5_2,Baja California,Tijuana,02004,exacto,1:1,0.9994946041561376,1.0,False
+MEX.2.1_2,Baja California Sur,Comondú,03001,exacto,1:1,0.9999323355076191,0.9997429236347892,False
+MEX.2.2_2,Baja California Sur,La Paz,03003,exacto,1:1,0.9999829224474183,1.0,False
+MEX.2.3_2,Baja California Sur,Loreto,03009,exacto,1:1,0.9945208481727029,1.0,False
+MEX.2.4_2,Baja California Sur,Los Cabos,03008,exacto,1:1,1.0,1.0,False
+MEX.2.5_2,Baja California Sur,Mulegé,03002,exacto,1:1,0.9997827470088918,0.9983729002665345,False
+MEX.4.1_2,Campeche,Calakmul,04010,exacto,1:1,1.0,1.0,False
+MEX.4.2_2,Campeche,Calkiní,04001,exacto,1:n,0.721249767905069,1.0,False
+MEX.4.3_2,Campeche,Campeche,04002,exacto,1:1,0.9999898116167946,0.9999898116167946,False
+MEX.4.4_2,Campeche,Candelaria,04011,exacto,1:1,1.0,1.0,False
+MEX.4.5_2,Campeche,Carmen,04003,exacto,1:1,1.0,1.0,False
+MEX.4.6_2,Campeche,Champotón,04004,exacto,1:n,0.8365221654923948,1.0,False
+MEX.4.7_2,Campeche,Escárcega,04009,exacto,1:1,1.0,1.0,False
+MEX.4.8_2,Campeche,Hecelchakán,04005,exacto,1:1,1.0,1.0,False
+MEX.4.9_2,Campeche,Hopelchén,04006,exacto,1:1,1.0,1.0,False
+MEX.4.10_2,Campeche,Palizada,04007,exacto,1:1,1.0,0.9994276556776557,False
+MEX.4.11_2,Campeche,Tenabo,04008,exacto,1:1,1.0,1.0,False
+MEX.5.1_2,Chiapas,Acacoyagua,07001,exacto,1:1,1.0,1.0,False
+MEX.5.2_2,Chiapas,Acala,07002,exacto,1:n,0.6613873047359285,1.0,False
+MEX.5.3_2,Chiapas,Acapetahua,07003,exacto,1:1,1.0,1.0,False
+MEX.5.4_2,Chiapas,Aldama,07113,exacto,1:1,1.0,1.0,False
+MEX.5.5_2,Chiapas,Altamirano,07004,exacto,1:1,0.9920045844021176,1.0,False
+MEX.5.6_2,Chiapas,Amatán,07005,exacto,1:1,1.0,1.0,False
+MEX.5.7_2,Chiapas,Amatenango de la Frontera,07006,exacto,1:1,1.0,1.0,False
+MEX.5.8_2,Chiapas,Amatenango del Valle,07007,exacto,1:1,1.0,1.0,False
+MEX.5.9_2,Chiapas,Angel Albino Corzo,07008,exacto,1:1,1.0,1.0,False
+MEX.5.10_2,Chiapas,Arriaga,07009,exacto,1:1,1.0,1.0,False
+MEX.5.11_2,Chiapas,Bejucal de Ocampo,07010,exacto,1:1,1.0,1.0,False
+MEX.5.12_2,Chiapas,Bella Vista,07011,exacto,1:1,1.0,1.0,False
+MEX.5.13_2,Chiapas,Benemérito de las Américas,07114,exacto,1:1,1.0,1.0,False
+MEX.5.14_2,Chiapas,Berriozábal,07012,exacto,1:1,0.9993929809427965,1.0,False
+MEX.5.15_2,Chiapas,Bochil,07013,exacto,1:1,1.0,0.9685357754927164,False
+MEX.5.16_2,Chiapas,Cacahoatán,07015,exacto,1:1,1.0,1.0,False
+MEX.5.17_2,Chiapas,Catazajá,07016,exacto,1:1,1.0,0.9857190860215054,False
+MEX.5.18_2,Chiapas,Chalchihuitán,07022,exacto,1:1,1.0,0.9843010556971241,False
+MEX.5.19_2,Chiapas,Chamula,07023,exacto,1:1,1.0,0.9842255231231701,False
+MEX.5.20_2,Chiapas,Chanal,07024,exacto,1:1,1.0,1.0,False
+MEX.5.21_2,Chiapas,Chapultenango,07025,exacto,1:1,1.0,1.0,False
+MEX.5.22_2,Chiapas,Chenalhó,07026,exacto,1:1,0.976531031648171,1.0,False
+MEX.5.23_2,Chiapas,Chiapa de Corzo,07027,exacto,1:1,1.0,1.0,False
+MEX.5.24_2,Chiapas,Chiapilla,07028,exacto,1:1,1.0,1.0,False
+MEX.5.25_2,Chiapas,Chicoasén,07029,exacto,1:1,1.0,1.0,False
+MEX.5.26_2,Chiapas,Chicomuselo,07030,exacto,1:1,1.0,1.0,False
+MEX.5.27_2,Chiapas,Chilón,07031,exacto,1:1,0.9969399713529233,1.0,False
+MEX.5.28_2,Chiapas,Cintalapa,07017,prefijo,1:1,1.0,1.0,False
+MEX.5.29_2,Chiapas,Coapilla,07018,exacto,1:1,1.0,1.0,False
+MEX.5.30_2,Chiapas,Comitán de Domínguez,07019,exacto,1:1,0.9986628851700174,1.0,False
+MEX.5.31_2,Chiapas,Copainalá,07021,exacto,1:1,1.0,1.0,False
+MEX.5.32_2,Chiapas,El Bosque,07014,exacto,1:1,0.9636478834197917,1.0,False
+MEX.5.33_2,Chiapas,El Porvenir,07070,exacto,1:1,1.0,1.0,False
+MEX.5.34_2,Chiapas,Escuintla,07032,exacto,1:1,1.0,1.0,False
+MEX.5.35_2,Chiapas,Francisco León,07033,exacto,1:1,1.0,0.9214745785939427,False
+MEX.5.36_2,Chiapas,Frontera Comalapa,07034,exacto,1:1,1.0,1.0,False
+MEX.5.37_2,Chiapas,Frontera Hidalgo,07035,exacto,1:1,1.0,1.0,False
+MEX.5.38_2,Chiapas,Huehuetán,07037,exacto,1:1,1.0,1.0,False
+MEX.5.39_2,Chiapas,Huitiupán,07039,exacto,1:1,0.980313247770285,0.9658510448294338,False
+MEX.5.40_2,Chiapas,Huixtán,07038,exacto,1:1,1.0,1.0,False
+MEX.5.41_2,Chiapas,Huixtla,07040,exacto,1:1,1.0,1.0,False
+MEX.5.42_2,Chiapas,Ixhuatán,07042,exacto,1:1,1.0,1.0,False
+MEX.5.43_2,Chiapas,Ixtacomitán,07043,exacto,1:1,1.0,1.0,False
+MEX.5.44_2,Chiapas,Ixtapa,07044,exacto,1:1,1.0,1.0,False
+MEX.5.45_2,Chiapas,Ixtapangajoya,07045,exacto,1:1,1.0,1.0,False
+MEX.5.46_2,Chiapas,Jiquipilas,07046,exacto,1:1,1.0,1.0,False
+MEX.5.47_2,Chiapas,Jitotol,07047,exacto,1:1,0.9689544381217822,0.9999600511345478,False
+MEX.5.48_2,Chiapas,Juárez,07048,exacto,1:1,1.0,1.0,False
+MEX.5.49_2,Chiapas,La Concordia,07020,exacto,1:1,1.0,1.0,False
+MEX.5.50_2,Chiapas,La Grandeza,07036,exacto,1:1,1.0,1.0,False
+MEX.5.51_2,Chiapas,La Independencia,07041,exacto,1:1,0.9875481386392811,0.9919198865345769,False
+MEX.5.52_2,Chiapas,La Libertad,07050,exacto,1:1,1.0,1.0,False
+MEX.5.53_2,Chiapas,La Trinitaria,07099,exacto,1:1,0.9964499297133735,1.0,False
+MEX.5.54_2,Chiapas,Larráinzar,07049,exacto,1:1,1.0,1.0,False
+MEX.5.55_2,Chiapas,Las Margaritas,07052,exacto,1:1,0.9928735337295649,0.9845868992176844,False
+MEX.5.56_2,Chiapas,Las Rosas,07075,exacto,1:1,1.0,0.9923021160550933,False
+MEX.5.57_2,Chiapas,Mapastepec,07051,exacto,1:1,1.0,1.0,False
+MEX.5.58_2,Chiapas,Maravilla Tenejapa,07115,exacto,1:1,0.9186140711659501,1.0,False
+MEX.5.59_2,Chiapas,Marqués de Comillas,07116,exacto,1:1,1.0,1.0,False
+MEX.5.60_2,Chiapas,Mazapa de Madero,07053,exacto,1:1,1.0,1.0,False
+MEX.5.61_2,Chiapas,Mazatán,07054,exacto,1:1,0.992991309223437,1.0,False
+MEX.5.62_2,Chiapas,Metapa,07055,exacto,1:1,1.0,1.0,False
+MEX.5.63_2,Chiapas,Mitontic,07056,exacto,1:1,0.974045261669024,1.0,False
+MEX.5.64_2,Chiapas,Montecristo de Guerrero,07117,exacto,1:1,1.0,1.0,False
+MEX.5.65_2,Chiapas,Motozintla,07057,exacto,1:1,1.0,0.9965631712556141,False
+MEX.5.66_2,Chiapas,Nicolás Ruíz,07058,exacto,1:1,1.0,1.0,False
+MEX.5.67_2,Chiapas,Ocosingo,07059,exacto,1:1,1.0,0.9959104970970886,False
+MEX.5.68_2,Chiapas,Ocotepec,07060,exacto,1:1,1.0,1.0,False
+MEX.5.69_2,Chiapas,Ocozocoautla de Espinosa,07061,exacto,1:1,0.9983858195772675,0.9988421341296201,False
+MEX.5.70_2,Chiapas,Ostuacán,07062,exacto,1:1,1.0,1.0,False
+MEX.5.71_2,Chiapas,Osumacinta,07063,exacto,1:1,1.0,1.0,False
+MEX.5.72_2,Chiapas,Oxchuc,07064,exacto,1:1,1.0,1.0,False
+MEX.5.73_2,Chiapas,Palenque,07065,exacto,1:1,0.9980837873379673,1.0,False
+MEX.5.74_2,Chiapas,Pantelhó,07066,exacto,1:1,0.9817118317784689,1.0,False
+MEX.5.75_2,Chiapas,Pantepec,07067,exacto,1:1,1.0,1.0,False
+MEX.5.76_2,Chiapas,Pichucalco,07068,exacto,1:1,1.0,0.98990625,False
+MEX.5.77_2,Chiapas,Pijijiapan,07069,exacto,1:1,0.9999807899185492,1.0,False
+MEX.5.78_2,Chiapas,Pueblo Nuevo Solistahuacán,07072,exacto,1:n,0.7730240058258993,1.0,False
+MEX.5.79_2,Chiapas,Rayón,07073,exacto,1:1,0.966950203792309,1.0,False
+MEX.5.80_2,Chiapas,Reforma,07074,exacto,1:1,1.0,1.0,False
+MEX.5.81_2,Chiapas,Sabanilla,07076,exacto,1:1,1.0,0.9818776491005573,False
+MEX.5.82_2,Chiapas,Salto de Agua,07077,exacto,1:1,1.0,0.9941180112686521,False
+MEX.5.83_2,Chiapas,San Andrés Duraznal,07118,exacto,1:1,1.0,0.9262497937634053,False
+MEX.5.84_2,Chiapas,San Cristóbal de las Casas,07078,exacto,1:1,0.9979348770166134,1.0,False
+MEX.5.85_2,Chiapas,San Fernando,07079,exacto,1:1,1.0,0.999094850173884,False
+MEX.5.86_2,Chiapas,San Juan Cancuc,07112,exacto,1:1,1.0,1.0,False
+MEX.5.87_2,Chiapas,San Lucas,07110,exacto,1:1,1.0,1.0,False
+MEX.5.88_2,Chiapas,Santiago el Pinar,07119,exacto,1:1,1.0,1.0,False
+MEX.5.89_2,Chiapas,Siltepec,07080,exacto,1:n,0.6182405165456013,1.0,False
+MEX.5.90_2,Chiapas,Simojovel,07081,exacto,1:1,0.9735447740086361,0.9733979374446183,False
+MEX.5.91_2,Chiapas,Sitalá,07082,exacto,1:1,1.0,1.0,False
+MEX.5.92_2,Chiapas,Socoltenango,07083,exacto,1:1,1.0,0.9862571577303487,False
+MEX.5.93_2,Chiapas,Solosuchiapa,07084,exacto,1:1,1.0,1.0,False
+MEX.5.94_2,Chiapas,Soyaló,07085,exacto,1:1,1.0,1.0,False
+MEX.5.95_2,Chiapas,Suchiapa,07086,exacto,1:1,1.0,1.0,False
+MEX.5.96_2,Chiapas,Suchiate,07087,exacto,1:1,1.0,1.0,False
+MEX.5.97_2,Chiapas,Sunuapa,07088,exacto,1:1,1.0,1.0,False
+MEX.5.98_2,Chiapas,Tapachula,07089,exacto,1:1,0.9995821475357998,0.9994354173959192,False
+MEX.5.99_2,Chiapas,Tapalapa,07090,exacto,1:1,1.0,1.0,False
+MEX.5.100_2,Chiapas,Tapilula,07091,exacto,1:1,1.0,1.0,False
+MEX.5.101_2,Chiapas,Tecpatán,07092,exacto,1:n,0.4686797509942936,1.0,True
+MEX.5.102_2,Chiapas,Tenejapa,07093,exacto,1:1,1.0,1.0,False
+MEX.5.103_2,Chiapas,Teopisca,07094,exacto,1:1,1.0,1.0,False
+MEX.5.104_2,Chiapas,Tila,07096,exacto,1:1,1.0,1.0,False
+MEX.5.105_2,Chiapas,Tonalá,07097,exacto,1:1,1.0,0.9999891987643387,False
+MEX.5.106_2,Chiapas,Totolapa,07098,exacto,1:1,1.0,1.0,False
+MEX.5.107_2,Chiapas,Tumbalá,07100,exacto,1:1,1.0,1.0,False
+MEX.5.108_2,Chiapas,Tuxtla Chico,07102,exacto,1:1,1.0,1.0,False
+MEX.5.109_2,Chiapas,Tuxtla Gutiérrez,07101,exacto,1:1,1.0,1.0,False
+MEX.5.110_2,Chiapas,Tuzantán,07103,exacto,1:1,0.9913601256708994,0.9951379763469119,False
+MEX.5.111_2,Chiapas,Tzimol,07104,exacto,1:1,0.9843823946994794,1.0,False
+MEX.5.112_2,Chiapas,Unión Juárez,07105,exacto,1:1,1.0,1.0,False
+MEX.5.113_2,Chiapas,Venustiano Carranza,07106,exacto,1:1,1.0,1.0,False
+MEX.5.114_2,Chiapas,Villa Comaltitlán,07071,exacto,1:1,1.0,1.0,False
+MEX.5.115_2,Chiapas,Villa Corzo,07107,exacto,1:n,0.8112041922573046,1.0,False
+MEX.5.116_2,Chiapas,Villaflores,07108,exacto,1:1,0.9996853649766271,1.0,False
+MEX.5.117_2,Chiapas,Yajalón,07109,exacto,1:1,1.0,1.0,False
+MEX.5.118_2,Chiapas,Zinacantán,07111,exacto,1:1,1.0,1.0,False
+MEX.6.1_2,Chihuahua,Ahumada,08001,exacto,1:1,1.0,1.0,False
+MEX.6.2_2,Chihuahua,Aldama,08002,exacto,1:1,1.0,1.0,False
+MEX.6.3_2,Chihuahua,Allende,08003,exacto,1:1,1.0,1.0,False
+MEX.6.4_2,Chihuahua,Aquiles Serdán,08004,exacto,1:1,1.0,1.0,False
+MEX.6.5_2,Chihuahua,Ascensión,08005,exacto,1:1,1.0,1.0,False
+MEX.6.6_2,Chihuahua,Bachíniva,08006,exacto,1:1,1.0,1.0,False
+MEX.6.7_2,Chihuahua,Balleza,08007,exacto,1:1,1.0,1.0,False
+MEX.6.8_2,Chihuahua,Batopilas,08008,prefijo,1:1,1.0,1.0,False
+MEX.6.9_2,Chihuahua,Bocoyna,08009,exacto,1:1,1.0,1.0,False
+MEX.6.10_2,Chihuahua,Buenaventura,08010,exacto,1:1,1.0,1.0,False
+MEX.6.11_2,Chihuahua,Camargo,08011,exacto,1:1,1.0,1.0,False
+MEX.6.12_2,Chihuahua,Carichí,08012,exacto,1:1,1.0,1.0,False
+MEX.6.13_2,Chihuahua,Casas Grandes,08013,exacto,1:1,1.0,1.0,False
+MEX.6.14_2,Chihuahua,Chihuahua,08019,exacto,1:1,1.0,1.0,False
+MEX.6.15_2,Chihuahua,Chínipas,08020,exacto,1:1,1.0,1.0,False
+MEX.6.16_2,Chihuahua,Coronado,08014,exacto,1:1,1.0,1.0,False
+MEX.6.17_2,Chihuahua,Coyame del Sotol,08015,exacto,1:1,1.0,1.0,False
+MEX.6.18_2,Chihuahua,Cuauhtémoc,08017,exacto,1:1,1.0,1.0,False
+MEX.6.19_2,Chihuahua,Cusihuiriachi,08018,exacto,1:1,1.0,1.0,False
+MEX.6.20_2,Chihuahua,Delicias,08021,exacto,1:1,1.0,1.0,False
+MEX.6.21_2,Chihuahua,Dr. Belisario Domínguez,08022,exacto,1:1,1.0,1.0,False
+MEX.6.22_2,Chihuahua,El Tule,08064,exacto,1:1,1.0,1.0,False
+MEX.6.23_2,Chihuahua,Galeana,08023,exacto,1:1,1.0,1.0,False
+MEX.6.24_2,Chihuahua,Gómez Farías,08025,exacto,1:1,1.0,1.0,False
+MEX.6.25_2,Chihuahua,Gran Morelos,08026,exacto,1:1,1.0,1.0,False
+MEX.6.26_2,Chihuahua,Guachochi,08027,exacto,1:1,1.0,1.0,False
+MEX.6.27_2,Chihuahua,Guadalupe,08028,exacto,1:1,1.0,1.0,False
+MEX.6.28_2,Chihuahua,Guadalupe y Calvo,08029,exacto,1:1,1.0,1.0,False
+MEX.6.29_2,Chihuahua,Guazapares,08030,exacto,1:1,1.0,1.0,False
+MEX.6.30_2,Chihuahua,Guerrero,08031,exacto,1:1,1.0,1.0,False
+MEX.6.31_2,Chihuahua,Hidalgo del Parral,08032,exacto,1:1,1.0,1.0,False
+MEX.6.32_2,Chihuahua,Huejotitán,08033,exacto,1:1,1.0,1.0,False
+MEX.6.33_2,Chihuahua,Ignacio Zaragoza,08034,exacto,1:1,1.0,1.0,False
+MEX.6.34_2,Chihuahua,Janos,08035,exacto,1:1,1.0,1.0,False
+MEX.6.35_2,Chihuahua,Jiménez,08036,exacto,1:1,1.0,1.0,False
+MEX.6.36_2,Chihuahua,Juárez,08037,exacto,1:1,1.0,1.0,False
+MEX.6.37_2,Chihuahua,Julimes,08038,exacto,1:1,1.0,1.0,False
+MEX.6.38_2,Chihuahua,La Cruz,08016,exacto,1:1,1.0,1.0,False
+MEX.6.39_2,Chihuahua,López,08039,exacto,1:1,1.0,1.0,False
+MEX.6.40_2,Chihuahua,Madera,08040,exacto,1:1,1.0,1.0,False
+MEX.6.41_2,Chihuahua,Maguarichi,08041,exacto,1:1,1.0,1.0,False
+MEX.6.42_2,Chihuahua,Manuel Benavides,08042,exacto,1:1,1.0,1.0,False
+MEX.6.43_2,Chihuahua,Matachí,08043,exacto,1:1,1.0,1.0,False
+MEX.6.44_2,Chihuahua,Matamoros,08044,exacto,1:1,1.0,1.0,False
+MEX.6.45_2,Chihuahua,Meoqui,08045,exacto,1:1,1.0,1.0,False
+MEX.6.46_2,Chihuahua,Morelos,08046,exacto,1:1,1.0,1.0,False
+MEX.6.47_2,Chihuahua,Moris,08047,exacto,1:1,1.0,1.0,False
+MEX.6.48_2,Chihuahua,Namiquipa,08048,exacto,1:1,1.0,1.0,False
+MEX.6.49_2,Chihuahua,Nonoava,08049,exacto,1:1,1.0,1.0,False
+MEX.6.50_2,Chihuahua,Nuevo Casas Grandes,08050,exacto,1:1,1.0,1.0,False
+MEX.6.51_2,Chihuahua,Ocampo,08051,exacto,1:1,1.0,1.0,False
+MEX.6.52_2,Chihuahua,Ojinaga,08052,exacto,1:1,1.0,1.0,False
+MEX.6.53_2,Chihuahua,Praxedis G. Guerrero,08053,exacto,1:1,1.0,1.0,False
+MEX.6.54_2,Chihuahua,Riva Palacio,08054,exacto,1:1,1.0,1.0,False
+MEX.6.55_2,Chihuahua,Rosales,08055,exacto,1:1,1.0,1.0,False
+MEX.6.56_2,Chihuahua,Rosario,08056,exacto,1:1,1.0,1.0,False
+MEX.6.57_2,Chihuahua,San Francisco de Borja,08057,exacto,1:1,1.0,1.0,False
+MEX.6.58_2,Chihuahua,San Francisco de Conchos,08058,exacto,1:1,1.0,1.0,False
+MEX.6.59_2,Chihuahua,San Francisco del Oro,08059,exacto,1:1,1.0,1.0,False
+MEX.6.60_2,Chihuahua,Santa Bárbara,08060,exacto,1:1,1.0,1.0,False
+MEX.6.61_2,Chihuahua,Santa Isabel,08024,exacto,1:1,1.0,1.0,False
+MEX.6.62_2,Chihuahua,Satevó,08061,exacto,1:1,1.0,1.0,False
+MEX.6.63_2,Chihuahua,Saucillo,08062,exacto,1:1,1.0,1.0,False
+MEX.6.64_2,Chihuahua,Temósachic,08063,exacto,1:1,1.0,1.0,False
+MEX.6.65_2,Chihuahua,Urique,08065,exacto,1:1,1.0,1.0,False
+MEX.6.66_2,Chihuahua,Uruachi,08066,exacto,1:1,1.0,1.0,False
+MEX.6.67_2,Chihuahua,Valle de Zaragoza,08067,exacto,1:1,1.0,1.0,False
+MEX.7.1_2,Coahuila,Abasolo,05001,exacto,1:1,1.0,1.0,False
+MEX.7.2_2,Coahuila,Acuña,05002,exacto,1:1,1.0,1.0,False
+MEX.7.3_2,Coahuila,Allende,05003,exacto,1:1,1.0,1.0,False
+MEX.7.4_2,Coahuila,Arteaga,05004,exacto,1:1,1.0,1.0,False
+MEX.7.5_2,Coahuila,Candela,05005,exacto,1:1,1.0,1.0,False
+MEX.7.6_2,Coahuila,Castaños,05006,exacto,1:1,1.0,1.0,False
+MEX.7.7_2,Coahuila,Cuatro Ciénegas,05007,exacto,1:1,1.0,1.0,False
+MEX.7.8_2,Coahuila,Escobedo,05008,exacto,1:1,1.0,1.0,False
+MEX.7.9_2,Coahuila,Francisco I. Madero,05009,exacto,1:1,1.0,1.0,False
+MEX.7.10_2,Coahuila,Frontera,05010,exacto,1:1,1.0,1.0,False
+MEX.7.11_2,Coahuila,General Cepeda,05011,exacto,1:1,1.0,1.0,False
+MEX.7.12_2,Coahuila,Guerrero,05012,exacto,1:1,1.0,1.0,False
+MEX.7.13_2,Coahuila,Hidalgo,05013,exacto,1:1,1.0,1.0,False
+MEX.7.14_2,Coahuila,Jiménez,05014,exacto,1:1,1.0,1.0,False
+MEX.7.15_2,Coahuila,Juárez,05015,exacto,1:1,1.0,1.0,False
+MEX.7.16_2,Coahuila,Lamadrid,05016,exacto,1:1,1.0,1.0,False
+MEX.7.17_2,Coahuila,Matamoros,05017,exacto,1:1,1.0,1.0,False
+MEX.7.18_2,Coahuila,Monclova,05018,exacto,1:1,1.0,1.0,False
+MEX.7.19_2,Coahuila,Morelos,05019,exacto,1:1,1.0,1.0,False
+MEX.7.20_2,Coahuila,Múzquiz,05020,exacto,1:1,1.0,1.0,False
+MEX.7.21_2,Coahuila,Nadadores,05021,exacto,1:1,1.0,1.0,False
+MEX.7.22_2,Coahuila,Nava,05022,exacto,1:1,1.0,1.0,False
+MEX.7.23_2,Coahuila,Ocampo,05023,exacto,1:1,1.0,1.0,False
+MEX.7.24_2,Coahuila,Parras,05024,exacto,1:1,1.0,1.0,False
+MEX.7.25_2,Coahuila,Piedras Negras,05025,exacto,1:1,1.0,1.0,False
+MEX.7.26_2,Coahuila,Progreso,05026,exacto,1:1,1.0,1.0,False
+MEX.7.27_2,Coahuila,Ramos Arizpe,05027,exacto,1:1,1.0,1.0,False
+MEX.7.28_2,Coahuila,Sabinas,05028,exacto,1:1,1.0,1.0,False
+MEX.7.29_2,Coahuila,Sacramento,05029,exacto,1:1,1.0,1.0,False
+MEX.7.30_2,Coahuila,Saltillo,05030,exacto,1:1,1.0,1.0,False
+MEX.7.31_2,Coahuila,San Buenaventura,05031,exacto,1:1,1.0,1.0,False
+MEX.7.32_2,Coahuila,San Juan de Sabinas,05032,exacto,1:1,1.0,1.0,False
+MEX.7.33_2,Coahuila,San Pedro,05033,exacto,1:1,1.0,1.0,False
+MEX.7.34_2,Coahuila,Sierra Mojada,05034,exacto,1:1,1.0,1.0,False
+MEX.7.35_2,Coahuila,Torreón,05035,exacto,1:1,1.0,1.0,False
+MEX.7.36_2,Coahuila,Viesca,05036,exacto,1:1,1.0,1.0,False
+MEX.7.37_2,Coahuila,Villa Unión,05037,exacto,1:1,1.0,1.0,False
+MEX.7.38_2,Coahuila,Zaragoza,05038,exacto,1:1,1.0,1.0,False
+MEX.8.1_2,Colima,Armería,06001,exacto,1:1,1.0,1.0,False
+MEX.8.2_2,Colima,Colima,06002,exacto,1:1,1.0,1.0,False
+MEX.8.3_2,Colima,Comala,06003,exacto,1:1,1.0,1.0,False
+MEX.8.4_2,Colima,Coquimatlán,06004,exacto,1:1,1.0,1.0,False
+MEX.8.5_2,Colima,Cuauhtémoc,06005,exacto,1:1,1.0,1.0,False
+MEX.8.6_2,Colima,Ixtlahuacán,06006,exacto,1:1,1.0,1.0,False
+MEX.8.7_2,Colima,Manzanillo,06007,exacto,1:1,1.0,1.0,False
+MEX.8.8_2,Colima,Minatitlán,06008,exacto,1:1,1.0,1.0,False
+MEX.8.9_2,Colima,Tecomán,06009,exacto,1:1,1.0,1.0,False
+MEX.8.10_2,Colima,Villa de Álvarez,06010,exacto,1:1,1.0,1.0,False
+MEX.9.1_2,Distrito Federal,Álvaro Obregón,09010,exacto,1:1,1.0,1.0,False
+MEX.9.2_2,Distrito Federal,Azcapotzalco,09002,exacto,1:1,1.0,1.0,False
+MEX.9.3_2,Distrito Federal,Benito Juárez,09014,exacto,1:1,1.0,1.0,False
+MEX.9.4_2,Distrito Federal,Coyoacán,09003,exacto,1:1,1.0,1.0,False
+MEX.9.5_2,Distrito Federal,Cuajimalpa de Morelos,09004,exacto,1:1,1.0,1.0,False
+MEX.9.6_2,Distrito Federal,Cuauhtémoc,09015,exacto,1:1,1.0,1.0,False
+MEX.9.7_2,Distrito Federal,Gustavo A. Madero,09005,exacto,1:1,1.0,1.0,False
+MEX.9.8_2,Distrito Federal,Iztacalco,09006,exacto,1:1,1.0,1.0,False
+MEX.9.9_2,Distrito Federal,Iztapalapa,09007,exacto,1:1,1.0,1.0,False
+MEX.9.10_2,Distrito Federal,La Magdalena Contreras,09008,exacto,1:1,1.0,1.0,False
+MEX.9.11_2,Distrito Federal,Miguel Hidalgo,09016,exacto,1:1,1.0,1.0,False
+MEX.9.12_2,Distrito Federal,Milpa Alta,09009,exacto,1:1,1.0,1.0,False
+MEX.9.13_2,Distrito Federal,Tláhuac,09011,exacto,1:1,1.0,1.0,False
+MEX.9.14_2,Distrito Federal,Tlalpan,09012,exacto,1:1,1.0,1.0,False
+MEX.9.15_2,Distrito Federal,Venustiano Carranza,09017,exacto,1:1,1.0,1.0,False
+MEX.9.16_2,Distrito Federal,Xochimilco,09013,exacto,1:1,1.0,1.0,False
+MEX.10.1_2,Durango,Canatlán,10001,exacto,1:1,1.0,1.0,False
+MEX.10.2_2,Durango,Canelas,10002,exacto,1:1,1.0,1.0,False
+MEX.10.3_2,Durango,Coneto de Comonfort,10003,exacto,1:1,1.0,1.0,False
+MEX.10.4_2,Durango,Cuencamé,10004,exacto,1:1,1.0,1.0,False
+MEX.10.5_2,Durango,Durango,10005,exacto,1:1,1.0,1.0,False
+MEX.10.6_2,Durango,El Oro,10018,exacto,1:1,1.0,1.0,False
+MEX.10.7_2,Durango,General Simón Bolívar,10006,exacto,1:1,1.0,1.0,False
+MEX.10.8_2,Durango,Gómez Palacio,10007,exacto,1:1,1.0,1.0,False
+MEX.10.9_2,Durango,Guadalupe Victoria,10008,exacto,1:1,1.0,1.0,False
+MEX.10.10_2,Durango,Guanaceví,10009,exacto,1:1,1.0,1.0,False
+MEX.10.11_2,Durango,Hidalgo,10010,exacto,1:1,1.0,1.0,False
+MEX.10.12_2,Durango,Indé,10011,exacto,1:1,1.0,1.0,False
+MEX.10.13_2,Durango,Lerdo,10012,exacto,1:1,1.0,1.0,False
+MEX.10.14_2,Durango,Mapimí,10013,exacto,1:1,1.0,1.0,False
+MEX.10.15_2,Durango,Mezquital,10014,exacto,1:1,1.0,1.0,False
+MEX.10.16_2,Durango,Nazas,10015,exacto,1:1,1.0,1.0,False
+MEX.10.17_2,Durango,Nombre de Dios,10016,exacto,1:1,1.0,1.0,False
+MEX.10.18_2,Durango,Nuevo Ideal,10039,exacto,1:1,1.0,1.0,False
+MEX.10.19_2,Durango,Ocampo,10017,exacto,1:1,1.0,1.0,False
+MEX.10.20_2,Durango,Otáez,10019,exacto,1:1,1.0,1.0,False
+MEX.10.21_2,Durango,Pánuco de Coronado,10020,exacto,1:1,1.0,1.0,False
+MEX.10.22_2,Durango,Peñón Blanco,10021,exacto,1:1,1.0,1.0,False
+MEX.10.23_2,Durango,Poanas,10022,exacto,1:1,1.0,1.0,False
+MEX.10.24_2,Durango,Pueblo Nuevo,10023,exacto,1:1,1.0,0.9951268564356436,False
+MEX.10.25_2,Durango,Rodeo,10024,exacto,1:1,1.0,1.0,False
+MEX.10.26_2,Durango,San Bernardo,10025,exacto,1:1,1.0,1.0,False
+MEX.10.27_2,Durango,San Dimas,10026,exacto,1:1,0.9860811930405965,1.0,False
+MEX.10.28_2,Durango,San Juan de Guadalupe,10027,exacto,1:1,1.0,1.0,False
+MEX.10.29_2,Durango,San Juan del Río,10028,exacto,1:1,1.0,1.0,False
+MEX.10.30_2,Durango,San Luis del Cordero,10029,exacto,1:1,1.0,1.0,False
+MEX.10.31_2,Durango,San Pedro del Gallo,10030,exacto,1:1,1.0,1.0,False
+MEX.10.32_2,Durango,Santa Clara,10031,exacto,1:1,1.0,1.0,False
+MEX.10.33_2,Durango,Santiago Papasquiaro,10032,exacto,1:1,1.0,1.0,False
+MEX.10.34_2,Durango,Súchil,10033,exacto,1:1,1.0,1.0,False
+MEX.10.35_2,Durango,Tamazula,10034,exacto,1:1,1.0,0.998578961145806,False
+MEX.10.36_2,Durango,Tepehuanes,10035,exacto,1:1,1.0,1.0,False
+MEX.10.37_2,Durango,Tlahualilo,10036,exacto,1:1,1.0,1.0,False
+MEX.10.38_2,Durango,Topia,10037,exacto,1:1,1.0,1.0,False
+MEX.10.39_2,Durango,Vicente Guerrero,10038,exacto,1:1,1.0,1.0,False
+MEX.11.1_2,Guanajuato,Abasolo,11001,exacto,1:1,1.0,1.0,False
+MEX.11.2_2,Guanajuato,Acámbaro,11002,exacto,1:1,1.0,1.0,False
+MEX.11.3_2,Guanajuato,Apaseo el Alto,11004,exacto,1:1,1.0,1.0,False
+MEX.11.4_2,Guanajuato,Apaseo el Grande,11005,exacto,1:1,1.0,1.0,False
+MEX.11.5_2,Guanajuato,Atarjea,11006,exacto,1:1,1.0,1.0,False
+MEX.11.6_2,Guanajuato,Celaya,11007,exacto,1:1,1.0,1.0,False
+MEX.11.7_2,Guanajuato,Comonfort,11009,exacto,1:1,1.0,1.0,False
+MEX.11.8_2,Guanajuato,Coroneo,11010,exacto,1:1,1.0,1.0,False
+MEX.11.9_2,Guanajuato,Cortazar,11011,exacto,1:1,1.0,1.0,False
+MEX.11.10_2,Guanajuato,Cuerámaro,11012,exacto,1:1,1.0,1.0,False
+MEX.11.11_2,Guanajuato,Doctor Mora,11013,exacto,1:1,1.0,1.0,False
+MEX.11.12_2,Guanajuato,Dolores Hidalgo Cuna de la Indep,11014,prefijo,1:1,1.0,1.0,False
+MEX.11.13_2,Guanajuato,Guanajuato,11015,exacto,1:1,1.0,1.0,False
+MEX.11.14_2,Guanajuato,Huanímaro,11016,exacto,1:1,1.0,1.0,False
+MEX.11.15_2,Guanajuato,Irapuato,11017,exacto,1:1,1.0,1.0,False
+MEX.11.16_2,Guanajuato,Jaral del Progreso,11018,exacto,1:1,1.0,1.0,False
+MEX.11.17_2,Guanajuato,Jerécuaro,11019,exacto,1:1,1.0,1.0,False
+MEX.11.18_2,Guanajuato,León,11020,exacto,1:1,1.0,1.0,False
+MEX.11.19_2,Guanajuato,Manuel Doblado,11008,exacto,1:1,1.0,1.0,False
+MEX.11.20_2,Guanajuato,Moroleón,11021,exacto,1:1,1.0,1.0,False
+MEX.11.21_2,Guanajuato,Ocampo,11022,exacto,1:1,1.0,1.0,False
+MEX.11.22_2,Guanajuato,Pénjamo,11023,exacto,1:1,1.0,1.0,False
+MEX.11.23_2,Guanajuato,Pueblo Nuevo,11024,exacto,1:1,1.0,1.0,False
+MEX.11.24_2,Guanajuato,Purísima del Rincón,11025,exacto,1:1,1.0,1.0,False
+MEX.11.25_2,Guanajuato,Romita,11026,exacto,1:1,1.0,1.0,False
+MEX.11.26_2,Guanajuato,Salamanca,11027,exacto,1:1,1.0,1.0,False
+MEX.11.27_2,Guanajuato,Salvatierra,11028,exacto,1:1,1.0,1.0,False
+MEX.11.28_2,Guanajuato,San Diego de la Unión,11029,exacto,1:1,1.0,1.0,False
+MEX.11.29_2,Guanajuato,San Felipe,11030,exacto,1:1,1.0,1.0,False
+MEX.11.30_2,Guanajuato,San Francisco del Rincón,11031,exacto,1:1,1.0,1.0,False
+MEX.11.31_2,Guanajuato,San José Iturbide,11032,exacto,1:1,1.0,1.0,False
+MEX.11.32_2,Guanajuato,San Luis de la Paz,11033,exacto,1:1,1.0,1.0,False
+MEX.11.33_2,Guanajuato,San Miguel de Allende,11003,exacto,1:1,1.0,1.0,False
+MEX.11.34_2,Guanajuato,Santa Catarina,11034,exacto,1:1,1.0,1.0,False
+MEX.11.35_2,Guanajuato,Santa Cruz de Juventino Rosas,11035,exacto,1:1,1.0,1.0,False
+MEX.11.36_2,Guanajuato,Santiago Maravatío,11036,exacto,1:1,1.0,1.0,False
+MEX.11.37_2,Guanajuato,Silao de la Victoria,11037,exacto,1:1,1.0,1.0,False
+MEX.11.38_2,Guanajuato,Tarandacuao,11038,exacto,1:1,1.0,1.0,False
+MEX.11.39_2,Guanajuato,Tarimoro,11039,exacto,1:1,1.0,1.0,False
+MEX.11.40_2,Guanajuato,Tierra Blanca,11040,exacto,1:1,1.0,1.0,False
+MEX.11.41_2,Guanajuato,Uriangato,11041,exacto,1:1,1.0,1.0,False
+MEX.11.42_2,Guanajuato,Valle de Santiago,11042,exacto,1:1,1.0,1.0,False
+MEX.11.43_2,Guanajuato,Victoria,11043,exacto,1:1,1.0,1.0,False
+MEX.11.44_2,Guanajuato,Villagrán,11044,exacto,1:1,1.0,1.0,False
+MEX.11.45_2,Guanajuato,Xichú,11045,exacto,1:1,1.0,1.0,False
+MEX.11.46_2,Guanajuato,Yuriria,11046,exacto,1:1,1.0,1.0,False
+MEX.12.1_2,Guerrero,Acapulco de Juárez,12001,exacto,1:1,0.9999653135526373,0.998863025353508,False
+MEX.12.2_2,Guerrero,Acatepec,12076,exacto,n:1,0.9498780738607986,0.8011051092720155,False
+MEX.12.3_2,Guerrero,Ahuacuotzingo,12002,exacto,1:1,0.9972061543304608,0.9993296265625616,False
+MEX.12.4_2,Guerrero,Ajuchitlán del Progreso,12003,exacto,1:1,0.9941921858500528,0.9949276128077776,False
+MEX.12.5_2,Guerrero,Alcozauca de Guerrero,12004,exacto,1:1,0.9999506367854675,0.9534500611879884,False
+MEX.12.6_2,Guerrero,Alpoyeca,12005,exacto,1:1,1.0,1.0,False
+MEX.12.7_2,Guerrero,Apaxtla,12006,exacto,1:1,0.9998172681589766,0.9807313138555297,False
+MEX.12.8_2,Guerrero,Arcelia,12007,exacto,1:1,0.9891359047985554,1.0,False
+MEX.12.9_2,Guerrero,Atenango del Río,12008,exacto,1:1,0.9989215098861594,0.907962095632284,False
+MEX.12.10_2,Guerrero,Atlamajalcingo del Monte,12009,exacto,ambiguo,0.5654724491933795,0.9418949572500436,False
+MEX.12.11_2,Guerrero,Atlixtac,12010,exacto,1:1,0.992647842301545,0.9769636802181284,False
+MEX.12.12_2,Guerrero,Atoyac de Álvarez,12011,exacto,1:1,1.0,0.9987027062532843,False
+MEX.12.13_2,Guerrero,Ayutla de los Libres,12012,exacto,1:n,0.8319978750719377,0.970630767111968,False
+MEX.12.14_2,Guerrero,Azoyú,12013,exacto,1:1,0.9446657537657164,1.0,False
+MEX.12.15_2,Guerrero,Benito Juárez,12014,exacto,1:1,0.9985194721596395,0.9999355379359247,False
+MEX.12.16_2,Guerrero,Buenavista de Cuéllar,12015,exacto,1:1,0.9989263803680981,0.9988497814584771,False
+MEX.12.17_2,Guerrero,Chilapa de Álvarez,12028,exacto,1:1,0.9993675350896397,1.0,False
+MEX.12.18_2,Guerrero,Chilpancingo de los Bravo,12029,exacto,1:1,0.9999221789883268,0.9975157208291282,False
+MEX.12.19_2,Guerrero,Coahuayutla de José María Izazag,12016,prefijo,1:1,0.99731713090823,1.0,False
+MEX.12.20_2,Guerrero,Cochoapa el Grande,12078,exacto,1:1,0.9999504827927704,0.9434244335435645,False
+MEX.12.21_2,Guerrero,Cocula,12017,exacto,1:1,1.0,1.0,False
+MEX.12.22_2,Guerrero,Copala,12018,exacto,1:1,0.9993111524419646,0.9999310725117176,False
+MEX.12.23_2,Guerrero,Copalillo,12019,exacto,1:1,1.0,0.9943160045982884,False
+MEX.12.24_2,Guerrero,Copanatoyac,12020,exacto,1:1,0.985372280016354,0.999447081048703,False
+MEX.12.25_2,Guerrero,Coyuca de Benítez,12021,exacto,1:1,0.9998770088553625,0.9993307473776224,False
+MEX.12.26_2,Guerrero,Coyuca de Catalán,12022,exacto,1:1,0.9993050193050194,0.9939833068769522,False
+MEX.12.27_2,Guerrero,Cuajinicuilapa,12023,exacto,1:n,0.7346500320379933,0.9865863535128568,False
+MEX.12.28_2,Guerrero,Cualác,12024,exacto,1:1,0.9991189427312775,0.9998740395515808,False
+MEX.12.29_2,Guerrero,Cuautepec,12025,exacto,1:1,0.9999399507596229,0.9760271965300978,False
+MEX.12.30_2,Guerrero,Cuetzala del Progreso,12026,exacto,1:1,0.9762241054613936,1.0,False
+MEX.12.31_2,Guerrero,Cutzamala de Pinzón,12027,exacto,1:1,0.9840749191861571,1.0,False
+MEX.12.32_2,Guerrero,Eduardo Neri,12075,exacto,1:1,0.9995488637004455,0.9997743809577528,False
+MEX.12.33_2,Guerrero,Florencio Villarreal,12030,exacto,1:1,0.9824275521888488,1.0,False
+MEX.12.34_2,Guerrero,General Canuto A. Neri,12031,exacto,1:1,0.9715117169551233,1.0,False
+MEX.12.35_2,Guerrero,General Heliodoro Castillo,12032,exacto,1:1,0.9921782099727823,0.999786979097324,False
+MEX.12.36_2,Guerrero,Huamuxtitlán,12033,exacto,1:1,1.0,1.0,False
+MEX.12.37_2,Guerrero,Huitzuco de los Figueroa,12034,exacto,1:1,0.9770601870354089,1.0,False
+MEX.12.38_2,Guerrero,Iguala de la Independencia,12035,exacto,1:1,1.0,0.9987872813701775,False
+MEX.12.39_2,Guerrero,Igualapa,12036,exacto,n:1,1.0,0.879666638319585,False
+MEX.12.40_2,Guerrero,Iliatenco,12081,exacto,1:1,0.9910412440838404,1.0,False
+MEX.12.41_2,Guerrero,Ixcateopan de Cuauhtémoc,12037,exacto,1:1,0.9935587761674718,1.0,False
+MEX.12.42_2,Guerrero,José Joaquín de Herrera,12079,exacto,1:1,1.0,0.9997829036635006,False
+MEX.12.43_2,Guerrero,Juan R. Escudero,12039,exacto,n:1,0.9803287064634251,0.880896812947163,False
+MEX.12.44_2,Guerrero,Juchitán,12080,exacto,1:1,1.0,1.0,False
+MEX.12.45_2,Guerrero,La Unión de Isidoro Montes de Oc,12068,prefijo,1:1,1.0,0.998716496791242,False
+MEX.12.46_2,Guerrero,Leonardo Bravo,12040,exacto,1:1,1.0,0.9990909435248665,False
+MEX.12.47_2,Guerrero,Malinaltepec,12041,exacto,1:n,0.7555882654982371,0.977286814841052,False
+MEX.12.48_2,Guerrero,Marquelia,12077,exacto,1:1,1.0,0.9999298294856501,False
+MEX.12.49_2,Guerrero,Mártir de Cuilapan,12042,exacto,1:1,1.0,1.0,False
+MEX.12.50_2,Guerrero,Metlatónoc,12043,exacto,ambiguo,0.8912545350391445,0.9957333333333334,False
+MEX.12.51_2,Guerrero,Mochitlán,12044,exacto,1:1,0.9999179722746289,0.9795098433105665,False
+MEX.12.52_2,Guerrero,Olinalá,12045,exacto,1:1,0.9968970085768077,0.9975578271639396,False
+MEX.12.53_2,Guerrero,Ometepec,12046,exacto,1:1,0.9998244664511505,1.0,False
+MEX.12.54_2,Guerrero,Pedro Ascencio Alquisiras,12047,exacto,1:1,1.0,0.994138989673458,False
+MEX.12.55_2,Guerrero,Petatlán,12048,exacto,1:1,0.9996662513349946,0.9992438226986633,False
+MEX.12.56_2,Guerrero,Pilcaya,12049,exacto,1:1,0.9889438688727386,0.9996092528915286,False
+MEX.12.57_2,Guerrero,Pungarabato,12050,exacto,1:1,1.0,0.9912996052358196,False
+MEX.12.58_2,Guerrero,Quechultenango,12051,exacto,1:1,1.0,1.0,False
+MEX.12.59_2,Guerrero,San Luis Acatlán,12052,exacto,1:1,1.0,0.9098406666954532,False
+MEX.12.60_2,Guerrero,San Marcos,12053,exacto,1:n,0.7424306643324426,1.0,False
+MEX.12.61_2,Guerrero,San Miguel Totolapan,12054,exacto,1:1,0.9930910428845918,0.9992595639654464,False
+MEX.12.62_2,Guerrero,Taxco de Alarcón,12055,exacto,1:1,0.9998107476414425,0.9993757389453771,False
+MEX.12.63_2,Guerrero,Tecoanapa,12056,exacto,1:1,1.0,0.9957080614744326,False
+MEX.12.64_2,Guerrero,Técpan de Galeana,12057,exacto,1:1,0.9990722856751784,0.9998477976317311,False
+MEX.12.65_2,Guerrero,Teloloapan,12058,exacto,1:1,0.9961255471733259,0.9899115175298953,False
+MEX.12.66_2,Guerrero,Tepecoacuilco de Trujano,12059,exacto,1:1,0.9996437362352636,0.9999676018920495,False
+MEX.12.67_2,Guerrero,Tetipac,12060,exacto,1:1,0.9991094619666048,0.9894899309128325,False
+MEX.12.68_2,Guerrero,Tixtla de Guerrero,12061,exacto,1:1,0.9941341553183658,0.9997686631040784,False
+MEX.12.69_2,Guerrero,Tlacoachistlahuaca,12062,exacto,1:1,1.0,0.9942679618447536,False
+MEX.12.70_2,Guerrero,Tlacoapa,12063,exacto,ambiguo,0.725393127548049,1.0,False
+MEX.12.71_2,Guerrero,Tlalchapa,12064,exacto,1:1,1.0,1.0,False
+MEX.12.72_2,Guerrero,Tlalixtaquilla de Maldonado,12065,exacto,1:1,1.0,1.0,False
+MEX.12.73_2,Guerrero,Tlapa de Comonfort,12066,exacto,1:1,0.9988036037535631,0.9976515332578222,False
+MEX.12.74_2,Guerrero,Tlapehuala,12067,exacto,1:1,1.0,1.0,False
+MEX.12.75_2,Guerrero,Xalpatláhuac,12069,exacto,ambiguo,0.8946580876851713,0.9969153814089203,False
+MEX.12.76_2,Guerrero,Xochihuehuetlán,12070,exacto,1:1,1.0,1.0,False
+MEX.12.77_2,Guerrero,Xochistlahuaca,12071,exacto,1:1,1.0,0.9998667066546703,False
+MEX.12.78_2,Guerrero,Zapotitlán Tablas,12072,exacto,ambiguo,0.7021150542093726,0.9828329739591972,False
+MEX.12.79_2,Guerrero,Zihuatanejo de Azueta,12038,exacto,1:1,0.9997862232779098,0.9999920807133693,False
+MEX.12.80_2,Guerrero,Zirándaro,12073,exacto,1:1,0.9999458112062426,0.9995125121871953,False
+MEX.12.81_2,Guerrero,Zitlala,12074,exacto,1:1,1.0,0.9965305452670074,False
+MEX.13.1_2,Hidalgo,Acatlán,13001,exacto,1:1,1.0,1.0,False
+MEX.13.2_2,Hidalgo,Acaxochitlán,13002,exacto,1:1,1.0,1.0,False
+MEX.13.3_2,Hidalgo,Actopan,13003,exacto,1:1,1.0,1.0,False
+MEX.13.4_2,Hidalgo,Agua Blanca de Iturbide,13004,exacto,1:1,1.0,1.0,False
+MEX.13.5_2,Hidalgo,Ajacuba,13005,exacto,1:1,1.0,1.0,False
+MEX.13.6_2,Hidalgo,Alfajayucan,13006,exacto,1:1,1.0,1.0,False
+MEX.13.7_2,Hidalgo,Almoloya,13007,exacto,1:1,1.0,1.0,False
+MEX.13.8_2,Hidalgo,Apan,13008,exacto,1:1,1.0,1.0,False
+MEX.13.9_2,Hidalgo,Atitalaquia,13010,exacto,1:1,1.0,1.0,False
+MEX.13.10_2,Hidalgo,Atlapexco,13011,exacto,1:1,1.0,1.0,False
+MEX.13.11_2,Hidalgo,Atotonilco de Tula,13013,exacto,1:1,1.0,1.0,False
+MEX.13.12_2,Hidalgo,Atotonilco el Grande,13012,exacto,1:1,1.0,1.0,False
+MEX.13.13_2,Hidalgo,Calnali,13014,exacto,1:1,1.0,1.0,False
+MEX.13.14_2,Hidalgo,Cardonal,13015,exacto,1:1,1.0,1.0,False
+MEX.13.15_2,Hidalgo,Chapantongo,13017,exacto,1:1,1.0,1.0,False
+MEX.13.16_2,Hidalgo,Chapulhuacán,13018,exacto,1:1,1.0,1.0,False
+MEX.13.17_2,Hidalgo,Chilcuautla,13019,exacto,1:1,1.0,1.0,False
+MEX.13.18_2,Hidalgo,Cuautepec de Hinojosa,13016,exacto,1:1,1.0,1.0,False
+MEX.13.19_2,Hidalgo,El Arenal,13009,exacto,1:1,1.0,1.0,False
+MEX.13.20_2,Hidalgo,Eloxochitlán,13020,exacto,1:1,1.0,1.0,False
+MEX.13.21_2,Hidalgo,Emiliano Zapata,13021,exacto,1:1,1.0,1.0,False
+MEX.13.22_2,Hidalgo,Epazoyucan,13022,exacto,1:1,1.0,0.9988387727661655,False
+MEX.13.23_2,Hidalgo,Francisco I. Madero,13023,exacto,1:1,1.0,1.0,False
+MEX.13.24_2,Hidalgo,Huasca de Ocampo,13024,exacto,1:1,1.0,1.0,False
+MEX.13.25_2,Hidalgo,Huautla,13025,exacto,1:1,1.0,1.0,False
+MEX.13.26_2,Hidalgo,Huazalingo,13026,exacto,1:1,1.0,1.0,False
+MEX.13.27_2,Hidalgo,Huehuetla,13027,exacto,1:1,0.998867940958767,1.0,False
+MEX.13.28_2,Hidalgo,Huejutla de Reyes,13028,exacto,1:1,1.0,1.0,False
+MEX.13.29_2,Hidalgo,Huichapan,13029,exacto,1:1,1.0,1.0,False
+MEX.13.30_2,Hidalgo,Ixmiquilpan,13030,exacto,1:1,1.0,1.0,False
+MEX.13.31_2,Hidalgo,Jacala de Ledezma,13031,exacto,1:1,1.0,1.0,False
+MEX.13.32_2,Hidalgo,Jaltocán,13032,exacto,1:1,1.0,1.0,False
+MEX.13.33_2,Hidalgo,Juárez Hidalgo,13033,exacto,1:1,1.0,1.0,False
+MEX.13.34_2,Hidalgo,La Misión,13040,exacto,1:1,1.0,1.0,False
+MEX.13.35_2,Hidalgo,Lolotla,13034,exacto,1:1,1.0,1.0,False
+MEX.13.36_2,Hidalgo,Metepec,13035,exacto,1:1,1.0,1.0,False
+MEX.13.37_2,Hidalgo,Metztitlán,13037,exacto,1:1,1.0,1.0,False
+MEX.13.38_2,Hidalgo,Mineral de la Reforma,13051,exacto,1:1,0.999906354119433,1.0,False
+MEX.13.39_2,Hidalgo,Mineral del Chico,13038,exacto,1:1,1.0,1.0,False
+MEX.13.40_2,Hidalgo,Mineral del Monte,13039,exacto,1:1,1.0,1.0,False
+MEX.13.41_2,Hidalgo,Mixquiahuala de Juárez,13041,exacto,1:1,1.0,1.0,False
+MEX.13.42_2,Hidalgo,Molango de Escamilla,13042,exacto,1:1,1.0,1.0,False
+MEX.13.43_2,Hidalgo,Nicolás Flores,13043,exacto,1:1,1.0,1.0,False
+MEX.13.44_2,Hidalgo,Nopala de Villagrán,13044,exacto,1:1,1.0,1.0,False
+MEX.13.45_2,Hidalgo,Omitlán de Juárez,13045,exacto,1:1,1.0,1.0,False
+MEX.13.46_2,Hidalgo,Pachuca de Soto,13048,exacto,1:1,1.0,1.0,False
+MEX.13.47_2,Hidalgo,Pacula,13047,exacto,1:1,1.0,1.0,False
+MEX.13.48_2,Hidalgo,Pisaflores,13049,exacto,1:1,1.0,1.0,False
+MEX.13.49_2,Hidalgo,Progreso de Obregón,13050,exacto,1:1,1.0,1.0,False
+MEX.13.50_2,Hidalgo,San Agustín Metzquititlán,13036,exacto,1:1,1.0,1.0,False
+MEX.13.51_2,Hidalgo,San Agustín Tlaxiaca,13052,exacto,1:1,1.0,1.0,False
+MEX.13.52_2,Hidalgo,San Bartolo Tutotepec,13053,exacto,1:1,1.0,0.9985419470614625,False
+MEX.13.53_2,Hidalgo,San Felipe Orizatlán,13046,exacto,1:1,1.0,1.0,False
+MEX.13.54_2,Hidalgo,San Salvador,13054,exacto,1:1,1.0,1.0,False
+MEX.13.55_2,Hidalgo,Santiago de Anaya,13055,exacto,1:1,1.0,1.0,False
+MEX.13.56_2,Hidalgo,Santiago Tulantepec de Lugo Guer,13056,prefijo,1:1,1.0,1.0,False
+MEX.13.57_2,Hidalgo,Singuilucan,13057,exacto,1:1,1.0,1.0,False
+MEX.13.58_2,Hidalgo,Tasquillo,13058,exacto,1:1,1.0,1.0,False
+MEX.13.59_2,Hidalgo,Tecozautla,13059,exacto,1:1,1.0,1.0,False
+MEX.13.60_2,Hidalgo,Tenango de Doria,13060,exacto,1:1,1.0,1.0,False
+MEX.13.61_2,Hidalgo,Tepeapulco,13061,exacto,1:1,1.0,1.0,False
+MEX.13.62_2,Hidalgo,Tepehuacán de Guerrero,13062,exacto,1:1,1.0,1.0,False
+MEX.13.63_2,Hidalgo,Tepeji del Río de Ocampo,13063,exacto,1:1,1.0,1.0,False
+MEX.13.64_2,Hidalgo,Tepetitlán,13064,exacto,1:1,1.0,1.0,False
+MEX.13.65_2,Hidalgo,Tetepango,13065,exacto,1:1,1.0,1.0,False
+MEX.13.66_2,Hidalgo,Tezontepec de Aldama,13067,exacto,1:1,1.0,1.0,False
+MEX.13.67_2,Hidalgo,Tianguistengo,13068,exacto,1:1,1.0,1.0,False
+MEX.13.68_2,Hidalgo,Tizayuca,13069,exacto,1:1,1.0,1.0,False
+MEX.13.69_2,Hidalgo,Tlahuelilpan,13070,exacto,1:1,1.0,0.9993712339533665,False
+MEX.13.70_2,Hidalgo,Tlahuiltepa,13071,exacto,1:1,1.0,1.0,False
+MEX.13.71_2,Hidalgo,Tlanalapa,13072,exacto,1:1,1.0,1.0,False
+MEX.13.72_2,Hidalgo,Tlanchinol,13073,exacto,1:1,1.0,1.0,False
+MEX.13.73_2,Hidalgo,Tlaxcoapan,13074,exacto,1:1,0.9995811372124681,1.0,False
+MEX.13.74_2,Hidalgo,Tolcayuca,13075,exacto,1:1,0.9999531879037543,0.998177570093458,False
+MEX.13.75_2,Hidalgo,Tula de Allende,13076,exacto,1:1,1.0,1.0,False
+MEX.13.76_2,Hidalgo,Tulancingo de Bravo,13077,exacto,1:1,1.0,1.0,False
+MEX.13.77_2,Hidalgo,Villa de Tezontepec,13066,exacto,1:1,1.0,1.0,False
+MEX.13.78_2,Hidalgo,Xochiatipan,13078,exacto,1:1,1.0,1.0,False
+MEX.13.79_2,Hidalgo,Xochicoatlán,13079,exacto,1:1,1.0,1.0,False
+MEX.13.80_2,Hidalgo,Yahualica,13080,exacto,1:1,1.0,1.0,False
+MEX.13.81_2,Hidalgo,Zacualtipán de Ángeles,13081,exacto,1:1,1.0,1.0,False
+MEX.13.82_2,Hidalgo,Zapotlán de Juárez,13082,exacto,1:1,0.998186889818689,0.9999534277198212,False
+MEX.13.83_2,Hidalgo,Zempoala,13083,exacto,1:1,1.0,1.0,False
+MEX.13.84_2,Hidalgo,Zimapán,13084,exacto,1:1,1.0,1.0,False
+MEX.14.1_2,Jalisco,Acatic,14001,exacto,1:1,1.0,1.0,False
+MEX.14.2_2,Jalisco,Acatlán de Juárez,14002,exacto,1:1,1.0,0.9991701900659896,False
+MEX.14.3_2,Jalisco,Ahualulco de Mercado,14003,exacto,1:1,1.0,1.0,False
+MEX.14.4_2,Jalisco,Amacueca,14004,exacto,1:1,1.0,1.0,False
+MEX.14.5_2,Jalisco,Amatitán,14005,exacto,1:1,1.0,1.0,False
+MEX.14.6_2,Jalisco,Ameca,14006,exacto,1:1,1.0,1.0,False
+MEX.14.7_2,Jalisco,Arandas,14008,exacto,1:1,1.0,1.0,False
+MEX.14.8_2,Jalisco,Atemajac de Brizuela,14010,exacto,1:1,1.0,1.0,False
+MEX.14.9_2,Jalisco,Atengo,14011,exacto,1:1,1.0,1.0,False
+MEX.14.10_2,Jalisco,Atenguillo,14012,exacto,1:1,1.0,1.0,False
+MEX.14.11_2,Jalisco,Atotonilco el Alto,14013,exacto,1:1,1.0,1.0,False
+MEX.14.12_2,Jalisco,Atoyac,14014,exacto,1:1,1.0,1.0,False
+MEX.14.13_2,Jalisco,Autlán de Navarro,14015,exacto,1:1,1.0,1.0,False
+MEX.14.14_2,Jalisco,Ayotlán,14016,exacto,1:1,1.0,1.0,False
+MEX.14.15_2,Jalisco,Ayutla,14017,exacto,1:1,1.0,1.0,False
+MEX.14.16_2,Jalisco,Bolaños,14019,exacto,1:1,0.9986318237789027,0.9541176470588235,False
+MEX.14.17_2,Jalisco,Cabo Corrientes,14020,exacto,1:1,1.0,1.0,False
+MEX.14.18_2,Jalisco,Cañadas de Obregón,14117,exacto,1:1,1.0,1.0,False
+MEX.14.19_2,Jalisco,Casimiro Castillo,14021,exacto,1:1,1.0,1.0,False
+MEX.14.20_2,Jalisco,Chapala,14030,exacto,1:1,1.0,1.0,False
+MEX.14.21_2,Jalisco,Chimaltitán,14031,exacto,ambiguo,0.8970070422535211,0.9967394848386045,False
+MEX.14.22_2,Jalisco,Chiquilistlán,14032,exacto,1:1,1.0,1.0,False
+MEX.14.23_2,Jalisco,Cihuatlán,14022,exacto,1:1,1.0,1.0,False
+MEX.14.24_2,Jalisco,Cocula,14024,exacto,1:1,1.0,1.0,False
+MEX.14.25_2,Jalisco,Colotlán,14025,exacto,1:1,1.0,1.0,False
+MEX.14.26_2,Jalisco,Concepción de Buenos Aires,14026,exacto,1:1,1.0,1.0,False
+MEX.14.27_2,Jalisco,Cuautitlán de García Barragán,14027,exacto,1:1,1.0,1.0,False
+MEX.14.28_2,Jalisco,Cuautla,14028,exacto,1:1,1.0,1.0,False
+MEX.14.29_2,Jalisco,Cuquío,14029,exacto,1:1,1.0,1.0,False
+MEX.14.30_2,Jalisco,Degollado,14033,exacto,1:1,1.0,1.0,False
+MEX.14.31_2,Jalisco,Ejutla,14034,exacto,1:1,1.0,1.0,False
+MEX.14.32_2,Jalisco,El Arenal,14009,exacto,1:1,1.0,1.0,False
+MEX.14.33_2,Jalisco,El Grullo,14037,exacto,1:1,1.0,1.0,False
+MEX.14.34_2,Jalisco,El Limón,14054,exacto,1:1,1.0,1.0,False
+MEX.14.35_2,Jalisco,El Salto,14070,exacto,1:1,0.9999952842422957,0.9108496664647845,False
+MEX.14.36_2,Jalisco,Encarnación de Díaz,14035,exacto,1:1,1.0,1.0,False
+MEX.14.37_2,Jalisco,Etzatlán,14036,exacto,1:1,1.0,1.0,False
+MEX.14.38_2,Jalisco,Gómez Farías,14079,exacto,1:1,1.0,1.0,False
+MEX.14.39_2,Jalisco,Guachinango,14038,exacto,1:1,1.0,1.0,False
+MEX.14.40_2,Jalisco,Guadalajara,14039,exacto,1:1,1.0,1.0,False
+MEX.14.41_2,Jalisco,Hostotipaquillo,14040,exacto,1:1,1.0,1.0,False
+MEX.14.42_2,Jalisco,Huejúcar,14041,exacto,1:1,1.0,1.0,False
+MEX.14.43_2,Jalisco,Huejuquilla el Alto,14042,exacto,1:1,1.0,1.0,False
+MEX.14.44_2,Jalisco,Ixtlahuacán de los Membrillos,14044,exacto,1:1,1.0,1.0,False
+MEX.14.45_2,Jalisco,Ixtlahuacán del Río,14045,exacto,1:1,1.0,1.0,False
+MEX.14.46_2,Jalisco,Jalostotitlán,14046,exacto,1:1,1.0,1.0,False
+MEX.14.47_2,Jalisco,Jamay,14047,exacto,1:1,1.0,1.0,False
+MEX.14.48_2,Jalisco,Jesús María,14048,exacto,1:1,1.0,1.0,False
+MEX.14.49_2,Jalisco,Jilotlán de los Dolores,14049,exacto,1:1,1.0,1.0,False
+MEX.14.50_2,Jalisco,Jocotepec,14050,exacto,1:1,1.0,1.0,False
+MEX.14.51_2,Jalisco,Juanacatlán,14051,exacto,1:1,1.0,1.0,False
+MEX.14.52_2,Jalisco,Juchitlán,14052,exacto,1:1,1.0,1.0,False
+MEX.14.53_2,Jalisco,La Barca,14018,exacto,1:1,1.0,1.0,False
+MEX.14.54_2,Jalisco,La Huerta,14043,exacto,1:1,1.0,1.0,False
+MEX.14.55_2,Jalisco,La Manzanilla de la Paz,14057,exacto,1:1,1.0,1.0,False
+MEX.14.56_2,Jalisco,Lagos de Moreno,14053,exacto,1:1,1.0,1.0,False
+MEX.14.57_2,Jalisco,Magdalena,14055,exacto,1:1,1.0,1.0,False
+MEX.14.58_2,Jalisco,Mascota,14058,exacto,1:1,1.0,1.0,False
+MEX.14.59_2,Jalisco,Mazamitla,14059,exacto,1:1,1.0,1.0,False
+MEX.14.60_2,Jalisco,Mexticacán,14060,exacto,1:1,1.0,1.0,False
+MEX.14.61_2,Jalisco,Mezquitic,14061,exacto,1:1,1.0,1.0,False
+MEX.14.62_2,Jalisco,Mixtlán,14062,exacto,1:1,1.0,1.0,False
+MEX.14.63_2,Jalisco,Ocotlán,14063,exacto,1:1,1.0,1.0,False
+MEX.14.64_2,Jalisco,Ojuelos de Jalisco,14064,exacto,1:1,1.0,1.0,False
+MEX.14.65_2,Jalisco,Pihuamo,14065,exacto,1:1,1.0,1.0,False
+MEX.14.66_2,Jalisco,Poncitlán,14066,exacto,1:1,1.0,1.0,False
+MEX.14.67_2,Jalisco,Puerto Vallarta,14067,exacto,1:1,1.0,1.0,False
+MEX.14.68_2,Jalisco,Quitupan,14069,exacto,1:1,1.0,1.0,False
+MEX.14.69_2,Jalisco,San Cristóbal de la Barranca,14071,exacto,1:1,1.0,1.0,False
+MEX.14.70_2,Jalisco,San Diego de Alejandría,14072,exacto,1:1,1.0,1.0,False
+MEX.14.71_2,Jalisco,San Gabriel,14113,exacto,1:1,1.0,1.0,False
+MEX.14.72_2,Jalisco,San Ignacio Cerro Gordo,14125,exacto,1:1,1.0,1.0,False
+MEX.14.73_2,Jalisco,San Juan de los Lagos,14073,exacto,1:1,1.0,1.0,False
+MEX.14.74_2,Jalisco,San Juanito de Escobedo,14007,exacto,1:1,1.0,1.0,False
+MEX.14.75_2,Jalisco,San Julián,14074,exacto,1:1,1.0,1.0,False
+MEX.14.76_2,Jalisco,San Marcos,14075,exacto,1:1,1.0,1.0,False
+MEX.14.77_2,Jalisco,San Martín de Bolaños,14076,exacto,1:1,1.0,1.0,False
+MEX.14.78_2,Jalisco,San Martín Hidalgo,14077,exacto,1:1,1.0,1.0,False
+MEX.14.79_2,Jalisco,San Miguel el Alto,14078,exacto,1:1,1.0,1.0,False
+MEX.14.80_2,Jalisco,San Pedro Tlaquepaque,14098,exacto,1:1,0.9982491241988471,0.9999679787611856,False
+MEX.14.81_2,Jalisco,San Sebastián del Oeste,14080,exacto,1:1,1.0,1.0,False
+MEX.14.82_2,Jalisco,Santa María de los Ángeles,14081,exacto,1:1,1.0,1.0,False
+MEX.14.83_2,Jalisco,Santa María del Oro,14056,exacto,1:1,1.0,1.0,False
+MEX.14.84_2,Jalisco,Sayula,14082,exacto,1:1,1.0,1.0,False
+MEX.14.85_2,Jalisco,Tala,14083,exacto,1:1,1.0,0.9978380100589427,False
+MEX.14.86_2,Jalisco,Talpa de Allende,14084,exacto,1:1,1.0,1.0,False
+MEX.14.87_2,Jalisco,Tamazula de Gordiano,14085,exacto,1:1,1.0,1.0,False
+MEX.14.88_2,Jalisco,Tapalpa,14086,exacto,1:1,1.0,1.0,False
+MEX.14.89_2,Jalisco,Tecalitlán,14087,exacto,1:1,1.0,1.0,False
+MEX.14.90_2,Jalisco,Techaluta de Montenegro,14089,exacto,1:1,1.0,1.0,False
+MEX.14.91_2,Jalisco,Tecolotlán,14088,exacto,1:1,1.0,1.0,False
+MEX.14.92_2,Jalisco,Tenamaxtlán,14090,exacto,1:1,1.0,1.0,False
+MEX.14.93_2,Jalisco,Teocaltiche,14091,exacto,1:1,1.0,1.0,False
+MEX.14.94_2,Jalisco,Teocuitatlán de Corona,14092,exacto,1:1,1.0,1.0,False
+MEX.14.95_2,Jalisco,Tepatitlán de Morelos,14093,exacto,1:1,1.0,1.0,False
+MEX.14.96_2,Jalisco,Tequila,14094,exacto,1:1,1.0,1.0,False
+MEX.14.97_2,Jalisco,Teuchitlán,14095,exacto,1:1,1.0,1.0,False
+MEX.14.98_2,Jalisco,Tizapán el Alto,14096,exacto,1:1,1.0,1.0,False
+MEX.14.99_2,Jalisco,Tlajomulco de Zúñiga,14097,exacto,1:1,0.9997084271432324,0.9983449711846435,False
+MEX.14.100_2,Jalisco,Tolimán,14099,exacto,1:1,1.0,1.0,False
+MEX.14.101_2,Jalisco,Tomatlán,14100,exacto,1:1,1.0,1.0,False
+MEX.14.102_2,Jalisco,Tonalá,14101,exacto,1:1,0.964802466455928,0.9999982422774459,False
+MEX.14.103_2,Jalisco,Tonaya,14102,exacto,1:1,1.0,1.0,False
+MEX.14.104_2,Jalisco,Tonila,14103,exacto,1:1,1.0,1.0,False
+MEX.14.105_2,Jalisco,Totatiche,14104,exacto,1:1,1.0,1.0,False
+MEX.14.106_2,Jalisco,Tototlán,14105,exacto,1:1,1.0,1.0,False
+MEX.14.107_2,Jalisco,Tuxcacuesco,14106,exacto,1:1,1.0,1.0,False
+MEX.14.108_2,Jalisco,Tuxcueca,14107,exacto,1:1,1.0,1.0,False
+MEX.14.109_2,Jalisco,Tuxpan,14108,exacto,1:1,1.0,1.0,False
+MEX.14.110_2,Jalisco,Unión de San Antonio,14109,exacto,1:1,1.0,1.0,False
+MEX.14.111_2,Jalisco,Unión de Tula,14110,exacto,1:1,1.0,1.0,False
+MEX.14.112_2,Jalisco,Valle de Guadalupe,14111,exacto,1:1,1.0,1.0,False
+MEX.14.113_2,Jalisco,Valle de Juárez,14112,exacto,1:1,1.0,1.0,False
+MEX.14.114_2,Jalisco,Villa Corona,14114,exacto,1:1,1.0,1.0,False
+MEX.14.115_2,Jalisco,Villa Guerrero,14115,exacto,1:1,1.0,1.0,False
+MEX.14.116_2,Jalisco,Villa Hidalgo,14116,exacto,1:1,1.0,1.0,False
+MEX.14.117_2,Jalisco,Villa Purificación,14068,exacto,1:1,1.0,1.0,False
+MEX.14.118_2,Jalisco,Yahualica de González Gallo,14118,exacto,1:1,1.0,1.0,False
+MEX.14.119_2,Jalisco,Zacoalco de Torres,14119,exacto,1:1,0.9993125347824664,1.0,False
+MEX.14.120_2,Jalisco,Zapopan,14120,exacto,1:1,1.0,1.0,False
+MEX.14.121_2,Jalisco,Zapotiltic,14121,exacto,1:1,1.0,1.0,False
+MEX.14.122_2,Jalisco,Zapotitlán de Vadillo,14122,exacto,1:1,1.0,1.0,False
+MEX.14.123_2,Jalisco,Zapotlán del Rey,14123,exacto,1:1,1.0,1.0,False
+MEX.14.124_2,Jalisco,Zapotlán el Grande,14023,exacto,1:1,1.0,1.0,False
+MEX.14.125_2,Jalisco,Zapotlanejo,14124,exacto,1:1,1.0,1.0,False
+MEX.15.1_2,México,Acambay de Ruíz Castañeda,15001,exacto,1:1,1.0,1.0,False
+MEX.15.2_2,México,Acolman,15002,exacto,1:1,1.0,1.0,False
+MEX.15.3_2,México,Aculco,15003,exacto,1:1,1.0,1.0,False
+MEX.15.4_2,México,Almoloya de Alquisiras,15004,exacto,1:1,1.0,1.0,False
+MEX.15.5_2,México,Almoloya de Juárez,15005,exacto,1:1,1.0,1.0,False
+MEX.15.6_2,México,Almoloya del Río,15006,exacto,1:1,1.0,1.0,False
+MEX.15.7_2,México,Amanalco,15007,exacto,1:1,1.0,1.0,False
+MEX.15.8_2,México,Amatepec,15008,exacto,1:1,1.0,1.0,False
+MEX.15.9_2,México,Amecameca,15009,exacto,1:1,1.0,1.0,False
+MEX.15.10_2,México,Apaxco,15010,exacto,1:1,1.0,1.0,False
+MEX.15.11_2,México,Atenco,15011,exacto,1:1,1.0,1.0,False
+MEX.15.12_2,México,Atizapán,15012,exacto,1:1,1.0,1.0,False
+MEX.15.13_2,México,Atizapán de Zaragoza,15013,exacto,1:1,1.0,1.0,False
+MEX.15.14_2,México,Atlacomulco,15014,exacto,1:1,1.0,1.0,False
+MEX.15.15_2,México,Atlautla,15015,exacto,1:1,1.0,1.0,False
+MEX.15.16_2,México,Axapusco,15016,exacto,1:1,1.0,1.0,False
+MEX.15.17_2,México,Ayapango,15017,exacto,1:1,1.0,1.0,False
+MEX.15.18_2,México,Calimaya,15018,exacto,1:1,1.0,1.0,False
+MEX.15.19_2,México,Capulhuac,15019,exacto,1:1,1.0,0.9890086090205209,False
+MEX.15.20_2,México,Chalco,15025,exacto,1:1,1.0,1.0,False
+MEX.15.21_2,México,Chapa de Mota,15026,exacto,1:1,1.0,1.0,False
+MEX.15.22_2,México,Chapultepec,15027,exacto,1:1,1.0,1.0,False
+MEX.15.23_2,México,Chiautla,15028,exacto,1:1,1.0,1.0,False
+MEX.15.24_2,México,Chicoloapan,15029,exacto,1:1,1.0,1.0,False
+MEX.15.25_2,México,Chiconcuac,15030,exacto,1:1,1.0,1.0,False
+MEX.15.26_2,México,Chimalhuacán,15031,exacto,1:1,1.0,1.0,False
+MEX.15.27_2,México,Coacalco de Berriozábal,15020,exacto,1:1,1.0,1.0,False
+MEX.15.28_2,México,Coatepec Harinas,15021,exacto,1:1,1.0,1.0,False
+MEX.15.29_2,México,Cocotitlán,15022,exacto,1:1,1.0,1.0,False
+MEX.15.30_2,México,Coyotepec,15023,exacto,1:1,1.0,1.0,False
+MEX.15.31_2,México,Cuautitlán,15024,exacto,1:1,1.0,1.0,False
+MEX.15.32_2,México,Cuautitlán Izcalli,15121,exacto,1:1,1.0,1.0,False
+MEX.15.33_2,México,Donato Guerra,15032,exacto,1:1,1.0,1.0,False
+MEX.15.34_2,México,Ecatepec de Morelos,15033,exacto,1:1,1.0,1.0,False
+MEX.15.35_2,México,Ecatzingo,15034,exacto,1:1,1.0,1.0,False
+MEX.15.36_2,México,El Oro,15064,exacto,1:1,1.0,0.982045319344546,False
+MEX.15.37_2,México,Huehuetoca,15035,exacto,1:1,1.0,1.0,False
+MEX.15.38_2,México,Hueypoxtla,15036,exacto,1:1,1.0,1.0,False
+MEX.15.39_2,México,Huixquilucan,15037,exacto,1:1,1.0,1.0,False
+MEX.15.40_2,México,Isidro Fabela,15038,exacto,1:1,1.0,1.0,False
+MEX.15.41_2,México,Ixtapaluca,15039,exacto,1:1,1.0,1.0,False
+MEX.15.42_2,México,Ixtapan de la Sal,15040,exacto,1:1,1.0,1.0,False
+MEX.15.43_2,México,Ixtapan del Oro,15041,exacto,1:1,1.0,1.0,False
+MEX.15.44_2,México,Ixtlahuaca,15042,exacto,1:1,0.9987033146519211,1.0,False
+MEX.15.45_2,México,Jaltenco,15044,exacto,1:1,1.0,1.0,False
+MEX.15.46_2,México,Jilotepec,15045,exacto,1:1,1.0,1.0,False
+MEX.15.47_2,México,Jilotzingo,15046,exacto,1:1,1.0,1.0,False
+MEX.15.48_2,México,Jiquipilco,15047,exacto,1:1,1.0,1.0,False
+MEX.15.49_2,México,Jocotitlán,15048,exacto,1:1,0.9692885890981503,0.9969997259365038,False
+MEX.15.50_2,México,Joquicingo,15049,exacto,1:1,1.0,1.0,False
+MEX.15.51_2,México,Juchitepec,15050,exacto,1:1,1.0,1.0,False
+MEX.15.52_2,México,La Paz,15070,exacto,1:1,1.0,1.0,False
+MEX.15.53_2,México,Lerma,15051,exacto,1:1,1.0,1.0,False
+MEX.15.54_2,México,Luvianos,15123,exacto,1:1,1.0,1.0,False
+MEX.15.55_2,México,Malinalco,15052,exacto,1:1,1.0,1.0,False
+MEX.15.56_2,México,Melchor Ocampo,15053,exacto,1:1,1.0,1.0,False
+MEX.15.57_2,México,Metepec,15054,exacto,1:1,1.0,1.0,False
+MEX.15.58_2,México,Mexicaltzingo,15055,exacto,1:1,1.0,1.0,False
+MEX.15.59_2,México,Morelos,15056,exacto,1:1,1.0,1.0,False
+MEX.15.60_2,México,Naucalpan de Juárez,15057,exacto,1:1,1.0,1.0,False
+MEX.15.61_2,México,Nextlalpan,15059,exacto,1:1,1.0,1.0,False
+MEX.15.62_2,México,Nezahualcóyotl,15058,exacto,1:1,1.0,1.0,False
+MEX.15.63_2,México,Nicolás Romero,15060,exacto,1:1,1.0,1.0,False
+MEX.15.64_2,México,Nopaltepec,15061,exacto,1:1,1.0,1.0,False
+MEX.15.65_2,México,Ocoyoacac,15062,exacto,1:1,0.9944038594073054,1.0,False
+MEX.15.66_2,México,Ocuilan,15063,exacto,1:1,1.0,1.0,False
+MEX.15.67_2,México,Otumba,15065,exacto,1:1,1.0,1.0,False
+MEX.15.68_2,México,Otzoloapan,15066,exacto,1:1,1.0,1.0,False
+MEX.15.69_2,México,Otzolotepec,15067,exacto,1:1,0.924966316644924,0.9738800508888664,False
+MEX.15.70_2,México,Ozumba,15068,exacto,1:1,1.0,1.0,False
+MEX.15.71_2,México,Papalotla,15069,exacto,1:1,1.0,1.0,False
+MEX.15.72_2,México,Polotitlán,15071,exacto,1:1,1.0,1.0,False
+MEX.15.73_2,México,Rayón,15072,exacto,1:1,1.0,1.0,False
+MEX.15.74_2,México,San Antonio la Isla,15073,exacto,1:1,1.0,1.0,False
+MEX.15.75_2,México,San Felipe del Progreso,15074,exacto,1:1,1.0,0.9848994676889979,False
+MEX.15.76_2,México,San José del Rincón,15124,exacto,1:1,0.9934186399183277,1.0,False
+MEX.15.77_2,México,San Martín de las Pirámides,15075,exacto,1:1,1.0,1.0,False
+MEX.15.78_2,México,San Mateo Atenco,15076,exacto,1:1,1.0,1.0,False
+MEX.15.79_2,México,San Simón de Guerrero,15077,exacto,1:1,1.0,1.0,False
+MEX.15.80_2,México,Santo Tomás,15078,exacto,1:1,1.0,0.9393753200204813,False
+MEX.15.81_2,México,Soyaniquilpan de Juárez,15079,exacto,1:1,1.0,1.0,False
+MEX.15.82_2,México,Sultepec,15080,exacto,1:1,1.0,1.0,False
+MEX.15.83_2,México,Tecámac,15081,exacto,1:1,1.0,1.0,False
+MEX.15.84_2,México,Tejupilco,15082,exacto,1:1,1.0,1.0,False
+MEX.15.85_2,México,Temamatla,15083,exacto,1:1,1.0,1.0,False
+MEX.15.86_2,México,Temascalapa,15084,exacto,1:1,1.0,1.0,False
+MEX.15.87_2,México,Temascalcingo,15085,exacto,1:1,1.0,1.0,False
+MEX.15.88_2,México,Temascaltepec,15086,exacto,1:1,1.0,1.0,False
+MEX.15.89_2,México,Temoaya,15087,exacto,1:1,1.0,1.0,False
+MEX.15.90_2,México,Tenancingo,15088,exacto,1:1,1.0,1.0,False
+MEX.15.91_2,México,Tenango del Aire,15089,exacto,1:1,1.0,1.0,False
+MEX.15.92_2,México,Tenango del Valle,15090,exacto,1:1,1.0,1.0,False
+MEX.15.93_2,México,Teoloyucan,15091,exacto,1:1,1.0,1.0,False
+MEX.15.94_2,México,Teotihuacán,15092,exacto,1:1,1.0,1.0,False
+MEX.15.95_2,México,Tepetlaoxtoc,15093,exacto,1:1,1.0,1.0,False
+MEX.15.96_2,México,Tepetlixpa,15094,exacto,1:1,1.0,1.0,False
+MEX.15.97_2,México,Tepotzotlán,15095,exacto,1:1,1.0,1.0,False
+MEX.15.98_2,México,Tequixquiac,15096,exacto,1:1,1.0,1.0,False
+MEX.15.99_2,México,Texcaltitlán,15097,exacto,1:1,1.0,1.0,False
+MEX.15.100_2,México,Texcalyacac,15098,exacto,1:1,1.0,1.0,False
+MEX.15.101_2,México,Texcoco,15099,exacto,1:1,1.0,1.0,False
+MEX.15.102_2,México,Tezoyuca,15100,exacto,1:1,1.0,1.0,False
+MEX.15.103_2,México,Tianguistenco,15101,exacto,1:1,1.0,1.0,False
+MEX.15.104_2,México,Timilpan,15102,exacto,1:1,1.0,1.0,False
+MEX.15.105_2,México,Tlalmanalco,15103,exacto,1:1,1.0,1.0,False
+MEX.15.106_2,México,Tlalnepantla de Baz,15104,exacto,1:1,1.0,1.0,False
+MEX.15.107_2,México,Tlatlaya,15105,exacto,1:1,1.0,1.0,False
+MEX.15.108_2,México,Toluca,15106,exacto,1:1,0.9974393670821808,0.9922951325485356,False
+MEX.15.109_2,México,Tonanitla,15125,exacto,1:1,1.0,1.0,False
+MEX.15.110_2,México,Tonatico,15107,exacto,1:1,1.0,1.0,False
+MEX.15.111_2,México,Tultepec,15108,exacto,1:1,1.0,1.0,False
+MEX.15.112_2,México,Tultitlán,15109,exacto,1:1,1.0,1.0,False
+MEX.15.113_2,México,Valle de Bravo,15110,exacto,1:1,0.9904910291212233,1.0,False
+MEX.15.114_2,México,Valle de Chalco Solidaridad,15122,exacto,1:1,1.0,1.0,False
+MEX.15.115_2,México,Villa de Allende,15111,exacto,1:1,1.0,1.0,False
+MEX.15.116_2,México,Villa del Carbón,15112,exacto,1:1,1.0,1.0,False
+MEX.15.117_2,México,Villa Guerrero,15113,exacto,1:1,1.0,1.0,False
+MEX.15.118_2,México,Villa Victoria,15114,exacto,1:1,1.0,1.0,False
+MEX.15.119_2,México,Xalatlaco,15043,exacto,1:1,1.0,1.0,False
+MEX.15.120_2,México,Xonacatlán,15115,exacto,1:1,1.0,1.0,False
+MEX.15.121_2,México,Zacazonapan,15116,exacto,1:1,1.0,1.0,False
+MEX.15.122_2,México,Zacualpan,15117,exacto,1:1,1.0,1.0,False
+MEX.15.123_2,México,Zinacantepec,15118,exacto,1:1,1.0,1.0,False
+MEX.15.124_2,México,Zumpahuacán,15119,exacto,1:1,1.0,1.0,False
+MEX.15.125_2,México,Zumpango,15120,exacto,1:1,1.0,1.0,False
+MEX.16.1_2,Michoacán,Acuitzio,16001,exacto,1:1,1.0,1.0,False
+MEX.16.2_2,Michoacán,Aguililla,16002,exacto,1:1,1.0,1.0,False
+MEX.16.3_2,Michoacán,Álvaro Obregón,16003,exacto,1:1,1.0,1.0,False
+MEX.16.4_2,Michoacán,Angamacutiro,16004,exacto,1:1,1.0,1.0,False
+MEX.16.5_2,Michoacán,Angangueo,16005,exacto,1:1,1.0,1.0,False
+MEX.16.6_2,Michoacán,Apatzingán,16006,exacto,1:1,1.0,1.0,False
+MEX.16.7_2,Michoacán,Aporo,16007,exacto,1:1,1.0,1.0,False
+MEX.16.8_2,Michoacán,Aquila,16008,exacto,1:1,1.0,1.0,False
+MEX.16.9_2,Michoacán,Ario,16009,exacto,1:1,1.0,1.0,False
+MEX.16.10_2,Michoacán,Arteaga,16010,exacto,1:1,0.9975073102919323,1.0,False
+MEX.16.11_2,Michoacán,Briseñas,16011,exacto,1:1,1.0,1.0,False
+MEX.16.12_2,Michoacán,Buenavista,16012,exacto,1:1,1.0,1.0,False
+MEX.16.13_2,Michoacán,Carácuaro,16013,exacto,1:1,1.0,1.0,False
+MEX.16.14_2,Michoacán,Charapan,16021,exacto,1:1,1.0,1.0,False
+MEX.16.15_2,Michoacán,Charo,16022,exacto,1:1,1.0,1.0,False
+MEX.16.16_2,Michoacán,Chavinda,16023,exacto,1:1,1.0,1.0,False
+MEX.16.17_2,Michoacán,Cherán,16024,exacto,1:1,1.0,1.0,False
+MEX.16.18_2,Michoacán,Chilchota,16025,exacto,1:1,1.0,1.0,False
+MEX.16.19_2,Michoacán,Chinicuila,16026,exacto,1:1,1.0,1.0,False
+MEX.16.20_2,Michoacán,Chucándiro,16027,exacto,1:1,1.0,1.0,False
+MEX.16.21_2,Michoacán,Churintzio,16028,exacto,1:1,1.0,1.0,False
+MEX.16.22_2,Michoacán,Churumuco,16029,exacto,1:1,1.0,1.0,False
+MEX.16.23_2,Michoacán,Coahuayana,16014,exacto,1:1,1.0,1.0,False
+MEX.16.24_2,Michoacán,Coalcomán de Vázquez Pallares,16015,exacto,1:1,1.0,1.0,False
+MEX.16.25_2,Michoacán,Coeneo,16016,exacto,1:1,1.0,1.0,False
+MEX.16.26_2,Michoacán,Cojumatlán de Régules,16074,exacto,1:1,1.0,1.0,False
+MEX.16.27_2,Michoacán,Contepec,16017,exacto,1:1,1.0,1.0,False
+MEX.16.28_2,Michoacán,Copándaro,16018,exacto,1:1,1.0,1.0,False
+MEX.16.29_2,Michoacán,Cotija,16019,exacto,1:1,1.0,1.0,False
+MEX.16.30_2,Michoacán,Cuitzeo,16020,exacto,1:1,1.0,1.0,False
+MEX.16.31_2,Michoacán,Ecuandureo,16030,exacto,1:1,1.0,1.0,False
+MEX.16.32_2,Michoacán,Epitacio Huerta,16031,exacto,1:1,1.0,1.0,False
+MEX.16.33_2,Michoacán,Erongarícuaro,16032,exacto,1:1,1.0,1.0,False
+MEX.16.34_2,Michoacán,Gabriel Zamora,16033,exacto,1:1,1.0,1.0,False
+MEX.16.35_2,Michoacán,Hidalgo,16034,exacto,1:1,1.0,1.0,False
+MEX.16.36_2,Michoacán,Huandacareo,16036,exacto,1:1,1.0,1.0,False
+MEX.16.37_2,Michoacán,Huaniqueo,16037,exacto,1:1,1.0,1.0,False
+MEX.16.38_2,Michoacán,Huetamo,16038,exacto,1:1,1.0,1.0,False
+MEX.16.39_2,Michoacán,Huiramba,16039,exacto,1:1,1.0,1.0,False
+MEX.16.40_2,Michoacán,Indaparapeo,16040,exacto,1:1,1.0,1.0,False
+MEX.16.41_2,Michoacán,Irimbo,16041,exacto,1:1,1.0,1.0,False
+MEX.16.42_2,Michoacán,Ixtlán,16042,exacto,1:1,1.0,1.0,False
+MEX.16.43_2,Michoacán,Jacona,16043,exacto,1:1,1.0,1.0,False
+MEX.16.44_2,Michoacán,Jiménez,16044,exacto,1:1,1.0,1.0,False
+MEX.16.45_2,Michoacán,Jiquilpan,16045,exacto,1:1,1.0,1.0,False
+MEX.16.46_2,Michoacán,José Sixto Verduzco,16113,exacto,1:1,1.0,1.0,False
+MEX.16.47_2,Michoacán,Juárez,16046,exacto,1:1,1.0,1.0,False
+MEX.16.48_2,Michoacán,Jungapeo,16047,exacto,1:1,1.0,1.0,False
+MEX.16.49_2,Michoacán,La Huacana,16035,exacto,1:1,1.0,1.0,False
+MEX.16.50_2,Michoacán,La Piedad,16069,exacto,1:1,1.0,1.0,False
+MEX.16.51_2,Michoacán,Lagunillas,16048,exacto,1:1,1.0,1.0,False
+MEX.16.52_2,Michoacán,Lázaro Cárdenas,16052,exacto,1:1,1.0,1.0,False
+MEX.16.53_2,Michoacán,Los Reyes,16075,exacto,1:1,1.0,1.0,False
+MEX.16.54_2,Michoacán,Madero,16049,exacto,1:1,1.0,1.0,False
+MEX.16.55_2,Michoacán,Maravatío,16050,exacto,1:1,1.0,1.0,False
+MEX.16.56_2,Michoacán,Marcos Castellanos,16051,exacto,1:1,1.0,1.0,False
+MEX.16.57_2,Michoacán,Morelia,16053,exacto,1:1,1.0,0.999989395021316,False
+MEX.16.58_2,Michoacán,Morelos,16054,exacto,1:1,1.0,1.0,False
+MEX.16.59_2,Michoacán,Múgica,16055,exacto,1:1,1.0,1.0,False
+MEX.16.60_2,Michoacán,Nahuatzen,16056,exacto,1:1,1.0,1.0,False
+MEX.16.61_2,Michoacán,Nocupétaro,16057,exacto,1:1,1.0,1.0,False
+MEX.16.62_2,Michoacán,Nuevo Parangaricutiro,16058,exacto,1:1,1.0,1.0,False
+MEX.16.63_2,Michoacán,Nuevo Urecho,16059,exacto,1:1,1.0,1.0,False
+MEX.16.64_2,Michoacán,Numarán,16060,exacto,1:1,1.0,1.0,False
+MEX.16.65_2,Michoacán,Ocampo,16061,exacto,1:1,1.0,1.0,False
+MEX.16.66_2,Michoacán,Pajacuarán,16062,exacto,1:1,1.0,1.0,False
+MEX.16.67_2,Michoacán,Panindícuaro,16063,exacto,1:1,1.0,1.0,False
+MEX.16.68_2,Michoacán,Paracho,16065,exacto,1:1,1.0,1.0,False
+MEX.16.69_2,Michoacán,Parácuaro,16064,exacto,1:1,1.0,1.0,False
+MEX.16.70_2,Michoacán,Pátzcuaro,16066,exacto,1:1,1.0,1.0,False
+MEX.16.71_2,Michoacán,Penjamillo,16067,exacto,1:1,1.0,1.0,False
+MEX.16.72_2,Michoacán,Peribán,16068,exacto,1:1,1.0,1.0,False
+MEX.16.73_2,Michoacán,Purépero,16070,exacto,1:1,1.0,1.0,False
+MEX.16.74_2,Michoacán,Puruándiro,16071,exacto,1:1,1.0,1.0,False
+MEX.16.75_2,Michoacán,Queréndaro,16072,exacto,1:1,1.0,1.0,False
+MEX.16.76_2,Michoacán,Quiroga,16073,exacto,1:1,1.0,1.0,False
+MEX.16.77_2,Michoacán,Sahuayo,16076,exacto,1:1,1.0,1.0,False
+MEX.16.78_2,Michoacán,Salvador Escalante,16079,exacto,1:1,1.0,1.0,False
+MEX.16.79_2,Michoacán,San Lucas,16077,exacto,1:1,1.0,1.0,False
+MEX.16.80_2,Michoacán,Santa Ana Maya,16078,exacto,1:1,1.0,1.0,False
+MEX.16.81_2,Michoacán,Senguio,16080,exacto,1:1,1.0,1.0,False
+MEX.16.82_2,Michoacán,Susupuato,16081,exacto,1:1,1.0,1.0,False
+MEX.16.83_2,Michoacán,Tacámbaro,16082,exacto,1:1,1.0,1.0,False
+MEX.16.84_2,Michoacán,Tancítaro,16083,exacto,1:1,1.0,1.0,False
+MEX.16.85_2,Michoacán,Tangamandapio,16084,exacto,1:1,1.0,1.0,False
+MEX.16.86_2,Michoacán,Tangancícuaro,16085,exacto,1:1,1.0,1.0,False
+MEX.16.87_2,Michoacán,Tanhuato,16086,exacto,1:1,1.0,1.0,False
+MEX.16.88_2,Michoacán,Taretan,16087,exacto,1:1,1.0,1.0,False
+MEX.16.89_2,Michoacán,Tarímbaro,16088,exacto,1:1,0.9999213809008002,1.0,False
+MEX.16.90_2,Michoacán,Tepalcatepec,16089,exacto,1:1,1.0,1.0,False
+MEX.16.91_2,Michoacán,Tingambato,16090,exacto,1:1,1.0,1.0,False
+MEX.16.92_2,Michoacán,Tingüindín,16091,exacto,1:1,1.0,1.0,False
+MEX.16.93_2,Michoacán,Tiquicheo de Nicolás Romero,16092,exacto,1:1,1.0,1.0,False
+MEX.16.94_2,Michoacán,Tlalpujahua,16093,exacto,1:1,1.0,1.0,False
+MEX.16.95_2,Michoacán,Tlazazalca,16094,exacto,1:1,1.0,1.0,False
+MEX.16.96_2,Michoacán,Tocumbo,16095,exacto,1:1,1.0,1.0,False
+MEX.16.97_2,Michoacán,Tumbiscatío,16096,exacto,1:1,1.0,0.9916999201915403,False
+MEX.16.98_2,Michoacán,Turicato,16097,exacto,1:1,1.0,1.0,False
+MEX.16.99_2,Michoacán,Tuxpan,16098,exacto,1:1,1.0,1.0,False
+MEX.16.100_2,Michoacán,Tuzantla,16099,exacto,1:1,1.0,1.0,False
+MEX.16.101_2,Michoacán,Tzintzuntzan,16100,exacto,1:1,1.0,1.0,False
+MEX.16.102_2,Michoacán,Tzitzio,16101,exacto,1:1,1.0,1.0,False
+MEX.16.103_2,Michoacán,Uruapan,16102,exacto,1:1,1.0,1.0,False
+MEX.16.104_2,Michoacán,Venustiano Carranza,16103,exacto,1:1,1.0,1.0,False
+MEX.16.105_2,Michoacán,Villamar,16104,exacto,1:1,1.0,1.0,False
+MEX.16.106_2,Michoacán,Vista Hermosa,16105,exacto,1:1,1.0,1.0,False
+MEX.16.107_2,Michoacán,Yurécuaro,16106,exacto,1:1,1.0,1.0,False
+MEX.16.108_2,Michoacán,Zacapu,16107,exacto,1:1,1.0,1.0,False
+MEX.16.109_2,Michoacán,Zamora,16108,exacto,1:1,1.0,1.0,False
+MEX.16.110_2,Michoacán,Zináparo,16109,exacto,1:1,1.0,1.0,False
+MEX.16.111_2,Michoacán,Zinapécuaro,16110,exacto,1:1,1.0,1.0,False
+MEX.16.112_2,Michoacán,Ziracuaretiro,16111,exacto,1:1,1.0,1.0,False
+MEX.16.113_2,Michoacán,Zitácuaro,16112,exacto,1:1,1.0,1.0,False
+MEX.17.1_2,Morelos,Amacuzac,17001,exacto,1:1,1.0,1.0,False
+MEX.17.2_2,Morelos,Atlatlahucan,17002,exacto,1:1,1.0,1.0,False
+MEX.17.3_2,Morelos,Axochiapan,17003,exacto,1:1,1.0,1.0,False
+MEX.17.4_2,Morelos,Ayala,17004,exacto,1:1,0.990600614151909,1.0,False
+MEX.17.5_2,Morelos,Coatlán del Río,17005,exacto,1:1,1.0,1.0,False
+MEX.17.6_2,Morelos,Cuautla,17006,exacto,1:1,1.0,0.99400532497019,False
+MEX.17.7_2,Morelos,Cuernavaca,17007,exacto,1:1,1.0,1.0,False
+MEX.17.8_2,Morelos,Emiliano Zapata,17008,exacto,1:1,1.0,1.0,False
+MEX.17.9_2,Morelos,Huitzilac,17009,exacto,1:1,1.0,1.0,False
+MEX.17.10_2,Morelos,Jantetelco,17010,exacto,1:1,1.0,1.0,False
+MEX.17.11_2,Morelos,Jiutepec,17011,exacto,1:1,1.0,1.0,False
+MEX.17.12_2,Morelos,Jojutla,17012,exacto,1:1,0.9993064586042479,1.0,False
+MEX.17.13_2,Morelos,Jonacatepec,17013,prefijo,1:1,1.0,1.0,False
+MEX.17.14_2,Morelos,Mazatepec,17014,exacto,1:1,1.0,1.0,False
+MEX.17.15_2,Morelos,Miacatlán,17015,exacto,1:n,0.5823468862583634,1.0,False
+MEX.17.16_2,Morelos,Ocuituco,17016,exacto,1:1,1.0,1.0,False
+MEX.17.17_2,Morelos,Puente de Ixtla,17017,exacto,1:n,0.5742278922490937,1.0,False
+MEX.17.18_2,Morelos,Temixco,17018,exacto,1:1,1.0,1.0,False
+MEX.17.19_2,Morelos,Temoac,17033,exacto,1:1,1.0,1.0,False
+MEX.17.20_2,Morelos,Tepalcingo,17019,exacto,1:1,1.0,1.0,False
+MEX.17.21_2,Morelos,Tepoztlán,17020,exacto,1:1,1.0,1.0,False
+MEX.17.22_2,Morelos,Tetecala,17021,exacto,1:1,1.0,1.0,False
+MEX.17.23_2,Morelos,Tetela del Volcán,17022,exacto,1:n,0.9661820070102557,1.0,False
+MEX.17.24_2,Morelos,Tlalnepantla,17023,exacto,1:1,1.0,1.0,False
+MEX.17.25_2,Morelos,Tlaltizapán de Zapata,17024,exacto,1:1,1.0,1.0,False
+MEX.17.26_2,Morelos,Tlaquiltenango,17025,exacto,1:1,1.0,1.0,False
+MEX.17.27_2,Morelos,Tlayacapan,17026,exacto,1:1,0.9994051160023796,0.9302840688853203,False
+MEX.17.28_2,Morelos,Totolapan,17027,exacto,1:1,1.0,1.0,False
+MEX.17.29_2,Morelos,Xochitepec,17028,exacto,1:1,1.0,1.0,False
+MEX.17.30_2,Morelos,Yautepec,17029,exacto,1:1,0.9882032329114869,0.9999055659433018,False
+MEX.17.31_2,Morelos,Yecapixtla,17030,exacto,1:1,0.9957104367555304,1.0,False
+MEX.17.32_2,Morelos,Zacatepec,17031,exacto,1:1,1.0,0.9988925189656127,False
+MEX.17.33_2,Morelos,Zacualpan,17032,prefijo,1:1,1.0,1.0,False
+MEX.18.1_2,Nayarit,Acaponeta,18001,exacto,1:1,1.0,0.9981827899518974,False
+MEX.18.2_2,Nayarit,Ahuacatlán,18002,exacto,1:1,1.0,1.0,False
+MEX.18.3_2,Nayarit,Amatlán de Cañas,18003,exacto,1:1,1.0,1.0,False
+MEX.18.4_2,Nayarit,Bahía de Banderas,18020,exacto,1:1,1.0,1.0,False
+MEX.18.5_2,Nayarit,Compostela,18004,exacto,1:1,1.0,1.0,False
+MEX.18.6_2,Nayarit,Del Nayar,18009,exacto,1:1,1.0,1.0,False
+MEX.18.7_2,Nayarit,Huajicori,18005,exacto,1:1,1.0,1.0,False
+MEX.18.8_2,Nayarit,Ixtlán del Río,18006,exacto,1:1,1.0,1.0,False
+MEX.18.9_2,Nayarit,Jala,18007,exacto,1:1,1.0,1.0,False
+MEX.18.10_2,Nayarit,La Yesca,18019,exacto,1:1,1.0,1.0,False
+MEX.18.11_2,Nayarit,Rosamorada,18010,exacto,1:1,1.0,1.0,False
+MEX.18.12_2,Nayarit,Ruíz,18011,exacto,1:1,1.0,1.0,False
+MEX.18.13_2,Nayarit,San Blas,18012,exacto,1:1,1.0,1.0,False
+MEX.18.14_2,Nayarit,San Pedro Lagunillas,18013,exacto,1:1,1.0,1.0,False
+MEX.18.15_2,Nayarit,Santa María del Oro,18014,exacto,1:1,1.0,1.0,False
+MEX.18.16_2,Nayarit,Santiago Ixcuintla,18015,exacto,1:1,1.0,1.0,False
+MEX.18.17_2,Nayarit,Tecuala,18016,exacto,1:1,0.998179286708793,1.0,False
+MEX.18.18_2,Nayarit,Tepic,18017,exacto,1:1,0.9953199111623855,1.0,False
+MEX.18.19_2,Nayarit,Tuxpan,18018,exacto,1:1,1.0,1.0,False
+MEX.18.20_2,Nayarit,Xalisco,18008,exacto,1:1,1.0,0.9692345481899967,False
+MEX.19.1_2,Nuevo León,Abasolo,19001,exacto,1:1,1.0,1.0,False
+MEX.19.2_2,Nuevo León,Agualeguas,19002,exacto,1:1,1.0,1.0,False
+MEX.19.3_2,Nuevo León,Allende,19004,exacto,1:1,1.0,1.0,False
+MEX.19.4_2,Nuevo León,Anáhuac,19005,exacto,1:1,1.0,1.0,False
+MEX.19.5_2,Nuevo León,Apodaca,19006,exacto,1:1,1.0,0.9999984768217973,False
+MEX.19.6_2,Nuevo León,Aramberri,19007,exacto,1:1,1.0,1.0,False
+MEX.19.7_2,Nuevo León,Bustamante,19008,exacto,1:1,1.0,1.0,False
+MEX.19.8_2,Nuevo León,Cadereyta Jiménez,19009,exacto,1:1,1.0,1.0,False
+MEX.19.9_2,Nuevo León,Cerralvo,19011,exacto,1:1,1.0,1.0,False
+MEX.19.10_2,Nuevo León,China,19013,exacto,1:1,1.0,1.0,False
+MEX.19.11_2,Nuevo León,Ciénega de Flores,19012,exacto,1:1,1.0,1.0,False
+MEX.19.12_2,Nuevo León,Doctor Arroyo,19014,exacto,1:1,1.0,1.0,False
+MEX.19.13_2,Nuevo León,Doctor Coss,19015,exacto,1:1,1.0,1.0,False
+MEX.19.14_2,Nuevo León,Doctor González,19016,exacto,1:1,1.0,1.0,False
+MEX.19.15_2,Nuevo León,El Carmen,19010,exacto,1:1,0.9999234728041477,1.0,False
+MEX.19.16_2,Nuevo León,Galeana,19017,exacto,1:1,1.0,1.0,False
+MEX.19.17_2,Nuevo León,García,19018,exacto,1:1,1.0,1.0,False
+MEX.19.18_2,Nuevo León,General Bravo,19020,exacto,1:1,1.0,1.0,False
+MEX.19.19_2,Nuevo León,General Escobedo,19021,exacto,1:1,1.0,1.0,False
+MEX.19.20_2,Nuevo León,General Terán,19022,exacto,1:1,1.0,1.0,False
+MEX.19.21_2,Nuevo León,General Treviño,19023,exacto,1:1,1.0,1.0,False
+MEX.19.22_2,Nuevo León,General Zaragoza,19024,exacto,1:1,1.0,1.0,False
+MEX.19.23_2,Nuevo León,General Zuazua,19025,exacto,1:1,1.0,1.0,False
+MEX.19.24_2,Nuevo León,Guadalupe,19026,exacto,1:1,0.9999984451575988,1.0,False
+MEX.19.25_2,Nuevo León,Hidalgo,19047,exacto,1:1,1.0,1.0,False
+MEX.19.26_2,Nuevo León,Higueras,19028,exacto,1:1,1.0,1.0,False
+MEX.19.27_2,Nuevo León,Hualahuises,19029,exacto,1:1,1.0,1.0,False
+MEX.19.28_2,Nuevo León,Iturbide,19030,exacto,1:1,1.0,1.0,False
+MEX.19.29_2,Nuevo León,Juárez,19031,exacto,1:1,1.0,1.0,False
+MEX.19.30_2,Nuevo León,Lampazos de Naranjo,19032,exacto,1:1,1.0,1.0,False
+MEX.19.31_2,Nuevo León,Linares,19033,exacto,1:1,1.0,1.0,False
+MEX.19.32_2,Nuevo León,Los Aldamas,19003,exacto,1:1,1.0,1.0,False
+MEX.19.33_2,Nuevo León,Los Herreras,19027,exacto,1:1,1.0,1.0,False
+MEX.19.34_2,Nuevo León,Los Ramones,19042,exacto,1:1,1.0,1.0,False
+MEX.19.35_2,Nuevo León,Marín,19034,exacto,1:1,1.0,1.0,False
+MEX.19.36_2,Nuevo León,Melchor Ocampo,19035,exacto,1:1,1.0,1.0,False
+MEX.19.37_2,Nuevo León,Mier y Noriega,19036,exacto,1:1,1.0,1.0,False
+MEX.19.38_2,Nuevo León,Mina,19037,exacto,1:1,1.0,1.0,False
+MEX.19.39_2,Nuevo León,Montemorelos,19038,exacto,1:1,1.0,1.0,False
+MEX.19.40_2,Nuevo León,Monterrey,19039,exacto,1:1,1.0,1.0,False
+MEX.19.41_2,Nuevo León,Parás,19040,exacto,1:1,1.0,1.0,False
+MEX.19.42_2,Nuevo León,Pesquería,19041,exacto,1:1,1.0,1.0,False
+MEX.19.43_2,Nuevo León,Rayones,19043,exacto,1:1,1.0,1.0,False
+MEX.19.44_2,Nuevo León,Sabinas Hidalgo,19044,exacto,1:1,1.0,1.0,False
+MEX.19.45_2,Nuevo León,Salinas Victoria,19045,exacto,1:1,1.0,0.9999081599853056,False
+MEX.19.46_2,Nuevo León,San Nicolás de los Garza,19046,exacto,1:1,1.0,1.0,False
+MEX.19.47_2,Nuevo León,San Pedro Garza García,19019,exacto,1:1,1.0,1.0,False
+MEX.19.48_2,Nuevo León,Santa Catarina,19048,exacto,1:1,1.0,1.0,False
+MEX.19.49_2,Nuevo León,Santiago,19049,exacto,1:1,1.0,1.0,False
+MEX.19.50_2,Nuevo León,Vallecillo,19050,exacto,1:1,1.0,1.0,False
+MEX.19.51_2,Nuevo León,Villaldama,19051,exacto,1:1,1.0,1.0,False
+MEX.20.1_2,Oaxaca,Abejones,20001,exacto,1:1,0.9894242068155111,1.0,False
+MEX.20.2_2,Oaxaca,Acatlán de Pérez Figueroa,20002,exacto,1:1,1.0,1.0,False
+MEX.20.3_2,Oaxaca,Ánimas Trujano,20174,exacto,1:1,1.0,1.0,False
+MEX.20.4_2,Oaxaca,Asunción Cacalotepec,20003,exacto,1:1,1.0,1.0,False
+MEX.20.5_2,Oaxaca,Asunción Cuyotepeji,20004,exacto,1:1,1.0,1.0,False
+MEX.20.6_2,Oaxaca,Asunción Ixtaltepec,20005,exacto,1:1,1.0,1.0,False
+MEX.20.7_2,Oaxaca,Asunción Nochixtlán,20006,exacto,1:1,1.0,1.0,False
+MEX.20.8_2,Oaxaca,Asunción Ocotlán,20007,exacto,1:1,1.0,1.0,False
+MEX.20.9_2,Oaxaca,Asunción Tlacolulita,20008,exacto,1:1,1.0,1.0,False
+MEX.20.10_2,Oaxaca,Ayoquezco de Aldama,20398,exacto,1:1,1.0,1.0,False
+MEX.20.11_2,Oaxaca,Ayotzintepec,20009,exacto,n:1,1.0,0.8996212121212122,False
+MEX.20.12_2,Oaxaca,Calihualá,20011,exacto,1:1,1.0,1.0,False
+MEX.20.13_2,Oaxaca,Candelaria Loxicha,20012,exacto,1:1,1.0,1.0,False
+MEX.20.14_2,Oaxaca,Capulálpam de Méndez,20247,exacto,1:1,1.0,1.0,False
+MEX.20.15_2,Oaxaca,Chahuites,20025,exacto,1:1,1.0,1.0,False
+MEX.20.16_2,Oaxaca,Chalcatongo de Hidalgo,20026,exacto,1:1,1.0,0.9785942844532716,False
+MEX.20.17_2,Oaxaca,Chiquihuitlán de Benito Juárez,20027,exacto,1:1,1.0,1.0,False
+MEX.20.18_2,Oaxaca,Ciénega de Zimatlán,20013,exacto,1:1,1.0,0.9996720236142997,False
+MEX.20.19_2,Oaxaca,Ciudad Ixtepec,20014,exacto,1:1,1.0,1.0,False
+MEX.20.20_2,Oaxaca,Coatecas Altas,20015,exacto,ambiguo,0.7319166326113609,1.0,False
+MEX.20.21_2,Oaxaca,Coicoyán de las Flores,20016,exacto,1:1,1.0,1.0,False
+MEX.20.22_2,Oaxaca,Concepción Buenavista,20018,exacto,1:1,1.0,1.0,False
+MEX.20.23_2,Oaxaca,Concepción Pápalo,20019,exacto,1:1,1.0,1.0,False
+MEX.20.24_2,Oaxaca,Constancia del Rosario,20020,exacto,1:1,1.0,1.0,False
+MEX.20.25_2,Oaxaca,Cosolapa,20021,exacto,1:1,1.0,0.995042687964748,False
+MEX.20.26_2,Oaxaca,Cosoltepec,20022,exacto,1:1,1.0,1.0,False
+MEX.20.27_2,Oaxaca,Cuilápam de Guerrero,20023,exacto,1:1,1.0,1.0,False
+MEX.20.28_2,Oaxaca,Cuyamecalco Villa de Zaragoza,20024,exacto,1:1,1.0,1.0,False
+MEX.20.29_2,Oaxaca,El Barrio de la Soledad,20010,exacto,1:1,1.0,1.0,False
+MEX.20.30_2,Oaxaca,El Espinal,20030,exacto,1:1,1.0,1.0,False
+MEX.20.31_2,Oaxaca,Eloxochitlán de Flores Magón,20029,exacto,1:1,1.0,1.0,False
+MEX.20.32_2,Oaxaca,Fresnillo de Trujano,20032,exacto,1:1,1.0,1.0,False
+MEX.20.33_2,Oaxaca,Guadalupe de Ramírez,20034,exacto,1:1,0.964152352501867,1.0,False
+MEX.20.34_2,Oaxaca,Guadalupe Etla,20033,exacto,1:1,1.0,1.0,False
+MEX.20.35_2,Oaxaca,Guelatao de Juárez,20035,exacto,1:1,1.0,1.0,False
+MEX.20.36_2,Oaxaca,Guevea de Humboldt,20036,exacto,1:1,1.0,1.0,False
+MEX.20.37_2,Oaxaca,Heroica Ciudad de Ejutla de Cres,20028,prefijo,1:1,1.0,0.9670648164412436,False
+MEX.20.38_2,Oaxaca,Heroica Ciudad de Huajuapan de L,20039,prefijo,1:1,1.0,0.9743776238053312,False
+MEX.20.39_2,Oaxaca,Heroica Ciudad de Juchitán de Za,20043,prefijo,1:1,1.0,0.9674978436446326,False
+MEX.20.40_2,Oaxaca,Heroica Ciudad de Tlaxiaco,20397,exacto,1:1,0.995959959856926,0.9746417869104278,False
+MEX.20.41_2,Oaxaca,Heroica Villa Tezoatlán de Segur,20549,prefijo,1:1,1.0,1.0,False
+MEX.20.42_2,Oaxaca,Huautepec,20040,exacto,1:1,0.9092198581560283,1.0,False
+MEX.20.43_2,Oaxaca,Huautla de Jiménez,20041,exacto,1:1,0.9885254215798149,0.9798906554389493,False
+MEX.20.44_2,Oaxaca,Ixpantepec Nieves,20065,exacto,1:1,1.0,1.0,False
+MEX.20.45_2,Oaxaca,Ixtlán de Juárez,20042,exacto,1:1,1.0,1.0,False
+MEX.20.46_2,Oaxaca,La Compañía,20017,exacto,1:1,1.0,1.0,False
+MEX.20.47_2,Oaxaca,La Pe,20069,exacto,1:1,1.0,1.0,False
+MEX.20.48_2,Oaxaca,La Reforma,20076,exacto,1:1,1.0,1.0,False
+MEX.20.49_2,Oaxaca,La Trinidad Vista Hermosa,20556,exacto,1:1,1.0,1.0,False
+MEX.20.50_2,Oaxaca,Loma Bonita,20044,exacto,1:1,1.0,0.9962581397609097,False
+MEX.20.51_2,Oaxaca,Magdalena Apasco,20045,exacto,1:1,1.0,1.0,False
+MEX.20.52_2,Oaxaca,Magdalena Jaltepec,20046,exacto,1:1,0.9880159786950732,1.0,False
+MEX.20.53_2,Oaxaca,Magdalena Mixtepec,20048,exacto,1:1,1.0,1.0,False
+MEX.20.54_2,Oaxaca,Magdalena Ocotlán,20049,exacto,1:1,1.0,1.0,False
+MEX.20.55_2,Oaxaca,Magdalena Peñasco,20050,exacto,1:1,0.954638124362895,1.0,False
+MEX.20.56_2,Oaxaca,Magdalena Teitipac,20051,exacto,1:1,1.0,1.0,False
+MEX.20.57_2,Oaxaca,Magdalena Tequisistlán,20052,exacto,1:1,1.0,1.0,False
+MEX.20.58_2,Oaxaca,Magdalena Tlacotepec,20053,exacto,1:1,1.0,1.0,False
+MEX.20.59_2,Oaxaca,Magdalena Yodocono de Porfirio D,20562,prefijo,1:1,1.0,1.0,False
+MEX.20.60_2,Oaxaca,Magdalena Zahuatlán,20054,exacto,1:1,1.0,1.0,False
+MEX.20.61_2,Oaxaca,Mariscala de Juárez,20055,exacto,1:1,1.0,1.0,False
+MEX.20.62_2,Oaxaca,Mártires de Tacubaya,20056,exacto,1:1,1.0,1.0,False
+MEX.20.63_2,Oaxaca,Matías Romero Avendaño,20057,exacto,1:1,0.9403083862427377,1.0,False
+MEX.20.64_2,Oaxaca,Mazatlán Villa de Flores,20058,exacto,1:1,1.0,1.0,False
+MEX.20.65_2,Oaxaca,Mesones Hidalgo,20037,exacto,1:1,1.0,0.9804538305998652,False
+MEX.20.66_2,Oaxaca,Miahuatlán de Porfirio Díaz,20059,exacto,1:1,1.0,0.9860044295744781,False
+MEX.20.67_2,Oaxaca,Mixistlán de la Reforma,20060,exacto,1:1,1.0,1.0,False
+MEX.20.68_2,Oaxaca,Monjas,20061,exacto,n:1,1.0,0.5798551224560193,False
+MEX.20.69_2,Oaxaca,Natividad,20062,exacto,1:1,1.0,1.0,False
+MEX.20.70_2,Oaxaca,Nazareno Etla,20063,exacto,1:1,1.0,1.0,False
+MEX.20.71_2,Oaxaca,Nejapa de Madero,20064,exacto,1:1,0.9998826841858283,1.0,False
+MEX.20.72_2,Oaxaca,Nuevo Zoquiápam,20504,exacto,1:1,1.0,1.0,False
+MEX.20.73_2,Oaxaca,Oaxaca de Juárez,20067,exacto,1:1,1.0,1.0,False
+MEX.20.74_2,Oaxaca,Ocotlán de Morelos,20068,exacto,1:1,1.0,1.0,False
+MEX.20.75_2,Oaxaca,Pinotepa de Don Luis,20070,exacto,1:1,1.0,1.0,False
+MEX.20.76_2,Oaxaca,Pluma Hidalgo,20071,exacto,1:1,1.0,1.0,False
+MEX.20.77_2,Oaxaca,Putla Villa de Guerrero,20073,exacto,1:1,0.9972675879396985,0.9481054611686722,False
+MEX.20.78_2,Oaxaca,Reforma de Pineda,20075,exacto,1:1,1.0,1.0,False
+MEX.20.79_2,Oaxaca,Reyes Etla,20077,exacto,1:1,1.0,1.0,False
+MEX.20.80_2,Oaxaca,Rojas de Cuauhtémoc,20078,exacto,1:1,1.0,1.0,False
+MEX.20.81_2,Oaxaca,Salina Cruz,20079,exacto,1:1,1.0,1.0,False
+MEX.20.82_2,Oaxaca,San Agustín Amatengo,20080,exacto,1:1,1.0,1.0,False
+MEX.20.83_2,Oaxaca,San Agustín Atenango,20081,exacto,1:1,1.0,1.0,False
+MEX.20.84_2,Oaxaca,San Agustín Chayuco,20082,exacto,1:1,0.9132050721469174,1.0,False
+MEX.20.85_2,Oaxaca,San Agustín de las Juntas,20083,exacto,1:1,0.9995616726571404,1.0,False
+MEX.20.86_2,Oaxaca,San Agustín Etla,20084,exacto,1:1,1.0,1.0,False
+MEX.20.87_2,Oaxaca,San Agustín Loxicha,20085,exacto,1:1,1.0,1.0,False
+MEX.20.88_2,Oaxaca,San Agustín Tlacotepec,20086,exacto,1:1,1.0,1.0,False
+MEX.20.89_2,Oaxaca,San Agustín Yatareni,20087,exacto,1:1,1.0,1.0,False
+MEX.20.90_2,Oaxaca,San Andrés Cabecera Nueva,20088,exacto,1:1,0.9618218352310783,0.9798703514158991,False
+MEX.20.91_2,Oaxaca,San Andrés Dinicuiti,20089,exacto,1:1,1.0,1.0,False
+MEX.20.92_2,Oaxaca,San Andrés Huaxpaltepec,20090,exacto,1:1,1.0,1.0,False
+MEX.20.93_2,Oaxaca,San Andrés Huayápam,20091,exacto,1:1,1.0,1.0,False
+MEX.20.94_2,Oaxaca,San Andrés Ixtlahuaca,20092,exacto,1:1,1.0,1.0,False
+MEX.20.95_2,Oaxaca,San Andrés Lagunas,20093,exacto,1:1,1.0,1.0,False
+MEX.20.96_2,Oaxaca,San Andrés Nuxiño,20094,exacto,1:1,1.0,1.0,False
+MEX.20.97_2,Oaxaca,San Andrés Paxtlán,20095,exacto,1:1,1.0,1.0,False
+MEX.20.98_2,Oaxaca,San Andrés Sinaxtla,20096,exacto,1:1,1.0,1.0,False
+MEX.20.99_2,Oaxaca,San Andrés Solaga,20097,exacto,1:1,1.0,1.0,False
+MEX.20.100_2,Oaxaca,San Andrés Teotilálpam,20098,exacto,1:1,0.9855140186915888,0.9901408450704225,False
+MEX.20.101_2,Oaxaca,San Andrés Tepetlapa,20099,exacto,1:1,1.0,1.0,False
+MEX.20.102_2,Oaxaca,San Andrés Yaá,20100,exacto,1:1,1.0,1.0,False
+MEX.20.103_2,Oaxaca,San Andrés Zabache,20101,exacto,1:1,1.0,1.0,False
+MEX.20.104_2,Oaxaca,San Andrés Zautla,20102,exacto,1:1,1.0,1.0,False
+MEX.20.105_2,Oaxaca,San Antonino Castillo Velasco,20103,exacto,1:1,1.0,1.0,False
+MEX.20.106_2,Oaxaca,San Antonino el Alto,20104,exacto,1:1,1.0,1.0,False
+MEX.20.107_2,Oaxaca,San Antonino Monte Verde,20105,exacto,1:1,1.0,1.0,False
+MEX.20.108_2,Oaxaca,San Antonio Acutla,20106,exacto,1:1,1.0,1.0,False
+MEX.20.109_2,Oaxaca,San Antonio de la Cal,20107,exacto,1:1,1.0,1.0,False
+MEX.20.110_2,Oaxaca,San Antonio Huitepec,20108,exacto,ambiguo,0.6128834355828221,1.0,False
+MEX.20.111_2,Oaxaca,San Antonio Nanahuatípam,20109,exacto,1:1,0.9327286470143613,1.0,False
+MEX.20.112_2,Oaxaca,San Antonio Sinicahua,20110,exacto,1:1,1.0,0.9064362336114422,False
+MEX.20.113_2,Oaxaca,San Antonio Tepetlapa,20111,exacto,1:1,1.0,1.0,False
+MEX.20.114_2,Oaxaca,San Baltazar Chichicápam,20112,exacto,1:1,1.0,1.0,False
+MEX.20.115_2,Oaxaca,San Baltazar Loxicha,20113,exacto,1:1,1.0,1.0,False
+MEX.20.116_2,Oaxaca,San Baltazar Yatzachi el Bajo,20114,exacto,1:1,1.0,1.0,False
+MEX.20.117_2,Oaxaca,San Bartolo Coyotepec,20115,exacto,1:1,1.0,1.0,False
+MEX.20.118_2,Oaxaca,San Bartolo Soyaltepec,20121,exacto,1:1,1.0,1.0,False
+MEX.20.119_2,Oaxaca,San Bartolo Yautepec,20122,exacto,1:1,1.0,1.0,False
+MEX.20.120_2,Oaxaca,San Bartolomé Ayautla,20116,exacto,1:1,1.0,1.0,False
+MEX.20.121_2,Oaxaca,San Bartolomé Loxicha,20117,exacto,1:1,1.0,1.0,False
+MEX.20.122_2,Oaxaca,San Bartolomé Quialana,20118,exacto,1:1,1.0,1.0,False
+MEX.20.123_2,Oaxaca,San Bartolomé Yucuañe,20119,exacto,1:1,1.0,1.0,False
+MEX.20.124_2,Oaxaca,San Bartolomé Zoogocho,20120,exacto,1:1,1.0,1.0,False
+MEX.20.125_2,Oaxaca,San Bernardo Mixtepec,20123,exacto,n:1,1.0,0.8632840028188865,False
+MEX.20.126_2,Oaxaca,San Blas Atempa,20124,espacial,1:1,1.0,1.0,False
+MEX.20.127_2,Oaxaca,San Carlos Yautepec,20125,exacto,1:1,0.9813545150501672,0.9998296277366044,False
+MEX.20.128_2,Oaxaca,San Cristóbal Amatlán,20126,exacto,1:1,1.0,1.0,False
+MEX.20.129_2,Oaxaca,San Cristóbal Amoltepec,20127,exacto,1:1,1.0,1.0,False
+MEX.20.130_2,Oaxaca,San Cristóbal Lachirioag,20128,exacto,ambiguo,0.8989966555183947,1.0,False
+MEX.20.131_2,Oaxaca,San Cristóbal Suchixtlahuaca,20129,exacto,1:1,1.0,1.0,False
+MEX.20.132_2,Oaxaca,San Dionisio del Mar,20130,exacto,1:1,1.0,1.0,False
+MEX.20.133_2,Oaxaca,San Dionisio Ocotepec,20131,exacto,1:1,1.0,1.0,False
+MEX.20.134_2,Oaxaca,San Dionisio Ocotlán,20132,exacto,1:1,1.0,1.0,False
+MEX.20.135_2,Oaxaca,San Esteban Atatlahuca,20133,exacto,1:1,1.0,1.0,False
+MEX.20.136_2,Oaxaca,San Felipe Jalapa de Díaz,20134,exacto,1:1,1.0,1.0,False
+MEX.20.137_2,Oaxaca,San Felipe Tejalápam,20135,exacto,1:1,1.0,1.0,False
+MEX.20.138_2,Oaxaca,San Felipe Usila,20136,exacto,1:1,1.0,1.0,False
+MEX.20.139_2,Oaxaca,San Francisco Cahuacuá,20137,exacto,1:1,1.0,1.0,False
+MEX.20.140_2,Oaxaca,San Francisco Cajonos,20138,exacto,1:1,1.0,1.0,False
+MEX.20.141_2,Oaxaca,San Francisco Chapulapa,20139,exacto,1:1,1.0,1.0,False
+MEX.20.142_2,Oaxaca,San Francisco Chindúa,20140,exacto,ambiguo,0.8995584988962473,1.0,False
+MEX.20.143_2,Oaxaca,San Francisco del Mar,20141,exacto,n:1,0.9932135728542915,0.8495333485089915,False
+MEX.20.144_2,Oaxaca,San Francisco Huehuetlán,20142,exacto,1:1,1.0,1.0,False
+MEX.20.145_2,Oaxaca,San Francisco Ixhuatán,20143,exacto,ambiguo,0.8641315519013361,0.9939709185482918,False
+MEX.20.146_2,Oaxaca,San Francisco Jaltepetongo,20144,exacto,1:1,1.0,1.0,False
+MEX.20.147_2,Oaxaca,San Francisco Lachigoló,20145,exacto,1:1,1.0,1.0,False
+MEX.20.148_2,Oaxaca,San Francisco Logueche,20146,exacto,1:1,1.0,1.0,False
+MEX.20.149_2,Oaxaca,San Francisco Nuxaño,20147,exacto,1:1,1.0,1.0,False
+MEX.20.150_2,Oaxaca,San Francisco Ozolotepec,20148,exacto,1:1,1.0,1.0,False
+MEX.20.151_2,Oaxaca,San Francisco Sola,20149,exacto,1:1,1.0,1.0,False
+MEX.20.152_2,Oaxaca,San Francisco Telixtlahuaca,20150,exacto,1:1,1.0,1.0,False
+MEX.20.153_2,Oaxaca,San Francisco Teopan,20151,exacto,1:1,1.0,1.0,False
+MEX.20.154_2,Oaxaca,San Francisco Tlapancingo,20152,exacto,1:1,1.0,1.0,False
+MEX.20.155_2,Oaxaca,San Gabriel Mixtepec,20153,exacto,1:1,1.0,1.0,False
+MEX.20.156_2,Oaxaca,San Ildefonso Amatlán,20154,exacto,n:1,0.9430939226519337,0.730423620025674,False
+MEX.20.157_2,Oaxaca,San Ildefonso Sola,20155,exacto,1:1,1.0,1.0,False
+MEX.20.158_2,Oaxaca,San Ildefonso Villa Alta,20156,exacto,1:1,1.0,0.9590452942771901,False
+MEX.20.159_2,Oaxaca,San Jacinto Amilpas,20157,exacto,1:1,1.0,1.0,False
+MEX.20.160_2,Oaxaca,San Jacinto Tlacotepec,20158,exacto,1:1,1.0,1.0,False
+MEX.20.161_2,Oaxaca,San Jerónimo Coatlán,20159,exacto,1:1,1.0,1.0,False
+MEX.20.162_2,Oaxaca,San Jerónimo Silacayoapilla,20160,exacto,ambiguo,0.7243297926150734,1.0,False
+MEX.20.163_2,Oaxaca,San Jerónimo Sosola,20161,exacto,1:1,1.0,1.0,False
+MEX.20.164_2,Oaxaca,San Jerónimo Taviche,20162,exacto,1:1,1.0,1.0,False
+MEX.20.165_2,Oaxaca,San Jerónimo Tecóatl,20163,exacto,1:1,1.0,1.0,False
+MEX.20.166_2,Oaxaca,San Jerónimo Tlacochahuaya,20550,exacto,1:1,1.0,1.0,False
+MEX.20.167_2,Oaxaca,San Jorge Nuchita,20164,exacto,1:1,1.0,1.0,False
+MEX.20.168_2,Oaxaca,San José Ayuquila,20165,exacto,1:1,1.0,1.0,False
+MEX.20.169_2,Oaxaca,San José Chiltepec,20166,exacto,1:1,1.0,0.9840528634361233,False
+MEX.20.170_2,Oaxaca,San José del Peñasco,20167,exacto,1:1,1.0,1.0,False
+MEX.20.171_2,Oaxaca,San José del Progreso,20072,exacto,1:1,1.0,1.0,False
+MEX.20.172_2,Oaxaca,San José Estancia Grande,20168,exacto,1:1,1.0,1.0,False
+MEX.20.173_2,Oaxaca,San José Independencia,20169,exacto,1:1,1.0,1.0,False
+MEX.20.174_2,Oaxaca,San José Lachiguiri,20170,exacto,1:1,1.0,1.0,False
+MEX.20.175_2,Oaxaca,San José Tenango,20171,exacto,1:1,1.0,1.0,False
+MEX.20.176_2,Oaxaca,San Juan Achiutla,20172,exacto,1:1,1.0,1.0,False
+MEX.20.177_2,Oaxaca,San Juan Atepec,20173,exacto,1:1,1.0,1.0,False
+MEX.20.178_2,Oaxaca,San Juan Bautista Atatlahuca,20175,exacto,1:1,1.0,1.0,False
+MEX.20.179_2,Oaxaca,San Juan Bautista Coixtlahuaca,20176,exacto,1:1,1.0,1.0,False
+MEX.20.180_2,Oaxaca,San Juan Bautista Cuicatlán,20177,exacto,1:1,1.0,1.0,False
+MEX.20.181_2,Oaxaca,San Juan Bautista Guelache,20178,exacto,1:1,1.0,1.0,False
+MEX.20.182_2,Oaxaca,San Juan Bautista Jayacatlán,20179,exacto,1:1,1.0,1.0,False
+MEX.20.183_2,Oaxaca,San Juan Bautista Lo de Soto,20180,exacto,1:1,1.0,1.0,False
+MEX.20.184_2,Oaxaca,San Juan Bautista Suchitepec,20181,exacto,1:1,1.0,1.0,False
+MEX.20.185_2,Oaxaca,San Juan Bautista Tlachichilco,20183,exacto,1:1,0.9993252361673415,1.0,False
+MEX.20.186_2,Oaxaca,San Juan Bautista Tlacoatzintepe,20182,prefijo,1:1,1.0,1.0,False
+MEX.20.187_2,Oaxaca,San Juan Bautista Tuxtepec,20184,exacto,1:1,0.9990235841970858,1.0,False
+MEX.20.188_2,Oaxaca,San Juan Bautista Valle Nacional,20559,exacto,1:1,1.0,1.0,False
+MEX.20.189_2,Oaxaca,San Juan Cacahuatepec,20185,exacto,1:1,1.0,1.0,False
+MEX.20.190_2,Oaxaca,San Juan Chicomezúchil,20191,exacto,1:1,1.0,1.0,False
+MEX.20.191_2,Oaxaca,San Juan Chilateca,20192,exacto,1:1,1.0,1.0,False
+MEX.20.192_2,Oaxaca,San Juan Cieneguilla,20186,exacto,1:1,1.0,1.0,False
+MEX.20.193_2,Oaxaca,San Juan Coatzóspam,20187,exacto,1:1,1.0,1.0,False
+MEX.20.194_2,Oaxaca,San Juan Colorado,20188,exacto,1:1,1.0,0.9587403866140095,False
+MEX.20.195_2,Oaxaca,San Juan Comaltepec,20189,exacto,n:1,1.0,0.8609865470852018,False
+MEX.20.196_2,Oaxaca,San Juan Cotzocón,20190,exacto,1:1,0.9828146565157384,0.9892005735794945,False
+MEX.20.197_2,Oaxaca,San Juan de los Cués,20206,exacto,1:1,1.0,1.0,False
+MEX.20.198_2,Oaxaca,San Juan del Estado,20193,exacto,1:1,1.0,1.0,False
+MEX.20.199_2,Oaxaca,San Juan del Río,20194,exacto,1:1,1.0,1.0,False
+MEX.20.200_2,Oaxaca,San Juan Diuxi,20195,exacto,1:1,1.0,1.0,False
+MEX.20.201_2,Oaxaca,San Juan Evangelista Analco,20196,exacto,1:1,1.0,1.0,False
+MEX.20.202_2,Oaxaca,San Juan Guelavía,20197,exacto,1:1,1.0,1.0,False
+MEX.20.203_2,Oaxaca,San Juan Guichicovi,20198,exacto,1:1,1.0,0.9400614927188566,False
+MEX.20.204_2,Oaxaca,San Juan Ihualtepec,20199,exacto,1:1,1.0,1.0,False
+MEX.20.205_2,Oaxaca,San Juan Juquila Mixes,20200,exacto,1:1,1.0,0.9997319753417314,False
+MEX.20.206_2,Oaxaca,San Juan Juquila Vijanos,20201,exacto,n:1,1.0,0.8097509273979863,False
+MEX.20.207_2,Oaxaca,San Juan Lachao,20202,exacto,1:1,0.976768968456948,1.0,False
+MEX.20.208_2,Oaxaca,San Juan Lachigalla,20203,exacto,1:1,1.0,1.0,False
+MEX.20.209_2,Oaxaca,San Juan Lajarcia,20204,exacto,1:1,1.0,1.0,False
+MEX.20.210_2,Oaxaca,San Juan Lalana,20205,exacto,1:1,0.9860613071139387,1.0,False
+MEX.20.211_2,Oaxaca,San Juan Mazatlán,20207,exacto,n:1,0.9604104749621488,0.8975944656988627,False
+MEX.20.212_2,Oaxaca,San Juan Mixtepec -Dto. 08 -,20208,espacial,1:1,0.9604055350047952,1.0,False
+MEX.20.213_2,Oaxaca,San Juan Mixtepec -Dto. 26 -,20209,espacial,1:1,1.0,1.0,False
+MEX.20.214_2,Oaxaca,San Juan Ñumí,20210,exacto,1:1,1.0,1.0,False
+MEX.20.215_2,Oaxaca,San Juan Ozolotepec,20211,exacto,1:1,1.0,0.9997081144191476,False
+MEX.20.216_2,Oaxaca,San Juan Petlapa,20212,exacto,1:1,1.0,1.0,False
+MEX.20.217_2,Oaxaca,San Juan Quiahije,20213,exacto,1:1,1.0,0.9997644842204427,False
+MEX.20.218_2,Oaxaca,San Juan Quiotepec,20214,exacto,1:1,1.0,0.9555012224938876,False
+MEX.20.219_2,Oaxaca,San Juan Sayultepec,20215,exacto,1:1,1.0,1.0,False
+MEX.20.220_2,Oaxaca,San Juan Tabaá,20216,exacto,1:1,1.0,1.0,False
+MEX.20.221_2,Oaxaca,San Juan Tamazola,20217,exacto,1:1,1.0,1.0,False
+MEX.20.222_2,Oaxaca,San Juan Teita,20218,exacto,1:1,1.0,1.0,False
+MEX.20.223_2,Oaxaca,San Juan Teitipac,20219,exacto,1:1,1.0,1.0,False
+MEX.20.224_2,Oaxaca,San Juan Tepeuxila,20220,exacto,1:1,1.0,1.0,False
+MEX.20.225_2,Oaxaca,San Juan Teposcolula,20221,exacto,1:1,1.0,1.0,False
+MEX.20.226_2,Oaxaca,San Juan Yaeé,20222,exacto,1:1,1.0,1.0,False
+MEX.20.227_2,Oaxaca,San Juan Yatzona,20223,exacto,1:1,1.0,1.0,False
+MEX.20.228_2,Oaxaca,San Juan Yucuita,20224,exacto,1:1,1.0,1.0,False
+MEX.20.229_2,Oaxaca,San Lorenzo,20225,exacto,1:1,1.0,1.0,False
+MEX.20.230_2,Oaxaca,San Lorenzo Albarradas,20226,exacto,1:1,1.0,1.0,False
+MEX.20.231_2,Oaxaca,San Lorenzo Cacaotepec,20227,exacto,1:1,1.0,1.0,False
+MEX.20.232_2,Oaxaca,San Lorenzo Cuaunecuiltitla,20228,exacto,1:1,1.0,1.0,False
+MEX.20.233_2,Oaxaca,San Lorenzo Texmelúcan,20229,exacto,1:1,1.0,1.0,False
+MEX.20.234_2,Oaxaca,San Lorenzo Victoria,20230,exacto,1:1,1.0,1.0,False
+MEX.20.235_2,Oaxaca,San Lucas Camotlán,20231,exacto,ambiguo,0.7760758570386579,1.0,False
+MEX.20.236_2,Oaxaca,San Lucas Ojitlán,20232,exacto,1:1,1.0,1.0,False
+MEX.20.237_2,Oaxaca,San Lucas Quiaviní,20233,exacto,1:1,1.0,1.0,False
+MEX.20.238_2,Oaxaca,San Lucas Zoquiápam,20234,exacto,1:1,1.0,1.0,False
+MEX.20.239_2,Oaxaca,San Luis Amatlán,20235,exacto,1:1,1.0,1.0,False
+MEX.20.240_2,Oaxaca,San Marcial Ozolotepec,20236,exacto,1:1,1.0,1.0,False
+MEX.20.241_2,Oaxaca,San Marcos Arteaga,20237,exacto,ambiguo,0.5895343254920787,1.0,False
+MEX.20.242_2,Oaxaca,San Martín de los Cansecos,20238,espacial,1:1,1.0,1.0,False
+MEX.20.243_2,Oaxaca,San Martín Huamelúlpam,20239,exacto,1:1,1.0,1.0,False
+MEX.20.244_2,Oaxaca,San Martín Itunyoso,20240,exacto,1:1,1.0,1.0,False
+MEX.20.245_2,Oaxaca,San Martín Lachilá,20241,exacto,1:1,1.0,1.0,False
+MEX.20.246_2,Oaxaca,San Martín Peras,20242,exacto,1:1,1.0,1.0,False
+MEX.20.247_2,Oaxaca,San Martín Tilcajete,20243,exacto,1:1,1.0,1.0,False
+MEX.20.248_2,Oaxaca,San Martín Toxpalan,20244,exacto,1:1,1.0,0.9774512287813529,False
+MEX.20.249_2,Oaxaca,San Martín Zacatepec,20245,exacto,1:1,1.0,1.0,False
+MEX.20.250_2,Oaxaca,San Mateo Cajonos,20246,exacto,1:1,1.0,1.0,False
+MEX.20.251_2,Oaxaca,San Mateo del Mar,20248,exacto,1:1,1.0,1.0,False
+MEX.20.252_2,Oaxaca,San Mateo Etlatongo,20250,exacto,1:1,1.0,1.0,False
+MEX.20.253_2,Oaxaca,San Mateo Nejápam,20251,exacto,1:1,1.0,1.0,False
+MEX.20.254_2,Oaxaca,San Mateo Peñasco,20252,exacto,1:1,1.0,1.0,False
+MEX.20.255_2,Oaxaca,San Mateo Piñas,20253,exacto,ambiguo,0.8424045491470349,1.0,False
+MEX.20.256_2,Oaxaca,San Mateo Río Hondo,20254,exacto,1:1,1.0,1.0,False
+MEX.20.257_2,Oaxaca,San Mateo Sindihui,20255,exacto,1:1,1.0,1.0,False
+MEX.20.258_2,Oaxaca,San Mateo Tlapiltepec,20256,exacto,1:1,1.0,1.0,False
+MEX.20.259_2,Oaxaca,San Mateo Yoloxochitlán,20249,exacto,1:1,1.0,1.0,False
+MEX.20.260_2,Oaxaca,San Mateo Yucutindó,20566,prefijo,1:1,1.0,1.0,False
+MEX.20.261_2,Oaxaca,San Melchor Betaza,20257,exacto,1:1,1.0,1.0,False
+MEX.20.262_2,Oaxaca,San Miguel Achiutla,20258,exacto,1:1,1.0,1.0,False
+MEX.20.263_2,Oaxaca,San Miguel Ahuehuetitlán,20259,exacto,1:1,1.0,0.999534450651769,False
+MEX.20.264_2,Oaxaca,San Miguel Aloápam,20260,exacto,1:1,1.0,1.0,False
+MEX.20.265_2,Oaxaca,San Miguel Amatitlán,20261,exacto,1:1,1.0,0.9755501222493888,False
+MEX.20.266_2,Oaxaca,San Miguel Amatlán,20262,exacto,1:1,1.0,1.0,False
+MEX.20.267_2,Oaxaca,San Miguel Chicahua,20264,exacto,1:1,1.0,1.0,False
+MEX.20.268_2,Oaxaca,San Miguel Chimalapa,20265,exacto,1:1,1.0,0.999258929894768,False
+MEX.20.269_2,Oaxaca,San Miguel Coatlán,20263,exacto,1:1,1.0,1.0,False
+MEX.20.270_2,Oaxaca,San Miguel del Puerto,20266,exacto,1:1,0.9998811222063718,0.9741718786194117,False
+MEX.20.271_2,Oaxaca,San Miguel del Río,20267,exacto,1:1,1.0,1.0,False
+MEX.20.272_2,Oaxaca,San Miguel Ejutla,20268,exacto,1:1,1.0,1.0,False
+MEX.20.273_2,Oaxaca,San Miguel el Grande,20269,exacto,1:1,1.0,1.0,False
+MEX.20.274_2,Oaxaca,San Miguel Huautla,20270,exacto,1:1,1.0,1.0,False
+MEX.20.275_2,Oaxaca,San Miguel Mixtepec,20271,exacto,1:1,1.0,1.0,False
+MEX.20.276_2,Oaxaca,San Miguel Panixtlahuaca,20272,exacto,1:1,0.9998370008149959,1.0,False
+MEX.20.277_2,Oaxaca,San Miguel Peras,20273,exacto,1:1,1.0,0.9075959279561472,False
+MEX.20.278_2,Oaxaca,San Miguel Piedras,20274,exacto,1:1,1.0,1.0,False
+MEX.20.279_2,Oaxaca,San Miguel Quetzaltepec,20275,exacto,n:1,1.0,0.8742474001094691,False
+MEX.20.280_2,Oaxaca,San Miguel Santa Flor,20276,exacto,1:1,1.0,1.0,False
+MEX.20.281_2,Oaxaca,San Miguel Soyaltepec,20278,exacto,1:1,1.0,1.0,False
+MEX.20.282_2,Oaxaca,San Miguel Suchixtepec,20279,exacto,1:1,1.0,1.0,False
+MEX.20.283_2,Oaxaca,San Miguel Tecomatlán,20281,exacto,1:1,1.0,1.0,False
+MEX.20.284_2,Oaxaca,San Miguel Tenango,20282,exacto,1:1,1.0,1.0,False
+MEX.20.285_2,Oaxaca,San Miguel Tequixtepec,20283,exacto,1:1,1.0,1.0,False
+MEX.20.286_2,Oaxaca,San Miguel Tilquiápam,20284,exacto,1:1,1.0,1.0,False
+MEX.20.287_2,Oaxaca,San Miguel Tlacamama,20285,exacto,1:1,1.0,1.0,False
+MEX.20.288_2,Oaxaca,San Miguel Tlacotepec,20286,exacto,1:1,1.0,1.0,False
+MEX.20.289_2,Oaxaca,San Miguel Tulancingo,20287,exacto,1:1,1.0,1.0,False
+MEX.20.290_2,Oaxaca,San Miguel Yotao,20288,exacto,1:1,1.0,1.0,False
+MEX.20.291_2,Oaxaca,San Nicolás,20289,exacto,1:1,1.0,1.0,False
+MEX.20.292_2,Oaxaca,San Nicolás Hidalgo,20290,exacto,1:1,1.0,0.9541547277936963,False
+MEX.20.293_2,Oaxaca,San Pablo Coatlán,20291,exacto,1:1,1.0,1.0,False
+MEX.20.294_2,Oaxaca,San Pablo Cuatro Venados,20292,exacto,ambiguo,0.6993135011441648,1.0,False
+MEX.20.295_2,Oaxaca,San Pablo Etla,20293,exacto,1:1,1.0,1.0,False
+MEX.20.296_2,Oaxaca,San Pablo Huitzo,20294,exacto,1:1,1.0,1.0,False
+MEX.20.297_2,Oaxaca,San Pablo Huixtepec,20295,exacto,1:1,0.9999003587086489,1.0,False
+MEX.20.298_2,Oaxaca,San Pablo Macuiltianguis,20296,exacto,1:1,0.9989615784008308,1.0,False
+MEX.20.299_2,Oaxaca,San Pablo Tijaltepec,20297,exacto,ambiguo,0.8416565164433617,1.0,False
+MEX.20.300_2,Oaxaca,San Pablo Villa de Mitla,20298,exacto,1:1,1.0,0.9994852184144727,False
+MEX.20.301_2,Oaxaca,San Pablo Yaganiza,20299,exacto,1:1,1.0,1.0,False
+MEX.20.302_2,Oaxaca,San Pedro Amuzgos,20300,exacto,1:1,1.0,1.0,False
+MEX.20.303_2,Oaxaca,San Pedro Apóstol,20301,exacto,1:1,1.0,1.0,False
+MEX.20.304_2,Oaxaca,San Pedro Atoyac,20302,exacto,1:1,1.0,1.0,False
+MEX.20.305_2,Oaxaca,San Pedro Cajonos,20303,exacto,1:1,1.0,1.0,False
+MEX.20.306_2,Oaxaca,San Pedro Comitancillo,20305,exacto,1:1,1.0,1.0,False
+MEX.20.307_2,Oaxaca,San Pedro Coxcaltepec Cántaros,20304,exacto,1:1,1.0,1.0,False
+MEX.20.308_2,Oaxaca,San Pedro el Alto,20306,exacto,ambiguo,0.8518173345759553,1.0,False
+MEX.20.309_2,Oaxaca,San Pedro Huamelula,20307,exacto,ambiguo,0.8880800727934486,1.0,False
+MEX.20.310_2,Oaxaca,San Pedro Huilotepec,20308,exacto,1:1,1.0,1.0,False
+MEX.20.311_2,Oaxaca,San Pedro Ixcatlán,20309,exacto,1:1,1.0,1.0,False
+MEX.20.312_2,Oaxaca,San Pedro Ixtlahuaca,20310,exacto,n:1,1.0,0.77915799368831,False
+MEX.20.313_2,Oaxaca,San Pedro Jaltepetongo,20311,exacto,1:1,1.0,1.0,False
+MEX.20.314_2,Oaxaca,San Pedro Jicayán,20312,exacto,1:1,1.0,1.0,False
+MEX.20.315_2,Oaxaca,San Pedro Jocotipac,20313,exacto,1:1,1.0,1.0,False
+MEX.20.316_2,Oaxaca,San Pedro Juchatengo,20314,exacto,1:1,1.0,1.0,False
+MEX.20.317_2,Oaxaca,San Pedro Mártir,20315,exacto,1:1,1.0,1.0,False
+MEX.20.318_2,Oaxaca,San Pedro Mártir Quiechapa,20316,exacto,1:1,1.0,1.0,False
+MEX.20.319_2,Oaxaca,San Pedro Mártir Yucuxaco,20317,exacto,1:1,1.0,1.0,False
+MEX.20.320_2,Oaxaca,San Pedro Mixtepec -Dto. 22 -,20318,espacial,1:1,1.0,1.0,False
+MEX.20.321_2,Oaxaca,San Pedro Mixtepec -Dto. 26 -,20319,espacial,1:1,1.0,1.0,False
+MEX.20.322_2,Oaxaca,San Pedro Molinos,20320,exacto,1:1,1.0,1.0,False
+MEX.20.323_2,Oaxaca,San Pedro Nopala,20321,exacto,1:1,1.0,1.0,False
+MEX.20.324_2,Oaxaca,San Pedro Ocopetatillo,20322,exacto,1:1,1.0,1.0,False
+MEX.20.325_2,Oaxaca,San Pedro Ocotepec,20323,exacto,1:1,1.0,1.0,False
+MEX.20.326_2,Oaxaca,San Pedro Pochutla,20324,exacto,1:1,1.0,0.9755366226891103,False
+MEX.20.327_2,Oaxaca,San Pedro Quiatoni,20325,exacto,1:1,0.9830188679245283,1.0,False
+MEX.20.328_2,Oaxaca,San Pedro Sochiápam,20326,exacto,1:1,1.0,1.0,False
+MEX.20.329_2,Oaxaca,San Pedro Tapanatepec,20327,exacto,1:1,1.0,1.0,False
+MEX.20.330_2,Oaxaca,San Pedro Taviche,20328,exacto,1:1,1.0,1.0,False
+MEX.20.331_2,Oaxaca,San Pedro Teozacoalco,20329,exacto,1:1,1.0,1.0,False
+MEX.20.332_2,Oaxaca,San Pedro Teutila,20330,exacto,1:1,0.990221187427241,0.9856315179606026,False
+MEX.20.333_2,Oaxaca,San Pedro Tidaá,20331,exacto,1:1,1.0,1.0,False
+MEX.20.334_2,Oaxaca,San Pedro Topiltepec,20332,exacto,1:1,1.0,1.0,False
+MEX.20.335_2,Oaxaca,San Pedro Totolápam,20333,exacto,1:1,1.0,1.0,False
+MEX.20.336_2,Oaxaca,San Pedro y San Pablo Ayutla,20337,exacto,1:1,0.9554690145614629,1.0,False
+MEX.20.337_2,Oaxaca,San Pedro y San Pablo Teposcolul,20339,prefijo,1:1,1.0,0.9780934039480019,False
+MEX.20.338_2,Oaxaca,San Pedro y San Pablo Tequixtepe,20340,prefijo,1:1,1.0,1.0,False
+MEX.20.339_2,Oaxaca,San Pedro Yaneri,20335,exacto,1:1,1.0,1.0,False
+MEX.20.340_2,Oaxaca,San Pedro Yólox,20336,exacto,1:1,0.9492470719464584,0.994739918176505,False
+MEX.20.341_2,Oaxaca,San Pedro Yucunama,20341,exacto,1:1,1.0,1.0,False
+MEX.20.342_2,Oaxaca,San Raymundo Jalpan,20342,exacto,1:1,1.0,1.0,False
+MEX.20.343_2,Oaxaca,San Sebastián Abasolo,20343,exacto,1:1,1.0,1.0,False
+MEX.20.344_2,Oaxaca,San Sebastián Coatlán,20344,exacto,1:1,1.0,1.0,False
+MEX.20.345_2,Oaxaca,San Sebastián Ixcapa,20345,exacto,1:1,1.0,1.0,False
+MEX.20.346_2,Oaxaca,San Sebastián Nicananduta,20346,exacto,1:1,1.0,1.0,False
+MEX.20.347_2,Oaxaca,San Sebastián Río Hondo,20347,exacto,ambiguo,0.8365079365079365,1.0,False
+MEX.20.348_2,Oaxaca,San Sebastián Tecomaxtlahuaca,20348,exacto,1:1,1.0,1.0,False
+MEX.20.349_2,Oaxaca,San Sebastián Teitipac,20349,exacto,1:1,1.0,1.0,False
+MEX.20.350_2,Oaxaca,San Sebastián Tutla,20350,exacto,1:1,1.0,1.0,False
+MEX.20.351_2,Oaxaca,San Simón Almolongas,20351,exacto,1:1,1.0,1.0,False
+MEX.20.352_2,Oaxaca,San Simón Zahuatlán,20352,exacto,1:1,1.0,1.0,False
+MEX.20.353_2,Oaxaca,San Vicente Coatlán,20534,exacto,1:1,1.0,1.0,False
+MEX.20.354_2,Oaxaca,San Vicente Lachixío,20535,exacto,ambiguo,0.8846679420606723,1.0,False
+MEX.20.355_2,Oaxaca,San Vicente Nuñú,20536,exacto,1:1,1.0,1.0,False
+MEX.20.356_2,Oaxaca,Santa Ana,20353,exacto,1:1,1.0,1.0,False
+MEX.20.357_2,Oaxaca,Santa Ana Ateixtlahuaca,20354,exacto,1:1,1.0,1.0,False
+MEX.20.358_2,Oaxaca,Santa Ana Cuauhtémoc,20355,exacto,1:1,1.0,1.0,False
+MEX.20.359_2,Oaxaca,Santa Ana del Valle,20356,exacto,1:1,1.0,1.0,False
+MEX.20.360_2,Oaxaca,Santa Ana Tavela,20357,exacto,1:1,1.0,1.0,False
+MEX.20.361_2,Oaxaca,Santa Ana Tlapacoyan,20358,exacto,1:1,1.0,1.0,False
+MEX.20.362_2,Oaxaca,Santa Ana Yareni,20359,exacto,1:1,1.0,1.0,False
+MEX.20.363_2,Oaxaca,Santa Ana Zegache,20360,exacto,1:1,1.0,1.0,False
+MEX.20.364_2,Oaxaca,Santa Catalina Quierí,20361,exacto,1:1,1.0,1.0,False
+MEX.20.365_2,Oaxaca,Santa Catarina Cuixtla,20362,exacto,1:1,1.0,1.0,False
+MEX.20.366_2,Oaxaca,Santa Catarina Ixtepeji,20363,exacto,1:1,1.0,1.0,False
+MEX.20.367_2,Oaxaca,Santa Catarina Juquila,20364,exacto,1:1,1.0,0.9941807698467781,False
+MEX.20.368_2,Oaxaca,Santa Catarina Lachatao,20365,exacto,1:1,1.0,1.0,False
+MEX.20.369_2,Oaxaca,Santa Catarina Loxicha,20366,exacto,1:1,1.0,1.0,False
+MEX.20.370_2,Oaxaca,Santa Catarina Mechoacán,20367,exacto,1:1,1.0,1.0,False
+MEX.20.371_2,Oaxaca,Santa Catarina Minas,20368,exacto,1:1,1.0,1.0,False
+MEX.20.372_2,Oaxaca,Santa Catarina Quiané,20369,exacto,1:1,1.0,1.0,False
+MEX.20.373_2,Oaxaca,Santa Catarina Quioquitani,20074,exacto,1:1,1.0,1.0,False
+MEX.20.374_2,Oaxaca,Santa Catarina Tayata,20370,exacto,1:1,1.0,1.0,False
+MEX.20.375_2,Oaxaca,Santa Catarina Ticuá,20371,exacto,1:1,1.0,1.0,False
+MEX.20.376_2,Oaxaca,Santa Catarina Yosonotú,20372,exacto,1:1,1.0,1.0,False
+MEX.20.377_2,Oaxaca,Santa Catarina Zapoquila,20373,exacto,1:1,1.0,1.0,False
+MEX.20.378_2,Oaxaca,Santa Cruz Acatepec,20374,exacto,1:1,1.0,1.0,False
+MEX.20.379_2,Oaxaca,Santa Cruz Amilpas,20375,exacto,1:1,1.0,1.0,False
+MEX.20.380_2,Oaxaca,Santa Cruz de Bravo,20376,exacto,1:1,1.0,1.0,False
+MEX.20.381_2,Oaxaca,Santa Cruz Itundujia,20377,exacto,1:1,1.0,1.0,False
+MEX.20.382_2,Oaxaca,Santa Cruz Mixtepec,20378,exacto,1:1,1.0,1.0,False
+MEX.20.383_2,Oaxaca,Santa Cruz Nundaco,20379,exacto,1:1,1.0,1.0,False
+MEX.20.384_2,Oaxaca,Santa Cruz Papalutla,20380,exacto,1:1,1.0,1.0,False
+MEX.20.385_2,Oaxaca,Santa Cruz Tacache de Mina,20381,exacto,1:1,1.0,1.0,False
+MEX.20.386_2,Oaxaca,Santa Cruz Tacahua,20382,exacto,1:1,1.0,1.0,False
+MEX.20.387_2,Oaxaca,Santa Cruz Tayata,20383,exacto,1:1,1.0,1.0,False
+MEX.20.388_2,Oaxaca,Santa Cruz Xitla,20384,exacto,1:1,1.0,1.0,False
+MEX.20.389_2,Oaxaca,Santa Cruz Xoxocotlán,20385,exacto,1:1,0.9682083997873472,1.0,False
+MEX.20.390_2,Oaxaca,Santa Cruz Zenzontepec,20386,exacto,1:1,1.0,1.0,False
+MEX.20.391_2,Oaxaca,Santa Gertrudis,20387,exacto,ambiguo,0.8502202643171806,1.0,False
+MEX.20.392_2,Oaxaca,Santa Inés de Zaragoza,20569,exacto,1:1,1.0,1.0,False
+MEX.20.393_2,Oaxaca,Santa Inés del Monte,20388,exacto,1:1,1.0,0.9996465182043125,False
+MEX.20.394_2,Oaxaca,Santa Inés Yatzeche,20389,exacto,1:1,1.0,1.0,False
+MEX.20.395_2,Oaxaca,Santa Lucía del Camino,20390,exacto,1:1,1.0,1.0,False
+MEX.20.396_2,Oaxaca,Santa Lucía Miahuatlán,20391,exacto,1:1,1.0,1.0,False
+MEX.20.397_2,Oaxaca,Santa Lucía Monteverde,20392,exacto,1:1,1.0,0.997779422649889,False
+MEX.20.398_2,Oaxaca,Santa Lucía Ocotlán,20393,exacto,1:1,1.0,1.0,False
+MEX.20.399_2,Oaxaca,Santa Magdalena Jicotlán,20047,exacto,1:1,1.0,1.0,False
+MEX.20.400_2,Oaxaca,Santa María Alotepec,20394,exacto,1:1,1.0,1.0,False
+MEX.20.401_2,Oaxaca,Santa María Apazco,20395,exacto,1:1,1.0,1.0,False
+MEX.20.402_2,Oaxaca,Santa María Atzompa,20399,exacto,1:1,1.0,1.0,False
+MEX.20.403_2,Oaxaca,Santa María Camotlán,20400,exacto,1:1,1.0,1.0,False
+MEX.20.404_2,Oaxaca,Santa María Chachoápam,20404,exacto,1:1,1.0,0.9987046632124352,False
+MEX.20.405_2,Oaxaca,Santa María Chilchotla,20406,exacto,1:1,1.0,0.9832368603843482,False
+MEX.20.406_2,Oaxaca,Santa María Chimalapa,20407,exacto,1:1,0.999429874572406,1.0,False
+MEX.20.407_2,Oaxaca,Santa María Colotepec,20401,exacto,1:1,1.0,1.0,False
+MEX.20.408_2,Oaxaca,Santa María Cortijo,20402,exacto,1:1,1.0,1.0,False
+MEX.20.409_2,Oaxaca,Santa María Coyotepec,20403,exacto,1:1,1.0,0.9986737400530504,False
+MEX.20.410_2,Oaxaca,Santa María del Rosario,20408,exacto,1:1,1.0,1.0,False
+MEX.20.411_2,Oaxaca,Santa María del Tule,20409,exacto,1:1,1.0,1.0,False
+MEX.20.412_2,Oaxaca,Santa María Ecatepec,20410,exacto,1:1,1.0,1.0,False
+MEX.20.413_2,Oaxaca,Santa María Guelacé,20411,exacto,1:1,1.0,1.0,False
+MEX.20.414_2,Oaxaca,Santa María Guienagati,20412,exacto,1:1,0.9413138686131387,1.0,False
+MEX.20.415_2,Oaxaca,Santa María Huatulco,20413,exacto,1:1,1.0,1.0,False
+MEX.20.416_2,Oaxaca,Santa María Huazolotitlán,20414,exacto,1:1,1.0,1.0,False
+MEX.20.417_2,Oaxaca,Santa María Ipalapa,20415,exacto,1:1,1.0,1.0,False
+MEX.20.418_2,Oaxaca,Santa María Ixcatlán,20416,exacto,1:1,1.0,1.0,False
+MEX.20.419_2,Oaxaca,Santa María Jacatepec,20417,exacto,1:1,0.9167464114832536,0.9848874267502827,False
+MEX.20.420_2,Oaxaca,Santa María Jalapa del Marqués,20418,exacto,1:1,1.0,1.0,False
+MEX.20.421_2,Oaxaca,Santa María Jaltianguis,20419,exacto,1:1,1.0,1.0,False
+MEX.20.422_2,Oaxaca,Santa María la Asunción,20396,exacto,1:1,1.0,1.0,False
+MEX.20.423_2,Oaxaca,Santa María Lachixío,20420,exacto,n:1,1.0,0.7498518079430943,False
+MEX.20.424_2,Oaxaca,Santa María Mixtequilla,20421,exacto,1:1,1.0,1.0,False
+MEX.20.425_2,Oaxaca,Santa María Nativitas,20422,exacto,1:1,1.0,1.0,False
+MEX.20.426_2,Oaxaca,Santa María Nduayaco,20423,exacto,1:1,1.0,1.0,False
+MEX.20.427_2,Oaxaca,Santa María Ozolotepec,20424,exacto,1:1,1.0,1.0,False
+MEX.20.428_2,Oaxaca,Santa María Pápalo,20425,exacto,1:1,1.0,1.0,False
+MEX.20.429_2,Oaxaca,Santa María Peñoles,20426,exacto,1:1,1.0,1.0,False
+MEX.20.430_2,Oaxaca,Santa María Petapa,20427,exacto,1:1,1.0,1.0,False
+MEX.20.431_2,Oaxaca,Santa María Quiegolani,20428,exacto,1:1,1.0,1.0,False
+MEX.20.432_2,Oaxaca,Santa María Sola,20429,exacto,1:1,1.0,1.0,False
+MEX.20.433_2,Oaxaca,Santa María Tataltepec,20430,exacto,1:1,1.0,1.0,False
+MEX.20.434_2,Oaxaca,Santa María Tecomavaca,20431,exacto,1:1,1.0,1.0,False
+MEX.20.435_2,Oaxaca,Santa María Temaxcalapa,20432,exacto,1:1,1.0,1.0,False
+MEX.20.436_2,Oaxaca,Santa María Temaxcaltepec,20433,exacto,1:1,1.0,1.0,False
+MEX.20.437_2,Oaxaca,Santa María Teopoxco,20434,exacto,1:1,1.0,1.0,False
+MEX.20.438_2,Oaxaca,Santa María Tepantlali,20435,exacto,1:1,1.0,1.0,False
+MEX.20.439_2,Oaxaca,Santa María Texcatitlán,20436,exacto,1:1,1.0,1.0,False
+MEX.20.440_2,Oaxaca,Santa María Tlahuitoltepec,20437,exacto,1:1,1.0,1.0,False
+MEX.20.441_2,Oaxaca,Santa María Tlalixtac,20438,exacto,1:1,1.0,1.0,False
+MEX.20.442_2,Oaxaca,Santa María Tonameca,20439,exacto,1:1,1.0,1.0,False
+MEX.20.443_2,Oaxaca,Santa María Totolapilla,20440,exacto,1:1,1.0,1.0,False
+MEX.20.444_2,Oaxaca,Santa María Xadani,20441,exacto,1:1,0.917920792079208,1.0,False
+MEX.20.445_2,Oaxaca,Santa María Yalina,20442,exacto,1:1,1.0,1.0,False
+MEX.20.446_2,Oaxaca,Santa María Yavesía,20443,exacto,1:1,1.0,1.0,False
+MEX.20.447_2,Oaxaca,Santa María Yolotepec,20444,exacto,1:1,1.0,1.0,False
+MEX.20.448_2,Oaxaca,Santa María Yosoyúa,20445,exacto,1:1,1.0,1.0,False
+MEX.20.449_2,Oaxaca,Santa María Yucuhiti,20446,exacto,1:1,1.0,1.0,False
+MEX.20.450_2,Oaxaca,Santa María Zacatepec,20447,exacto,1:1,0.9965643743085075,1.0,False
+MEX.20.451_2,Oaxaca,Santa María Zaniza,20448,exacto,1:1,1.0,1.0,False
+MEX.20.452_2,Oaxaca,Santa María Zoquitlán,20449,exacto,1:1,1.0,1.0,False
+MEX.20.453_2,Oaxaca,Santiago Amoltepec,20450,exacto,1:1,1.0,1.0,False
+MEX.20.454_2,Oaxaca,Santiago Apoala,20451,exacto,1:1,1.0,1.0,False
+MEX.20.455_2,Oaxaca,Santiago Apóstol,20452,exacto,1:1,1.0,1.0,False
+MEX.20.456_2,Oaxaca,Santiago Astata,20453,exacto,n:1,1.0,0.6868635437881874,False
+MEX.20.457_2,Oaxaca,Santiago Atitlán,20454,exacto,1:1,1.0,1.0,False
+MEX.20.458_2,Oaxaca,Santiago Ayuquililla,20455,exacto,1:1,1.0,1.0,False
+MEX.20.459_2,Oaxaca,Santiago Cacaloxtepec,20456,exacto,1:1,1.0,1.0,False
+MEX.20.460_2,Oaxaca,Santiago Camotlán,20457,exacto,1:1,1.0,1.0,False
+MEX.20.461_2,Oaxaca,Santiago Chazumba,20459,espacial,1:1,1.0,1.0,False
+MEX.20.462_2,Oaxaca,Santiago Choápam,20460,exacto,1:1,0.923739237392374,1.0,False
+MEX.20.463_2,Oaxaca,Santiago Comaltepec,20458,exacto,1:1,1.0,0.99915611814346,False
+MEX.20.464_2,Oaxaca,Santiago del Río,20461,exacto,1:1,1.0,1.0,False
+MEX.20.465_2,Oaxaca,Santiago Huajolotitlán,20462,exacto,ambiguo,0.8836808876984886,1.0,False
+MEX.20.466_2,Oaxaca,Santiago Huauclilla,20463,exacto,1:1,1.0,1.0,False
+MEX.20.467_2,Oaxaca,Santiago Ihuitlán Plumas,20464,exacto,1:1,1.0,1.0,False
+MEX.20.468_2,Oaxaca,Santiago Ixcuintepec,20465,exacto,1:1,1.0,1.0,False
+MEX.20.469_2,Oaxaca,Santiago Ixtayutla,20466,exacto,1:1,1.0,1.0,False
+MEX.20.470_2,Oaxaca,Santiago Jamiltepec,20467,exacto,1:1,1.0,1.0,False
+MEX.20.471_2,Oaxaca,Santiago Jocotepec,20468,exacto,1:1,1.0,1.0,False
+MEX.20.472_2,Oaxaca,Santiago Juxtlahuaca,20469,exacto,1:1,0.9540073633531577,0.9914937454010302,False
+MEX.20.473_2,Oaxaca,Santiago Lachiguiri,20470,exacto,ambiguo,0.861304012345679,1.0,False
+MEX.20.474_2,Oaxaca,Santiago Lalopa,20471,exacto,1:1,1.0,1.0,False
+MEX.20.475_2,Oaxaca,Santiago Laollaga,20472,exacto,1:1,1.0,1.0,False
+MEX.20.476_2,Oaxaca,Santiago Laxopa,20473,exacto,1:1,1.0,1.0,False
+MEX.20.477_2,Oaxaca,Santiago Llano Grande,20474,exacto,1:1,1.0,1.0,False
+MEX.20.478_2,Oaxaca,Santiago Matatlán,20475,exacto,1:1,1.0,1.0,False
+MEX.20.479_2,Oaxaca,Santiago Miltepec,20476,exacto,1:1,1.0,1.0,False
+MEX.20.480_2,Oaxaca,Santiago Minas,20477,exacto,1:1,1.0,1.0,False
+MEX.20.481_2,Oaxaca,Santiago Nacaltepec,20478,exacto,1:1,1.0,1.0,False
+MEX.20.482_2,Oaxaca,Santiago Nejapilla,20479,exacto,1:1,1.0,1.0,False
+MEX.20.483_2,Oaxaca,Santiago Niltepec,20066,exacto,1:1,1.0,1.0,False
+MEX.20.484_2,Oaxaca,Santiago Nundiche,20480,exacto,1:1,1.0,1.0,False
+MEX.20.485_2,Oaxaca,Santiago Nuyoó,20481,exacto,ambiguo,0.8358078602620087,1.0,False
+MEX.20.486_2,Oaxaca,Santiago Pinotepa Nacional,20482,exacto,1:1,1.0,1.0,False
+MEX.20.487_2,Oaxaca,Santiago Suchilquitongo,20483,exacto,1:1,1.0,1.0,False
+MEX.20.488_2,Oaxaca,Santiago Tamazola,20484,exacto,1:1,1.0,1.0,False
+MEX.20.489_2,Oaxaca,Santiago Tapextla,20485,exacto,1:1,1.0,1.0,False
+MEX.20.490_2,Oaxaca,Santiago Tenango,20487,exacto,1:1,1.0,1.0,False
+MEX.20.491_2,Oaxaca,Santiago Tepetlapa,20488,exacto,1:1,1.0,1.0,False
+MEX.20.492_2,Oaxaca,Santiago Tetepec,20489,exacto,1:1,1.0,1.0,False
+MEX.20.493_2,Oaxaca,Santiago Texcalcingo,20490,exacto,1:1,1.0,1.0,False
+MEX.20.494_2,Oaxaca,Santiago Textitlán,20491,exacto,1:1,1.0,1.0,False
+MEX.20.495_2,Oaxaca,Santiago Tilantongo,20492,exacto,1:1,1.0,0.9870921477231983,False
+MEX.20.496_2,Oaxaca,Santiago Tillo,20493,exacto,1:1,1.0,1.0,False
+MEX.20.497_2,Oaxaca,Santiago Tlazoyaltepec,20494,exacto,n:1,1.0,0.7089880578252671,False
+MEX.20.498_2,Oaxaca,Santiago Xanica,20495,exacto,1:1,1.0,1.0,False
+MEX.20.499_2,Oaxaca,Santiago Xiacuí,20496,exacto,1:1,1.0,1.0,False
+MEX.20.500_2,Oaxaca,Santiago Yaitepec,20497,exacto,1:1,1.0,1.0,False
+MEX.20.501_2,Oaxaca,Santiago Yaveo,20498,exacto,1:1,1.0,1.0,False
+MEX.20.502_2,Oaxaca,Santiago Yolomécatl,20499,exacto,1:1,1.0,1.0,False
+MEX.20.503_2,Oaxaca,Santiago Yosondúa,20500,exacto,1:1,1.0,1.0,False
+MEX.20.504_2,Oaxaca,Santiago Yucuyachi,20501,exacto,1:1,1.0,1.0,False
+MEX.20.505_2,Oaxaca,Santiago Zacatepec,20502,exacto,1:1,1.0,1.0,False
+MEX.20.506_2,Oaxaca,Santiago Zoochila,20503,exacto,1:1,1.0,1.0,False
+MEX.20.507_2,Oaxaca,Santo Domingo Albarradas,20506,exacto,1:1,1.0,1.0,False
+MEX.20.508_2,Oaxaca,Santo Domingo Armenta,20507,exacto,1:1,1.0,1.0,False
+MEX.20.509_2,Oaxaca,Santo Domingo Chihuitán,20508,exacto,1:1,1.0,1.0,False
+MEX.20.510_2,Oaxaca,Santo Domingo de Morelos,20509,exacto,1:1,1.0,1.0,False
+MEX.20.511_2,Oaxaca,Santo Domingo Ingenio,20505,exacto,1:1,1.0,1.0,False
+MEX.20.512_2,Oaxaca,Santo Domingo Ixcatlán,20510,exacto,1:1,1.0,1.0,False
+MEX.20.513_2,Oaxaca,Santo Domingo Nuxaá,20511,exacto,1:1,1.0,1.0,False
+MEX.20.514_2,Oaxaca,Santo Domingo Ozolotepec,20512,exacto,1:1,1.0,1.0,False
+MEX.20.515_2,Oaxaca,Santo Domingo Petapa,20513,exacto,1:1,1.0,1.0,False
+MEX.20.516_2,Oaxaca,Santo Domingo Roayaga,20514,exacto,1:1,1.0,1.0,False
+MEX.20.517_2,Oaxaca,Santo Domingo Tehuantepec,20515,exacto,1:1,1.0,0.9893995016733749,False
+MEX.20.518_2,Oaxaca,Santo Domingo Teojomulco,20516,exacto,1:1,1.0,1.0,False
+MEX.20.519_2,Oaxaca,Santo Domingo Tepuxtepec,20517,exacto,1:1,1.0,0.9224038302790161,False
+MEX.20.520_2,Oaxaca,Santo Domingo Tlatayápam,20518,exacto,1:1,1.0,1.0,False
+MEX.20.521_2,Oaxaca,Santo Domingo Tomaltepec,20519,exacto,1:1,0.9247546346782988,1.0,False
+MEX.20.522_2,Oaxaca,Santo Domingo Tonalá,20520,exacto,1:1,1.0,1.0,False
+MEX.20.523_2,Oaxaca,Santo Domingo Tonaltepec,20521,exacto,1:1,1.0,1.0,False
+MEX.20.524_2,Oaxaca,Santo Domingo Xagacía,20522,exacto,1:1,1.0,1.0,False
+MEX.20.525_2,Oaxaca,Santo Domingo Yanhuitlán,20523,exacto,1:1,0.9993954050785974,1.0,False
+MEX.20.526_2,Oaxaca,Santo Domingo Yodohino,20524,exacto,1:1,1.0,1.0,False
+MEX.20.527_2,Oaxaca,Santo Domingo Zanatepec,20525,exacto,1:1,1.0,1.0,False
+MEX.20.528_2,Oaxaca,Santo Tomás Jalieza,20530,exacto,1:1,1.0,1.0,False
+MEX.20.529_2,Oaxaca,Santo Tomás Mazaltepec,20531,exacto,1:1,1.0,1.0,False
+MEX.20.530_2,Oaxaca,Santo Tomás Ocotepec,20532,exacto,1:1,0.9663905325443787,1.0,False
+MEX.20.531_2,Oaxaca,Santo Tomás Tamazulapan,20533,exacto,1:1,1.0,1.0,False
+MEX.20.532_2,Oaxaca,Santos Reyes Nopala,20526,exacto,1:1,1.0,1.0,False
+MEX.20.533_2,Oaxaca,Santos Reyes Pápalo,20527,exacto,1:1,1.0,1.0,False
+MEX.20.534_2,Oaxaca,Santos Reyes Tepejillo,20528,exacto,1:1,1.0,1.0,False
+MEX.20.535_2,Oaxaca,Santos Reyes Yucuná,20529,exacto,ambiguo,0.8969072164948454,1.0,False
+MEX.20.536_2,Oaxaca,Silacayoápam,20537,exacto,1:1,1.0,1.0,False
+MEX.20.537_2,Oaxaca,Sitio de Xitlapehua,20538,exacto,1:1,1.0,1.0,False
+MEX.20.538_2,Oaxaca,Soledad Etla,20539,exacto,1:1,1.0,1.0,False
+MEX.20.539_2,Oaxaca,Tamazulápam del Espíritu Santo,20031,exacto,1:1,1.0,1.0,False
+MEX.20.540_2,Oaxaca,Tanetze de Zaragoza,20541,exacto,1:1,1.0,1.0,False
+MEX.20.541_2,Oaxaca,Taniche,20542,exacto,1:1,1.0,1.0,False
+MEX.20.542_2,Oaxaca,Tataltepec de Valdés,20543,exacto,1:1,1.0,1.0,False
+MEX.20.543_2,Oaxaca,Teococuilco de Marcos Pérez,20544,exacto,1:1,1.0,1.0,False
+MEX.20.544_2,Oaxaca,Teotitlán de Flores Magón,20545,exacto,1:1,1.0,1.0,False
+MEX.20.545_2,Oaxaca,Teotitlán del Valle,20546,exacto,1:1,1.0,1.0,False
+MEX.20.546_2,Oaxaca,Teotongo,20547,exacto,1:1,1.0,1.0,False
+MEX.20.547_2,Oaxaca,Tepelmeme Villa de Morelos,20548,exacto,1:1,1.0,1.0,False
+MEX.20.548_2,Oaxaca,Tlacolula de Matamoros,20551,exacto,1:1,0.9997690073917634,1.0,False
+MEX.20.549_2,Oaxaca,Tlacotepec Plumas,20552,exacto,1:1,1.0,1.0,False
+MEX.20.550_2,Oaxaca,Tlalixtac de Cabrera,20553,exacto,1:1,1.0,0.9771617707902358,False
+MEX.20.551_2,Oaxaca,Totontepec Villa de Morelos,20554,exacto,1:1,1.0,1.0,False
+MEX.20.552_2,Oaxaca,Trinidad Zaachila,20555,exacto,1:1,1.0,1.0,False
+MEX.20.553_2,Oaxaca,Unión Hidalgo,20557,exacto,1:1,1.0,1.0,False
+MEX.20.554_2,Oaxaca,Valerio Trujano,20558,exacto,1:1,1.0,1.0,False
+MEX.20.555_2,Oaxaca,Villa de Chilapa de Díaz,20405,exacto,1:1,1.0,1.0,False
+MEX.20.556_2,Oaxaca,Villa de Etla,20338,exacto,1:1,1.0,1.0,False
+MEX.20.557_2,Oaxaca,Villa de Tamazulápam del Progres,20540,prefijo,1:1,1.0,1.0,False
+MEX.20.558_2,Oaxaca,Villa de Tututepec de Melchor Oc,20334,espacial,1:1,1.0,1.0,False
+MEX.20.559_2,Oaxaca,Villa de Zaachila,20565,exacto,1:1,1.0,1.0,False
+MEX.20.560_2,Oaxaca,Villa Díaz Ordaz,20560,exacto,1:1,1.0,1.0,False
+MEX.20.561_2,Oaxaca,Villa Hidalgo,20038,prefijo,1:1,1.0,1.0,False
+MEX.20.562_2,Oaxaca,Villa Sola de Vega,20277,exacto,1:1,1.0,1.0,False
+MEX.20.563_2,Oaxaca,Villa Talea de Castro,20280,exacto,ambiguo,0.8487784330244313,1.0,False
+MEX.20.564_2,Oaxaca,Villa Tejúpam de la Unión,20486,exacto,1:1,1.0,1.0,False
+MEX.20.565_2,Oaxaca,Yaxe,20561,exacto,1:1,1.0,1.0,False
+MEX.20.566_2,Oaxaca,Yogana,20563,exacto,1:1,1.0,1.0,False
+MEX.20.567_2,Oaxaca,Yutanduchi de Guerrero,20564,exacto,1:1,1.0,1.0,False
+MEX.20.568_2,Oaxaca,Zapotitlán Lagunas,20567,exacto,1:1,1.0,1.0,False
+MEX.20.569_2,Oaxaca,Zapotitlán Palmas,20568,exacto,1:1,1.0,1.0,False
+MEX.20.570_2,Oaxaca,Zimatlán de Álvarez,20570,exacto,1:1,0.9820646410622896,0.9614516565857182,False
+MEX.21.1_2,Puebla,Acajete,21001,exacto,1:1,1.0,1.0,False
+MEX.21.2_2,Puebla,Acateno,21002,exacto,1:1,1.0,1.0,False
+MEX.21.3_2,Puebla,Acatlán,21003,exacto,1:1,1.0,1.0,False
+MEX.21.4_2,Puebla,Acatzingo,21004,exacto,1:1,1.0,1.0,False
+MEX.21.5_2,Puebla,Acteopan,21005,exacto,1:1,1.0,1.0,False
+MEX.21.6_2,Puebla,Ahuacatlán,21006,exacto,1:1,1.0,1.0,False
+MEX.21.7_2,Puebla,Ahuatlán,21007,exacto,1:1,1.0,1.0,False
+MEX.21.8_2,Puebla,Ahuazotepec,21008,exacto,1:1,1.0,1.0,False
+MEX.21.9_2,Puebla,Ahuehuetitla,21009,exacto,1:1,1.0,1.0,False
+MEX.21.10_2,Puebla,Ajalpan,21010,exacto,1:1,1.0,1.0,False
+MEX.21.11_2,Puebla,Albino Zertuche,21011,exacto,1:1,1.0,1.0,False
+MEX.21.12_2,Puebla,Aljojuca,21012,exacto,1:1,1.0,1.0,False
+MEX.21.13_2,Puebla,Altepexi,21013,exacto,1:1,1.0,1.0,False
+MEX.21.14_2,Puebla,Amixtlán,21014,exacto,1:1,1.0,1.0,False
+MEX.21.15_2,Puebla,Amozoc,21015,exacto,1:1,1.0,0.9790521868945145,False
+MEX.21.16_2,Puebla,Aquixtla,21016,exacto,1:1,1.0,1.0,False
+MEX.21.17_2,Puebla,Atempan,21017,exacto,1:1,1.0,1.0,False
+MEX.21.18_2,Puebla,Atexcal,21018,exacto,1:1,1.0,1.0,False
+MEX.21.19_2,Puebla,Atlequizayan,21080,exacto,1:1,1.0,1.0,False
+MEX.21.20_2,Puebla,Atlixco,21019,exacto,1:1,1.0,1.0,False
+MEX.21.21_2,Puebla,Atoyatempan,21020,exacto,1:1,1.0,1.0,False
+MEX.21.22_2,Puebla,Atzala,21021,exacto,1:1,1.0,1.0,False
+MEX.21.23_2,Puebla,Atzitzihuacán,21022,exacto,1:1,1.0,1.0,False
+MEX.21.24_2,Puebla,Atzitzintla,21023,exacto,1:1,1.0,1.0,False
+MEX.21.25_2,Puebla,Axutla,21024,exacto,1:1,1.0,1.0,False
+MEX.21.26_2,Puebla,Ayotoxco de Guerrero,21025,exacto,1:1,1.0,1.0,False
+MEX.21.27_2,Puebla,Calpan,21026,exacto,1:1,1.0,1.0,False
+MEX.21.28_2,Puebla,Caltepec,21027,exacto,1:1,1.0,1.0,False
+MEX.21.29_2,Puebla,Camocuautla,21028,exacto,1:1,1.0,1.0,False
+MEX.21.30_2,Puebla,Cañada Morelos,21099,exacto,1:1,1.0,1.0,False
+MEX.21.31_2,Puebla,Caxhuacan,21029,exacto,1:1,1.0,1.0,False
+MEX.21.32_2,Puebla,Chalchicomula de Sesma,21045,exacto,1:1,1.0,1.0,False
+MEX.21.33_2,Puebla,Chapulco,21046,exacto,1:1,1.0,1.0,False
+MEX.21.34_2,Puebla,Chiautla,21047,exacto,1:1,1.0,1.0,False
+MEX.21.35_2,Puebla,Chiautzingo,21048,exacto,1:1,1.0,1.0,False
+MEX.21.36_2,Puebla,Chichiquila,21050,exacto,1:1,1.0,1.0,False
+MEX.21.37_2,Puebla,Chiconcuautla,21049,exacto,1:1,1.0,1.0,False
+MEX.21.38_2,Puebla,Chietla,21051,exacto,1:1,1.0,1.0,False
+MEX.21.39_2,Puebla,Chigmecatitlán,21052,exacto,1:1,1.0,1.0,False
+MEX.21.40_2,Puebla,Chignahuapan,21053,exacto,1:1,1.0,1.0,False
+MEX.21.41_2,Puebla,Chignautla,21054,exacto,1:1,1.0,1.0,False
+MEX.21.42_2,Puebla,Chila,21055,exacto,1:1,1.0,1.0,False
+MEX.21.43_2,Puebla,Chila de la Sal,21056,exacto,1:1,1.0,1.0,False
+MEX.21.44_2,Puebla,Chilchotla,21058,exacto,1:1,1.0,1.0,False
+MEX.21.45_2,Puebla,Chinantla,21059,exacto,1:1,1.0,1.0,False
+MEX.21.46_2,Puebla,Coatepec,21030,exacto,1:1,1.0,1.0,False
+MEX.21.47_2,Puebla,Coatzingo,21031,exacto,1:1,1.0,1.0,False
+MEX.21.48_2,Puebla,Cohetzala,21032,exacto,1:1,1.0,1.0,False
+MEX.21.49_2,Puebla,Cohuecan,21033,exacto,1:1,1.0,1.0,False
+MEX.21.50_2,Puebla,Coronango,21034,exacto,1:1,1.0,1.0,False
+MEX.21.51_2,Puebla,Coxcatlán,21035,exacto,1:1,1.0,1.0,False
+MEX.21.52_2,Puebla,Coyomeapan,21036,exacto,1:1,1.0,1.0,False
+MEX.21.53_2,Puebla,Coyotepec,21037,exacto,1:1,1.0,1.0,False
+MEX.21.54_2,Puebla,Cuapiaxtla de Madero,21038,exacto,1:1,1.0,1.0,False
+MEX.21.55_2,Puebla,Cuautempan,21039,exacto,1:1,1.0,1.0,False
+MEX.21.56_2,Puebla,Cuautinchán,21040,exacto,1:1,1.0,1.0,False
+MEX.21.57_2,Puebla,Cuautlancingo,21041,exacto,1:1,1.0,1.0,False
+MEX.21.58_2,Puebla,Cuayuca de Andrade,21042,exacto,1:1,1.0,1.0,False
+MEX.21.59_2,Puebla,Cuetzalan del Progreso,21043,exacto,1:1,1.0,1.0,False
+MEX.21.60_2,Puebla,Cuyoaco,21044,exacto,1:1,1.0,1.0,False
+MEX.21.61_2,Puebla,Domingo Arenas,21060,exacto,1:1,1.0,1.0,False
+MEX.21.62_2,Puebla,Eloxochitlán,21061,exacto,1:1,1.0,1.0,False
+MEX.21.63_2,Puebla,Epatlán,21062,exacto,1:1,1.0,1.0,False
+MEX.21.64_2,Puebla,Esperanza,21063,exacto,1:1,1.0,1.0,False
+MEX.21.65_2,Puebla,Francisco Z. Mena,21064,exacto,1:1,1.0,1.0,False
+MEX.21.66_2,Puebla,General Felipe Ángeles,21065,exacto,1:1,1.0,1.0,False
+MEX.21.67_2,Puebla,Guadalupe,21066,exacto,1:1,1.0,1.0,False
+MEX.21.68_2,Puebla,Guadalupe Victoria,21067,exacto,1:1,1.0,1.0,False
+MEX.21.69_2,Puebla,Hermenegildo Galeana,21068,exacto,1:1,1.0,1.0,False
+MEX.21.70_2,Puebla,Honey,21057,exacto,1:1,1.0,1.0,False
+MEX.21.71_2,Puebla,Huaquechula,21069,exacto,1:1,1.0,1.0,False
+MEX.21.72_2,Puebla,Huatlatlauca,21070,exacto,1:1,1.0,1.0,False
+MEX.21.73_2,Puebla,Huauchinango,21071,exacto,1:1,1.0,1.0,False
+MEX.21.74_2,Puebla,Huehuetla,21072,exacto,1:1,1.0,1.0,False
+MEX.21.75_2,Puebla,Huehuetlán el Chico,21073,exacto,1:1,1.0,1.0,False
+MEX.21.76_2,Puebla,Huehuetlán el Grande,21150,exacto,1:1,1.0,1.0,False
+MEX.21.77_2,Puebla,Huejotzingo,21074,exacto,1:1,1.0,1.0,False
+MEX.21.78_2,Puebla,Hueyapan,21075,exacto,1:1,1.0,1.0,False
+MEX.21.79_2,Puebla,Hueytamalco,21076,exacto,1:1,1.0,1.0,False
+MEX.21.80_2,Puebla,Hueytlalpan,21077,exacto,1:1,1.0,1.0,False
+MEX.21.81_2,Puebla,Huitzilan de Serdán,21078,exacto,1:1,1.0,1.0,False
+MEX.21.82_2,Puebla,Huitziltepec,21079,exacto,1:1,1.0,1.0,False
+MEX.21.83_2,Puebla,Ixcamilpa de Guerrero,21081,exacto,1:1,1.0,1.0,False
+MEX.21.84_2,Puebla,Ixcaquixtla,21082,exacto,1:1,1.0,1.0,False
+MEX.21.85_2,Puebla,Ixtacamaxtitlán,21083,exacto,1:1,1.0,0.9928492849284929,False
+MEX.21.86_2,Puebla,Ixtepec,21084,exacto,1:1,1.0,1.0,False
+MEX.21.87_2,Puebla,Izúcar de Matamoros,21085,exacto,1:1,1.0,1.0,False
+MEX.21.88_2,Puebla,Jalpan,21086,exacto,1:1,1.0,1.0,False
+MEX.21.89_2,Puebla,Jolalpan,21087,exacto,1:1,1.0,1.0,False
+MEX.21.90_2,Puebla,Jonotla,21088,exacto,1:1,1.0,1.0,False
+MEX.21.91_2,Puebla,Jopala,21089,exacto,1:1,1.0,1.0,False
+MEX.21.92_2,Puebla,Juan C. Bonilla,21090,exacto,1:1,1.0,1.0,False
+MEX.21.93_2,Puebla,Juan Galindo,21091,exacto,1:1,1.0,1.0,False
+MEX.21.94_2,Puebla,Juan N. Méndez,21092,exacto,1:1,1.0,1.0,False
+MEX.21.95_2,Puebla,La Magdalena Tlatlauquitepec,21095,exacto,1:1,1.0,1.0,False
+MEX.21.96_2,Puebla,Lafragua,21093,exacto,1:1,1.0,1.0,False
+MEX.21.97_2,Puebla,Libres,21094,exacto,1:1,1.0,1.0,False
+MEX.21.98_2,Puebla,Los Reyes de Juárez,21118,exacto,1:1,1.0,1.0,False
+MEX.21.99_2,Puebla,Mazapiltepec de Juárez,21096,exacto,1:1,1.0,1.0,False
+MEX.21.100_2,Puebla,Mixtla,21097,exacto,1:1,1.0,1.0,False
+MEX.21.101_2,Puebla,Molcaxac,21098,exacto,1:1,1.0,1.0,False
+MEX.21.102_2,Puebla,Naupan,21100,exacto,1:1,1.0,1.0,False
+MEX.21.103_2,Puebla,Nauzontla,21101,exacto,1:1,1.0,1.0,False
+MEX.21.104_2,Puebla,Nealtican,21102,exacto,1:1,1.0,1.0,False
+MEX.21.105_2,Puebla,Nicolás Bravo,21103,exacto,1:1,1.0,1.0,False
+MEX.21.106_2,Puebla,Nopalucan,21104,exacto,1:1,1.0,1.0,False
+MEX.21.107_2,Puebla,Ocotepec,21105,exacto,1:1,1.0,1.0,False
+MEX.21.108_2,Puebla,Ocoyucan,21106,exacto,1:1,1.0,1.0,False
+MEX.21.109_2,Puebla,Olintla,21107,exacto,1:1,1.0,1.0,False
+MEX.21.110_2,Puebla,Oriental,21108,exacto,1:1,1.0,1.0,False
+MEX.21.111_2,Puebla,Pahuatlán,21109,exacto,1:1,1.0,1.0,False
+MEX.21.112_2,Puebla,Palmar de Bravo,21110,exacto,1:1,1.0,1.0,False
+MEX.21.113_2,Puebla,Pantepec,21111,exacto,1:1,1.0,1.0,False
+MEX.21.114_2,Puebla,Petlalcingo,21112,exacto,1:1,1.0,1.0,False
+MEX.21.115_2,Puebla,Piaxtla,21113,exacto,1:1,1.0,1.0,False
+MEX.21.116_2,Puebla,Puebla,21114,exacto,1:1,0.9984436238431164,1.0,False
+MEX.21.117_2,Puebla,Quecholac,21115,exacto,1:1,1.0,1.0,False
+MEX.21.118_2,Puebla,Quimixtlán,21116,exacto,1:1,1.0,1.0,False
+MEX.21.119_2,Puebla,Rafael Lara Grajales,21117,exacto,1:1,1.0,1.0,False
+MEX.21.120_2,Puebla,San Andrés Cholula,21119,exacto,1:1,1.0,1.0,False
+MEX.21.121_2,Puebla,San Antonio Cañada,21120,exacto,1:1,1.0,1.0,False
+MEX.21.122_2,Puebla,San Diego la Mesa Tochimiltzingo,21121,exacto,1:1,1.0,1.0,False
+MEX.21.123_2,Puebla,San Felipe Teotlalcingo,21122,exacto,1:1,1.0,1.0,False
+MEX.21.124_2,Puebla,San Felipe Tepatlán,21123,exacto,1:1,1.0,1.0,False
+MEX.21.125_2,Puebla,San Gabriel Chilac,21124,exacto,1:1,1.0,1.0,False
+MEX.21.126_2,Puebla,San Gregorio Atzompa,21125,exacto,1:1,1.0,1.0,False
+MEX.21.127_2,Puebla,San Jerónimo Tecuanipan,21126,exacto,1:1,1.0,1.0,False
+MEX.21.128_2,Puebla,San Jerónimo Xayacatlán,21127,exacto,1:1,1.0,1.0,False
+MEX.21.129_2,Puebla,San José Chiapa,21128,exacto,1:1,1.0,1.0,False
+MEX.21.130_2,Puebla,San José Miahuatlán,21129,exacto,1:1,1.0,1.0,False
+MEX.21.131_2,Puebla,San Juan Atenco,21130,exacto,1:1,1.0,1.0,False
+MEX.21.132_2,Puebla,San Juan Atzompa,21131,exacto,1:1,1.0,1.0,False
+MEX.21.133_2,Puebla,San Martín Texmelucan,21132,exacto,1:1,1.0,1.0,False
+MEX.21.134_2,Puebla,San Martín Totoltepec,21133,exacto,1:1,1.0,1.0,False
+MEX.21.135_2,Puebla,San Matías Tlalancaleca,21134,exacto,1:1,1.0,1.0,False
+MEX.21.136_2,Puebla,San Miguel Ixitlán,21135,exacto,1:1,1.0,1.0,False
+MEX.21.137_2,Puebla,San Miguel Xoxtla,21136,exacto,1:1,1.0,1.0,False
+MEX.21.138_2,Puebla,San Nicolás Buenos Aires,21137,exacto,1:1,0.9858242583552385,1.0,False
+MEX.21.139_2,Puebla,San Nicolás de los Ranchos,21138,exacto,1:1,1.0,1.0,False
+MEX.21.140_2,Puebla,San Pablo Anicano,21139,exacto,1:1,1.0,1.0,False
+MEX.21.141_2,Puebla,San Pedro Cholula,21140,exacto,1:1,1.0,1.0,False
+MEX.21.142_2,Puebla,San Pedro Yeloixtlahuaca,21141,exacto,1:1,1.0,1.0,False
+MEX.21.143_2,Puebla,San Salvador el Seco,21142,exacto,1:1,1.0,1.0,False
+MEX.21.144_2,Puebla,San Salvador el Verde,21143,exacto,1:1,1.0,1.0,False
+MEX.21.145_2,Puebla,San Salvador Huixcolotla,21144,exacto,1:1,1.0,1.0,False
+MEX.21.146_2,Puebla,San Sebastián Tlacotepec,21145,exacto,1:1,1.0,1.0,False
+MEX.21.147_2,Puebla,Santa Catarina Tlaltempan,21146,exacto,1:1,1.0,1.0,False
+MEX.21.148_2,Puebla,Santa Inés Ahuatempan,21147,exacto,1:1,1.0,1.0,False
+MEX.21.149_2,Puebla,Santa Isabel Cholula,21148,exacto,1:1,1.0,1.0,False
+MEX.21.150_2,Puebla,Santiago Miahuatlán,21149,exacto,1:1,1.0,1.0,False
+MEX.21.151_2,Puebla,Santo Tomás Hueyotlipan,21151,exacto,1:1,1.0,1.0,False
+MEX.21.152_2,Puebla,Soltepec,21152,exacto,1:1,1.0,1.0,False
+MEX.21.153_2,Puebla,Tecali de Herrera,21153,exacto,1:1,1.0,1.0,False
+MEX.21.154_2,Puebla,Tecamachalco,21154,exacto,1:1,1.0,1.0,False
+MEX.21.155_2,Puebla,Tecomatlán,21155,exacto,1:1,1.0,1.0,False
+MEX.21.156_2,Puebla,Tehuacán,21156,exacto,1:1,1.0,1.0,False
+MEX.21.157_2,Puebla,Tehuitzingo,21157,exacto,1:1,1.0,1.0,False
+MEX.21.158_2,Puebla,Tenampulco,21158,exacto,1:1,1.0,1.0,False
+MEX.21.159_2,Puebla,Teopantlán,21159,exacto,1:1,1.0,1.0,False
+MEX.21.160_2,Puebla,Teotlalco,21160,exacto,1:1,1.0,1.0,False
+MEX.21.161_2,Puebla,Tepanco de López,21161,exacto,1:1,1.0,1.0,False
+MEX.21.162_2,Puebla,Tepango de Rodríguez,21162,exacto,1:1,1.0,1.0,False
+MEX.21.163_2,Puebla,Tepatlaxco de Hidalgo,21163,exacto,1:1,1.0,1.0,False
+MEX.21.164_2,Puebla,Tepeaca,21164,exacto,1:1,1.0,1.0,False
+MEX.21.165_2,Puebla,Tepemaxalco,21165,exacto,1:1,1.0,1.0,False
+MEX.21.166_2,Puebla,Tepeojuma,21166,exacto,1:1,1.0,1.0,False
+MEX.21.167_2,Puebla,Tepetzintla,21167,exacto,1:1,1.0,1.0,False
+MEX.21.168_2,Puebla,Tepexco,21168,exacto,1:1,1.0,1.0,False
+MEX.21.169_2,Puebla,Tepexi de Rodríguez,21169,exacto,1:1,1.0,1.0,False
+MEX.21.170_2,Puebla,Tepeyahualco,21170,exacto,1:1,1.0,1.0,False
+MEX.21.171_2,Puebla,Tepeyahualco de Cuauhtémoc,21171,exacto,1:1,1.0,1.0,False
+MEX.21.172_2,Puebla,Tetela de Ocampo,21172,exacto,1:1,1.0,1.0,False
+MEX.21.173_2,Puebla,Teteles de Avila Castillo,21173,exacto,1:1,1.0,1.0,False
+MEX.21.174_2,Puebla,Teziutlán,21174,exacto,1:1,1.0,1.0,False
+MEX.21.175_2,Puebla,Tianguismanalco,21175,exacto,1:1,1.0,1.0,False
+MEX.21.176_2,Puebla,Tilapa,21176,exacto,1:1,1.0,1.0,False
+MEX.21.177_2,Puebla,Tlachichuca,21179,exacto,1:1,1.0,0.9952352402890411,False
+MEX.21.178_2,Puebla,Tlacotepec de Benito Juárez,21177,exacto,1:1,1.0,0.9963329867002353,False
+MEX.21.179_2,Puebla,Tlacuilotepec,21178,exacto,1:1,1.0,1.0,False
+MEX.21.180_2,Puebla,Tlahuapan,21180,exacto,1:1,1.0,1.0,False
+MEX.21.181_2,Puebla,Tlaltenango,21181,exacto,1:1,1.0,1.0,False
+MEX.21.182_2,Puebla,Tlanepantla,21182,exacto,1:1,1.0,1.0,False
+MEX.21.183_2,Puebla,Tlaola,21183,exacto,1:1,1.0,1.0,False
+MEX.21.184_2,Puebla,Tlapacoya,21184,exacto,1:1,1.0,1.0,False
+MEX.21.185_2,Puebla,Tlapanalá,21185,exacto,1:1,1.0,1.0,False
+MEX.21.186_2,Puebla,Tlatlauquitepec,21186,exacto,1:1,1.0,1.0,False
+MEX.21.187_2,Puebla,Tlaxco,21187,exacto,1:1,1.0,1.0,False
+MEX.21.188_2,Puebla,Tochimilco,21188,exacto,1:1,1.0,1.0,False
+MEX.21.189_2,Puebla,Tochtepec,21189,exacto,1:1,1.0,1.0,False
+MEX.21.190_2,Puebla,Totoltepec de Guerrero,21190,exacto,1:1,1.0,1.0,False
+MEX.21.191_2,Puebla,Tulcingo,21191,exacto,1:1,1.0,1.0,False
+MEX.21.192_2,Puebla,Tuzamapan de Galeana,21192,exacto,1:1,1.0,1.0,False
+MEX.21.193_2,Puebla,Tzicatlacoyan,21193,exacto,1:1,1.0,1.0,False
+MEX.21.194_2,Puebla,Venustiano Carranza,21194,exacto,1:1,1.0,1.0,False
+MEX.21.195_2,Puebla,Vicente Guerrero,21195,exacto,1:1,1.0,1.0,False
+MEX.21.196_2,Puebla,Xayacatlán de Bravo,21196,exacto,1:1,1.0,1.0,False
+MEX.21.197_2,Puebla,Xicotepec,21197,exacto,1:1,1.0,1.0,False
+MEX.21.198_2,Puebla,Xicotlán,21198,exacto,1:1,1.0,1.0,False
+MEX.21.199_2,Puebla,Xiutetelco,21199,exacto,1:1,1.0,1.0,False
+MEX.21.200_2,Puebla,Xochiapulco,21200,exacto,1:1,1.0,1.0,False
+MEX.21.201_2,Puebla,Xochiltepec,21201,exacto,1:1,1.0,1.0,False
+MEX.21.202_2,Puebla,Xochitlán de Vicente Suárez,21202,exacto,1:1,1.0,1.0,False
+MEX.21.203_2,Puebla,Xochitlán Todos Santos,21203,exacto,1:1,1.0,1.0,False
+MEX.21.204_2,Puebla,Yaonáhuac,21204,exacto,1:1,1.0,1.0,False
+MEX.21.205_2,Puebla,Yehualtepec,21205,exacto,1:1,0.9924498535046202,1.0,False
+MEX.21.206_2,Puebla,Zacapala,21206,exacto,1:1,1.0,1.0,False
+MEX.21.207_2,Puebla,Zacapoaxtla,21207,exacto,1:1,1.0,1.0,False
+MEX.21.208_2,Puebla,Zacatlán,21208,exacto,1:1,1.0,1.0,False
+MEX.21.209_2,Puebla,Zapotitlán,21209,exacto,1:1,1.0,1.0,False
+MEX.21.210_2,Puebla,Zapotitlán de Méndez,21210,exacto,1:1,1.0,1.0,False
+MEX.21.211_2,Puebla,Zaragoza,21211,exacto,1:1,1.0,1.0,False
+MEX.21.212_2,Puebla,Zautla,21212,exacto,1:1,1.0,1.0,False
+MEX.21.213_2,Puebla,Zihuateutla,21213,exacto,1:1,1.0,1.0,False
+MEX.21.214_2,Puebla,Zinacatepec,21214,exacto,1:1,1.0,1.0,False
+MEX.21.215_2,Puebla,Zongozotla,21215,exacto,1:1,1.0,1.0,False
+MEX.21.216_2,Puebla,Zoquiapan,21216,exacto,1:1,1.0,1.0,False
+MEX.21.217_2,Puebla,Zoquitlán,21217,exacto,1:1,1.0,1.0,False
+MEX.22.1_2,Querétaro,Amealco de Bonfil,22001,exacto,1:1,1.0,1.0,False
+MEX.22.2_2,Querétaro,Arroyo Seco,22003,exacto,1:1,1.0,1.0,False
+MEX.22.3_2,Querétaro,Cadereyta de Montes,22004,exacto,1:1,1.0,1.0,False
+MEX.22.4_2,Querétaro,Colón,22005,exacto,1:1,1.0,1.0,False
+MEX.22.5_2,Querétaro,Corregidora,22006,exacto,1:1,1.0,1.0,False
+MEX.22.6_2,Querétaro,El Marqués,22011,exacto,1:1,1.0,1.0,False
+MEX.22.7_2,Querétaro,Ezequiel Montes,22007,exacto,1:1,1.0,1.0,False
+MEX.22.8_2,Querétaro,Huimilpan,22008,exacto,1:1,1.0,1.0,False
+MEX.22.9_2,Querétaro,Jalpan de Serra,22009,exacto,1:1,1.0,1.0,False
+MEX.22.10_2,Querétaro,Landa de Matamoros,22010,exacto,1:1,1.0,1.0,False
+MEX.22.11_2,Querétaro,Pedro Escobedo,22012,exacto,1:1,1.0,1.0,False
+MEX.22.12_2,Querétaro,Peñamiller,22013,exacto,1:1,1.0,1.0,False
+MEX.22.13_2,Querétaro,Pinal de Amoles,22002,exacto,1:1,1.0,1.0,False
+MEX.22.14_2,Querétaro,Querétaro,22014,exacto,1:1,1.0,1.0,False
+MEX.22.15_2,Querétaro,San Joaquín,22015,exacto,1:1,1.0,1.0,False
+MEX.22.16_2,Querétaro,San Juan del Río,22016,exacto,1:1,1.0,1.0,False
+MEX.22.17_2,Querétaro,Tequisquiapan,22017,exacto,1:1,1.0,1.0,False
+MEX.22.18_2,Querétaro,Tolimán,22018,exacto,1:1,1.0,1.0,False
+MEX.23.1_2,Quintana Roo,Bacalar,23010,exacto,1:1,1.0,1.0,False
+MEX.23.2_2,Quintana Roo,Benito Juárez,23005,exacto,1:n,0.9708661568244111,1.0,False
+MEX.23.3_2,Quintana Roo,Cozumel,23001,exacto,1:1,1.0,1.0,False
+MEX.23.4_2,Quintana Roo,Felipe Carrillo Puerto,23002,exacto,1:1,1.0,1.0,False
+MEX.23.5_2,Quintana Roo,Isla Mujeres,23003,exacto,1:1,0.9998679519345042,1.0,False
+MEX.23.6_2,Quintana Roo,José María Morelos,23006,exacto,1:1,1.0,1.0,False
+MEX.23.7_2,Quintana Roo,Lázaro Cárdenas,23007,exacto,1:1,0.9999658283214872,0.9981921135216264,False
+MEX.23.8_2,Quintana Roo,Othón P. Blanco,23004,exacto,1:1,1.0,1.0,False
+MEX.23.9_2,Quintana Roo,Solidaridad,23008,exacto,1:1,0.9998982252275714,0.9999970063286213,False
+MEX.23.10_2,Quintana Roo,Tulum,23009,exacto,1:1,1.0,1.0,False
+MEX.24.1_2,San Luis Potosí,Ahualulco,24001,prefijo,1:1,1.0,1.0,False
+MEX.24.2_2,San Luis Potosí,Alaquines,24002,exacto,1:1,1.0,1.0,False
+MEX.24.3_2,San Luis Potosí,Aquismón,24003,exacto,1:1,1.0,1.0,False
+MEX.24.4_2,San Luis Potosí,Armadillo de los Infante,24004,exacto,1:1,1.0,1.0,False
+MEX.24.5_2,San Luis Potosí,Axtla de Terrazas,24053,exacto,1:1,1.0,1.0,False
+MEX.24.6_2,San Luis Potosí,Cárdenas,24005,exacto,1:1,1.0,1.0,False
+MEX.24.7_2,San Luis Potosí,Catorce,24006,exacto,1:1,1.0,1.0,False
+MEX.24.8_2,San Luis Potosí,Cedral,24007,exacto,1:1,1.0,1.0,False
+MEX.24.9_2,San Luis Potosí,Cerritos,24008,exacto,1:1,1.0,1.0,False
+MEX.24.10_2,San Luis Potosí,Cerro de San Pedro,24009,exacto,1:1,1.0,1.0,False
+MEX.24.11_2,San Luis Potosí,Charcas,24015,exacto,1:1,1.0,1.0,False
+MEX.24.12_2,San Luis Potosí,Ciudad del Maíz,24010,exacto,1:1,1.0,1.0,False
+MEX.24.13_2,San Luis Potosí,Ciudad Fernández,24011,exacto,1:1,1.0,1.0,False
+MEX.24.14_2,San Luis Potosí,Ciudad Valles,24013,exacto,1:1,1.0,1.0,False
+MEX.24.15_2,San Luis Potosí,Coxcatlán,24014,exacto,1:1,1.0,1.0,False
+MEX.24.16_2,San Luis Potosí,Ebano,24016,exacto,1:1,1.0,1.0,False
+MEX.24.17_2,San Luis Potosí,El Naranjo,24058,exacto,1:1,1.0,1.0,False
+MEX.24.18_2,San Luis Potosí,Guadalcázar,24017,exacto,1:1,1.0,1.0,False
+MEX.24.19_2,San Luis Potosí,Huehuetlán,24018,exacto,1:1,1.0,1.0,False
+MEX.24.20_2,San Luis Potosí,Lagunillas,24019,exacto,1:1,1.0,1.0,False
+MEX.24.21_2,San Luis Potosí,Matehuala,24020,exacto,1:1,1.0,1.0,False
+MEX.24.22_2,San Luis Potosí,Matlapa,24057,exacto,1:1,1.0,1.0,False
+MEX.24.23_2,San Luis Potosí,Mexquitic de Carmona,24021,exacto,1:1,1.0,1.0,False
+MEX.24.24_2,San Luis Potosí,Moctezuma,24022,exacto,1:1,1.0,1.0,False
+MEX.24.25_2,San Luis Potosí,Rayón,24023,exacto,1:1,1.0,1.0,False
+MEX.24.26_2,San Luis Potosí,Rioverde,24024,exacto,1:1,1.0,1.0,False
+MEX.24.27_2,San Luis Potosí,Salinas,24025,exacto,1:1,1.0,1.0,False
+MEX.24.28_2,San Luis Potosí,San Antonio,24026,exacto,1:1,1.0,1.0,False
+MEX.24.29_2,San Luis Potosí,San Ciro de Acosta,24027,exacto,1:1,1.0,1.0,False
+MEX.24.30_2,San Luis Potosí,San Luis Potosí,24028,exacto,1:1,1.0,1.0,False
+MEX.24.31_2,San Luis Potosí,San Martín Chalchicuautla,24029,exacto,1:1,1.0,1.0,False
+MEX.24.32_2,San Luis Potosí,San Nicolás Tolentino,24030,exacto,1:1,1.0,1.0,False
+MEX.24.33_2,San Luis Potosí,San Vicente Tancuayalab,24034,exacto,1:1,1.0,1.0,False
+MEX.24.34_2,San Luis Potosí,Santa Catarina,24031,exacto,1:1,1.0,1.0,False
+MEX.24.35_2,San Luis Potosí,Santa María del Río,24032,exacto,1:1,1.0,1.0,False
+MEX.24.36_2,San Luis Potosí,Santo Domingo,24033,exacto,1:1,1.0,1.0,False
+MEX.24.37_2,San Luis Potosí,Soledad de Graciano Sánchez,24035,exacto,1:1,1.0,1.0,False
+MEX.24.38_2,San Luis Potosí,Tamasopo,24036,exacto,1:1,1.0,1.0,False
+MEX.24.39_2,San Luis Potosí,Tamazunchale,24037,exacto,1:1,1.0,1.0,False
+MEX.24.40_2,San Luis Potosí,Tampacán,24038,exacto,1:1,1.0,1.0,False
+MEX.24.41_2,San Luis Potosí,Tampamolón Corona,24039,exacto,1:1,1.0,1.0,False
+MEX.24.42_2,San Luis Potosí,Tamuín,24040,exacto,1:1,1.0,1.0,False
+MEX.24.43_2,San Luis Potosí,Tancanhuitz,24012,exacto,1:1,1.0,1.0,False
+MEX.24.44_2,San Luis Potosí,Tanlajás,24041,exacto,1:1,1.0,1.0,False
+MEX.24.45_2,San Luis Potosí,Tanquián de Escobedo,24042,exacto,1:1,1.0,1.0,False
+MEX.24.46_2,San Luis Potosí,Tierra Nueva,24043,exacto,1:1,1.0,1.0,False
+MEX.24.47_2,San Luis Potosí,Vanegas,24044,exacto,1:1,1.0,1.0,False
+MEX.24.48_2,San Luis Potosí,Venado,24045,exacto,1:1,1.0,1.0,False
+MEX.24.49_2,San Luis Potosí,Villa de Arista,24056,exacto,1:1,1.0,1.0,False
+MEX.24.50_2,San Luis Potosí,Villa de Arriaga,24046,exacto,1:1,1.0,1.0,False
+MEX.24.51_2,San Luis Potosí,Villa de Guadalupe,24047,exacto,1:1,1.0,1.0,False
+MEX.24.52_2,San Luis Potosí,Villa de la Paz,24048,exacto,1:1,1.0,1.0,False
+MEX.24.53_2,San Luis Potosí,Villa de Ramos,24049,exacto,1:1,1.0,1.0,False
+MEX.24.54_2,San Luis Potosí,Villa de Reyes,24050,exacto,1:1,1.0,1.0,False
+MEX.24.55_2,San Luis Potosí,Villa Hidalgo,24051,exacto,1:1,1.0,1.0,False
+MEX.24.56_2,San Luis Potosí,Villa Juárez,24052,exacto,1:1,1.0,1.0,False
+MEX.24.57_2,San Luis Potosí,Xilitla,24054,exacto,1:1,1.0,1.0,False
+MEX.24.58_2,San Luis Potosí,Zaragoza,24055,exacto,1:1,1.0,1.0,False
+MEX.25.1_2,Sinaloa,Ahome,25001,exacto,1:1,1.0,1.0,False
+MEX.25.2_2,Sinaloa,Angostura,25002,exacto,1:1,1.0,1.0,False
+MEX.25.3_2,Sinaloa,Badiraguato,25003,exacto,1:1,0.9985817720385161,1.0,False
+MEX.25.4_2,Sinaloa,Choix,25007,exacto,1:1,1.0,1.0,False
+MEX.25.5_2,Sinaloa,Concordia,25004,exacto,1:1,1.0,1.0,False
+MEX.25.6_2,Sinaloa,Cosalá,25005,exacto,1:1,1.0,1.0,False
+MEX.25.7_2,Sinaloa,Culiacán,25006,exacto,1:1,1.0,1.0,False
+MEX.25.8_2,Sinaloa,El Fuerte,25010,exacto,1:1,1.0,1.0,False
+MEX.25.9_2,Sinaloa,Elota,25008,exacto,1:1,1.0,1.0,False
+MEX.25.10_2,Sinaloa,Escuinapa,25009,exacto,1:1,1.0,1.0,False
+MEX.25.11_2,Sinaloa,Guasave,25011,exacto,1:1,1.0,1.0,False
+MEX.25.12_2,Sinaloa,Mazatlán,25012,exacto,1:1,1.0,1.0,False
+MEX.25.13_2,Sinaloa,Mocorito,25013,exacto,1:1,1.0,1.0,False
+MEX.25.14_2,Sinaloa,Navolato,25018,exacto,1:1,1.0,1.0,False
+MEX.25.15_2,Sinaloa,Rosario,25014,exacto,1:1,1.0,1.0,False
+MEX.25.16_2,Sinaloa,Salvador Alvarado,25015,exacto,1:1,1.0,1.0,False
+MEX.25.17_2,Sinaloa,San Ignacio,25016,exacto,1:1,1.0,1.0,False
+MEX.25.18_2,Sinaloa,Sinaloa,25017,exacto,1:1,1.0,1.0,False
+MEX.26.1_2,Sonora,Aconchi,26001,exacto,1:1,1.0,1.0,False
+MEX.26.2_2,Sonora,Agua Prieta,26002,exacto,1:1,1.0,1.0,False
+MEX.26.3_2,Sonora,Alamos,26003,exacto,1:1,1.0,1.0,False
+MEX.26.4_2,Sonora,Altar,26004,exacto,1:1,1.0,1.0,False
+MEX.26.5_2,Sonora,Arivechi,26005,exacto,1:1,1.0,1.0,False
+MEX.26.6_2,Sonora,Arizpe,26006,exacto,1:1,1.0,1.0,False
+MEX.26.7_2,Sonora,Atil,26007,exacto,1:1,1.0,1.0,False
+MEX.26.8_2,Sonora,Bacadéhuachi,26008,exacto,1:1,1.0,1.0,False
+MEX.26.9_2,Sonora,Bacanora,26009,exacto,1:1,1.0,1.0,False
+MEX.26.10_2,Sonora,Bacerac,26010,exacto,1:1,1.0,1.0,False
+MEX.26.11_2,Sonora,Bacoachi,26011,exacto,1:1,1.0,1.0,False
+MEX.26.12_2,Sonora,Bácum,26012,exacto,1:1,1.0,1.0,False
+MEX.26.13_2,Sonora,Banámichi,26013,exacto,1:1,1.0,1.0,False
+MEX.26.14_2,Sonora,Baviácora,26014,exacto,1:1,1.0,1.0,False
+MEX.26.15_2,Sonora,Bavispe,26015,exacto,1:1,1.0,1.0,False
+MEX.26.16_2,Sonora,Benito Juárez,26071,exacto,1:1,1.0,1.0,False
+MEX.26.17_2,Sonora,Benjamín Hill,26016,exacto,1:1,1.0,1.0,False
+MEX.26.18_2,Sonora,Caborca,26017,exacto,1:1,1.0,1.0,False
+MEX.26.19_2,Sonora,Cajeme,26018,exacto,1:1,1.0,1.0,False
+MEX.26.20_2,Sonora,Cananea,26019,exacto,1:1,1.0,1.0,False
+MEX.26.21_2,Sonora,Carbó,26020,exacto,1:1,1.0,1.0,False
+MEX.26.22_2,Sonora,Cucurpe,26022,exacto,1:1,1.0,1.0,False
+MEX.26.23_2,Sonora,Cumpas,26023,exacto,1:1,1.0,1.0,False
+MEX.26.24_2,Sonora,Divisaderos,26024,exacto,1:1,1.0,1.0,False
+MEX.26.25_2,Sonora,Empalme,26025,exacto,1:1,1.0,1.0,False
+MEX.26.26_2,Sonora,Etchojoa,26026,exacto,1:1,1.0,1.0,False
+MEX.26.27_2,Sonora,Fronteras,26027,exacto,1:1,1.0,1.0,False
+MEX.26.28_2,Sonora,General Plutarco Elías Calles,26070,exacto,1:1,1.0,1.0,False
+MEX.26.29_2,Sonora,Granados,26028,exacto,1:1,1.0,1.0,False
+MEX.26.30_2,Sonora,Guaymas,26029,exacto,1:1,1.0,1.0,False
+MEX.26.31_2,Sonora,Hermosillo,26030,exacto,1:1,1.0,1.0,False
+MEX.26.32_2,Sonora,Huachinera,26031,exacto,1:1,1.0,1.0,False
+MEX.26.33_2,Sonora,Huásabas,26032,exacto,1:1,1.0,1.0,False
+MEX.26.34_2,Sonora,Huatabampo,26033,exacto,1:1,1.0,1.0,False
+MEX.26.35_2,Sonora,Huépac,26034,exacto,1:1,1.0,1.0,False
+MEX.26.36_2,Sonora,Imuris,26035,exacto,1:1,1.0,1.0,False
+MEX.26.37_2,Sonora,La Colorada,26021,exacto,1:1,1.0,1.0,False
+MEX.26.38_2,Sonora,Magdalena,26036,exacto,1:1,1.0,1.0,False
+MEX.26.39_2,Sonora,Mazatán,26037,exacto,1:1,1.0,1.0,False
+MEX.26.40_2,Sonora,Moctezuma,26038,exacto,1:1,1.0,1.0,False
+MEX.26.41_2,Sonora,Naco,26039,exacto,1:1,1.0,1.0,False
+MEX.26.42_2,Sonora,Nácori Chico,26040,exacto,1:1,1.0,1.0,False
+MEX.26.43_2,Sonora,Nacozari de García,26041,exacto,1:1,1.0,1.0,False
+MEX.26.44_2,Sonora,Navojoa,26042,exacto,1:1,1.0,1.0,False
+MEX.26.45_2,Sonora,Nogales,26043,exacto,1:1,1.0,1.0,False
+MEX.26.46_2,Sonora,Onavas,26044,exacto,1:1,1.0,1.0,False
+MEX.26.47_2,Sonora,Opodepe,26045,exacto,1:1,1.0,1.0,False
+MEX.26.48_2,Sonora,Oquitoa,26046,exacto,1:1,1.0,1.0,False
+MEX.26.49_2,Sonora,Pitiquito,26047,exacto,1:1,1.0,1.0,False
+MEX.26.50_2,Sonora,Puerto Peñasco,26048,exacto,1:1,1.0,1.0,False
+MEX.26.51_2,Sonora,Quiriego,26049,exacto,1:1,1.0,1.0,False
+MEX.26.52_2,Sonora,Rayón,26050,exacto,1:1,1.0,1.0,False
+MEX.26.53_2,Sonora,Rosario,26051,exacto,1:1,1.0,1.0,False
+MEX.26.54_2,Sonora,Sahuaripa,26052,exacto,1:1,1.0,1.0,False
+MEX.26.55_2,Sonora,San Felipe de Jesús,26053,exacto,1:1,1.0,1.0,False
+MEX.26.56_2,Sonora,San Ignacio Río Muerto,26072,exacto,1:1,1.0,1.0,False
+MEX.26.57_2,Sonora,San Javier,26054,exacto,1:1,1.0,1.0,False
+MEX.26.58_2,Sonora,San Luis Río Colorado,26055,exacto,1:1,1.0,1.0,False
+MEX.26.59_2,Sonora,San Miguel de Horcasitas,26056,exacto,1:1,1.0,1.0,False
+MEX.26.60_2,Sonora,San Pedro de la Cueva,26057,exacto,1:1,1.0,1.0,False
+MEX.26.61_2,Sonora,Santa Ana,26058,exacto,1:1,1.0,1.0,False
+MEX.26.62_2,Sonora,Santa Cruz,26059,exacto,1:1,1.0,1.0,False
+MEX.26.63_2,Sonora,Sáric,26060,exacto,1:1,1.0,1.0,False
+MEX.26.64_2,Sonora,Soyopa,26061,exacto,1:1,1.0,1.0,False
+MEX.26.65_2,Sonora,Suaqui Grande,26062,exacto,1:1,1.0,1.0,False
+MEX.26.66_2,Sonora,Tepache,26063,exacto,1:1,1.0,1.0,False
+MEX.26.67_2,Sonora,Trincheras,26064,exacto,1:1,1.0,1.0,False
+MEX.26.68_2,Sonora,Tubutama,26065,exacto,1:1,1.0,1.0,False
+MEX.26.69_2,Sonora,Ures,26066,exacto,1:1,1.0,1.0,False
+MEX.26.70_2,Sonora,Villa Hidalgo,26067,exacto,1:1,1.0,1.0,False
+MEX.26.71_2,Sonora,Villa Pesqueira,26068,exacto,1:1,1.0,1.0,False
+MEX.26.72_2,Sonora,Yécora,26069,exacto,1:1,1.0,1.0,False
+MEX.27.1_2,Tabasco,Balancán,27001,exacto,1:1,1.0,1.0,False
+MEX.27.2_2,Tabasco,Cárdenas,27002,exacto,1:1,1.0,1.0,False
+MEX.27.3_2,Tabasco,Centla,27003,exacto,1:1,1.0,0.9991089991089991,False
+MEX.27.4_2,Tabasco,Centro,27004,exacto,1:1,1.0,1.0,False
+MEX.27.5_2,Tabasco,Comalcalco,27005,exacto,1:1,1.0,1.0,False
+MEX.27.6_2,Tabasco,Cunduacán,27006,exacto,1:1,1.0,1.0,False
+MEX.27.7_2,Tabasco,Emiliano Zapata,27007,exacto,1:1,1.0,1.0,False
+MEX.27.8_2,Tabasco,Huimanguillo,27008,exacto,1:1,0.9982749043987268,1.0,False
+MEX.27.9_2,Tabasco,Jalapa,27009,exacto,1:1,1.0,1.0,False
+MEX.27.10_2,Tabasco,Jalpa de Méndez,27010,exacto,1:1,1.0,1.0,False
+MEX.27.11_2,Tabasco,Jonuta,27011,exacto,1:1,0.9998379674638668,1.0,False
+MEX.27.12_2,Tabasco,Macuspana,27012,exacto,1:1,0.9993951841538248,1.0,False
+MEX.27.13_2,Tabasco,Nacajuca,27013,exacto,1:1,1.0,1.0,False
+MEX.27.14_2,Tabasco,Paraíso,27014,exacto,1:1,1.0,1.0,False
+MEX.27.15_2,Tabasco,Tacotalpa,27015,exacto,1:1,1.0,1.0,False
+MEX.27.16_2,Tabasco,Teapa,27016,exacto,1:1,1.0,1.0,False
+MEX.27.17_2,Tabasco,Tenosique,27017,exacto,1:1,1.0,1.0,False
+MEX.28.1_2,Tamaulipas,Abasolo,28001,exacto,1:1,1.0,1.0,False
+MEX.28.2_2,Tamaulipas,Aldama,28002,exacto,1:1,1.0,1.0,False
+MEX.28.3_2,Tamaulipas,Altamira,28003,exacto,1:1,1.0,1.0,False
+MEX.28.4_2,Tamaulipas,Antiguo Morelos,28004,exacto,1:1,1.0,1.0,False
+MEX.28.5_2,Tamaulipas,Burgos,28005,exacto,1:1,1.0,1.0,False
+MEX.28.6_2,Tamaulipas,Bustamante,28006,exacto,1:1,1.0,1.0,False
+MEX.28.7_2,Tamaulipas,Camargo,28007,exacto,1:1,1.0,1.0,False
+MEX.28.8_2,Tamaulipas,Casas,28008,exacto,1:1,1.0,1.0,False
+MEX.28.9_2,Tamaulipas,Ciudad Madero,28009,exacto,1:1,1.0,1.0,False
+MEX.28.10_2,Tamaulipas,Cruillas,28010,exacto,1:1,1.0,1.0,False
+MEX.28.11_2,Tamaulipas,El Mante,28021,exacto,1:1,1.0,1.0,False
+MEX.28.12_2,Tamaulipas,Gómez Farías,28011,exacto,1:1,1.0,1.0,False
+MEX.28.13_2,Tamaulipas,González,28012,exacto,1:1,1.0,1.0,False
+MEX.28.14_2,Tamaulipas,Güémez,28013,exacto,1:1,1.0,1.0,False
+MEX.28.15_2,Tamaulipas,Guerrero,28014,exacto,1:1,1.0,1.0,False
+MEX.28.16_2,Tamaulipas,Gustavo Díaz Ordaz,28015,exacto,1:1,1.0,1.0,False
+MEX.28.17_2,Tamaulipas,Hidalgo,28016,exacto,1:1,1.0,1.0,False
+MEX.28.18_2,Tamaulipas,Jaumave,28017,exacto,1:1,1.0,1.0,False
+MEX.28.19_2,Tamaulipas,Jiménez,28018,exacto,1:1,1.0,1.0,False
+MEX.28.20_2,Tamaulipas,Llera,28019,exacto,1:1,1.0,1.0,False
+MEX.28.21_2,Tamaulipas,Mainero,28020,exacto,1:1,1.0,1.0,False
+MEX.28.22_2,Tamaulipas,Matamoros,28022,exacto,1:1,1.0,1.0,False
+MEX.28.23_2,Tamaulipas,Méndez,28023,exacto,1:1,1.0,1.0,False
+MEX.28.24_2,Tamaulipas,Mier,28024,exacto,1:1,1.0,1.0,False
+MEX.28.25_2,Tamaulipas,Miguel Alemán,28025,exacto,1:1,1.0,1.0,False
+MEX.28.26_2,Tamaulipas,Miquihuana,28026,exacto,1:1,1.0,1.0,False
+MEX.28.27_2,Tamaulipas,Nuevo Laredo,28027,exacto,1:1,1.0,1.0,False
+MEX.28.28_2,Tamaulipas,Nuevo Morelos,28028,exacto,1:1,1.0,1.0,False
+MEX.28.29_2,Tamaulipas,Ocampo,28029,exacto,1:1,1.0,1.0,False
+MEX.28.30_2,Tamaulipas,Padilla,28030,exacto,1:1,1.0,1.0,False
+MEX.28.31_2,Tamaulipas,Palmillas,28031,exacto,1:1,1.0,1.0,False
+MEX.28.32_2,Tamaulipas,Reynosa,28032,exacto,1:1,1.0,1.0,False
+MEX.28.33_2,Tamaulipas,Río Bravo,28033,exacto,1:1,1.0,1.0,False
+MEX.28.34_2,Tamaulipas,San Carlos,28034,exacto,1:1,1.0,1.0,False
+MEX.28.35_2,Tamaulipas,San Fernando,28035,exacto,1:1,1.0,1.0,False
+MEX.28.36_2,Tamaulipas,San Nicolás,28036,exacto,1:1,1.0,1.0,False
+MEX.28.37_2,Tamaulipas,Soto la Marina,28037,exacto,1:1,1.0,1.0,False
+MEX.28.38_2,Tamaulipas,Tampico,28038,exacto,1:1,1.0,1.0,False
+MEX.28.39_2,Tamaulipas,Tula,28039,exacto,1:1,1.0,1.0,False
+MEX.28.40_2,Tamaulipas,Valle Hermoso,28040,exacto,1:1,1.0,1.0,False
+MEX.28.41_2,Tamaulipas,Victoria,28041,exacto,1:1,1.0,1.0,False
+MEX.28.42_2,Tamaulipas,Villagrán,28042,exacto,1:1,1.0,1.0,False
+MEX.28.43_2,Tamaulipas,Xicoténcatl,28043,exacto,1:1,1.0,1.0,False
+MEX.29.1_2,Tlaxcala,Acuamanala de Miguel Hidalgo,29022,exacto,1:1,1.0,1.0,False
+MEX.29.2_2,Tlaxcala,Amaxac de Guerrero,29001,exacto,1:1,1.0,1.0,False
+MEX.29.3_2,Tlaxcala,Apetatitlán de Antonio Carvajal,29002,exacto,1:1,1.0,1.0,False
+MEX.29.4_2,Tlaxcala,Apizaco,29005,exacto,1:1,1.0,1.0,False
+MEX.29.5_2,Tlaxcala,Atlangatepec,29003,exacto,1:1,1.0,1.0,False
+MEX.29.6_2,Tlaxcala,Atltzayanca,29004,exacto,1:1,1.0,0.9757219666315614,False
+MEX.29.7_2,Tlaxcala,Benito Juárez,29045,exacto,n:1,1.0,0.8773745392685002,False
+MEX.29.8_2,Tlaxcala,Calpulalpan,29006,exacto,1:1,1.0,1.0,False
+MEX.29.9_2,Tlaxcala,Chiautempan,29010,exacto,1:1,1.0,0.9999726913991561,False
+MEX.29.10_2,Tlaxcala,Contla de Juan Cuamatzi,29018,exacto,1:1,1.0,1.0,False
+MEX.29.11_2,Tlaxcala,Cuapiaxtla,29008,exacto,1:1,0.973761456898101,1.0,False
+MEX.29.12_2,Tlaxcala,Cuaxomulco,29009,exacto,1:1,1.0,1.0,False
+MEX.29.13_2,Tlaxcala,El Carmen Tequexquitla,29007,exacto,1:1,1.0,1.0,False
+MEX.29.14_2,Tlaxcala,Emiliano Zapata,29046,exacto,1:1,1.0,1.0,False
+MEX.29.15_2,Tlaxcala,Españita,29012,exacto,1:1,1.0,1.0,False
+MEX.29.16_2,Tlaxcala,Huamantla,29013,exacto,1:1,1.0,1.0,False
+MEX.29.17_2,Tlaxcala,Hueyotlipan,29014,exacto,1:1,1.0,1.0,False
+MEX.29.18_2,Tlaxcala,Ixtacuixtla de Mariano Matamoros,29015,exacto,1:1,1.0,1.0,False
+MEX.29.19_2,Tlaxcala,Ixtenco,29016,exacto,1:1,1.0,1.0,False
+MEX.29.20_2,Tlaxcala,La Magdalena Tlaltelulco,29048,exacto,1:1,1.0,1.0,False
+MEX.29.21_2,Tlaxcala,Lázaro Cárdenas,29047,exacto,1:1,1.0,1.0,False
+MEX.29.22_2,Tlaxcala,Mazatecochco de José María Morel,29017,prefijo,1:1,1.0,1.0,False
+MEX.29.23_2,Tlaxcala,Muñoz de Domingo Arenas,29011,exacto,1:1,1.0,1.0,False
+MEX.29.24_2,Tlaxcala,Nanacamilpa de Mariano Arista,29021,exacto,1:1,1.0,1.0,False
+MEX.29.25_2,Tlaxcala,Natívitas,29023,exacto,1:1,1.0,1.0,False
+MEX.29.26_2,Tlaxcala,Panotla,29024,exacto,1:1,1.0,1.0,False
+MEX.29.27_2,Tlaxcala,Papalotla de Xicohténcatl,29041,exacto,1:1,1.0,1.0,False
+MEX.29.28_2,Tlaxcala,San Damián Texóloc,29049,exacto,1:1,1.0,1.0,False
+MEX.29.29_2,Tlaxcala,San Francisco Tetlanohcan,29050,exacto,1:1,1.0,1.0,False
+MEX.29.30_2,Tlaxcala,San Jerónimo Zacualpan,29051,exacto,1:1,1.0,1.0,False
+MEX.29.31_2,Tlaxcala,San José Teacalco,29052,exacto,1:1,0.9996897300651567,1.0,False
+MEX.29.32_2,Tlaxcala,San Juan Huactzinco,29053,exacto,1:1,1.0,1.0,False
+MEX.29.33_2,Tlaxcala,San Lorenzo Axocomanitla,29054,exacto,1:1,1.0,1.0,False
+MEX.29.34_2,Tlaxcala,San Lucas Tecopilco,29055,exacto,1:1,1.0,1.0,False
+MEX.29.35_2,Tlaxcala,San Pablo del Monte,29025,exacto,1:1,1.0,1.0,False
+MEX.29.36_2,Tlaxcala,Sanctórum de Lázaro Cárdenas,29020,exacto,1:1,0.9086492765867568,1.0,False
+MEX.29.37_2,Tlaxcala,Santa Ana Nopalucan,29056,exacto,1:1,1.0,1.0,False
+MEX.29.38_2,Tlaxcala,Santa Apolonia Teacalco,29057,exacto,1:1,1.0,1.0,False
+MEX.29.39_2,Tlaxcala,Santa Catarina Ayometla,29058,exacto,1:1,1.0,1.0,False
+MEX.29.40_2,Tlaxcala,Santa Cruz Quilehtla,29059,exacto,1:1,1.0,1.0,False
+MEX.29.41_2,Tlaxcala,Santa Cruz Tlaxcala,29026,exacto,1:1,1.0,1.0,False
+MEX.29.42_2,Tlaxcala,Santa Isabel Xiloxoxtla,29060,exacto,1:1,1.0,1.0,False
+MEX.29.43_2,Tlaxcala,Tenancingo,29027,exacto,1:1,1.0,1.0,False
+MEX.29.44_2,Tlaxcala,Teolocholco,29028,exacto,1:1,1.0,1.0,False
+MEX.29.45_2,Tlaxcala,Tepetitla de Lardizábal,29019,exacto,1:1,1.0,1.0,False
+MEX.29.46_2,Tlaxcala,Tepeyanco,29029,exacto,1:1,1.0,1.0,False
+MEX.29.47_2,Tlaxcala,Terrenate,29030,exacto,1:1,1.0,1.0,False
+MEX.29.48_2,Tlaxcala,Tetla de la Solidaridad,29031,exacto,1:1,1.0,1.0,False
+MEX.29.49_2,Tlaxcala,Tetlatlahuca,29032,exacto,1:1,1.0,1.0,False
+MEX.29.50_2,Tlaxcala,Tlaxcala,29033,exacto,1:1,1.0,1.0,False
+MEX.29.51_2,Tlaxcala,Tlaxco,29034,exacto,1:1,0.9960273284875472,1.0,False
+MEX.29.52_2,Tlaxcala,Tocatlán,29035,exacto,1:1,1.0,1.0,False
+MEX.29.53_2,Tlaxcala,Totolac,29036,exacto,1:1,1.0,1.0,False
+MEX.29.54_2,Tlaxcala,Tzompantepec,29038,exacto,1:1,1.0,1.0,False
+MEX.29.55_2,Tlaxcala,Xaloztoc,29039,exacto,1:1,1.0,1.0,False
+MEX.29.56_2,Tlaxcala,Xaltocan,29040,exacto,1:1,1.0,1.0,False
+MEX.29.57_2,Tlaxcala,Xicohtzinco,29042,exacto,1:1,1.0,1.0,False
+MEX.29.58_2,Tlaxcala,Yauhquemehcan,29043,exacto,1:1,1.0,1.0,False
+MEX.29.59_2,Tlaxcala,Zacatelco,29044,exacto,1:1,1.0,1.0,False
+MEX.29.60_2,Tlaxcala,Ziltlaltépec de Trinidad Sánchez,29037,prefijo,1:1,1.0,1.0,False
+MEX.30.1_2,Veracruz,Acajete,30001,exacto,1:1,1.0,1.0,False
+MEX.30.2_2,Veracruz,Acatlán,30002,exacto,1:1,1.0,1.0,False
+MEX.30.3_2,Veracruz,Acayucan,30003,exacto,1:1,1.0,1.0,False
+MEX.30.4_2,Veracruz,Actopan,30004,exacto,1:1,0.9978882930764486,1.0,False
+MEX.30.5_2,Veracruz,Acula,30005,exacto,1:1,1.0,0.999810641923878,False
+MEX.30.6_2,Veracruz,Acultzingo,30006,exacto,1:1,1.0,1.0,False
+MEX.30.7_2,Veracruz,Agua Dulce,30204,exacto,1:1,1.0,1.0,False
+MEX.30.8_2,Veracruz,Álamo Temapache,30160,exacto,1:1,1.0,1.0,False
+MEX.30.9_2,Veracruz,Alpatláhuac,30008,exacto,1:1,1.0,1.0,False
+MEX.30.10_2,Veracruz,Alto Lucero de Gutiérrez Barrios,30009,exacto,1:1,1.0,0.9968582321378142,False
+MEX.30.11_2,Veracruz,Altotonga,30010,exacto,1:1,1.0,0.9966274497614348,False
+MEX.30.12_2,Veracruz,Alvarado,30011,exacto,1:1,1.0,0.9991425021437447,False
+MEX.30.13_2,Veracruz,Amatitlán,30012,exacto,1:1,1.0,1.0,False
+MEX.30.14_2,Veracruz,Amatlán de los Reyes,30014,exacto,1:1,1.0,1.0,False
+MEX.30.15_2,Veracruz,Angel R. Cabada,30015,exacto,1:1,1.0,1.0,False
+MEX.30.16_2,Veracruz,Apazapan,30017,exacto,1:1,1.0,1.0,False
+MEX.30.17_2,Veracruz,Aquila,30018,exacto,1:1,1.0,1.0,False
+MEX.30.18_2,Veracruz,Astacinga,30019,exacto,1:1,1.0,1.0,False
+MEX.30.19_2,Veracruz,Atlahuilco,30020,exacto,1:1,1.0,1.0,False
+MEX.30.20_2,Veracruz,Atoyac,30021,exacto,1:1,1.0,1.0,False
+MEX.30.21_2,Veracruz,Atzacan,30022,exacto,1:1,1.0,1.0,False
+MEX.30.22_2,Veracruz,Atzalan,30023,exacto,1:1,1.0,1.0,False
+MEX.30.23_2,Veracruz,Ayahualulco,30025,exacto,1:1,1.0,1.0,False
+MEX.30.24_2,Veracruz,Banderilla,30026,exacto,1:1,1.0,1.0,False
+MEX.30.25_2,Veracruz,Benito Juárez,30027,exacto,1:1,0.9934989267095983,1.0,False
+MEX.30.26_2,Veracruz,Boca del Río,30028,exacto,1:1,1.0,1.0,False
+MEX.30.27_2,Veracruz,Calcahualco,30029,exacto,1:1,1.0,1.0,False
+MEX.30.28_2,Veracruz,Camarón de Tejeda,30007,exacto,1:1,1.0,1.0,False
+MEX.30.29_2,Veracruz,Camerino Z. Mendoza,30030,exacto,1:1,1.0,1.0,False
+MEX.30.30_2,Veracruz,Carlos A. Carrillo,30208,exacto,1:1,0.9997443436021987,1.0,False
+MEX.30.31_2,Veracruz,Carrillo Puerto,30031,exacto,1:1,1.0,1.0,False
+MEX.30.32_2,Veracruz,Castillo de Teayo,30157,exacto,1:1,1.0,1.0,False
+MEX.30.33_2,Veracruz,Catemaco,30032,exacto,1:1,1.0,1.0,False
+MEX.30.34_2,Veracruz,Cazones de Herrera,30033,exacto,1:1,1.0,1.0,False
+MEX.30.35_2,Veracruz,Cerro Azul,30034,exacto,1:1,1.0,1.0,False
+MEX.30.36_2,Veracruz,Chacaltianguis,30054,exacto,1:1,1.0,1.0,False
+MEX.30.37_2,Veracruz,Chalma,30055,exacto,1:1,1.0,1.0,False
+MEX.30.38_2,Veracruz,Chiconamel,30056,exacto,1:1,1.0,1.0,False
+MEX.30.39_2,Veracruz,Chiconquiaco,30057,exacto,1:1,1.0,1.0,False
+MEX.30.40_2,Veracruz,Chicontepec,30058,exacto,1:1,1.0,0.998043377941855,False
+MEX.30.41_2,Veracruz,Chinameca,30059,exacto,1:1,1.0,1.0,False
+MEX.30.42_2,Veracruz,Chinampa de Gorostiza,30060,exacto,1:1,1.0,1.0,False
+MEX.30.43_2,Veracruz,Chocamán,30062,exacto,1:1,1.0,1.0,False
+MEX.30.44_2,Veracruz,Chontla,30063,exacto,1:1,1.0,0.98413874888823,False
+MEX.30.45_2,Veracruz,Chumatlán,30064,exacto,1:1,1.0,1.0,False
+MEX.30.46_2,Veracruz,Citlaltépetl,30035,exacto,1:1,1.0,1.0,False
+MEX.30.47_2,Veracruz,Coacoatzintla,30036,exacto,1:1,1.0,1.0,False
+MEX.30.48_2,Veracruz,Coahuitlán,30037,exacto,1:1,1.0,1.0,False
+MEX.30.49_2,Veracruz,Coatepec,30038,exacto,1:1,1.0,1.0,False
+MEX.30.50_2,Veracruz,Coatzacoalcos,30039,exacto,1:1,0.9997909934243315,1.0,False
+MEX.30.51_2,Veracruz,Coatzintla,30040,exacto,1:1,1.0,1.0,False
+MEX.30.52_2,Veracruz,Coetzala,30041,exacto,1:1,1.0,1.0,False
+MEX.30.53_2,Veracruz,Colipa,30042,exacto,1:1,1.0,1.0,False
+MEX.30.54_2,Veracruz,Comapa,30043,exacto,1:1,1.0,1.0,False
+MEX.30.55_2,Veracruz,Córdoba,30044,exacto,1:1,1.0,1.0,False
+MEX.30.56_2,Veracruz,Cosamaloapan de Carpio,30045,exacto,1:1,1.0,0.9998905688595451,False
+MEX.30.57_2,Veracruz,Cosautlán de Carvajal,30046,exacto,1:1,1.0,1.0,False
+MEX.30.58_2,Veracruz,Coscomatepec,30047,exacto,1:1,1.0,1.0,False
+MEX.30.59_2,Veracruz,Cosoleacaque,30048,exacto,1:1,1.0,0.9995041044889987,False
+MEX.30.60_2,Veracruz,Cotaxtla,30049,exacto,1:1,1.0,1.0,False
+MEX.30.61_2,Veracruz,Coxquihui,30050,exacto,1:1,1.0,1.0,False
+MEX.30.62_2,Veracruz,Coyutla,30051,exacto,1:1,1.0,1.0,False
+MEX.30.63_2,Veracruz,Cuichapa,30052,exacto,1:1,1.0,1.0,False
+MEX.30.64_2,Veracruz,Cuitláhuac,30053,exacto,1:1,1.0,1.0,False
+MEX.30.65_2,Veracruz,El Higo,30205,exacto,1:1,1.0,1.0,False
+MEX.30.66_2,Veracruz,Emiliano Zapata,30065,exacto,1:1,1.0,1.0,False
+MEX.30.67_2,Veracruz,Espinal,30066,exacto,1:1,1.0,1.0,False
+MEX.30.68_2,Veracruz,Filomeno Mata,30067,exacto,1:1,1.0,1.0,False
+MEX.30.69_2,Veracruz,Fortín,30068,exacto,1:1,1.0,1.0,False
+MEX.30.70_2,Veracruz,Gutiérrez Zamora,30069,exacto,1:1,1.0,0.9939673822599434,False
+MEX.30.71_2,Veracruz,Hidalgotitlán,30070,exacto,1:1,0.9700152286929581,1.0,False
+MEX.30.72_2,Veracruz,Huatusco,30071,exacto,1:1,1.0,1.0,False
+MEX.30.73_2,Veracruz,Huayacocotla,30072,exacto,1:1,1.0,1.0,False
+MEX.30.74_2,Veracruz,Hueyapan de Ocampo,30073,exacto,1:1,0.9963538439540537,1.0,False
+MEX.30.75_2,Veracruz,Huiloapan de Cuauhtémoc,30074,exacto,1:1,1.0,1.0,False
+MEX.30.76_2,Veracruz,Ignacio de la Llave,30075,exacto,1:1,0.9974124443374655,0.9997587309246637,False
+MEX.30.77_2,Veracruz,Ilamatlán,30076,exacto,1:1,1.0,1.0,False
+MEX.30.78_2,Veracruz,Isla,30077,exacto,1:1,1.0,1.0,False
+MEX.30.79_2,Veracruz,Ixcatepec,30078,exacto,1:1,0.9830870149371691,1.0,False
+MEX.30.80_2,Veracruz,Ixhuacán de los Reyes,30079,exacto,1:1,1.0,1.0,False
+MEX.30.81_2,Veracruz,Ixhuatlán de Madero,30083,exacto,1:1,1.0,1.0,False
+MEX.30.82_2,Veracruz,Ixhuatlán del Café,30080,exacto,1:1,1.0,1.0,False
+MEX.30.83_2,Veracruz,Ixhuatlán del Sureste,30082,exacto,1:1,1.0,1.0,False
+MEX.30.84_2,Veracruz,Ixhuatlancillo,30081,exacto,1:1,1.0,1.0,False
+MEX.30.85_2,Veracruz,Ixmatlahuacan,30084,exacto,1:1,0.9980681419037584,1.0,False
+MEX.30.86_2,Veracruz,Ixtaczoquitlán,30085,exacto,1:1,1.0,1.0,False
+MEX.30.87_2,Veracruz,Jalacingo,30086,exacto,1:1,1.0,1.0,False
+MEX.30.88_2,Veracruz,Jalcomulco,30088,exacto,1:1,1.0,1.0,False
+MEX.30.89_2,Veracruz,Jáltipan,30089,exacto,1:1,1.0,1.0,False
+MEX.30.90_2,Veracruz,Jamapa,30090,exacto,1:1,1.0,1.0,False
+MEX.30.91_2,Veracruz,Jesús Carranza,30091,exacto,1:1,1.0,1.0,False
+MEX.30.92_2,Veracruz,Jilotepec,30093,exacto,1:1,1.0,1.0,False
+MEX.30.93_2,Veracruz,José Azueta,30169,exacto,1:1,1.0,1.0,False
+MEX.30.94_2,Veracruz,Juan Rodríguez Clara,30094,exacto,1:1,1.0,1.0,False
+MEX.30.95_2,Veracruz,Juchique de Ferrer,30095,exacto,1:1,1.0,1.0,False
+MEX.30.96_2,Veracruz,La Antigua,30016,exacto,1:1,1.0,1.0,False
+MEX.30.97_2,Veracruz,La Perla,30127,exacto,1:1,1.0,1.0,False
+MEX.30.98_2,Veracruz,Landero y Coss,30096,exacto,1:1,1.0,1.0,False
+MEX.30.99_2,Veracruz,Las Choapas,30061,exacto,1:1,1.0,0.9937872976582891,False
+MEX.30.100_2,Veracruz,Las Minas,30107,exacto,1:1,1.0,1.0,False
+MEX.30.101_2,Veracruz,Las Vigas de Ramírez,30132,exacto,1:1,1.0,1.0,False
+MEX.30.102_2,Veracruz,Lerdo de Tejada,30097,exacto,1:1,1.0,1.0,False
+MEX.30.103_2,Veracruz,Los Reyes,30137,exacto,1:1,1.0,1.0,False
+MEX.30.104_2,Veracruz,Magdalena,30098,exacto,1:1,1.0,1.0,False
+MEX.30.105_2,Veracruz,Maltrata,30099,exacto,1:1,1.0,1.0,False
+MEX.30.106_2,Veracruz,Manlio Fabio Altamirano,30100,exacto,1:1,1.0,1.0,False
+MEX.30.107_2,Veracruz,Mariano Escobedo,30101,exacto,1:1,1.0,1.0,False
+MEX.30.108_2,Veracruz,Martínez de la Torre,30102,exacto,1:1,1.0,1.0,False
+MEX.30.109_2,Veracruz,Mecatlán,30103,exacto,1:1,1.0,1.0,False
+MEX.30.110_2,Veracruz,Mecayapan,30104,exacto,1:1,1.0,1.0,False
+MEX.30.111_2,Veracruz,Medellín,30105,prefijo,1:1,1.0,1.0,False
+MEX.30.112_2,Veracruz,Miahuatlán,30106,exacto,1:1,1.0,1.0,False
+MEX.30.113_2,Veracruz,Minatitlán,30108,exacto,1:1,0.9978339499126704,1.0,False
+MEX.30.114_2,Veracruz,Misantla,30109,exacto,1:1,1.0,1.0,False
+MEX.30.115_2,Veracruz,Mixtla de Altamirano,30110,exacto,1:1,0.9715397713451714,1.0,False
+MEX.30.116_2,Veracruz,Moloacán,30111,exacto,1:1,0.9701992593898783,1.0,False
+MEX.30.117_2,Veracruz,Nanchital de Lázaro Cárdenas del,30206,prefijo,1:1,1.0,1.0,False
+MEX.30.118_2,Veracruz,Naolinco,30112,exacto,1:1,1.0,1.0,False
+MEX.30.119_2,Veracruz,Naranjal,30113,exacto,1:1,1.0,1.0,False
+MEX.30.120_2,Veracruz,Naranjos Amatlán,30013,exacto,1:1,1.0,1.0,False
+MEX.30.121_2,Veracruz,Nautla,30114,exacto,1:1,1.0,1.0,False
+MEX.30.122_2,Veracruz,Nogales,30115,exacto,1:1,1.0,1.0,False
+MEX.30.123_2,Veracruz,Oluta,30116,exacto,1:1,1.0,1.0,False
+MEX.30.124_2,Veracruz,Omealca,30117,exacto,1:1,1.0,1.0,False
+MEX.30.125_2,Veracruz,Orizaba,30118,exacto,1:1,1.0,1.0,False
+MEX.30.126_2,Veracruz,Otatitlán,30119,exacto,1:1,1.0,1.0,False
+MEX.30.127_2,Veracruz,Oteapan,30120,exacto,1:1,1.0,1.0,False
+MEX.30.128_2,Veracruz,Ozuluama de Mascareñas,30121,exacto,1:1,1.0,0.9727665227499169,False
+MEX.30.129_2,Veracruz,Pajapan,30122,exacto,1:1,1.0,1.0,False
+MEX.30.130_2,Veracruz,Pánuco,30123,exacto,1:1,1.0,1.0,False
+MEX.30.131_2,Veracruz,Papantla,30124,exacto,1:1,0.9990791487524053,1.0,False
+MEX.30.132_2,Veracruz,Paso de Ovejas,30126,exacto,1:1,1.0,1.0,False
+MEX.30.133_2,Veracruz,Paso del Macho,30125,exacto,1:1,1.0,1.0,False
+MEX.30.134_2,Veracruz,Perote,30128,exacto,1:1,1.0,1.0,False
+MEX.30.135_2,Veracruz,Platón Sánchez,30129,exacto,1:1,1.0,1.0,False
+MEX.30.136_2,Veracruz,Playa Vicente,30130,exacto,1:1,0.9961360899237254,1.0,False
+MEX.30.137_2,Veracruz,Poza Rica de Hidalgo,30131,exacto,1:1,1.0,1.0,False
+MEX.30.138_2,Veracruz,Pueblo Viejo,30133,exacto,1:1,1.0,1.0,False
+MEX.30.139_2,Veracruz,Puente Nacional,30134,exacto,1:1,1.0,1.0,False
+MEX.30.140_2,Veracruz,Rafael Delgado,30135,exacto,1:1,1.0,1.0,False
+MEX.30.141_2,Veracruz,Rafael Lucio,30136,exacto,1:1,1.0,1.0,False
+MEX.30.142_2,Veracruz,Río Blanco,30138,exacto,1:1,1.0,1.0,False
+MEX.30.143_2,Veracruz,Saltabarranca,30139,exacto,1:1,1.0,1.0,False
+MEX.30.144_2,Veracruz,San Andrés Tenejapan,30140,exacto,1:1,1.0,1.0,False
+MEX.30.145_2,Veracruz,San Andrés Tuxtla,30141,exacto,1:1,1.0,0.9990584151835167,False
+MEX.30.146_2,Veracruz,San Juan Evangelista,30142,exacto,1:1,1.0,1.0,False
+MEX.30.147_2,Veracruz,San Rafael,30211,exacto,1:1,1.0,0.9989170030520823,False
+MEX.30.148_2,Veracruz,Santiago Sochiapan,30212,exacto,1:1,1.0,1.0,False
+MEX.30.149_2,Veracruz,Santiago Tuxtla,30143,exacto,1:1,1.0,1.0,False
+MEX.30.150_2,Veracruz,Sayula de Alemán,30144,exacto,1:1,1.0,1.0,False
+MEX.30.151_2,Veracruz,Sochiapa,30146,exacto,1:1,1.0,1.0,False
+MEX.30.152_2,Veracruz,Soconusco,30145,exacto,1:1,1.0,1.0,False
+MEX.30.153_2,Veracruz,Soledad Atzompa,30147,exacto,1:1,1.0,1.0,False
+MEX.30.154_2,Veracruz,Soledad de Doblado,30148,exacto,1:1,1.0,1.0,False
+MEX.30.155_2,Veracruz,Soteapan,30149,exacto,1:1,1.0,1.0,False
+MEX.30.156_2,Veracruz,Tamalín,30150,exacto,1:1,1.0,1.0,False
+MEX.30.157_2,Veracruz,Tamiahua,30151,exacto,1:1,1.0,1.0,False
+MEX.30.158_2,Veracruz,Tampico Alto,30152,exacto,1:1,0.9468911917098446,1.0,False
+MEX.30.159_2,Veracruz,Tancoco,30153,exacto,1:1,1.0,1.0,False
+MEX.30.160_2,Veracruz,Tantima,30154,exacto,1:1,1.0,1.0,False
+MEX.30.161_2,Veracruz,Tantoyuca,30155,exacto,1:1,1.0,1.0,False
+MEX.30.162_2,Veracruz,Tatahuicapan de Juárez,30209,exacto,1:1,1.0,1.0,False
+MEX.30.163_2,Veracruz,Tatatila,30156,exacto,1:1,1.0,1.0,False
+MEX.30.164_2,Veracruz,Tecolutla,30158,exacto,1:1,0.9986517404804707,1.0,False
+MEX.30.165_2,Veracruz,Tehuipango,30159,exacto,1:1,1.0,1.0,False
+MEX.30.166_2,Veracruz,Tempoal,30161,exacto,1:1,1.0,1.0,False
+MEX.30.167_2,Veracruz,Tenampa,30162,exacto,1:1,1.0,1.0,False
+MEX.30.168_2,Veracruz,Tenochtitlán,30163,exacto,1:1,0.9589403973509933,1.0,False
+MEX.30.169_2,Veracruz,Teocelo,30164,exacto,1:1,1.0,1.0,False
+MEX.30.170_2,Veracruz,Tepatlaxco,30165,exacto,1:1,1.0,1.0,False
+MEX.30.171_2,Veracruz,Tepetlán,30166,exacto,1:1,1.0,1.0,False
+MEX.30.172_2,Veracruz,Tepetzintla,30167,exacto,1:1,1.0,1.0,False
+MEX.30.173_2,Veracruz,Tequila,30168,exacto,1:1,1.0,1.0,False
+MEX.30.174_2,Veracruz,Texcatepec,30170,exacto,1:1,1.0,1.0,False
+MEX.30.175_2,Veracruz,Texhuacán,30171,exacto,1:1,1.0,0.9372654155495979,False
+MEX.30.176_2,Veracruz,Texistepec,30172,exacto,1:1,1.0,1.0,False
+MEX.30.177_2,Veracruz,Tezonapa,30173,exacto,1:1,0.9986838737981208,1.0,False
+MEX.30.178_2,Veracruz,Tierra Blanca,30174,exacto,1:1,1.0,1.0,False
+MEX.30.179_2,Veracruz,Tihuatlán,30175,exacto,1:1,1.0,1.0,False
+MEX.30.180_2,Veracruz,Tlachichilco,30180,exacto,1:1,1.0,1.0,False
+MEX.30.181_2,Veracruz,Tlacojalpan,30176,exacto,1:1,1.0,1.0,False
+MEX.30.182_2,Veracruz,Tlacolulan,30177,exacto,1:1,1.0,1.0,False
+MEX.30.183_2,Veracruz,Tlacotalpan,30178,exacto,1:1,1.0,1.0,False
+MEX.30.184_2,Veracruz,Tlacotepec de Mejía,30179,exacto,1:1,1.0,1.0,False
+MEX.30.185_2,Veracruz,Tlalixcoyan,30181,exacto,1:1,1.0,1.0,False
+MEX.30.186_2,Veracruz,Tlalnelhuayocan,30182,exacto,1:1,1.0,1.0,False
+MEX.30.187_2,Veracruz,Tlaltetela,30024,exacto,1:1,1.0,1.0,False
+MEX.30.188_2,Veracruz,Tlapacoyan,30183,exacto,1:1,1.0,1.0,False
+MEX.30.189_2,Veracruz,Tlaquilpa,30184,exacto,1:1,1.0,1.0,False
+MEX.30.190_2,Veracruz,Tlilapan,30185,exacto,1:1,1.0,1.0,False
+MEX.30.191_2,Veracruz,Tomatlán,30186,exacto,1:1,1.0,1.0,False
+MEX.30.192_2,Veracruz,Tonayán,30187,exacto,1:1,1.0,1.0,False
+MEX.30.193_2,Veracruz,Totutla,30188,exacto,1:1,1.0,1.0,False
+MEX.30.194_2,Veracruz,Tres Valles,30207,exacto,1:1,1.0,0.9998010434167477,False
+MEX.30.195_2,Veracruz,Tuxpan,30189,exacto,1:1,1.0,1.0,False
+MEX.30.196_2,Veracruz,Tuxtilla,30190,exacto,1:1,1.0,1.0,False
+MEX.30.197_2,Veracruz,Ursulo Galván,30191,exacto,1:1,1.0,1.0,False
+MEX.30.198_2,Veracruz,Uxpanapa,30210,exacto,1:1,1.0,0.9715094218277702,False
+MEX.30.199_2,Veracruz,Vega de Alatorre,30192,exacto,1:1,1.0,1.0,False
+MEX.30.200_2,Veracruz,Veracruz,30193,exacto,1:1,1.0,1.0,False
+MEX.30.201_2,Veracruz,Villa Aldama,30194,exacto,1:1,1.0,1.0,False
+MEX.30.202_2,Veracruz,Xalapa,30087,exacto,1:1,1.0,1.0,False
+MEX.30.203_2,Veracruz,Xico,30092,exacto,1:1,1.0,1.0,False
+MEX.30.204_2,Veracruz,Xoxocotla,30195,exacto,1:1,1.0,1.0,False
+MEX.30.205_2,Veracruz,Yanga,30196,exacto,1:1,1.0,1.0,False
+MEX.30.206_2,Veracruz,Yecuatla,30197,exacto,1:1,1.0,1.0,False
+MEX.30.207_2,Veracruz,Zacualpan,30198,exacto,1:1,1.0,1.0,False
+MEX.30.208_2,Veracruz,Zaragoza,30199,exacto,1:1,1.0,1.0,False
+MEX.30.209_2,Veracruz,Zentla,30200,exacto,1:1,1.0,1.0,False
+MEX.30.210_2,Veracruz,Zongolica,30201,exacto,1:1,1.0,1.0,False
+MEX.30.211_2,Veracruz,Zontecomatlán de López y Fuentes,30202,exacto,1:1,1.0,1.0,False
+MEX.30.212_2,Veracruz,Zozocolco de Hidalgo,30203,exacto,1:1,1.0,1.0,False
+MEX.31.1_2,Yucatán,Abalá,31001,exacto,1:1,1.0,1.0,False
+MEX.31.2_2,Yucatán,Acanceh,31002,exacto,1:1,1.0,1.0,False
+MEX.31.3_2,Yucatán,Akil,31003,exacto,1:1,1.0,1.0,False
+MEX.31.4_2,Yucatán,Baca,31004,exacto,1:1,1.0,1.0,False
+MEX.31.5_2,Yucatán,Bokobá,31005,exacto,1:1,1.0,1.0,False
+MEX.31.6_2,Yucatán,Buctzotz,31006,exacto,1:1,1.0,1.0,False
+MEX.31.7_2,Yucatán,Cacalchén,31007,exacto,1:1,1.0,1.0,False
+MEX.31.8_2,Yucatán,Calotmul,31008,exacto,1:1,1.0,1.0,False
+MEX.31.9_2,Yucatán,Cansahcab,31009,exacto,1:1,1.0,0.9526876943580631,False
+MEX.31.10_2,Yucatán,Cantamayec,31010,exacto,1:1,1.0,1.0,False
+MEX.31.11_2,Yucatán,Celestún,31011,exacto,1:1,1.0,1.0,False
+MEX.31.12_2,Yucatán,Cenotillo,31012,exacto,1:1,1.0,1.0,False
+MEX.31.13_2,Yucatán,Chacsinkín,31016,exacto,1:1,1.0,1.0,False
+MEX.31.14_2,Yucatán,Chankom,31017,exacto,1:1,0.9908984830805134,0.9024442082890543,False
+MEX.31.15_2,Yucatán,Chapab,31018,exacto,1:1,1.0,1.0,False
+MEX.31.16_2,Yucatán,Chemax,31019,exacto,1:1,0.9864347913625611,1.0,False
+MEX.31.17_2,Yucatán,Chichimilá,31021,exacto,1:1,1.0,1.0,False
+MEX.31.18_2,Yucatán,Chicxulub Pueblo,31020,exacto,1:1,1.0,1.0,False
+MEX.31.19_2,Yucatán,Chikindzonot,31022,exacto,ambiguo,0.7147054023176106,1.0,False
+MEX.31.20_2,Yucatán,Chocholá,31023,exacto,1:1,0.991567958241317,1.0,False
+MEX.31.21_2,Yucatán,Chumayel,31024,exacto,1:1,1.0,1.0,False
+MEX.31.22_2,Yucatán,Conkal,31013,exacto,1:1,1.0,1.0,False
+MEX.31.23_2,Yucatán,Cuncunul,31014,exacto,1:1,0.9559322033898305,0.9774696707105719,False
+MEX.31.24_2,Yucatán,Cuzamá,31015,exacto,1:1,1.0,1.0,False
+MEX.31.25_2,Yucatán,Dzán,31025,exacto,1:1,1.0,1.0,False
+MEX.31.26_2,Yucatán,Dzemul,31026,exacto,1:1,1.0,1.0,False
+MEX.31.27_2,Yucatán,Dzidzantún,31027,exacto,1:1,1.0,1.0,False
+MEX.31.28_2,Yucatán,Dzilam de Bravo,31028,exacto,1:1,1.0,1.0,False
+MEX.31.29_2,Yucatán,Dzilam González,31029,exacto,1:1,1.0,1.0,False
+MEX.31.30_2,Yucatán,Dzitás,31030,exacto,1:1,1.0,0.9853743182944967,False
+MEX.31.31_2,Yucatán,Dzoncauich,31031,exacto,1:1,1.0,1.0,False
+MEX.31.32_2,Yucatán,Espita,31032,exacto,1:1,1.0,1.0,False
+MEX.31.33_2,Yucatán,Halachó,31033,exacto,1:1,1.0,1.0,False
+MEX.31.34_2,Yucatán,Hocabá,31034,exacto,1:1,1.0,1.0,False
+MEX.31.35_2,Yucatán,Hoctún,31035,exacto,1:1,1.0,1.0,False
+MEX.31.36_2,Yucatán,Homún,31036,exacto,1:1,1.0,1.0,False
+MEX.31.37_2,Yucatán,Huhí,31037,exacto,1:1,1.0,1.0,False
+MEX.31.38_2,Yucatán,Hunucmá,31038,exacto,1:1,1.0,1.0,False
+MEX.31.39_2,Yucatán,Ixil,31039,exacto,1:1,1.0,1.0,False
+MEX.31.40_2,Yucatán,Izamal,31040,exacto,1:1,1.0,1.0,False
+MEX.31.41_2,Yucatán,Kanasín,31041,exacto,1:1,1.0,1.0,False
+MEX.31.42_2,Yucatán,Kantunil,31042,exacto,1:1,1.0,1.0,False
+MEX.31.43_2,Yucatán,Kaua,31043,exacto,1:1,0.970504821327283,1.0,False
+MEX.31.44_2,Yucatán,Kinchil,31044,exacto,1:1,1.0,1.0,False
+MEX.31.45_2,Yucatán,Kopomá,31045,exacto,ambiguo,0.8901715039577837,1.0,False
+MEX.31.46_2,Yucatán,Mama,31046,exacto,1:1,1.0,1.0,False
+MEX.31.47_2,Yucatán,Maní,31047,exacto,1:1,1.0,1.0,False
+MEX.31.48_2,Yucatán,Maxcanú,31048,exacto,1:1,1.0,0.9798938728131996,False
+MEX.31.49_2,Yucatán,Mayapán,31049,exacto,1:1,1.0,1.0,False
+MEX.31.50_2,Yucatán,Mérida,31050,exacto,1:1,0.9996745475055171,1.0,False
+MEX.31.51_2,Yucatán,Mocochá,31051,exacto,1:1,1.0,1.0,False
+MEX.31.52_2,Yucatán,Motul,31052,exacto,1:1,1.0,1.0,False
+MEX.31.53_2,Yucatán,Muna,31053,exacto,1:1,1.0,1.0,False
+MEX.31.54_2,Yucatán,Muxupip,31054,exacto,1:1,1.0,1.0,False
+MEX.31.55_2,Yucatán,Opichén,31055,exacto,1:1,0.9790315905642157,1.0,False
+MEX.31.56_2,Yucatán,Oxkutzcab,31056,exacto,1:1,1.0,0.9911822819900321,False
+MEX.31.57_2,Yucatán,Panabá,31057,exacto,1:1,1.0,1.0,False
+MEX.31.58_2,Yucatán,Peto,31058,exacto,1:1,0.9976321417659639,1.0,False
+MEX.31.59_2,Yucatán,Progreso,31059,exacto,1:1,1.0,1.0,False
+MEX.31.60_2,Yucatán,Quintana Roo,31060,exacto,1:1,1.0,1.0,False
+MEX.31.61_2,Yucatán,Río Lagartos,31061,exacto,1:1,1.0,1.0,False
+MEX.31.62_2,Yucatán,Sacalum,31062,exacto,1:1,1.0,1.0,False
+MEX.31.63_2,Yucatán,Samahil,31063,exacto,1:1,1.0,1.0,False
+MEX.31.64_2,Yucatán,San Felipe,31065,exacto,1:1,1.0,1.0,False
+MEX.31.65_2,Yucatán,Sanahcat,31064,exacto,1:1,1.0,1.0,False
+MEX.31.66_2,Yucatán,Santa Elena,31066,exacto,1:1,1.0,1.0,False
+MEX.31.67_2,Yucatán,Seyé,31067,exacto,1:1,1.0,0.939804289809232,False
+MEX.31.68_2,Yucatán,Sinanché,31068,exacto,1:1,1.0,1.0,False
+MEX.31.69_2,Yucatán,Sotuta,31069,exacto,1:1,1.0,1.0,False
+MEX.31.70_2,Yucatán,Sucilá,31070,exacto,1:1,1.0,1.0,False
+MEX.31.71_2,Yucatán,Sudzal,31071,exacto,1:1,1.0,1.0,False
+MEX.31.72_2,Yucatán,Suma,31072,exacto,ambiguo,0.8978906999041227,1.0,False
+MEX.31.73_2,Yucatán,Tahdziú,31073,exacto,1:1,1.0,1.0,False
+MEX.31.74_2,Yucatán,Tahmek,31074,exacto,ambiguo,0.8621236133122029,1.0,False
+MEX.31.75_2,Yucatán,Teabo,31075,exacto,1:1,0.9082163286531462,1.0,False
+MEX.31.76_2,Yucatán,Tecoh,31076,exacto,1:1,1.0,0.9820704968082153,False
+MEX.31.77_2,Yucatán,Tekal de Venegas,31077,exacto,1:1,1.0,1.0,False
+MEX.31.78_2,Yucatán,Tekantó,31078,exacto,1:1,1.0,1.0,False
+MEX.31.79_2,Yucatán,Tekax,31079,exacto,1:1,0.9934521723896286,1.0,False
+MEX.31.80_2,Yucatán,Tekit,31080,exacto,1:1,1.0,1.0,False
+MEX.31.81_2,Yucatán,Tekom,31081,exacto,1:1,0.9012517385257302,0.9614243323442137,False
+MEX.31.82_2,Yucatán,Telchac Pueblo,31082,exacto,1:1,1.0,1.0,False
+MEX.31.83_2,Yucatán,Telchac Puerto,31083,exacto,1:1,1.0,1.0,False
+MEX.31.84_2,Yucatán,Temax,31084,exacto,1:1,1.0,1.0,False
+MEX.31.85_2,Yucatán,Temozón,31085,exacto,1:1,1.0,1.0,False
+MEX.31.86_2,Yucatán,Tepakán,31086,exacto,1:1,1.0,1.0,False
+MEX.31.87_2,Yucatán,Tetiz,31087,exacto,1:1,1.0,1.0,False
+MEX.31.88_2,Yucatán,Teya,31088,exacto,1:1,1.0,1.0,False
+MEX.31.89_2,Yucatán,Ticul,31089,exacto,1:1,1.0,1.0,False
+MEX.31.90_2,Yucatán,Timucuy,31090,exacto,1:1,1.0,1.0,False
+MEX.31.91_2,Yucatán,Tinum,31091,exacto,1:1,0.9953949422416485,1.0,False
+MEX.31.92_2,Yucatán,Tixcacalcupul,31092,exacto,n:1,1.0,0.7960418504979201,False
+MEX.31.93_2,Yucatán,Tixkokob,31093,exacto,1:1,1.0,1.0,False
+MEX.31.94_2,Yucatán,Tixmehuac,31094,exacto,n:1,1.0,0.8711208470244615,False
+MEX.31.95_2,Yucatán,Tixpéhual,31095,exacto,1:1,1.0,1.0,False
+MEX.31.96_2,Yucatán,Tizimín,31096,exacto,1:1,1.0,1.0,False
+MEX.31.97_2,Yucatán,Tunkás,31097,exacto,1:1,1.0,1.0,False
+MEX.31.98_2,Yucatán,Tzucacab,31098,exacto,1:1,1.0,0.9960030943785456,False
+MEX.31.99_2,Yucatán,Uayma,31099,exacto,1:1,1.0,1.0,False
+MEX.31.100_2,Yucatán,Ucú,31100,exacto,1:1,1.0,1.0,False
+MEX.31.101_2,Yucatán,Umán,31101,exacto,1:1,1.0,0.9993798673204499,False
+MEX.31.102_2,Yucatán,Valladolid,31102,exacto,1:1,1.0,0.9928145525690595,False
+MEX.31.103_2,Yucatán,Xocchel,31103,exacto,1:1,1.0,1.0,False
+MEX.31.104_2,Yucatán,Yaxcabá,31104,exacto,1:1,1.0,1.0,False
+MEX.31.105_2,Yucatán,Yaxkukul,31105,exacto,1:1,1.0,1.0,False
+MEX.31.106_2,Yucatán,Yobaín,31106,exacto,1:1,1.0,1.0,False
+MEX.32.1_2,Zacatecas,Apozol,32001,exacto,1:1,1.0,1.0,False
+MEX.32.2_2,Zacatecas,Apulco,32002,exacto,1:1,1.0,1.0,False
+MEX.32.3_2,Zacatecas,Atolinga,32003,exacto,1:1,1.0,1.0,False
+MEX.32.4_2,Zacatecas,Benito Juárez,32004,exacto,1:1,1.0,1.0,False
+MEX.32.5_2,Zacatecas,Calera,32005,exacto,1:1,1.0,1.0,False
+MEX.32.6_2,Zacatecas,Cañitas de Felipe Pescador,32006,exacto,1:1,1.0,1.0,False
+MEX.32.7_2,Zacatecas,Chalchihuites,32009,exacto,1:1,1.0,1.0,False
+MEX.32.8_2,Zacatecas,Concepción del Oro,32007,exacto,1:1,1.0,1.0,False
+MEX.32.9_2,Zacatecas,Cuauhtémoc,32008,exacto,1:1,1.0,1.0,False
+MEX.32.10_2,Zacatecas,El Plateado de Joaquín Amaro,32015,exacto,1:1,1.0,1.0,False
+MEX.32.11_2,Zacatecas,El Salvador,32041,exacto,1:1,1.0,1.0,False
+MEX.32.12_2,Zacatecas,Fresnillo,32010,exacto,1:1,1.0,1.0,False
+MEX.32.13_2,Zacatecas,Genaro Codina,32012,exacto,1:1,1.0,1.0,False
+MEX.32.14_2,Zacatecas,General Enrique Estrada,32013,exacto,1:1,1.0,1.0,False
+MEX.32.15_2,Zacatecas,General Francisco R. Murguía,32014,exacto,1:1,1.0,1.0,False
+MEX.32.16_2,Zacatecas,General Pánfilo Natera,32016,exacto,1:1,1.0,1.0,False
+MEX.32.17_2,Zacatecas,Guadalupe,32017,exacto,1:1,1.0,1.0,False
+MEX.32.18_2,Zacatecas,Huanusco,32018,exacto,1:1,1.0,1.0,False
+MEX.32.19_2,Zacatecas,Jalpa,32019,exacto,1:1,1.0,1.0,False
+MEX.32.20_2,Zacatecas,Jerez,32020,exacto,1:1,1.0,1.0,False
+MEX.32.21_2,Zacatecas,Jiménez del Teul,32021,exacto,1:1,1.0,1.0,False
+MEX.32.22_2,Zacatecas,Juan Aldama,32022,exacto,1:1,1.0,1.0,False
+MEX.32.23_2,Zacatecas,Juchipila,32023,exacto,1:1,1.0,1.0,False
+MEX.32.24_2,Zacatecas,Loreto,32024,exacto,1:1,1.0,1.0,False
+MEX.32.25_2,Zacatecas,Luis Moya,32025,exacto,1:1,1.0,1.0,False
+MEX.32.26_2,Zacatecas,Mazapil,32026,exacto,1:1,1.0,1.0,False
+MEX.32.27_2,Zacatecas,Melchor Ocampo,32027,exacto,1:1,1.0,1.0,False
+MEX.32.28_2,Zacatecas,Mezquital del Oro,32028,exacto,1:1,1.0,1.0,False
+MEX.32.29_2,Zacatecas,Miguel Auza,32029,exacto,1:1,1.0,1.0,False
+MEX.32.30_2,Zacatecas,Momax,32030,exacto,1:1,1.0,1.0,False
+MEX.32.31_2,Zacatecas,Monte Escobedo,32031,exacto,1:1,1.0,1.0,False
+MEX.32.32_2,Zacatecas,Morelos,32032,exacto,1:1,1.0,1.0,False
+MEX.32.33_2,Zacatecas,Moyahua de Estrada,32033,exacto,1:1,1.0,1.0,False
+MEX.32.34_2,Zacatecas,Nochistlán de Mejía,32034,exacto,1:1,1.0,1.0,False
+MEX.32.35_2,Zacatecas,Noria de Ángeles,32035,exacto,1:1,1.0,1.0,False
+MEX.32.36_2,Zacatecas,Ojocaliente,32036,exacto,1:1,1.0,1.0,False
+MEX.32.37_2,Zacatecas,Pánuco,32037,exacto,1:1,1.0,1.0,False
+MEX.32.38_2,Zacatecas,Pinos,32038,exacto,1:1,1.0,1.0,False
+MEX.32.39_2,Zacatecas,Río Grande,32039,exacto,1:1,1.0,1.0,False
+MEX.32.40_2,Zacatecas,Sain Alto,32040,exacto,1:1,1.0,1.0,False
+MEX.32.41_2,Zacatecas,Santa María de la Paz,32058,exacto,1:1,1.0,1.0,False
+MEX.32.42_2,Zacatecas,Sombrerete,32042,exacto,1:1,1.0,1.0,False
+MEX.32.43_2,Zacatecas,Susticacán,32043,exacto,1:1,1.0,1.0,False
+MEX.32.44_2,Zacatecas,Tabasco,32044,exacto,1:1,1.0,1.0,False
+MEX.32.45_2,Zacatecas,Tepechitlán,32045,exacto,1:1,1.0,1.0,False
+MEX.32.46_2,Zacatecas,Tepetongo,32046,exacto,1:1,1.0,1.0,False
+MEX.32.47_2,Zacatecas,Teúl de González Ortega,32047,exacto,1:1,1.0,1.0,False
+MEX.32.48_2,Zacatecas,Tlaltenango de Sánchez Román,32048,exacto,1:1,1.0,1.0,False
+MEX.32.49_2,Zacatecas,Trancoso,32057,exacto,1:1,1.0,1.0,False
+MEX.32.50_2,Zacatecas,Trinidad García de la Cadena,32011,exacto,1:1,1.0,1.0,False
+MEX.32.51_2,Zacatecas,Valparaíso,32049,exacto,1:1,1.0,1.0,False
+MEX.32.52_2,Zacatecas,Vetagrande,32050,exacto,1:1,1.0,1.0,False
+MEX.32.53_2,Zacatecas,Villa de Cos,32051,exacto,1:1,1.0,1.0,False
+MEX.32.54_2,Zacatecas,Villa García,32052,exacto,1:1,1.0,1.0,False
+MEX.32.55_2,Zacatecas,Villa González Ortega,32053,exacto,1:1,1.0,1.0,False
+MEX.32.56_2,Zacatecas,Villa Hidalgo,32054,exacto,1:1,1.0,1.0,False
+MEX.32.57_2,Zacatecas,Villanueva,32055,exacto,1:1,1.0,1.0,False
+MEX.32.58_2,Zacatecas,Zacatecas,32056,exacto,1:1,1.0,1.0,False

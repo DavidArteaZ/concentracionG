@@ -1,0 +1,59 @@
+anio,rama,nombre,municipios_con_ue,motivo
+2003,2121,Minería de carbón mineral,11,presente en menos de 10 municipios (P_MIN)
+2003,3365,Fabricación de equipo ferroviario,9,presente en menos de 10 municipios (P_MIN)
+2003,4811,Transporte aéreo regular,8,presente en menos de 10 municipios (P_MIN)
+2003,4821,Transporte por ferrocarril,5,presente en menos de 10 municipios (P_MIN)
+2003,4853,Servicio de taxis y limusinas,8,presente en menos de 10 municipios (P_MIN)
+2003,4862,Transporte de gas natural por ductos,9,presente en menos de 10 municipios (P_MIN)
+2003,4869,Transporte por ductos de otros productos,1,presente en menos de 10 municipios (P_MIN)
+2003,4879,Otro transporte turístico,2,presente en menos de 10 municipios (P_MIN)
+2003,5174,Operadores de servicios de telecomunicaciones vía satélite,9,presente en menos de 10 municipios (P_MIN)
+2003,5211,Banca central,1,presente en menos de 10 municipios (P_MIN)
+2003,5222,Instituciones financieras de fomento económico,7,presente en menos de 10 municipios (P_MIN)
+2003,1151,Servicios relacionados con la agricultura,0,sin cobertura en el censo de ese año
+2003,1152,Servicios relacionados con la cría y explotación de animales,0,sin cobertura en el censo de ese año
+2003,1153,Servicios relacionados con el aprovechamiento forestal,0,sin cobertura en el censo de ese año
+2003,4861,Transporte de petróleo crudo por ductos,0,sin cobertura en el censo de ese año
+2003,5232,Bolsa de valores,0,sin cobertura en el censo de ese año
+2003,5622,Tratamiento y disposición final de residuos,0,sin cobertura en el censo de ese año
+2003,5629,"Servicios de remediación, recuperación, y otros servicios de manejo de residuos",0,sin cobertura en el censo de ese año
+2008,2121,Minería de carbón mineral,10,presente en menos de 10 municipios (P_MIN)
+2008,2212,Suministro de gas natural por ductos al consumidor final,6,presente en menos de 10 municipios (P_MIN)
+2008,4821,Transporte por ferrocarril,5,presente en menos de 10 municipios (P_MIN)
+2008,4861,Transporte de petróleo crudo por ductos,5,presente en menos de 10 municipios (P_MIN)
+2008,4879,Otro transporte turístico,2,presente en menos de 10 municipios (P_MIN)
+2008,5211,Banca central,1,presente en menos de 10 municipios (P_MIN)
+2008,5222,Instituciones financieras de fomento económico,6,presente en menos de 10 municipios (P_MIN)
+2008,5232,Bolsa de valores,1,presente en menos de 10 municipios (P_MIN)
+2008,5622,Tratamiento y disposición final de residuos,0,sin cobertura en el censo de ese año
+2008,5629,"Servicios de remediación, recuperación, y otros servicios de manejo de residuos",0,sin cobertura en el censo de ese año
+2013,2121,Minería de carbón mineral,10,presente en menos de 10 municipios (P_MIN)
+2013,2211,"Generación, transmisión, distribución y comercialización de energía eléctrica",7,presente en menos de 10 municipios (P_MIN)
+2013,2212,Suministro de gas natural por ductos al consumidor final,9,presente en menos de 10 municipios (P_MIN)
+2013,4821,Transporte por ferrocarril,4,presente en menos de 10 municipios (P_MIN)
+2013,4869,Transporte por ductos de otros productos,5,presente en menos de 10 municipios (P_MIN)
+2013,4879,Otro transporte turístico,3,presente en menos de 10 municipios (P_MIN)
+2013,5211,Banca central,1,presente en menos de 10 municipios (P_MIN)
+2013,5222,Instituciones financieras de fomento económico,6,presente en menos de 10 municipios (P_MIN)
+2013,5232,Bolsa de valores,1,presente en menos de 10 municipios (P_MIN)
+2013,4861,Transporte de petróleo crudo por ductos,0,sin cobertura en el censo de ese año
+2013,5622,Tratamiento y disposición final de residuos,0,sin cobertura en el censo de ese año
+2013,5629,"Servicios de remediación, recuperación, y otros servicios de manejo de residuos",0,sin cobertura en el censo de ese año
+2018,2212,Suministro de gas natural por ductos al consumidor final,6,presente en menos de 10 municipios (P_MIN)
+2018,3346,Fabricación y reproducción de medios magnéticos y ópticos,9,presente en menos de 10 municipios (P_MIN)
+2018,4821,Transporte por ferrocarril,5,presente en menos de 10 municipios (P_MIN)
+2018,4869,Transporte por ductos de otros productos,6,presente en menos de 10 municipios (P_MIN)
+2018,4879,Otro transporte turístico,7,presente en menos de 10 municipios (P_MIN)
+2018,5211,Banca central,1,presente en menos de 10 municipios (P_MIN)
+2018,5222,Instituciones financieras de fomento económico,5,presente en menos de 10 municipios (P_MIN)
+2018,5225,Servicios relacionados con la intermediación crediticia no bursátil,9,presente en menos de 10 municipios (P_MIN)
+2018,5232,Bolsa de valores,2,presente en menos de 10 municipios (P_MIN)
+2018,4861,Transporte de petróleo crudo por ductos,0,sin cobertura en el censo de ese año
+2023,2121,Minería de carbón mineral,8,presente en menos de 10 municipios (P_MIN)
+2023,2212,Suministro de gas natural por ductos al consumidor final,9,presente en menos de 10 municipios (P_MIN)
+2023,3346,Fabricación y reproducción de medios magnéticos y ópticos,9,presente en menos de 10 municipios (P_MIN)
+2023,4821,Transporte por ferrocarril,6,presente en menos de 10 municipios (P_MIN)
+2023,4869,Transporte por ductos de otros productos,8,presente en menos de 10 municipios (P_MIN)
+2023,5211,Banca central,1,presente en menos de 10 municipios (P_MIN)
+2023,5232,Bolsa de valores,2,presente en menos de 10 municipios (P_MIN)
+2023,4861,Transporte de petróleo crudo por ductos,0,sin cobertura en el censo de ese año

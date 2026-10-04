@@ -1,0 +1,16 @@
+# Entorno con el que se ejecutó el pipeline del ICE (04/10/2026).
+# Crear con: conda env create -f codigo/ice/environment.yml
+name: ice-municipal
+channels:
+  - conda-forge
+dependencies:
+  - python=3.13
+  - numpy=2.5.3
+  - pandas=3.0.5
+  - scipy=1.18.1
+  - matplotlib=3.11.2
+  - pip
+  - pip:
+      - pyshp==3.1.6
+      # ecomplexity 0.5.3 (rama develop, commit 554cc5dc0d9fe5b72adee54b5cd64fb4953d0a20)
+      - git+https://github.com/cid-harvard/py-ecomplexity.git@554cc5dc0d9fe5b72adee54b5cd64fb4953d0a20

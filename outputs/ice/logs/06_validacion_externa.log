@@ -1,0 +1,39 @@
+# 06_validacion_externa | 2026-10-04T12:28:17
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+Municipio-año: 12,292; sin población: 0; sin centroide: 0; sin remuneración media: 462; sin productividad: 96
+Los municipios sin remuneración media tienen mediana de 18 UE vs. 349 del resto; 71% están fuera del núcleo.
+[log_rem_rel 2003] n=2272 | (1) b=0.322 (se 0.017, p_w 0.0000, R2p 0.327) | (2) b=0.408 (se 0.031, p_w 0.0000, R2p 0.149) | (3) b=0.454 (se 0.041, p_w 0.0000, R2p 0.116) | (4) b=0.365 (se 0.039, p_w 0.0000, R2p 0.068)
+[log_rem_rel 2008] n=2355 | (1) b=0.349 (se 0.019, p_w 0.0000, R2p 0.351) | (2) b=0.425 (se 0.032, p_w 0.0000, R2p 0.157) | (3) b=0.411 (se 0.047, p_w 0.0000, R2p 0.095) | (4) b=0.339 (se 0.034, p_w 0.0000, R2p 0.060)
+[log_rem_rel 2013] n=2361 | (1) b=0.304 (se 0.013, p_w 0.0000, R2p 0.340) | (2) b=0.384 (se 0.037, p_w 0.0000, R2p 0.165) | (3) b=0.391 (se 0.053, p_w 0.0000, R2p 0.108) | (4) b=0.310 (se 0.039, p_w 0.0000, R2p 0.062)
+[log_rem_rel 2018] n=2410 | (1) b=0.282 (se 0.012, p_w 0.0000, R2p 0.370) | (2) b=0.380 (se 0.039, p_w 0.0000, R2p 0.215) | (3) b=0.385 (se 0.050, p_w 0.0000, R2p 0.145) | (4) b=0.310 (se 0.034, p_w 0.0000, R2p 0.085)
+[log_rem_rel 2023] n=2432 | (1) b=0.243 (se 0.020, p_w 0.0000, R2p 0.364) | (2) b=0.288 (se 0.029, p_w 0.0000, R2p 0.172) | (3) b=0.285 (se 0.038, p_w 0.0000, R2p 0.112) | (4) b=0.239 (se 0.030, p_w 0.0000, R2p 0.068)
+[log_vacb_po_rel 2003] n=2421 | (1) b=0.724 (se 0.089, p_w 0.0000, R2p 0.431) | (2) b=0.727 (se 0.073, p_w 0.0000, R2p 0.137) | (3) b=0.759 (se 0.100, p_w 0.0000, R2p 0.094) | (4) b=0.609 (se 0.071, p_w 0.0000, R2p 0.057)
+[log_vacb_po_rel 2008] n=2418 | (1) b=0.768 (se 0.071, p_w 0.0000, R2p 0.439) | (2) b=0.788 (se 0.066, p_w 0.0000, R2p 0.162) | (3) b=0.704 (se 0.100, p_w 0.0000, R2p 0.085) | (4) b=0.603 (se 0.071, p_w 0.0000, R2p 0.060)
+[log_vacb_po_rel 2013] n=2439 | (1) b=0.678 (se 0.066, p_w 0.0000, R2p 0.404) | (2) b=0.819 (se 0.098, p_w 0.0000, R2p 0.194) | (3) b=0.787 (se 0.133, p_w 0.0001, R2p 0.117) | (4) b=0.629 (se 0.091, p_w 0.0000, R2p 0.073)
+[log_vacb_po_rel 2018] n=2456 | (1) b=0.628 (se 0.046, p_w 0.0000, R2p 0.450) | (2) b=0.748 (se 0.078, p_w 0.0000, R2p 0.228) | (3) b=0.734 (se 0.099, p_w 0.0000, R2p 0.147) | (4) b=0.569 (se 0.084, p_w 0.0001, R2p 0.084)
+[log_vacb_po_rel 2023] n=2462 | (1) b=0.617 (se 0.056, p_w 0.0000, R2p 0.454) | (2) b=0.735 (se 0.059, p_w 0.0000, R2p 0.233) | (3) b=0.677 (se 0.085, p_w 0.0000, R2p 0.137) | (4) b=0.553 (se 0.066, p_w 0.0000, R2p 0.086)
+
+Crecimiento:
+    dependiente        periodo                                         columna  beta_ice  se_crv1  p_wild_cluster  r2_parcial_ice    n
+    log_rem_rel      2003-2023                                    (a) ICE + y0    0.1308   0.0267          0.0007          0.1118 2261
+    log_rem_rel      2003-2023           (b) + escala + diversidad + FE estado    0.0747   0.0215          0.0002          0.0066 2261
+    log_rem_rel apilado 5 años                       (a) ICE + y0 + FE periodo    0.1330   0.0239          0.0000          0.0916 9281
+    log_rem_rel apilado 5 años (b) + escala + diversidad + FE estado y periodo    0.1494   0.0180          0.0000          0.0210 9281
+log_vacb_po_rel      2003-2023                                    (a) ICE + y0    0.2827   0.0630          0.0001          0.1051 2410
+log_vacb_po_rel      2003-2023           (b) + escala + diversidad + FE estado    0.1925   0.0437          0.0006          0.0098 2410
+log_vacb_po_rel apilado 5 años                       (a) ICE + y0 + FE periodo    0.2691   0.0525          0.0001          0.0933 9665
+log_vacb_po_rel apilado 5 años (b) + escala + diversidad + FE estado y periodo    0.2348   0.0256          0.0000          0.0150 9665
+
+Regla Rama vs. Clase (R2 parcial del ICE, col. 4, log_rem_rel):
+ anio    n  r2p_rama  r2p_clase  dif_clase_menos_rama  ic95_inf  ic95_sup  clase_gana
+ 2003 2272    0.0677     0.0611               -0.0066   -0.0178    0.0121       False
+ 2013 2361    0.0615     0.0666                0.0051   -0.0087    0.0183       False
+Decisión según la regla fijada: especificación base = Rama
+
+PIB Kummu (descriptivo, solo relaciones 1:1):
+ anio  anio_pib    n  corr_ice_logpib  beta_ice  se_crv1  r2_parcial_ice
+ 2003      2003 2380           0.5005    0.3689   0.0966          0.1354
+ 2008      2008 2388           0.5024    0.3638   0.1027          0.1281
+ 2013      2013 2389           0.5119    0.4115   0.1000          0.1719
+ 2018      2018 2390           0.4907    0.4321   0.0996          0.1805
+ 2023      2022 2386           0.4911    0.4170   0.0920          0.1805

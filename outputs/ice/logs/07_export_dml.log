@@ -1,0 +1,5 @@
+# 07_export_dml | 2026-10-04T12:30:24
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+ice_para_dml.csv: 12,292 filas, 41 columnas, 33 especificaciones alternativas
+Municipios por año: anio | 2003    2447 | 2008    2455 | 2013    2456 | 2018    2465 | 2023    2469
+Sin población: 0 | NaN por alternativa (máx.): 1

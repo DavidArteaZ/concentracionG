@@ -1,0 +1,33 @@
+cve_mun_hijo,cve_mun_padre,share_pob_padre,otros_padres,localidades_emparejadas,localidades_hijo,fuente,nombre_hijo,nombre_padre
+02006,02001,0.9999083792285531,03002,541.0,873.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),San Quintín,Ensenada
+02007,02002,0.9729579738661016,02001,153.0,263.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),San Felipe,Mexicali
+04012,04004,0.9997386645759833,04002,27.0,54.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Seybaplaya,Champotón
+04013,04001,1.0,,28.0,57.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Dzitbalché,Calkiní
+07120,07080,1.0,,29.0,49.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Capitán Luis Ángel Vidal,Siltepec
+07121,07072,1.0,,5.0,9.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Rincón Chamula San Pedro,Pueblo Nuevo Solistahuacán
+07122,07107,1.0,,86.0,156.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),El Parral,Villa Corzo
+07123,07002,1.0,,68.0,142.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Emiliano Zapata,Acala
+07124,07092,1.0,,134.0,206.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Mezcalapa,Tecpatán
+07125,07080,1.0,,52.0,68.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Honduras de la Sierra,Siltepec
+12078,12043,1.0,,4.0,167.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Cochoapa el Grande,Metlatónoc
+12079,12028,1.0,,9.0,71.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),José Joaquín de Herrera,Chilapa de Álvarez
+12080,12013,1.0,,5.0,37.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Juchitán,Azoyú
+12081,,,,0.0,47.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Iliatenco,
+12082,12053,1.0,,30.0,36.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Las Vigas,San Marcos
+12083,12012,1.0,,32.0,44.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Ñuu Savi,Ayutla de los Libres
+12084,12041,1.0,,8.0,16.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Santa Cruz del Rincón,Malinaltepec
+12085,12023,1.0,,26.0,29.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),San Nicolás,Cuajinicuilapa
+14125,14008,0.8990208078335373,14093,46.0,89.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),San Ignacio Cerro Gordo,Arandas
+15125,15044,1.0,,1.0,7.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Tonanitla,Jaltenco
+17034,17015,1.0,,7.0,14.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Coatetelco,Miacatlán
+17035,17017,1.0,,17.0,29.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Xoxocotla,Puente de Ixtla
+17036,17022,1.0,,16.0,19.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Hueyapan,Tetela del Volcán
+23009,23008,1.0,,38.0,386.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Tulum,Solidaridad
+23010,23004,1.0,,89.0,358.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Bacalar,Othón P. Blanco
+23011,23005,1.0,,58.0,484.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Puerto Morelos,Benito Juárez
+30211,30102,0.9968881071573535,30158,36.0,120.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),San Rafael,Martínez de la Torre
+30212,30130,1.0,,17.0,125.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Santiago Sochiapan,Playa Vicente
+32058,32047,0.9881422924901185,32004 32045,11.0,42.0,CUCG 2003 vs 2023 (localidades a <=100 m con mismo nombre),Santa María de la Paz,Teúl de González Ortega
+24059,24028,,,,,decreto (municipios_nuevos_2024.csv),Villa de Pozos,San Luis Potosí
+25019,25006,,,,,decreto (municipios_nuevos_2024.csv),Eldorado,Culiacán
+25020,25011,,,,,decreto (municipios_nuevos_2024.csv),Juan José Ríos,Guasave
