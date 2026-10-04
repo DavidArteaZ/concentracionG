@@ -1,0 +1,53 @@
+# 02_ice | 2026-10-04T12:26:38
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+Parámetros del núcleo: U_MIN=30, D_MIN=5, P_MIN=10
+Ramas comunes a los cinco años: 272
+[base 2003] núcleo: 2085/2447 municipios, 261/272 ramas (2 iter.); UE fuera del núcleo 0.20%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3536, 0.1313, 0.1079, 0.0858; brecha λ2-λ3 = 0.2223; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.896, ~log UE 0.863, ~log pob 0.779; empates 2.49%; corr proyección 1.000000; corr ecomplexity 1.000000
+[base 2008] núcleo: 2205/2455 municipios, 269/277 ramas (2 iter.); UE fuera del núcleo 0.12%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3439, 0.1337, 0.1117, 0.0913; brecha λ2-λ3 = 0.2102; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.890, ~log UE 0.870, ~log pob 0.799; empates 0.08%; corr proyección 1.000000; corr ecomplexity 1.000000
+[base 2013] núcleo: 2266/2456 municipios, 267/276 ramas (2 iter.); UE fuera del núcleo 0.09%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3377, 0.1282, 0.1076, 0.0942; brecha λ2-λ3 = 0.2096; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.891, ~log UE 0.866, ~log pob 0.808; empates 0.61%; corr proyección 1.000000; corr ecomplexity 1.000000
+[base 2018] núcleo: 2320/2465 municipios, 269/278 ramas (2 iter.); UE fuera del núcleo 0.06%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3332, 0.1247, 0.1047, 0.0912; brecha λ2-λ3 = 0.2085; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.891, ~log UE 0.854, ~log pob 0.820; empates 0.45%; corr proyección 1.000000; corr ecomplexity 1.000000
+[base 2023] núcleo: 2337/2469 municipios, 271/278 ramas (2 iter.); UE fuera del núcleo 0.05%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3260, 0.1207, 0.0977, 0.0853; brecha λ2-λ3 = 0.2054; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.893, ~log UE 0.850, ~log pob 0.819; empates 0.36%; corr proyección 1.000000; corr ecomplexity 1.000000
+[ramas_comunes 2003] núcleo: 2085/2447 municipios, 261/272 ramas (2 iter.); UE fuera del núcleo 0.20%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3536, 0.1313, 0.1079, 0.0858; brecha λ2-λ3 = 0.2223; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.896, ~log UE 0.863, ~log pob 0.779; empates 2.49%; corr proyección 1.000000
+[ramas_comunes 2008] núcleo: 2205/2455 municipios, 266/272 ramas (2 iter.); UE fuera del núcleo 0.12%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3441, 0.1336, 0.1117, 0.0915; brecha λ2-λ3 = 0.2105; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.890, ~log UE 0.870, ~log pob 0.798; empates 0.08%; corr proyección 1.000000
+[ramas_comunes 2013] núcleo: 2266/2456 municipios, 264/272 ramas (2 iter.); UE fuera del núcleo 0.09%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3383, 0.1280, 0.1075, 0.0943; brecha λ2-λ3 = 0.2103; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.890, ~log UE 0.865, ~log pob 0.807; empates 0.61%; corr proyección 1.000000
+[ramas_comunes 2018] núcleo: 2320/2465 municipios, 264/272 ramas (2 iter.); UE fuera del núcleo 0.06%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3314, 0.1246, 0.1049, 0.0912; brecha λ2-λ3 = 0.2068; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.891, ~log UE 0.854, ~log pob 0.820; empates 0.45%; corr proyección 1.000000
+[ramas_comunes 2023] núcleo: 2336/2469 municipios, 266/272 ramas (2 iter.); UE fuera del núcleo 0.05%; ICE NaN: 0
+      λ1..λ5 = 1.0000, 0.3243, 0.1206, 0.0977, 0.0858; brecha λ2-λ3 = 0.2036; eig>0.999: 1; componentes: 1
+      Spearman ICE~diversidad 0.892, ~log UE 0.849, ~log pob 0.818; empates 0.36%; corr proyección 1.000000
+
+Spearman del ICE base entre años:
+anio   2003   2008   2013   2018   2023
+anio                                   
+2003  1.000  0.910  0.912  0.909  0.907
+2008  0.910  1.000  0.928  0.915  0.911
+2013  0.912  0.928  1.000  0.944  0.934
+2018  0.909  0.915  0.944  1.000  0.957
+2023  0.907  0.911  0.934  0.957  1.000
+Spearman base vs. ramas comunes por año: 2003: 1.0000, 2008: 0.9997, 2013: 0.9997, 2018: 0.9996, 2023: 0.9995
+
+2003 — 5 ramas de mayor PCI: 5221 (8.06, ubic. 11.0), 3346 (7.96, ubic. 21.0), 5331 (7.94, ubic. 10.0), 2212 (7.45, ubic. 13.0), 5132 (7.09, ubic. 25.0)
+2003 — 5 ramas de menor PCI: 3149 (-2.48, ubic. 179.0), 2213 (-2.07, ubic. 1639.0), 3141 (-1.81, ubic. 104.0), 3131 (-1.73, ubic. 104.0), 4611 (-1.71, ubic. 1561.0)
+
+2013 — 5 ramas de mayor PCI: 3346 (8.34, ubic. 16.0), 3341 (8.30, ubic. 24.0), 5221 (8.12, ubic. 13.0), 4853 (7.98, ubic. 15.0), 5225 (7.82, ubic. 10.0)
+2013 — 5 ramas de menor PCI: 3131 (-3.80, ubic. 155.0), 3149 (-2.61, ubic. 276.0), 2213 (-2.14, ubic. 1747.0), 3118 (-1.77, ubic. 1507.0), 4611 (-1.69, ubic. 1685.0)
+
+2023 — 5 ramas de mayor PCI: 5225 (8.59, ubic. 10.0), 5221 (8.13, ubic. 11.0), 4811 (7.63, ubic. 14.0), 5222 (7.50, ubic. 14.0), 3341 (7.46, ubic. 28.0)
+2023 — 5 ramas de menor PCI: 3131 (-3.81, ubic. 191.0), 3149 (-3.12, ubic. 340.0), 2213 (-2.17, ubic. 1809.0), 3118 (-1.90, ubic. 1528.0), 3152 (-1.81, ubic. 731.0)

@@ -1,0 +1,17 @@
+# 08_export_ecomplexity | 2026-10-04T13:47:40
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+[2003] corr con ecomplexity en el núcleo: mcp 1.000000, eci 1.000000, pci 1.000000, density 1.000000, cog 1.000000, coi 1.000000
+[2003] 2447 municipios x 261 ramas = 638,667 filas
+[2008] corr con ecomplexity en el núcleo: mcp 1.000000, eci 1.000000, pci 1.000000, density 1.000000, cog 1.000000, coi 1.000000
+[2008] 2455 municipios x 269 ramas = 660,395 filas
+[2013] corr con ecomplexity en el núcleo: mcp 1.000000, eci 1.000000, pci 1.000000, density 1.000000, cog 1.000000, coi 1.000000
+[2013] 2456 municipios x 267 ramas = 655,752 filas
+[2018] corr con ecomplexity en el núcleo: mcp 1.000000, eci 1.000000, pci 1.000000, density 1.000000, cog 1.000000, coi 1.000000
+[2018] 2465 municipios x 269 ramas = 663,085 filas
+[2023] corr con ecomplexity en el núcleo: mcp 1.000000, eci 1.000000, pci 1.000000, density 1.000000, cog 1.000000, coi 1.000000
+[2023] 2469 municipios x 271 ramas = 669,099 filas
+Municipios sin nombre: <StringArray>
+[]
+Length: 0, dtype: str
+catalogo_ramas.csv: 279 ramas
+Guardado ecomplexity_rama_ue_<año>.csv.gz (5 archivos): 3,286,998 filas; proximidad_ramas.csv.gz

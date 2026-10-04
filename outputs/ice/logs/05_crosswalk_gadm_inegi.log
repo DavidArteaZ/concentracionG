@@ -1,0 +1,80 @@
+# 05_crosswalk_gadm_inegi | 2026-10-04T12:27:51
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+GADM: 2457 polígonos; GID_2 coinciden 1:1 con el CSV de PIB
+INEGI 2023: 2478 municipios
+Cruce por nombre: exacto 2425, prefijo 24, sin resolver 8
+Localidades activas: 286,583; fuera de todo polígono GADM: 154 (0.004% de la población)
+Tipo de relación: tipo_relacion | 1:1        2390 | ambiguo      31 | n:1          19 | 1:n          17
+Discrepancias nombre vs. espacial: 1; claves INEGI asignadas a más de un GADM: 0
+Municipios INEGI 2023 sin polígono GADM asignado: 21
+Casos para revisión manual: 99 (outputs/ice/crosswalk_revision.csv)
+                          NAME_2 cve_mun                                                                       NOMGEO   metodo tipo_relacion
+                       Cintalapa   07017                                                        Cintalapa de Figueroa  prefijo           1:1
+                       Batopilas   08008                                              Batopilas de Manuel Gómez Morín  prefijo           1:1
+Dolores Hidalgo Cuna de la Indep   11014                            Dolores Hidalgo Cuna de la Independencia Nacional  prefijo           1:1
+Coahuayutla de José María Izazag   12016                                            Coahuayutla de José María Izazaga  prefijo           1:1
+La Unión de Isidoro Montes de Oc   12068                                            La Unión de Isidoro Montes de Oca  prefijo           1:1
+Santiago Tulantepec de Lugo Guer   13056                                         Santiago Tulantepec de Lugo Guerrero  prefijo           1:1
+                     Jonacatepec   17013                                                 Jonacatepec de Leandro Valle  prefijo           1:1
+                       Zacualpan   17032                                                         Zacualpan de Amilpas  prefijo           1:1
+Heroica Ciudad de Ejutla de Cres   20028                                           Heroica Ciudad de Ejutla de Crespo  prefijo           1:1
+Heroica Ciudad de Huajuapan de L   20039                                          Heroica Ciudad de Huajuapan de León  prefijo           1:1
+Heroica Ciudad de Juchitán de Za   20043                                       Heroica Ciudad de Juchitán de Zaragoza  prefijo           1:1
+Heroica Villa Tezoatlán de Segur   20549 Heroica Villa Tezoatlán de Segura y Luna, Cuna de la Independencia de Oaxaca  prefijo           1:1
+Magdalena Yodocono de Porfirio D   20562                                          Magdalena Yodocono de Porfirio Díaz  prefijo           1:1
+                 San Blas Atempa   20124                                             Heroica Villa de San Blas Atempa espacial           1:1
+San Juan Bautista Tlacoatzintepe   20182                                            San Juan Bautista Tlacoatzintepec  prefijo           1:1
+    San Juan Mixtepec -Dto. 08 -   20208                                                            San Juan Mixtepec espacial           1:1
+    San Juan Mixtepec -Dto. 26 -   20209                                                            San Juan Mixtepec espacial           1:1
+      San Martín de los Cansecos   20238                                           Heroico San Martín de los Cansecos espacial           1:1
+             San Mateo Yucutindó   20566                                                         San Mateo Yucutindoo  prefijo           1:1
+   San Pedro Mixtepec -Dto. 22 -   20318                                                           San Pedro Mixtepec espacial           1:1
+   San Pedro Mixtepec -Dto. 26 -   20319                                                           San Pedro Mixtepec espacial           1:1
+San Pedro y San Pablo Teposcolul   20339                                            San Pedro y San Pablo Teposcolula  prefijo           1:1
+San Pedro y San Pablo Tequixtepe   20340                                            San Pedro y San Pablo Tequixtepec  prefijo           1:1
+               Santiago Chazumba   20459                                                   Villa de Santiago Chazumba espacial           1:1
+Villa de Tamazulápam del Progres   20540                                            Villa de Tamazulápam del Progreso  prefijo           1:1
+Villa de Tututepec de Melchor Oc   20334                                                           Villa de Tututepec espacial           1:1
+                   Villa Hidalgo   20038                                                        Villa Hidalgo Yalálag  prefijo           1:1
+                       Ahualulco   24001                                                      Ahualulco del Sonido 13  prefijo           1:1
+Mazatecochco de José María Morel   29017                                           Mazatecochco de José María Morelos  prefijo           1:1
+Ziltlaltépec de Trinidad Sánchez   29037                                      Ziltlaltépec de Trinidad Sánchez Santos  prefijo           1:1
+                        Medellín   30105                                                            Medellín de Bravo  prefijo           1:1
+Nanchital de Lázaro Cárdenas del   30206                                         Nanchital de Lázaro Cárdenas del Río  prefijo           1:1
+
+Municipios en CUCG_2023 ausentes en CUCG_2003: 29
+cve_mun_hijo              nombre_hijo cve_mun_padre               nombre_padre  share_pob_padre otros_padres  localidades_emparejadas  localidades_hijo
+       02006              San Quintín         02001                   Ensenada            1.000        03002                    541.0             873.0
+       02007               San Felipe         02002                   Mexicali            0.973        02001                    153.0             263.0
+       04012               Seybaplaya         04004                  Champotón            1.000        04002                     27.0              54.0
+       04013               Dzitbalché         04001                    Calkiní            1.000                                  28.0              57.0
+       07120 Capitán Luis Ángel Vidal         07080                   Siltepec            1.000                                  29.0              49.0
+       07121 Rincón Chamula San Pedro         07072 Pueblo Nuevo Solistahuacán            1.000                                   5.0               9.0
+       07122                El Parral         07107                Villa Corzo            1.000                                  86.0             156.0
+       07123          Emiliano Zapata         07002                      Acala            1.000                                  68.0             142.0
+       07124                Mezcalapa         07092                   Tecpatán            1.000                                 134.0             206.0
+       07125    Honduras de la Sierra         07080                   Siltepec            1.000                                  52.0              68.0
+       12078       Cochoapa el Grande         12043                 Metlatónoc            1.000                                   4.0             167.0
+       12079  José Joaquín de Herrera         12028         Chilapa de Álvarez            1.000                                   9.0              71.0
+       12080                 Juchitán         12013                      Azoyú            1.000                                   5.0              37.0
+       12081                Iliatenco           NaN                        NaN              NaN          NaN                      0.0              47.0
+       12082                Las Vigas         12053                 San Marcos            1.000                                  30.0              36.0
+       12083                 Ñuu Savi         12012       Ayutla de los Libres            1.000                                  32.0              44.0
+       12084    Santa Cruz del Rincón         12041               Malinaltepec            1.000                                   8.0              16.0
+       12085              San Nicolás         12023             Cuajinicuilapa            1.000                                  26.0              29.0
+       14125  San Ignacio Cerro Gordo         14008                    Arandas            0.899        14093                     46.0              89.0
+       15125                Tonanitla         15044                   Jaltenco            1.000                                   1.0               7.0
+       17034               Coatetelco         17015                  Miacatlán            1.000                                   7.0              14.0
+       17035                Xoxocotla         17017            Puente de Ixtla            1.000                                  17.0              29.0
+       17036                 Hueyapan         17022          Tetela del Volcán            1.000                                  16.0              19.0
+       23009                    Tulum         23008                Solidaridad            1.000                                  38.0             386.0
+       23010                  Bacalar         23004            Othón P. Blanco            1.000                                  89.0             358.0
+       23011           Puerto Morelos         23005              Benito Juárez            1.000                                  58.0             484.0
+       30211               San Rafael         30102       Martínez de la Torre            0.997        30158                     36.0             120.0
+       30212       Santiago Sochiapan         30130              Playa Vicente            1.000                                  17.0             125.0
+       32058    Santa María de la Paz         32047    Teúl de González Ortega            0.988  32004 32045                     11.0              42.0
+       24059           Villa de Pozos         24028            San Luis Potosí              NaN          NaN                      NaN               NaN
+       25019                 Eldorado         25006                   Culiacán              NaN          NaN                      NaN               NaN
+       25020           Juan José Ríos         25011                    Guasave              NaN          NaN                      NaN               NaN
+
+Centroides poblacionales: 2475 municipios

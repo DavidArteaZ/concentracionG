@@ -1,0 +1,101 @@
+rama,nombre_rama,pci,ubiquity,grupo,año
+5221,Banca múltiple,8.06005,11,top,2003
+3346,Fabricación y reproducción de medios magnéticos y ópticos,7.96318,21,top,2003
+5331,"Servicios de alquiler de marcas registradas, patentes y franquicias",7.93756,10,top,2003
+2212,Suministro de gas natural por ductos al consumidor final,7.4542,13,top,2003
+5132,Edición de software,7.08578,25,top,2003
+3341,Fabricación de computadoras y equipo periférico,7.04728,32,top,2003
+5239,Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,6.93759,12,top,2003
+3343,Fabricación de equipo de audio y de video,6.72912,31,top,2003
+3364,Fabricación de equipo aeroespacial,6.71665,10,top,2003
+3336,"Fabricación de motores de combustión interna, turbinas y transmisiones",6.57578,30,top,2003
+3149,"Fabricación de otros productos textiles, excepto prendas de vestir",-2.48325,179,bottom,2003
+2213,"Captación, tratamiento y suministro de agua",-2.07261,1639,bottom,2003
+3141,"Confección de alfombras, blancos y similares",-1.80548,104,bottom,2003
+3131,"Preparación e hilado de fibras textiles, y fabricación de hilos",-1.72829,104,bottom,2003
+4611,Comercio al por menor de abarrotes y alimentos,-1.70693,1561,bottom,2003
+3118,Elaboración de productos de panadería y tortillas,-1.66868,1353,bottom,2003
+4612,"Comercio al por menor de bebidas, hielo y tabaco",-1.44659,1260,bottom,2003
+4641,Comercio al por menor de artículos para el cuidado de la salud,-1.3528,1030,bottom,2003
+3371,"Fabricación de muebles, excepto de oficina y estantería",-1.34891,753,bottom,2003
+3152,Confección de prendas de vestir,-1.26298,670,bottom,2003
+5221,Banca múltiple,8.23753,11,top,2008
+5241,Compañías de seguros y fianzas,7.88195,15,top,2008
+5132,Edición de software,7.66522,28,top,2008
+5511,Dirección y administración de grupos empresariales o corporativos,7.62768,30,top,2008
+3343,Fabricación de equipo de audio y de video,7.62474,28,top,2008
+3346,Fabricación y reproducción de medios magnéticos y ópticos,7.53456,20,top,2008
+4373,Intermediación de comercio al por mayor,7.51098,48,top,2008
+5331,"Servicios de alquiler de marcas registradas, patentes y franquicias",7.44914,29,top,2008
+5182,"Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados",7.42523,35,top,2008
+4853,Servicio de taxis y limusinas,7.361,15,top,2008
+3149,"Fabricación de otros productos textiles, excepto prendas de vestir",-2.71418,302,bottom,2008
+3131,"Preparación e hilado de fibras textiles, y fabricación de hilos",-2.27986,121,bottom,2008
+2213,"Captación, tratamiento y suministro de agua",-2.07604,1699,bottom,2008
+4611,Comercio al por menor de abarrotes y alimentos,-1.69117,1661,bottom,2008
+3118,Elaboración de productos de panadería y tortillas,-1.66178,1443,bottom,2008
+3371,"Fabricación de muebles, excepto de oficina y estantería",-1.57255,822,bottom,2008
+8123,Servicios funerarios y administración de cementerios,-1.49213,1437,bottom,2008
+4612,"Comercio al por menor de bebidas, hielo y tabaco",-1.47951,1308,bottom,2008
+3152,Confección de prendas de vestir,-1.47228,709,bottom,2008
+4641,Comercio al por menor de artículos para el cuidado de la salud,-1.35089,965,bottom,2008
+3346,Fabricación y reproducción de medios magnéticos y ópticos,8.34016,16,top,2013
+3341,Fabricación de computadoras y equipo periférico,8.30246,24,top,2013
+5221,Banca múltiple,8.11549,13,top,2013
+4853,Servicio de taxis y limusinas,7.98112,15,top,2013
+5225,Servicios relacionados con la intermediación crediticia no bursátil,7.82162,10,top,2013
+5239,Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,7.75569,25,top,2013
+4811,Transporte aéreo regular,7.56917,13,top,2013
+5132,Edición de software,7.5192,26,top,2013
+4882,Servicios relacionados con el transporte por ferrocarril,7.25412,17,top,2013
+3336,"Fabricación de motores de combustión interna, turbinas y transmisiones",7.22131,29,top,2013
+3131,"Preparación e hilado de fibras textiles, y fabricación de hilos",-3.8026,155,bottom,2013
+3149,"Fabricación de otros productos textiles, excepto prendas de vestir",-2.60912,276,bottom,2013
+2213,"Captación, tratamiento y suministro de agua",-2.14467,1747,bottom,2013
+3118,Elaboración de productos de panadería y tortillas,-1.76963,1507,bottom,2013
+4611,Comercio al por menor de abarrotes y alimentos,-1.69352,1685,bottom,2013
+3371,"Fabricación de muebles, excepto de oficina y estantería",-1.68891,936,bottom,2013
+4612,"Comercio al por menor de bebidas, hielo y tabaco",-1.4597,1361,bottom,2013
+3152,Confección de prendas de vestir,-1.45103,705,bottom,2013
+5614,"Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",-1.38313,1156,bottom,2013
+3399,Otras industrias manufactureras,-1.24164,344,bottom,2013
+5221,Banca múltiple,7.8345,12,top,2018
+3341,Fabricación de computadoras y equipo periférico,7.52777,27,top,2018
+6117,Servicios de apoyo a la educación,7.02749,45,top,2018
+4811,Transporte aéreo regular,6.98735,14,top,2018
+3336,"Fabricación de motores de combustión interna, turbinas y transmisiones",6.9868,38,top,2018
+5331,"Servicios de alquiler de marcas registradas, patentes y franquicias",6.60144,31,top,2018
+3364,Fabricación de equipo aeroespacial,6.58767,25,top,2018
+3361,Fabricación de automóviles y camiones,6.55862,37,top,2018
+3313,Industria básica del aluminio,6.53475,57,top,2018
+5511,Dirección y administración de grupos empresariales o corporativos,6.50353,56,top,2018
+3131,"Preparación e hilado de fibras textiles, y fabricación de hilos",-4.00944,188,bottom,2018
+3149,"Fabricación de otros productos textiles, excepto prendas de vestir",-2.76918,324,bottom,2018
+2213,"Captación, tratamiento y suministro de agua",-2.13027,1813,bottom,2018
+3118,Elaboración de productos de panadería y tortillas,-1.79872,1477,bottom,2018
+4611,Comercio al por menor de abarrotes y alimentos,-1.70362,1647,bottom,2018
+3371,"Fabricación de muebles, excepto de oficina y estantería",-1.65199,882,bottom,2018
+3152,Confección de prendas de vestir,-1.60052,743,bottom,2018
+5614,"Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",-1.56754,1229,bottom,2018
+8132,"Asociaciones y organizaciones religiosas, políticas y civiles",-1.49322,1104,bottom,2018
+3399,Otras industrias manufactureras,-1.44674,377,bottom,2018
+5225,Servicios relacionados con la intermediación crediticia no bursátil,8.59097,10,top,2023
+5221,Banca múltiple,8.13146,11,top,2023
+4811,Transporte aéreo regular,7.6282,14,top,2023
+5222,Instituciones financieras de fomento económico,7.50171,14,top,2023
+3341,Fabricación de computadoras y equipo periférico,7.45713,28,top,2023
+5132,Edición de software,7.37147,32,top,2023
+6117,Servicios de apoyo a la educación,7.3428,37,top,2023
+4882,Servicios relacionados con el transporte por ferrocarril,7.14878,28,top,2023
+3336,"Fabricación de motores de combustión interna, turbinas y transmisiones",7.01343,35,top,2023
+3342,Fabricación de equipo de comunicación,6.94507,42,top,2023
+3131,"Preparación e hilado de fibras textiles, y fabricación de hilos",-3.81125,191,bottom,2023
+3149,"Fabricación de otros productos textiles, excepto prendas de vestir",-3.11812,340,bottom,2023
+2213,"Captación, tratamiento y suministro de agua",-2.17028,1809,bottom,2023
+3118,Elaboración de productos de panadería y tortillas,-1.89716,1528,bottom,2023
+3152,Confección de prendas de vestir,-1.80795,731,bottom,2023
+4611,Comercio al por menor de abarrotes y alimentos,-1.72483,1584,bottom,2023
+3371,"Fabricación de muebles, excepto de oficina y estantería",-1.635,877,bottom,2023
+3399,Otras industrias manufactureras,-1.59389,434,bottom,2023
+8132,"Asociaciones y organizaciones religiosas, políticas y civiles",-1.5476,1164,bottom,2023
+3219,Fabricación de otros productos de madera,-1.42426,1023,bottom,2023
