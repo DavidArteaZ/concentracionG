@@ -1,0 +1,280 @@
+rama,nombre_rama,nombre_rama_en
+1125,Acuicultura,Aquaculture
+1141,Pesca,Fishing
+1151,Servicios relacionados con la agricultura,Support activities for crop production
+1152,Servicios relacionados con la cría y explotación de animales,Support activities for animal production
+1153,Servicios relacionados con el aprovechamiento forestal,Support activities for forestry
+2111,Extracción de petróleo y gas,Oil and gas extraction
+2121,Minería de carbón mineral,Coal mining
+2122,Minería de minerales metálicos,Metal ore mining
+2123,Minería de minerales no metálicos,Nonmetallic mineral mining
+2131,Servicios relacionados con la minería,Support activities for mining
+2211,"Generación, transmisión, distribución y comercialización de energía eléctrica","Electric power generation, transmission, distribution and retail"
+2212,Suministro de gas natural por ductos al consumidor final,Natural gas distribution by pipeline to final consumers
+2213,"Captación, tratamiento y suministro de agua","Water collection, treatment and supply"
+2361,Edificación residencial,Residential building construction
+2362,Edificación no residencial,Nonresidential building construction
+2371,"Construcción de obras para el suministro de agua, petróleo, gas, energía eléctrica y telecomunicaciones","Construction of water, oil, gas, power and telecommunications works"
+2372,División de terrenos y construcción de obras de urbanización,Land subdivision and urban development works
+2373,Construcción de vías de comunicación,"Highway, street and bridge construction"
+2379,Otras construcciones de ingeniería civil,Other heavy and civil engineering construction
+2381,"Cimentaciones, montaje de estructuras prefabricadas y trabajos en exteriores","Foundation, prefabricated structure and building exterior contractors"
+2382,Instalaciones y equipamiento en construcciones,Building equipment contractors
+2383,Trabajos de acabados en edificaciones,Building finishing contractors
+2389,Otros trabajos especializados para la construcción,Other specialty trade contractors
+3111,Elaboración de alimentos balanceados para animales,Animal food manufacturing
+3112,Molienda de granos y de semillas y obtención de aceites y grasas,Grain and oilseed milling
+3113,"Elaboración de azúcares, chocolates, dulces y similares","Sugar, chocolate and confectionery manufacturing"
+3114,"Conservación de frutas, verduras, guisos y otros alimentos preparados","Fruit, vegetable and prepared food preserving"
+3115,Elaboración de productos lácteos,Dairy product manufacturing
+3116,"Matanza, empacado y procesamiento de carne de ganado, aves y otros animales comestibles",Animal slaughtering and processing
+3117,Preparación y envasado de pescados y mariscos,Seafood product preparation and packaging
+3118,Elaboración de productos de panadería y tortillas,Bakery and tortilla manufacturing
+3119,Otras industrias alimentarias,Other food manufacturing
+3121,Industria de las bebidas,Beverage manufacturing
+3122,Industria del tabaco,Tobacco manufacturing
+3131,"Preparación e hilado de fibras textiles, y fabricación de hilos","Fiber, yarn and thread mills"
+3132,Fabricación de telas,Fabric mills
+3133,Acabado de productos textiles y fabricación de telas recubiertas,Textile and fabric finishing and fabric coating mills
+3141,"Confección de alfombras, blancos y similares",Textile furnishings mills
+3149,"Fabricación de otros productos textiles, excepto prendas de vestir","Other textile product mills, except apparel"
+3151,Fabricación de prendas de vestir de tejido de punto,Apparel knitting mills
+3152,Confección de prendas de vestir,Cut and sew apparel manufacturing
+3159,Confección de accesorios de vestir y otras prendas de vestir no clasificados en otra parte,Apparel accessories and other apparel manufacturing
+3161,Curtido y acabado de cuero y piel,Leather and hide tanning and finishing
+3162,Fabricación de calzado,Footwear manufacturing
+3169,"Fabricación de otros productos de cuero, piel y materiales sucedáneos",Other leather and allied product manufacturing
+3211,Aserrado y conservación de la madera,Sawmills and wood preservation
+3212,Fabricación de laminados y aglutinados de madera,"Veneer, plywood and engineered wood product manufacturing"
+3219,Fabricación de otros productos de madera,Other wood product manufacturing
+3221,"Fabricación de pulpa, papel y cartón","Pulp, paper and paperboard mills"
+3222,Fabricación de productos de cartón y papel,Converted paper product manufacturing
+3231,Impresión e industrias conexas,Printing and related support activities
+3241,Fabricación de productos derivados del petróleo y del carbón,Petroleum and coal products manufacturing
+3251,Fabricación de productos químicos básicos,Basic chemical manufacturing
+3252,"Fabricación de resinas y hules sintéticos, y fibras químicas","Resin, synthetic rubber and artificial fibers manufacturing"
+3253,"Fabricación de fertilizantes, plaguicidas y otros agroquímicos","Fertilizer, pesticide and other agricultural chemical manufacturing"
+3254,Fabricación de productos farmacéuticos,Pharmaceutical manufacturing
+3255,"Fabricación de pinturas, recubrimientos y adhesivos","Paint, coating and adhesive manufacturing"
+3256,"Fabricación de jabones, limpiadores y preparaciones de tocador","Soap, cleaning compound and toilet preparation manufacturing"
+3259,Fabricación de otros productos químicos,Other chemical product manufacturing
+3261,Fabricación de productos de plástico,Plastics product manufacturing
+3262,Fabricación de productos de hule,Rubber product manufacturing
+3271,Fabricación de productos a base de arcillas y minerales refractarios,Clay product and refractory manufacturing
+3272,Fabricación de vidrio y productos de vidrio,Glass and glass product manufacturing
+3273,"Fabricación de cemento, concreto y sus productos",Cement and concrete product manufacturing
+3274,"Fabricación de cal, yeso y productos de yeso",Lime and gypsum product manufacturing
+3279,Fabricación de otros productos a base de minerales no metálicos,Other nonmetallic mineral product manufacturing
+3311,Industria básica del hierro y del acero,Iron and steel mills
+3312,Fabricación de productos de hierro y acero,Steel product manufacturing from purchased steel
+3313,Industria básica del aluminio,Alumina and aluminum production
+3314,"Industrias de metales no ferrosos, excepto aluminio","Nonferrous metal production, except aluminum"
+3315,Moldeo por fundición de piezas metálicas,Foundries
+3321,Fabricación de productos metálicos forjados y troquelados,Forging and stamping
+3322,Fabricación de herramientas de mano sin motor y utensilios de cocina metálicos,"Cutlery, hand tool and metal kitchenware manufacturing"
+3323,Fabricación de estructuras metálicas y productos de herrería,Architectural and structural metals manufacturing
+3324,"Fabricación de calderas, tanques y envases metálicos","Boiler, tank and shipping container manufacturing"
+3325,Fabricación de herrajes y cerraduras,Hardware manufacturing
+3326,"Fabricación de alambre, productos de alambre y resortes",Spring and wire product manufacturing
+3327,Maquinado de piezas y fabricación de tornillos,"Machine shops; turned product; and screw, nut and bolt manufacturing"
+3328,Recubrimientos y terminados metálicos,"Coating, engraving, heat treating and allied activities"
+3329,Fabricación de otros productos metálicos,Other fabricated metal product manufacturing
+3331,"Fabricación de maquinaria y equipo agropecuario, para la construcción y para la industria extractiva","Agriculture, construction and mining machinery manufacturing"
+3332,"Fabricación de maquinaria y equipo para las industrias manufactureras, excepto la metalmecánica","Industrial machinery manufacturing, except metalworking"
+3333,Fabricación de maquinaria y equipo para el comercio y los servicios,Commercial and service industry machinery manufacturing
+3334,"Fabricación de equipo de aire acondicionado, calefacción, y de refrigeración industrial y comercial",HVAC and commercial refrigeration equipment manufacturing
+3335,Fabricación de maquinaria y equipo para la industria metalmecánica,Metalworking machinery manufacturing
+3336,"Fabricación de motores de combustión interna, turbinas y transmisiones","Engine, turbine and power transmission equipment manufacturing"
+3339,Fabricación de otra maquinaria y equipo para la industria en general,Other general purpose machinery manufacturing
+3341,Fabricación de computadoras y equipo periférico,Computer and peripheral equipment manufacturing
+3342,Fabricación de equipo de comunicación,Communications equipment manufacturing
+3343,Fabricación de equipo de audio y de video,Audio and video equipment manufacturing
+3344,Fabricación de componentes electrónicos,Semiconductor and other electronic component manufacturing
+3345,"Fabricación de instrumentos de medición, control, navegación, y equipo médico electrónico","Navigational, measuring, electromedical and control instruments manufacturing"
+3346,Fabricación y reproducción de medios magnéticos y ópticos,Manufacturing and reproducing magnetic and optical media
+3351,Fabricación de accesorios de iluminación,Electric lighting equipment manufacturing
+3352,Fabricación de aparatos eléctricos de uso doméstico,Household appliance manufacturing
+3353,Fabricación de equipo de generación y distribución de energía eléctrica,Electrical equipment manufacturing
+3359,Fabricación de otros equipos y accesorios eléctricos,Other electrical equipment and component manufacturing
+3361,Fabricación de automóviles y camiones,Motor vehicle manufacturing
+3362,Fabricación de carrocerías y remolques,Motor vehicle body and trailer manufacturing
+3363,Fabricación de partes para vehículos automotores,Motor vehicle parts manufacturing
+3364,Fabricación de equipo aeroespacial,Aerospace product and parts manufacturing
+3365,Fabricación de equipo ferroviario,Railroad rolling stock manufacturing
+3366,Fabricación de embarcaciones,Ship and boat building
+3369,Fabricación de otro equipo de transporte,Other transportation equipment manufacturing
+3371,"Fabricación de muebles, excepto de oficina y estantería",Household and institutional furniture manufacturing
+3372,Fabricación de muebles de oficina y estantería,Office furniture and shelving manufacturing
+3379,"Fabricación de colchones, persianas y cortineros","Mattress, blind and shade manufacturing"
+3391,"Fabricación de equipo no electrónico y material desechable de uso médico, dental y para laboratorio, y artículos oftálmicos","Medical, dental and laboratory equipment and supplies manufacturing"
+3399,Otras industrias manufactureras,Other miscellaneous manufacturing
+4311,Comercio al por mayor de abarrotes y alimentos,Grocery and food wholesalers
+4312,"Comercio al por mayor de bebidas, hielo y tabaco","Beverage, ice and tobacco wholesalers"
+4321,Comercio al por mayor de productos textiles y calzado,Textile and footwear wholesalers
+4331,Comercio al por mayor de productos farmacéuticos,Pharmaceutical wholesalers
+4332,"Comercio al por mayor de artículos de perfumería, cosméticos y joyería","Perfumery, cosmetics and jewelry wholesalers"
+4333,"Comercio al por mayor de grabaciones de audio y video en medios físicos, juguetes y artículos deportivos","Recorded media, toy and sporting goods wholesalers"
+4334,"Comercio al por mayor de artículos de papelería, libros, revistas y periódicos","Stationery, book and periodical wholesalers"
+4335,Comercio al por mayor de electrodomésticos menores y aparatos de línea blanca,Small appliance and white goods wholesalers
+4341,Comercio al por mayor de materias primas agropecuarias y forestales,Agricultural and forestry raw materials wholesalers
+4342,Comercio al por mayor de materias primas para la industria,Industrial raw materials wholesalers
+4343,Comercio al por mayor de materiales de desecho,Waste and scrap material wholesalers
+4351,"Comercio al por mayor de maquinaria y equipo agropecuario, forestal y para la pesca","Agricultural, forestry and fishing machinery wholesalers"
+4352,Comercio al por mayor de maquinaria y equipo para la industria,Industrial machinery and equipment wholesalers
+4353,Comercio al por mayor de maquinaria y equipo para los servicios y para actividades comerciales,Commercial and service machinery and equipment wholesalers
+4354,"Comercio al por mayor de mobiliario y equipo de cómputo y de oficina, y de otra maquinaria y equipo de uso general","Office furniture, computer and general purpose equipment wholesalers"
+4361,"Comercio al por mayor de camiones y de partes y refacciones nuevas para automóviles, camionetas y camiones",Truck and new motor vehicle parts wholesalers
+4373,Intermediación de comercio al por mayor,Wholesale trade agents and brokers
+4611,Comercio al por menor de abarrotes y alimentos,Grocery and food retailers
+4612,"Comercio al por menor de bebidas, hielo y tabaco","Beverage, ice and tobacco retailers"
+4621,Comercio al por menor en tiendas de autoservicio,Supermarkets and self-service stores
+4622,Comercio al por menor en tiendas departamentales,Department stores
+4631,"Comercio al por menor de productos textiles, excepto ropa","Textile retailers, except clothing"
+4632,"Comercio al por menor de ropa, bisutería y accesorios de vestir","Clothing, costume jewelry and accessories retailers"
+4633,Comercio al por menor de calzado,Footwear retailers
+4641,Comercio al por menor de artículos para el cuidado de la salud,Health care product retailers
+4651,Comercio al por menor de artículos de perfumería y joyería,Perfumery and jewelry retailers
+4652,Comercio al por menor de artículos para el esparcimiento,Recreational goods retailers
+4653,"Comercio al por menor de artículos de papelería, libros, revistas y periódicos","Stationery, book and periodical retailers"
+4659,"Comercio al por menor de mascotas y sus accesorios, regalos, artículos religiosos, desechables, artesanías y otros artículos de uso personal","Pet, gift, religious, handicraft and other personal goods retailers"
+4661,Comercio al por menor de muebles para el hogar y otros enseres domésticos,Home furniture and household goods retailers
+4662,"Comercio al por menor de mobiliario, equipo y accesorios de cómputo, teléfonos y otros aparatos de comunicación","Computer, telephone and communication equipment retailers"
+4663,Comercio al por menor de artículos para la decoración de interiores,Interior decoration goods retailers
+4664,Comercio al por menor de artículos usados,Used merchandise retailers
+4671,"Comercio al por menor de artículos de ferretería, tlapalería y vidrios","Hardware, paint and glass retailers"
+4681,Comercio al por menor de automóviles y camionetas,Automobile and light truck dealers
+4682,"Comercio al por menor de partes y refacciones para automóviles, camionetas y camiones",Automotive parts retailers
+4683,Comercio al por menor de motocicletas y otros vehículos de motor,Motorcycle and other motor vehicle dealers
+4684,"Comercio al por menor de combustibles, aceites y grasas lubricantes",Fuel and lubricant retailers
+4691,"Intermediación de comercio al por menor, y comercio al por menor a través de catálogos impresos, televisión y similares","Retail trade agents and catalog, TV and nonstore retailers"
+4811,Transporte aéreo regular,Scheduled air transportation
+4812,Transporte aéreo no regular,Nonscheduled air transportation
+4821,Transporte por ferrocarril,Rail transportation
+4831,Transporte marítimo,"Deep sea, coastal and Great Lakes water transportation"
+4832,Transporte por aguas interiores,Inland water transportation
+4841,Autotransporte de carga general,General freight trucking
+4842,Autotransporte de carga especializado,Specialized freight trucking
+4851,Transporte colectivo urbano y suburbano de pasajeros de ruta fija,Urban and suburban fixed-route passenger transit
+4852,Transporte colectivo foráneo de pasajeros de ruta fija,Interurban fixed-route passenger transit
+4853,Servicio de taxis y limusinas,Taxi and limousine service
+4854,Transporte escolar y de personal,School and employee bus transportation
+4855,Alquiler de autobuses con chofer,Charter bus with driver
+4859,Otro transporte terrestre de pasajeros,Other ground passenger transportation
+4861,Transporte de petróleo crudo por ductos,Pipeline transportation of crude oil
+4862,Transporte de gas natural por ductos,Pipeline transportation of natural gas
+4869,Transporte por ductos de otros productos,Other pipeline transportation
+4871,Transporte turístico por tierra,"Scenic and sightseeing transportation, land"
+4872,Transporte turístico por agua,"Scenic and sightseeing transportation, water"
+4879,Otro transporte turístico,Other scenic and sightseeing transportation
+4881,Servicios relacionados con el transporte aéreo,Support activities for air transportation
+4882,Servicios relacionados con el transporte por ferrocarril,Support activities for rail transportation
+4883,Servicios relacionados con el transporte por agua,Support activities for water transportation
+4884,Servicios relacionados con el transporte por carretera,Support activities for road transportation
+4885,Servicios de intermediación para el transporte de carga,Freight transportation arrangement
+4889,Otros servicios relacionados con el transporte,Other support activities for transportation
+4911,Servicios postales,Postal service
+4921,Servicios de mensajería y paquetería foránea,"Couriers and express delivery, long distance"
+4922,Servicios de mensajería y paquetería local,Local messengers and local delivery
+4931,Servicios de almacenamiento,Warehousing and storage
+5121,Industria fílmica y del video,Motion picture and video industries
+5122,Industria del sonido,Sound recording industries
+5131,"Edición de periódicos, revistas, libros, directorios y otros materiales","Newspaper, periodical, book and directory publishers"
+5132,Edición de software,Software publishers
+5161,Estaciones de transmisión de programas de radio y televisión,Radio and television broadcasting stations
+5162,"Servicios de distribución de audio y video en tiempo real (streaming), redes sociales, cadenas de radio y televisión y otros proveedores de contenido","Streaming, social networks, broadcast networks and other content providers"
+5173,Operadores de servicios de telecomunicaciones alámbricas e inalámbricas,Wired and wireless telecommunications carriers
+5174,Operadores de servicios de telecomunicaciones vía satélite,Satellite telecommunications
+5179,Otros servicios de telecomunicaciones,Other telecommunications
+5182,"Provisión de infraestructura de servicios de cómputo, procesamiento de datos, hospedaje de páginas de internet y otros servicios relacionados","Computing infrastructure, data processing and web hosting"
+5192,"Bibliotecas, archivos, portales de búsqueda en la red y otros servicios de suministro de información","Libraries, archives, web search portals and other information services"
+5211,Banca central,Central banking
+5221,Banca múltiple,Commercial banking
+5222,Instituciones financieras de fomento económico,Development finance institutions
+5223,Uniones de crédito e instituciones de ahorro,Credit unions and savings institutions
+5224,Otras instituciones de intermediación crediticia y financiera no bursátil,Other nondepository credit intermediation
+5225,Servicios relacionados con la intermediación crediticia no bursátil,Activities related to nondepository credit intermediation
+5231,"Casas de bolsa, casas de cambio y centros cambiarios",Brokerage firms and currency exchange
+5232,Bolsa de valores,Securities exchanges
+5239,Asesoría en inversiones y otros servicios relacionados con la intermediación bursátil,Investment advice and other securities intermediation activities
+5241,Compañías de seguros y fianzas,Insurance and surety carriers
+5242,"Servicios relacionados con los seguros y las fianzas, y administración de fondos para el retiro",Insurance-related activities and pension fund management
+5311,Alquiler sin intermediación de bienes raíces,Lessors of real estate
+5312,Inmobiliarias y corredores de bienes raíces,Real estate agents and brokers
+5313,Servicios relacionados con los servicios inmobiliarios,Activities related to real estate
+5321,"Alquiler de automóviles, camiones y otros transportes terrestres",Automotive and ground transportation equipment rental
+5322,Alquiler de artículos para el hogar y personales,Consumer goods rental
+5323,Centros generales de alquiler,General rental centers
+5324,"Alquiler de maquinaria y equipo agropecuario, pesquero, industrial, comercial y de servicios",Commercial and industrial machinery and equipment rental
+5331,"Servicios de alquiler de marcas registradas, patentes y franquicias","Lessors of trademarks, patents and franchises"
+5411,Servicios legales,Legal services
+5412,"Servicios de contabilidad, auditoría y servicios relacionados","Accounting, auditing and related services"
+5413,"Servicios de arquitectura, ingeniería y actividades relacionadas","Architectural, engineering and related services"
+5414,Diseño especializado,Specialized design services
+5415,Servicios de diseño de sistemas de cómputo y servicios relacionados,Computer systems design and related services
+5416,"Servicios de consultoría administrativa, científica y técnica","Management, scientific and technical consulting services"
+5417,Servicios de investigación científica y desarrollo,Scientific research and development services
+5418,Servicios de publicidad y actividades relacionadas,Advertising and related services
+5419,"Otros servicios profesionales, científicos y técnicos","Other professional, scientific and technical services"
+5511,Dirección y administración de grupos empresariales o corporativos,Management of companies and enterprises
+5611,Servicios de administración de negocios,Office administrative services
+5612,Servicios integrales de apoyo a los negocios en instalaciones,Facilities support services
+5613,Servicios de empleo,Employment services
+5614,"Servicios de apoyo secretarial, fotocopiado, cobranza, investigación crediticia y similares",Business support services
+5615,Agencias de viajes y servicios de reservaciones,Travel arrangement and reservation services
+5616,"Servicios de investigación, protección y seguridad",Investigation and security services
+5617,Servicios de limpieza,Services to buildings and dwellings
+5619,Otros servicios de apoyo a los negocios,Other support services
+5621,Recolección de residuos,Waste collection
+5622,Tratamiento y disposición final de residuos,Waste treatment and disposal
+5629,"Servicios de remediación, recuperación, y otros servicios de manejo de residuos",Remediation and other waste management services
+6111,"Escuelas de educación básica, media y para necesidades especiales","Elementary, secondary and special-needs schools"
+6112,Escuelas de educación técnica superior,Technical colleges
+6113,Escuelas de educación superior,Colleges and universities
+6114,"Escuelas comerciales, de computación y de capacitación para ejecutivos","Business, computer and management training schools"
+6115,Escuelas de oficios,Trade schools
+6116,Otros servicios educativos,Other schools and instruction
+6117,Servicios de apoyo a la educación,Educational support services
+6211,Consultorios médicos,Offices of physicians
+6212,Consultorios dentales,Offices of dentists
+6213,Otros consultorios para el cuidado de la salud,Offices of other health practitioners
+6214,Centros para la atención de pacientes que no requieren hospitalización,Outpatient care centers
+6215,Laboratorios médicos y de diagnóstico,Medical and diagnostic laboratories
+6216,Servicios de enfermería a domicilio,Home health care services
+6219,"Servicios de ambulancias, de bancos de órganos y otros servicios auxiliares al tratamiento médico","Ambulance, organ bank and other ancillary health care services"
+6221,Hospitales generales,General hospitals
+6222,Hospitales psiquiátricos y para el tratamiento por adicción,Psychiatric and substance abuse hospitals
+6223,Hospitales de otras especialidades médicas,Other specialty hospitals
+6231,"Residencias con cuidados de enfermeras para enfermos convalecientes, en rehabilitación, incurables y terminales",Nursing care facilities
+6232,"Residencias para el cuidado de personas con problemas de retardo mental, trastorno mental y adicciones",Residential mental health and substance abuse facilities
+6233,Asilos y otras residencias para el cuidado de ancianos,Retirement homes and elderly care facilities
+6239,Orfanatos y otras residencias de asistencia social,Orphanages and other residential care facilities
+6241,Servicios de orientación y trabajo social,Individual and family services
+6242,"Servicios comunitarios de alimentación, refugio y emergencia","Community food, housing and emergency services"
+6243,"Servicios de capacitación para el trabajo para personas desempleadas, subempleadas o con discapacidad",Vocational rehabilitation services
+6244,Guarderías,Child day care services
+7111,Compañías y grupos de espectáculos artísticos y culturales,Performing arts companies
+7112,Deportistas y equipos deportivos profesionales,Spectator sports
+7113,"Promotores de espectáculos artísticos, culturales, deportivos y similares","Promoters of performing arts, sports and similar events"
+7114,"Agentes y representantes de artistas, deportistas y similares","Agents and managers for artists, athletes and similar"
+7115,"Artistas, escritores y técnicos independientes","Independent artists, writers and performers"
+7121,"Museos, sitios históricos, zoológicos y similares","Museums, historical sites, zoos and similar"
+7131,Parques con instalaciones recreativas y casas de juegos electrónicos,Amusement parks and arcades
+7132,"Casinos, loterías y otros juegos de azar","Casinos, lotteries and other gambling"
+7139,Otros servicios recreativos,Other amusement and recreation industries
+7211,"Hoteles, moteles y similares","Hotels, motels and similar"
+7212,Campamentos y albergues recreativos,RV parks and recreational camps
+7213,"Pensiones y casas de huéspedes, y departamentos y casas amueblados con servicios de hotelería",Rooming and boarding houses and serviced apartments
+7223,Servicios de preparación de alimentos por encargo,Special food services
+7224,"Centros nocturnos, bares, cantinas y similares","Nightclubs, bars and drinking places"
+7225,Servicios de preparación de alimentos y bebidas alcohólicas y no alcohólicas,Restaurants and other eating places
+8111,Reparación y mantenimiento de automóviles y camiones,Automotive repair and maintenance
+8112,Reparación y mantenimiento de equipo electrónico y de equipo de precisión,Electronic and precision equipment repair and maintenance
+8113,"Reparación y mantenimiento de maquinaria y equipo agropecuario, industrial, comercial y de servicios",Commercial and industrial machinery repair and maintenance
+8114,Reparación y mantenimiento de artículos para el hogar y personales,Personal and household goods repair and maintenance
+8121,"Salones y clínicas de belleza, baños públicos y bolerías","Personal care services, public baths and shoe shining"
+8122,Lavanderías y tintorerías,Laundry and dry-cleaning services
+8123,Servicios funerarios y administración de cementerios,Death care services
+8124,Estacionamientos y pensiones para vehículos automotores,Parking lots and garages
+8129,Servicios de revelado e impresión de fotografías y otros servicios personales,Photofinishing and other personal services
+8131,"Asociaciones y organizaciones comerciales, laborales, profesionales y recreativas","Business, labor, professional and recreational associations"
+8132,"Asociaciones y organizaciones religiosas, políticas y civiles","Religious, political and civic organizations"

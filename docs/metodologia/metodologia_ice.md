@@ -1,7 +1,7 @@
 # Metodología del Índice de Complejidad Económica (ICE) municipal
 
 **Proyecto:** Movilidad social y complejidad económica en México
-**Versión:** 0.4 (04/10/2026). Contiene los resultados de la primera ejecución completa de los módulos 01–07 y el Módulo 08 (base `ecomplexity` y gráficas). Documento vivo.
+**Versión:** 0.5 (06/10/2026). Contiene los resultados de la primera ejecución completa de los módulos 01–07, el Módulo 08 (base `ecomplexity` y gráficas, refactorizadas el 06/10/2026), el apéndice en inglés y la revisión de literatura sobre ICE municipal en México. Documento vivo.
 **Alcance:** construcción, diagnóstico y validación del ICE municipal (2003, 2008, 2013, 2018 y 2023) que entra como regresor en el modelo DML. La estimación del DML se documenta en `decisiones_metodologicas.md`.
 
 ---
@@ -92,7 +92,7 @@ Todo se ejecuta con `python -m codigo.ice.run_all`. El notebook anterior (`compl
 | `07_export_dml.py` | Base final para el DML: ICE base y alternativos, núcleo, escala y diversidad | `data/clean/ice/ice_para_dml.csv` |
 | `export_ecomplexity.py` (Módulo 08, parte 1) | Base municipio × rama con las variables de `ecomplexity` para el ICE final, la proximidad entre ramas y un catálogo de nombres de rama. Se ejecuta desde `run_all` y desde el notebook. | `ecomplexity_rama_ue_<año>.csv.gz` (uno por año), `proximidad_ramas.csv.gz`, `catalogo_ramas.csv` |
 | `anexo_tablas.py` | Tablas adicionales del Apéndice Metodológico: municipios por año con altas, bajas y motivos; ramas incluidas y excluidas; varianza del ICE explicada por la escala; validación con categorías de tamaño; concentración del PBT | `outputs/ice/anexo/*.csv` |
-| `08_graficas.ipynb` (Módulo 08, parte 2) | Notebook con las gráficas del notebook original, actualizadas con los datos nuevos, organizadas por tipo y en ciclo por año | `figuras/ice/*.png` (57 figuras), `figuras/ice/tablas/*.csv` |
+| `08_graficas.ipynb` (Módulo 08, parte 2) | Notebook con las gráficas del notebook original, actualizadas con los datos nuevos, organizadas por tipo y en ciclo por año | `figuras/ice/*.png` (57 figuras) + `figuras/ice/anexo/*.png` (2), `figuras/ice/tablas/*.csv` |
 
 **Entorno de ejecución (04/10/2026):** Python 3.13.16, numpy 2.5.3, pandas 3.0.5, scipy 1.18.1, matplotlib 3.11.2, pyshp 3.1.6 y ecomplexity 0.5.3 (commit `554cc5d`). Está en `codigo/ice/environment.yml`. La corrida completa tarda unos 6 minutos. Los logs con todos los conteos están en `outputs/ice/logs/`.
 
@@ -204,14 +204,30 @@ Cada tipo de gráfica tiene una función `graficar_*` (el diseño) y una celda d
 
 **Para regenerar:** después de `run_all`, abrir el notebook y ejecutar todas las celdas (unos 2 minutos). Con `REGENERAR_BASE = True` vuelve a calcular la base `ecomplexity`.
 
+**Refactorización del 06/10/2026 (reglas de diseño):**
+- **Idioma:** `IDIOMA = "en"` (por defecto, para el artículo en inglés) o `"es"`; todos los textos pasan por `T(es, en)`. Los nombres de rama en inglés están en `codigo/ice/catalogo_ramas_en.csv` (279 ramas; traducción propia de los títulos SCIAN con terminología NAICS). Abreviaturas en inglés: ECI, PCI, COI, COG, RCA.
+- **`finalizar(fig, titulo, pie, ref=None, ...)`:** centra el título sobre el eje de simetría de la figura y lo envuelve a su ancho; alinea la fuente/notas a la izquierda del contenido y las envuelve con `textwrap`, reduciendo el ancho hasta que el texto renderizado mide como máximo el ancho de gráfica + leyenda + barra de color (nunca se corta). El recorte de la imagen es simétrico respecto a `ref` (los ejes principales o todo el contenido), por lo que la gráfica queda centrada. `guardar()` usa ese recorte.
+- **Tamaños:** título base 13 pt × 1.1 = 14.3 pt; G10 título 32 pt (2 × 16) y fuente 14.25 pt (1.5 × 9.5); mapas G11–G14 título 26 pt (2 × 13).
+- **G01:** eje Y común a los cinco años (`ylim_distribucion()`: máximo del histograma de densidad y del KDE).
+- **G02/G03:** eje Y común (`YLIM_PCI`, rango del PCI en todos los años); barra de color con `Normalize` lineal (colormap secuencial viridis), marcas equiespaciadas, `extend="max"`. G02: 0 a `VMAX_RCA_TOP` (percentil 95 del RCA de los cinco municipios con mayor ICE, máximo entre años, redondeado hacia arriba; = 9) con línea roja en RCA = 1. G03: 0.0 a 1.0.
+- **G04/G05:** etiquetas de rama envueltas a 30 caracteres (sin truncar); etiquetas de ubicuidad dentro de la caja (`textos_dentro()` amplía el eje X si alguna se sale); orden de la leyenda igual al de las barras; nota al pie con separación 1.5 × la estándar.
+- **G07/G08:** centrados sobre los ejes; en G08 la leyenda pasa debajo de la gráfica.
+- **G09/G10:** eje Y de Q5 (arriba) a Q1 (abajo), eje X de Q1 a Q5. G10 usa una sola barra de color compartida y paneles del mismo tamaño.
+- **Mapas:** polígonos centrados (`set_aspect("equal", anchor="C")`, márgenes de 0.5% y recorte simétrico respecto a los ejes del mapa).
+- **A01:** ejes y leyenda explícitos ("Reference year (census round)", etiquetas de quintil con tamaño del municipio).
+
 ## 3d. Apéndice Metodológico (`docs/anexo_ice.docx`) y análisis de escala
 
-Documento independiente con el formato del 1er Avance, que corrige lo que esa entrega afirmaba sobre la elección de UE y de Rama. Se apoya en `anexo_tablas.py`, que agrega estos resultados:
+**Versión vigente (06/10/2026): en inglés**, 38 páginas, 9 figuras, 2 mapas, 2 matrices y 10 tablas. Título: *Methodological Appendix — A Municipal Economic Complexity Index for Mexico, 2003–2023: Construction, Validation and Spatial Patterns*. Cambios respecto a la versión en español del 04/10: (1) la tabla de fuentes se convirtió en párrafos; (2) se eliminó toda mención a ESRU-EMOVI, cohortes, la edad de 14 años, la migración y el modelo de movilidad (el texto es un análisis económico y espacial); (3) la sección 3.4 explica qué es un eigenvector de M̃, por qué se descarta el primero (eigenvalor trivial 1, vector constante por ser M̃ estocástica por filas) y por qué el segundo ordena la complejidad (componente no trivial de decaimiento más lento de las reflexiones; relajación del normalized cut, Mealy et al., 2019), y las condiciones de conexidad y brecha λ2–λ3; (4) la sección 5.1 quedó sin referencias a entregas previas ni a criterios descartados; (5) nueva sección 1.1 con antecedentes de ICE subnacional en México y la contribución; (6) correcciones de una revisión independiente: máximo |ICE| con PBT de 7 a 47 d.e. (no 17), R² parcial 0.06–0.08, censura del sector 22 de 98–100%, 99.95% de empates en 2023, malla de umbrales = 26 alternativas + base, p ≤ 0.0001 (mínimo alcanzable con B = 9,999).
+
+**Antecedentes (sección 1.1):** el ICE municipal con conteos de unidades económicas **no es nuevo**. Gómez-Zaldívar, Gómez-Zaldívar y Carrillo Ramírez (2024, *Investigaciones Regionales* 59, doi 10.38191/iirr-jorr.24.018) lo calculan con conteos de establecimientos del DENUE (2014 y 2019); Gómez Zaldívar y Gómez Zaldívar (2026, *Investigaciones Regionales*, doi 10.38191/iirr-jorr.26.005) con UE de los Censos 2004 y 2019, solo manufactura a 4 dígitos (86 grupos, 2,459 municipios). Con otras variables: Gómez-Zaldívar y Gómez-Zaldívar (2023, *RRS* 53(1)), personal ocupado y producción/valor agregado por trabajador, Censos 2009–2019 (solo 1,490 municipios en 2019 por confidencialidad); González Sierra et al. (2023, *REMEF* 18(2)), PBT por persona ocupada, SAIC 2018. Estatal: Chávez et al. (2017, *RRS* 47(2)). La contribución propia: serie homogénea de cinco censos con todos los sectores, núcleo + proyección, diagnóstico espectral de la censura, descomposición de escala con validación, y variables completas del espacio-producto verificadas contra *py-ecomplexity*.
+
+Se apoya en `anexo_tablas.py`, que agrega estos resultados:
 
 - **Escala (respuesta a la crítica de Soloaga):** la escala y la diversidad explican una parte muy grande de la varianza del ICE. R² con log de población: 0.69–0.72. Agregando log de UE: 0.75–0.80. Agregando diversidad: 0.85–0.88. Agregando efectos fijos de estado: 0.88–0.90. Con categorías de tamaño (<15 mil, 15–50 mil, 50–350 mil, ≥350 mil habitantes): 0.66–0.69. El componente del ICE independiente de la escala es solo 10–12% de su varianza, aunque dentro de cada categoría de tamaño el ICE tiene una desviación estándar de 0.45–0.80.
 - **Ese componente predice la remuneración media:** con categorías de tamaño, log de población, log de UE, diversidad y efectos fijos de estado, β = 0.25–0.40, con p ≤ 0.0001 en todos los años.
 - **El ICE no sustituye al ingreso:** su correlación con el log de la remuneración media relativa es de 0.57–0.61.
-- **Implicación para el DML:** la identificación depende del componente independiente de la escala. La especificación con `log_pob` es la prueba directa de la crítica y condiciona la potencia estadística.
+- **Implicación para el modelo de movilidad (no se menciona en el apéndice):** la identificación depende del componente independiente de la escala. La especificación con `log_pob` es la prueba directa de la crítica y condiciona la potencia estadística.
 - **Concentración del PBT observado:** el 1% de municipios con más PBT concentra entre 51 y 63% (contra 24–29% en el caso de las UE). Entre 9 y 21% de los municipios no tiene ninguna celda de PBT observada. Es un factor que amplifica el colapso de la matriz; la causa principal es la censura.
 - **Municipios sin UE en el censo:** Nicolás Ruíz en 2003. En 2023, seis municipios de Chiapas: Amatenango de la Frontera, Bejucal de Ocampo, Bella Vista, La Grandeza, Capitán Luis Ángel Vidal y Honduras de la Sierra.
 - **Figuras propias del anexo:** `figuras/ice/anexo/A01_censura_pbt_por_quintil.png` y `A02_espectro_ue_vs_pbt.png`, generadas en la sección 12 del notebook.
