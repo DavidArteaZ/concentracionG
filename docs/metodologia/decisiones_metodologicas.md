@@ -1,7 +1,7 @@
 # Decisiones metodológicas
 
 **Proyecto:** Movilidad social y complejidad económica: un estudio de las características económicas regionales que influyen en la movilidad inesperada en México.
-**Última actualización:** 29 de septiembre de 2026. Se precisó el orden de D2 (T18 después de los cortes), se corrigieron los conteos de D11, se cerró T5, se cerró T3 y se adoptó D19 (antes P1: el quintil de origen para la heterogeneidad se calcula con el IRE imputado). *(28/09/2026: se agregaron D14–D18, T16–T18 y V1; se modificaron D6, D13, 4.1 y T14.)*
+**Última actualización:** 9 de octubre de 2026. Se adoptaron D23 (alcance territorial de la inferencia) y D24 (quintiles de las matrices descriptivas). *(08/10/2026:* se adoptaron D20 (escala del municipio de origen en $X$), D21 (municipios creados después de los 14 años) y D22 (procedencia de `ESRU_mun.dta`); se corrigieron los datos de D15 y D16 con verificaciones en la base.)* *(29/09/2026: Se precisó el orden de D2 (T18 después de los cortes), se corrigieron los conteos de D11, se cerró T5, se cerró T3 y se adoptó D19, quintil de origen imputado para la heterogeneidad.)* *(28/09/2026: se agregaron D14–D18, T16–T18 y V1; se modificaron D6, D13, 4.1 y T14.)*
 **Estado:** decisiones adoptadas por el equipo. Cada una indica qué se decidió, qué alternativas se descartaron y por qué, para poder defenderla ante revisores.
 
 **Fuentes revisadas:**
@@ -132,6 +132,7 @@ DML corrige esto (teorema de Frisch–Waugh–Lovell con funciones auxiliares es
   - Características individuales predeterminadas: sexo, **edad** (tarea T16) y características étnico-raciales según D13 y D17.
   - `region_14`.
   - Tipo de localidad a los 14 años (p21).
+  - *(08/10/2026)* Log de la población del municipio de origen en el año en que la persona tenía 14 (D20).
 - **Robustez:** se agregan los servicios de la vivienda de origen (p26a agua, p26b electricidad, p26c baño) y los servicios del barrio a los 14 años (p33a–i).
 
 **Por qué:** hay dos errores posibles:
@@ -361,7 +362,7 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 
 ### D15. Año del ICE de origen
 
-**Datos:** la cohorte (25–34 años en 2023) cumplió 14 años entre 2003 y 2012. El año exacto es $2023 - \text{edad} + 14$, con ±1 según la fecha de nacimiento. Los ICE disponibles son 2003, 2008 y 2013.
+**Datos:** la cohorte (25–34 años en 2023) cumplió 14 años entre 2003 y 2012. El año exacto es $2023 - \text{edad} + 14$. *(08/10/2026: la base no tiene fecha ni año de nacimiento, solo `edad`; el año a los 14 se calcula solo con la edad y tiene un error de hasta un año, que se declara en el paper.)* Los ICE disponibles son 2003, 2008 y 2013.
 
 **Decisión:**
 - **Principal:** interpolación lineal del ICE al año exacto en que la persona tenía 14: $ICE_{t} = ICE_{t_0} + \frac{t - t_0}{t_1 - t_0}(ICE_{t_1} - ICE_{t_0})$ entre los años censales adyacentes.
@@ -378,14 +379,22 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 
 **Datos:** en la cohorte 1 hay 688 municipios de origen (mediana de 4 personas por municipio; 182 municipios con una sola persona). El diseño muestral tiene 1,322 UPM y 5 estratos, ubicados en 503 municipios de residencia actual.
 
+*(Corrección 08/10/2026)*
+- Los municipios de origen válidos son **686**. La cifra de 688 contaba los códigos 33333 y 99999 como municipios.
+- Variables de diseño: `upm_muestra` y `est`. **Los 5 estratos coinciden uno a uno con `region`, la región de residencia actual**. Por eso `est` no puede entrar en $X$ (T4).
+- Las UPM son AGEB en zonas urbanas y localidades de menos de 2,500 habitantes en zonas rurales, con selección PPT en tres etapas sobre el marco del Censo 2020 (documento *Diseño ESRU-EMOVI 2023*).
+- Según el CEEY, los ponderadores expanden a proporciones de población, no a totales.
+
 **Decisión:**
-- **Principal:** agrupación en dos dimensiones, municipio de origen × UPM (Cameron, Gelbach y Miller, 2011), con la estructura de datos agrupados de `DoubleML`.
+- **Principal:** agrupación en dos dimensiones, municipio de origen × UPM (Cameron, Gelbach y Miller, 2011).
+- **Estratos (08/10/2026):** no entran en la varianza de la especificación principal. Omitirlos suele ser conservador, y así se declara. Robustez: varianza de diseño con `est` + `upm_muestra` en la etapa final.
+- **Implementación (08/10/2026):** `DoubleMLPLR` no acepta pesos muestrales, lo que impide cumplir T9 con la librería tal cual. Los learners se entrenan con `sample_weight` en pliegues agrupados propios. La etapa final (MCO ponderado de $\tilde Y$ sobre $\tilde E$) y su varianza agrupada en dos dimensiones se calculan a mano, y se validan contra la librería con todos los pesos iguales a 1.
 - **Robustez:** (a) solo municipio de origen; (b) estado de origen (32 grupos) con wild cluster bootstrap.
 - Los pliegues de la validación cruzada (D8) usan la misma estructura de grupos.
 
 **Por qué:**
 - Según Abadie et al. (2023), se agrupa al nivel donde se asigna el tratamiento (el ICE, asignado por municipio de origen) y al nivel del diseño muestral (UPM). Aquí aplican ambos y no están anidados, porque los migrantes cruzan de un municipio de origen a una UPM en otro municipio.
-- Con 688 y 1,322 grupos hay suficientes para la agrupación en dos dimensiones.
+- Con 686 y 1,322 grupos hay suficientes para la agrupación en dos dimensiones.
 - La agrupación por estado capta la correlación espacial entre municipios vecinos. Con solo 32 grupos requiere wild cluster bootstrap.
 
 ### D17. Autoadscripción étnico-racial (p110) y color de piel autopercibido (p112)
@@ -449,6 +458,92 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 
 ---
 
+## Bloque 7. Decisiones adoptadas el 08/10/2026
+
+### D20. Escala del municipio de origen en $X$ (antes P3 de `correcciones_1er_avance.md`)
+
+**Decisión:**
+- **Principal:** $X$ incluye el log de la población del municipio de origen, **interpolado al año en que la persona tenía 14**, con la misma regla que D15. Las fuentes son la población de 2000, 2005 y 2010 de `poblacion_municipal.csv`, en la geografía de 2023. La población entra en $X$ del DML, es decir, en $\hat m$ y en $\hat e$. **No modifica el cálculo del ICE.**
+- **Asociación total:** también se reporta $\hat\beta$ sin controles de escala, junto con el cociente $\hat\beta_{|escala}/\hat\beta_{total}$, que es la proporción de la asociación que sobrevive al control por tamaño.
+- **Robustez:** (a) se agrega el log de UE totales del municipio de origen, interpolado; (b) en lugar del log de población, las categorías de tamaño de Soloaga et al. (2025): <15 mil, 15–50 mil, 50–350 mil y ≥350 mil habitantes.
+- **Lo que no entra:** la diversidad del municipio. Es un componente del propio ICE (Spearman de 0.89), así que controlarla elimina parte del concepto.
+- **Diagnósticos obligatorios:** el R² de $\hat e(X)$ con y sin escala, y la varianza de $\tilde E$ en ambos casos.
+- La regla queda fijada antes de estimar.
+
+**Por qué:**
+- La hipótesis del paper es que la complejidad capta las oportunidades del territorio de forma más directa que la escala. Solo se puede contrastar si $\beta$ se estima con la parte del ICE que no explica el tamaño.
+- Si se escribe ICE $= e(X) + b\tilde S + C^\perp$ y $Y = g(X) + \gamma\tilde S + \theta C^\perp + u$, sin $S$ en $X$ se obtiene $\hat\beta \to w\,\gamma/b + (1-w)\,\theta$, donde $w = b^2\mathrm{Var}(\tilde S)/\mathrm{Var}(\tilde E)$. A nivel municipal, la escala explica de 69 a 90% de la varianza del ICE (`metodologia_ice.md` §3d). Con $S$ en $X$, $\hat\beta \to \theta$.
+- La población se mide a los 14 años y no en 2020, porque el crecimiento posterior puede ser consecuencia de la complejidad.
+
+**Costos aceptados:**
+- Menor poder estadístico: el error estándar crece aproximadamente por un factor de $1/\sqrt{1-R^2}$ (de 1.8 a 2.9 con los R² municipales). Un $\hat\beta$ condicional no significativo se reporta como falta de variación independiente, no como evidencia de que la complejidad no importa.
+- Si la complejidad atrae población, el control absorbe parte de la asociación. La pregunta del paper define el parámetro (complejidad más allá de la escala), así que esto se declara pero no cambia la decisión.
+
+**Contradicción resuelta:** la nota del Módulo 07 de `prompt_reestructuracion_ice.md` ya proponía `log_pob` en la principal y `log_ue_total` en robustez. D6 ahora coincide con ella.
+
+### D21. Municipios de origen creados después de que la persona tenía 14 años (antes P4; decisión diferida 6 de `metodologia_ice.md`)
+
+**Datos:** `p20_COD` está codificado en la geografía de 2023. En la cohorte 1, 13 personas declaran un municipio que no existía en el año censal correspondiente: 07124 Mezcalapa (7), 07123 Emiliano Zapata (4) y 02006 San Quintín (2).
+
+**Decisión:**
+- **Principal:** se les asigna el ICE, y la población (D20), del **municipio padre** en el año correspondiente, según `municipios_padre_hijo.csv`: 07124 → 07092 Tecpatán; 07123 → 07002 Acala; 02006 → 02001 Ensenada.
+- **Robustez:** se excluyen esas 13 personas.
+- Los pliegues (D8) y la agrupación (D16) usan la clave del padre, que es la unidad a la que se asigna el ICE.
+
+**Por qué:** a los 14 años, esas personas vivían en un territorio que pertenecía al municipio padre. Su ICE describe la estructura productiva a la que estuvieron expuestas. Usar el ICE del municipio hijo del primer año en que existe sería usar información posterior a los 14.
+
+**Pendientes relacionados:**
+- Dos personas de la cohorte 1 tienen `p20_COD` = 03030, que no existe en el catálogo. Hay que revisarlas a mano con `p19` y el texto de `p20` para decidir si se recodifican o se excluyen.
+- Iliatenco (12081) sigue sin padre asignado, pero no tiene entrevistados en la cohorte 1.
+
+### D22. Procedencia de `ESRU_mun.dta`
+
+**Datos:** variables `index`, `entidad` y `municipio` (municipio de residencia actual); 17,843 filas, sin faltantes. No forma parte de las tablas públicas de la ESRU-EMOVI 2023 (`hogar_2023`, `entrevistado_2023`, `ingreso_2017`).
+
+**Decisión:** el archivo lo entregó directamente el CEEY por correo, en el marco de la colaboración de investigación. Así se declara en la sección de disponibilidad de datos del paper.
+
+**Pendiente:** registrar la fecha de entrega y las condiciones de uso, en particular si se puede redistribuir y si hay restricciones para publicar resultados con desagregación municipal. Esto condiciona el paquete de replicación.
+
+---
+
+## Bloque 8. Decisiones adoptadas el 09/10/2026
+
+### D23. Alcance territorial de la inferencia (antes P9)
+
+**Decisión:**
+- **No se reportan estimaciones de movilidad por municipio** (matrices, tasas, percentiles medios ni mapas de movilidad por municipio de origen o de residencia).
+- Se reportan los niveles **nacional** y de las **5 regiones**, y grupos amplios del ICE de origen (por ejemplo, terciles o quintiles), siempre con el n sin ponderar y con intervalos de confianza.
+- $\hat\beta$ se interpreta como una asociación a nivel individuo, representativa de la cohorte 25–34 nacional y de las 5 regiones. No es representativa de cada municipio.
+- **Sí se permiten** los conteos de entrevistados por municipio de origen (Anexos C y D del borrador), porque describen la cobertura, no la movilidad, y sostienen la discusión de limitaciones. Se construyen solo con `p20_COD`, que es una variable de la base pública.
+
+**Por qué:**
+1. La ESRU-EMOVI 2023 es representativa del país, de las 5 regiones, de las zonas urbanas y no urbanas, del sexo y de la jefatura del hogar. No lo es por municipio.
+2. La muestra se seleccionó por lugar de residencia actual (UPM del Censo 2020), no por municipio de origen. Las personas de un municipio de origen no forman una muestra de ese municipio.
+3. Hay 686 municipios de origen, con una mediana de 4 personas y 182 con una sola. Las estimaciones municipales serían ruido.
+4. El municipio actual (`ESRU_mun.dta`) llegó por colaboración con el CEEY (D22). Publicar estadísticas de movilidad por municipio con pocas observaciones aumenta el riesgo de reidentificación.
+
+**Sugerencia pendiente de adoptar:** no interpretar en el texto celdas de las matrices regionales con menos de 10 observaciones sin ponderar (se muestran, pero se marcan).
+
+### D24. Quintiles de las matrices de movilidad descriptivas (antes P10)
+
+**Decisión:**
+- **Matriz principal:** quintil de destino dentro de la cohorte 1 (`q_act_c1`) × quintil de origen dentro de la cohorte 1 con el IRE imputado (`q_or_c1_imp`). La muestra es la muestra de análisis: muestra CEEY de la cohorte 1 después de T18 y de la revisión de los casos 03030. Se reporta cuánto se aparta cada quintil del 20% después de esas exclusiones (D2, paso 4).
+- **Matriz de anexo, para comparar con el CEEY:** quintiles nacionales de las 4 cohortes con la regla del CEEY (`q_or_nac_ceey` × `q_act_nac_ceey`), restringida a la cohorte 1. **Toda comparación con las cifras publicadas por el CEEY se hace solo con esta versión.**
+- **Inferencia descriptiva:** intervalos de diseño completo (`factor`, `est`, `upm_muestra`), como ya hace el Apéndice F del borrador. Esto es compatible con D16: el diseño completo se usa en lo descriptivo y la agrupación en dos dimensiones en el DML. El texto debe explicarlo para que no parezca una inconsistencia.
+- **Región:** la de los 14 años (`region_14`) en las matrices regionales, porque el análisis es de lugar de origen. Al comparar con el CEEY hay que verificar qué región usa el CEEY (origen o residencia) y usar la misma en la matriz de anexo.
+
+**Por qué:**
+- Con `q_or_c1_na` o con la regla del CEEY se pierden 629 o 435 personas que no faltan al azar (percentil medio de destino de 55.7 contra 49.4). La matriz subestimaría la movilidad ascendente.
+- Usa el mismo quintil que la heterogeneidad (D19).
+- Los quintiles nacionales mezclan cohortes. Para personas de 25–34 años incorporan un efecto de ciclo de vida: los jóvenes aparecen más abajo porque no han terminado de acumular activos. D2 los descartó como principales por eso.
+
+**Implicaciones:**
+- La matriz principal no se compara directamente con el CEEY.
+- 12.4% de las personas tiene imputada una parte de su IRE de origen (casi siempre un solo activo financiero). Correlación con la versión sin imputar: 0.99994. Se declara en una nota.
+- **Requisito previo:** volver a correr el script 01 con `NCP_MAX_CV = 10` antes de generar la matriz principal.
+
+---
+
 ## Verificaciones pendientes
 
 ### V1. Homologación del SCIAN entre años del ICE
@@ -479,6 +574,7 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 
 - Abadie, A., Athey, S., Imbens, G. W., & Wooldridge, J. M. (2023). When should you adjust standard errors for clustering? *Quarterly Journal of Economics*, 138(1), 1–35.
 - Cameron, A. C., Gelbach, J. B., & Miller, D. L. (2011). Robust inference with multiway clustering. *Journal of Business & Economic Statistics*, 29(2), 238–249.
+- Soloaga, I., Plassot, T., & Cazzuffi, C. (2025). A common framework to analyze social mobility and inequality of opportunity. *The Journal of Development Studies*, 61(7), 1110–1125.
 - Villarreal, A. (2014). Ethnic identification and its consequences for measuring inequality in Mexico. *American Sociological Review*, 79(4), 775–806.
 
 - Chernozhukov, V., Chetverikov, D., Demirer, M., Duflo, E., Hansen, C., Newey, W., & Robins, J. (2018). Double/debiased machine learning for treatment and structural parameters. *The Econometrics Journal*, 21(1), C1–C68.

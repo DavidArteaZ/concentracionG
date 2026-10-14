@@ -67,8 +67,16 @@ SEMILLA           <- 20260929
 COHORTE_ANALISIS  <- 1L     # 25-34 años (D2)
 NCP_IMPUTACION    <- NULL   # NULL = se elige por validación cruzada (estim_ncpMCA)
 NBSIM_CV          <- 20L    # repeticiones de la validación cruzada de ncp
-NCP_MAX_CV        <- 10L    # tope de ncp en la validación cruzada. Con 5, la
-                            # corrida del 29/09/2026 eligió ncp = 5 (en el tope).
+NCP_MAX_CV        <- 19L    # tope de ncp en la validación cruzada. Con 5 y con
+                            # 10, el argmin cayó en el tope (corridas del 29/09
+                            # y 13/10/2026). 19 = máximo útil: 20 activos
+                            # binarios dan J - K = 20 dimensiones, y con
+                            # ncp = 20 no hay reducción. Se acota abajo por si
+                            # cambia la lista de activos.
+TOL_PARSIMONIA_CV <- 0.01   # regla de parsimonia (fijada ex ante, 13/10/2026):
+                            # ncp = menor valor cuyo error de CV es <= (1 + TOL)
+                            # veces el mínimo. Evita que el ncp lo decida el
+                            # tope cuando la curva es plana.
 
 # Referencia T3: cifras publicadas por el CEEY (presentación del Informe de
 # Movilidad Social en México 2025, julio de 2025), redondeadas a enteros.
@@ -214,12 +222,37 @@ mca_imputado <- function(datos, activos, peso, version, cohorte, ncp = NULL) {
   x <- a_factores(datos[sub, activos, drop = FALSE])
   w <- datos[[peso]][sub]
 
+  ncp_argmin <- NA_integer_
+  ncp_tope   <- NA_integer_
+  curva_cv   <- NULL
   if (is.null(ncp)) {
+    # Máximo de dimensiones del MCA = J - K (categorías menos variables);
+    # con ncp = J - K la imputación no reduce nada.
+    n_dim    <- sum(vapply(x, nlevels, integer(1))) - ncol(x)
+    ncp_tope <- as.integer(min(NCP_MAX_CV, n_dim - 1L))
+    # Nota: estim_ncpMCA no acepta row.w; la validación cruzada es sin
+    # ponderar y la imputación (imputeMCA) sí pondera. Se declara en el paper.
     set.seed(SEMILLA)
-    cv <- estim_ncpMCA(x, ncp.min = 0, ncp.max = NCP_MAX_CV, method = "Regularized",
+    cv <- estim_ncpMCA(x, ncp.min = 0, ncp.max = ncp_tope, method = "Regularized",
                        method.cv = "Kfold", nbsim = NBSIM_CV, pNA = 0.05,
                        verbose = FALSE)
-    ncp <- cv$ncp
+    crit <- as.numeric(cv$criterion)
+    ncp_grid <- seq(0L, ncp_tope)
+    stopifnot(length(crit) == length(ncp_grid))
+    ncp_argmin <- ncp_grid[which.min(crit)]
+    stopifnot(ncp_argmin == cv$ncp)
+    ncp <- min(ncp_grid[crit <= (1 + TOL_PARSIMONIA_CV) * min(crit)])
+    if (ncp_argmin == ncp_tope) {
+      warning("estim_ncpMCA: el argmin (", ncp_argmin, ") está en el tope. ",
+              "La curva no tiene mínimo interior; el ncp lo fija la regla de ",
+              "parsimonia (", ncp, ").")
+    }
+    curva_cv <- data.frame(
+      version = version, cohorte = cohorte, ncp = ncp_grid,
+      error_cv = crit, error_rel_min = crit / min(crit),
+      dentro_tol = crit <= (1 + TOL_PARSIMONIA_CV) * min(crit),
+      elegido = ncp_grid == ncp
+    )
   }
   imp <- imputeMCA(x, ncp = ncp, method = "Regularized", row.w = w,
                    seed = SEMILLA)
@@ -233,9 +266,10 @@ mca_imputado <- function(datos, activos, peso, version, cohorte, ncp = NULL) {
     version = version, cohorte = cohorte, n_cohorte = sum(sub),
     n_mca = sum(sub), eig1 = ajuste$eig[1, 1],
     pct_inercia1 = ajuste$eig[1, 2], ncp_imput = ncp,
-    r_signo = o$r, signo = o$signo
+    r_signo = o$r, signo = o$signo,
+    ncp_argmin_cv = ncp_argmin, ncp_tope_cv = ncp_tope
   )
-  list(indice = indice, diag = diag)
+  list(indice = indice, diag = diag, curva_cv = curva_cv)
 }
 
 # ==========================================
@@ -594,6 +628,10 @@ write.csv(faltantes_or,    file.path(dir_res, "faltantes_activos_origen_c1.csv")
 write.csv(ns_cohorte,      file.path(dir_res, "ns_origen_por_cohorte.csv"), row.names = FALSE)
 write.csv(ns_destino,      file.path(dir_res, "ns_origen_por_quintil_destino_c1.csv"), row.names = FALSE)
 write.csv(cor_versiones,   file.path(dir_res, "correlaciones_versiones_ire.csv"), row.names = FALSE)
+if (!is.null(res_or_imp$curva_cv)) {
+  write.csv(res_or_imp$curva_cv, file.path(dir_res, "curva_cv_ncp_or_imp.csv"),
+            row.names = FALSE)
+}
 
 # ==========================================
 # 12. Guardar

@@ -1,0 +1,10 @@
+"indicador","valor"
+"n",5072
+"municipios de origen (cve_ice)",667
+"UPM",1308
+"personas con ICE del padre (D21)",8
+"fuera del núcleo del ICE en t0 o t1",38
+"anio14 = 2011-2012 (población de 2010 en la robustez censal)",1731
+"migró de municipio (ponderado, %)",29.6993920678901
+"R2 de ice14 sobre log_pob14 (MCO ponderado)",0.832987198611652
+"correlación log_pob14 (CONAPO) vs log_pob14_censo",0.99965933851604
