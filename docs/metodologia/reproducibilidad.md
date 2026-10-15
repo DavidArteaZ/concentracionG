@@ -73,7 +73,8 @@ Construye el Índice de Recursos Económicos (IRE) comparable del hogar actual y
 | `COHORTE_ANALISIS` | 1 | Cohorte de 25–34 años (D2) |
 | `NCP_IMPUTACION` | `NULL` | Número de dimensiones de la imputación; `NULL` = se elige por validación cruzada |
 | `NBSIM_CV` | 20 | Repeticiones de la validación cruzada de `estim_ncpMCA` |
-| `NCP_MAX_CV` | 10 | Tope de búsqueda de ncp |
+| `NCP_MAX_CV` | 19 | Tope de búsqueda de ncp (acotado a J − K − 1 = 19 con 20 activos binarios) |
+| `TOL_PARSIMONIA_CV` | 0.01 | Regla de parsimonia, fijada ex ante el 13/10/2026: ncp = menor valor con error de CV ≤ 1.01 × mínimo |
 | `REF_T3` | Q1→Q1 = 50, Q5→Q5 = 50 | Cifras publicadas por el CEEY para la validación T3 |
 | `TOL_T3` | 2 pp | Tolerancia de la validación T3 (si se excede, el script emite una advertencia) |
 
@@ -118,7 +119,7 @@ Construye el Índice de Recursos Económicos (IRE) comparable del hogar actual y
 
 7. **IRE de origen imputado (D11, D19).** Solo para la cohorte de análisis:
    - Se parte de los activos con la regla `na`.
-   - `missMDA::estim_ncpMCA` elige el número de dimensiones con validación cruzada K-fold (ncp de 0 a `NCP_MAX_CV`, `NBSIM_CV` repeticiones, 5% de faltantes simulados).
+   - `missMDA::estim_ncpMCA` calcula el error de validación cruzada K-fold para ncp de 0 a `NCP_MAX_CV` (`NBSIM_CV` repeticiones, 5% de faltantes simulados, **sin ponderar**: la función no acepta `row.w`). El ncp se elige con la regla de parsimonia (`TOL_PARSIMONIA_CV`), no con el argmin. La curva se guarda en `curva_cv_ncp_or_imp.csv`.
    - `missMDA::imputeMCA` (método regularizado, `row.w = factor_ceey`) sustituye cada respuesta faltante por una probabilidad.
    - `FactoMineR::MCA(tab.disj = ...)` estima el índice sobre la tabla completa. Resultado: `irec_or_imp`, sin faltantes.
 
@@ -198,7 +199,8 @@ Construye el Índice de Recursos Económicos (IRE) comparable del hogar actual y
 | Archivo | Contenido |
 |---|---|
 | `flujo_muestra.csv` | n después de cada filtro, en total y en la cohorte 1 (T6) |
-| `diagnostico_mca.csv` | Por versión y cohorte: n, primer eigenvalor, % de inercia, ncp de la imputación, correlación con los activos y signo aplicado |
+| `diagnostico_mca.csv` | Por versión y cohorte: n, primer eigenvalor, % de inercia, ncp de la imputación, correlación con los activos, signo aplicado y, en `or_imp`, el argmin y el tope de la validación cruzada |
+| `curva_cv_ncp_or_imp.csv` | Error de validación cruzada por ncp (0–19), relativo al mínimo, y ncp elegido |
 | `t3_matriz_transicion_nacional.csv` | Matriz de transición nacional (% por renglón) |
 | `t3_persistencia_por_sexo.csv` | Q1→Q1, Q1→Q5 y Q5→Q5 por sexo |
 | `reparto_quintiles.csv` | Participación ponderada de cada quintil |
@@ -253,11 +255,47 @@ Fuente de las cifras publicadas: presentación del Informe de Movilidad Social e
 
 ### Pendientes del script 01
 
-- **Volver a correr el script con `NCP_MAX_CV = 10`.** En la corrida del 29/09/2026, `estim_ncpMCA` eligió ncp = 5, que era el tope anterior. Solo cambian `irec_or_imp` y sus posiciones; las cifras de referencia de arriba no cambian. Después de la corrida, actualizar el ncp elegido en esta sección.
+- ~~Volver a correr el script con `NCP_MAX_CV = 10`.~~ **Cerrada 13/10/2026.** Con tope 5 y tope 10 el argmin cayó en el tope (ncp = 5 y ncp = 10). Con tope 19 vuelve a caer en el tope: la curva de error no tiene mínimo interior. El error baja 21% de ncp = 0 a 1 y 4% de 1 a 3; de 7 a 19 baja menos de 1% (0.11157 contra 0.11058) y no es monótono entre 14 y 19. Con la regla de parsimonia de 1%, **ncp = 7**. Correlación ponderada `irec_or_na` vs `irec_or_imp` = 0.999945 (antes 0.999946). La matriz T3 no cambia.
+- Pendiente: sensibilidad del quintil `q_or_c1_imp` a ncp ∈ {3, 7, 19} (porcentaje de personas que cambian de quintil). Se espera trivial, pero un revisor puede pedirlo.
 - Fijar el entorno con `renv` (T8).
 
 ---
 
-## Script 02. *(pendiente)*
+## Script 02. `codigo/R/02_preparar_base_dml.R`
 
-Se documentará con la misma estructura: qué hace, insumos, parámetros, pasos, decisiones, salidas, resultados de referencia y pendientes.
+**Qué hace:** arma la base del DML a partir del `.rds` del script 01. No recalcula el IRE, los percentiles ni el ICE.
+
+### Insumos
+
+- `data/clean/01_generar_ires_quintiles_esru.rds` (script 01).
+- `data/clean/ice/ice_para_dml.csv` y `data/clean/ice/municipios_padre_hijo.csv` (`codigo/ice`, módulos 07 y 05).
+- `data/raw/pobproy_conapo.csv` (CONAPO, población municipal por sexo y año, 1990–2040).
+- `data/raw/ice/poblacion_municipal.csv` (censos INEGI 2000, 2005, 2010; robustez).
+- `data/raw/ESRU_mun.dta` (municipio actual, CEEY, D22).
+
+### Pasos
+
+1. Muestra: `muestra_ceey` y cohorte 1 (5,090) → sin `p20_COD` = 33333/99999 (T18; 16) → sin `p20_COD` = 03030 (2; no existe en BCS; ambas personas viven hoy en 14030 Chapala) = **5,072**.
+2. D21: los municipios sin ICE en algún año censal (02006, 07123, 07124; 8 personas) reciben la clave del padre (`cve_ice`) para ICE, población, pliegues y agrupación.
+3. D15: `anio14 = 2023 − edad + 14`; `ice14` interpolado entre 2003/2008/2013; `ice14_cercano`, `ice14_2003` y las 33 especificaciones alternativas (`ice14_<esp>`) interpoladas.
+4. D20 (modificada el 13/10/2026): `log_pob14` = log de la población CONAPO del año exacto a los 14. Robustez: `log_pob14_censo` (censos interpolados en log; 2011–2012 con 2010), `log_ue14`, `tam_soloaga14`.
+5. "No sabe" → `NA` con una tabla explícita de códigos por variable (`codigos_no_sabe.csv`). No hay regla general de 8: en p28 el 8 y el 9 son categorías, en p42 el 8 es un nivel educativo. `p46 = 99` (no documentado) → `NA`. Sí/No → 1/0. Los `NA` por pase de pregunta (p. ej. p42 si el padre no asistió) se dejan como `NA`.
+6. Roles y tipos en `diccionario_variables_02.csv`. X principal sin agua (`ac_or6_na`) ni electricidad (`ac_or10_na`) ni p26c (D6); siguen dentro de `irec_or_na`. Auditoría T4 con `stop()`.
+7. Y de robustez (D9), Z (4.2), mediadores (4.3) y migración (D14).
+
+### Salidas
+
+`data/clean/02_base_dml.csv` (NA = celda vacía) y `.rds`; `data/clean/02_resultados/`: `flujo_muestra_02.csv`, `municipios_padre_asignados.csv`, `codigos_no_sabe.csv`, `reparto_quintiles_02.csv`, `faltantes_x.csv`, `resumen_02.csv`, `distribucion_edad.csv`, `diccionario_variables_02.csv`, `sessionInfo_02.txt`.
+
+### Resultados de referencia (13/10/2026)
+
+- n = 5,072; 667 municipios de origen (`cve_ice`); 1,308 UPM; 38 personas fuera del núcleo del ICE en t0 o t1.
+- Desviación del 20% por quintil tras las exclusiones: ≤ 0.13 pp (`q_act_c1` y `q_or_c1_imp`).
+- R² ponderado de `ice14` sobre `log_pob14`: 0.833. Lineal sobre toda la X principal: 0.88; sin escala: 0.48.
+- Correlación `log_pob14` (CONAPO) vs `log_pob14_censo`: 0.9997.
+- La corrida en Windows (R 4.3.2) y una corrida en Linux (R 4.3.3, mismas versiones de dplyr y haven) dan la base idéntica celda por celda.
+
+### Pendientes y advertencias
+
+- **Edad:** 1,147 personas con 25 años contra ~450 por edad en el resto (18.5% ponderado); exceso también en 30. Los pesos reproducen los grupos quinquenales (25–29: 48.7% vs. 51% CONAPO 2023), no la edad simple. Robustez: `ice14_2003` y excluir edad = 25.
+- Correr el script en una sesión de R nueva (la `sessionInfo` de la primera corrida muestra missMDA y FactoMineR cargados de la sesión del script 01).

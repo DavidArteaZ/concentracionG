@@ -1,0 +1,18 @@
+{
+  "n": 5072,
+  "n_rep": 20,
+  "n_folds": 5,
+  "semilla": 20261013,
+  "media_ice14": 1.692249347550009,
+  "de_ice14": 1.320400468642765,
+  "n_x": {
+    "principal": 155,
+    "total": 154
+  },
+  "python": "3.13.16 (main, Oct  1 2026, 15:40:24) [GCC 13.3.0]",
+  "plataforma": "Linux-6.18.44-fc-v114-x86_64-with-glibc2.39",
+  "numpy": "2.5.3",
+  "pandas": "3.0.5",
+  "sklearn": "1.9.1",
+  "xgboost": "3.4.1"
+}
