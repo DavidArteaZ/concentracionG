@@ -469,6 +469,7 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 - **Lo que no entra:** la diversidad del municipio. Es un componente del propio ICE (Spearman de 0.89), así que controlarla elimina parte del concepto.
 - **Diagnósticos obligatorios:** el R² de $\hat e(X)$ con y sin escala, y la varianza de $\tilde E$ en ambos casos.
 - La regla queda fijada antes de estimar.
+- *(Modificado 13/10/2026)* La fuente principal de población pasa a ser **CONAPO en el año exacto a los 14** (serie anual; antes de 2015 es una reconstrucción de la conciliación demográfica). Los censos 2000, 2005 y 2010 interpolados quedan como robustez. Motivo: con solo censos hasta 2010, el 34% de la muestra (14 años en 2011–2012) quedaba fuera del rango de interpolación.
 
 **Por qué:**
 - La hipótesis del paper es que la complejidad capta las oportunidades del territorio de forma más directa que la escala. Solo se puede contrastar si $\beta$ se estima con la parte del ICE que no explica el tamaño.
