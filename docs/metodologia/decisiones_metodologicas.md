@@ -1,7 +1,7 @@
 # Decisiones metodológicas
 
 **Proyecto:** Movilidad social y complejidad económica: un estudio de las características económicas regionales que influyen en la movilidad inesperada en México.
-**Última actualización:** 9 de octubre de 2026. Se adoptaron D23 (alcance territorial de la inferencia) y D24 (quintiles de las matrices descriptivas). *(08/10/2026:* se adoptaron D20 (escala del municipio de origen en $X$), D21 (municipios creados después de los 14 años) y D22 (procedencia de `ESRU_mun.dta`); se corrigieron los datos de D15 y D16 con verificaciones en la base.)* *(29/09/2026: Se precisó el orden de D2 (T18 después de los cortes), se corrigieron los conteos de D11, se cerró T5, se cerró T3 y se adoptó D19, quintil de origen imputado para la heterogeneidad.)* *(28/09/2026: se agregaron D14–D18, T16–T18 y V1; se modificaron D6, D13, 4.1 y T14.)*
+**Última actualización:** 17 de octubre de 2026. Se adoptó D25 (ICE por zona metropolitana como robustez). *(09/10/2026: se adoptaron D23 (alcance territorial de la inferencia) y D24 (quintiles de las matrices descriptivas).)* *(08/10/2026:* se adoptaron D20 (escala del municipio de origen en $X$), D21 (municipios creados después de los 14 años) y D22 (procedencia de `ESRU_mun.dta`); se corrigieron los datos de D15 y D16 con verificaciones en la base.)* *(29/09/2026: Se precisó el orden de D2 (T18 después de los cortes), se corrigieron los conteos de D11, se cerró T5, se cerró T3 y se adoptó D19, quintil de origen imputado para la heterogeneidad.)* *(28/09/2026: se agregaron D14–D18, T16–T18 y V1; se modificaron D6, D13, 4.1 y T14.)*
 **Estado:** decisiones adoptadas por el equipo. Cada una indica qué se decidió, qué alternativas se descartaron y por qué, para poder defenderla ante revisores.
 
 **Fuentes revisadas:**
@@ -542,6 +542,103 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
 - La matriz principal no se compara directamente con el CEEY.
 - 12.4% de las personas tiene imputada una parte de su IRE de origen (casi siempre un solo activo financiero). Correlación con la versión sin imputar: 0.99994. Se declara en una nota.
 - **Requisito previo:** volver a correr el script 01 con `NCP_MAX_CV = 10` antes de generar la matriz principal.
+
+---
+
+## Bloque 9. Decisiones adoptadas el 17/10/2026
+
+### D25. ICE por zona metropolitana (V2 del ICE) como robustez
+
+**Decisión:**
+- Se construye una **V2 del ICE** en la que cada zona metropolitana (ZM) es **una sola unidad** de la red municipio–rama. Las UE por rama se suman entre los municipios de la ZM; los municipios no metropolitanos quedan como unidades propias. Todo lo demás es igual a V1: UE, nivel rama, $M_{cp} = \mathbb{1}[RCA \ge 1]$, núcleo con `U_MIN`, `D_MIN` y `P_MIN`, PCI espectral, proyección y un cálculo por año censal (2003–2023).
+- **Mapa estático:** la misma delimitación se aplica a todos los años censales.
+  - **Principal de esta robustez:** delimitación de **2010** (SEDATU–CONAPO–INEGI).
+  - **Alternativa:** delimitación de **2020** (*Metrópolis de México 2020*).
+- **Se recalcula, no se reasigna.** El ICE V2 se genera en el pipeline del ICE (`codigo/ice_v2/`) y se exporta como un archivo nuevo. No se calcula a mano ni dentro de `02_preparar_base_dml.R`. Aplica el protocolo de V1, punto 2.
+- **Asignación a personas:** cada persona recibe el ICE V2 de la unidad (ZM o municipio) que contiene su municipio de origen `cve_ice` (incluido el padre de D21), interpolado al año en que tenía 14 con la regla de D15. En el DML se estandariza con pesos en la muestra, igual que V1.
+- **Escala (D20):** el control pasa a ser el **log de la población de la unidad V2** en el año a los 14 (suma de la población CONAPO de los municipios miembros). Para los municipios no metropolitanos coincide con `log_pob14`.
+- **Pliegues (D8) y agrupación (D16):** por unidad V2. Los pliegues se agrupan por ZM o municipio no metropolitano, y el error estándar se agrupa en dos dimensiones, unidad V2 × UPM.
+- **DML:** se repiten **ambas fases** (potencia y estimación; especificaciones principal y total) con el ICE V2 como tratamiento, con los mismos aprendices, rejilla de hiperparámetros, semillas y número de repeticiones que la corrida principal. V1 sigue siendo la especificación principal del paper.
+- **Estimando:** ya no es "complejidad del municipio de origen", sino **"complejidad del mercado laboral local de origen"**. Se presenta en el paper como un parámetro distinto, no como la misma $\beta$ con otro dato.
+
+**Por qué:**
+- El ICE municipal mide lo que se produce dentro del municipio. En una ZM la gente trabaja en el mercado laboral de toda la zona: el municipio 15031 (por la clave, Chimalhuacán; falta verificar el nombre) tiene un ICE muy bajo para su tamaño y mueve $\hat\beta$ en 2 puntos (`fase04_supresion_influencia.md`), aunque está dentro del mercado laboral del Valle de México. El ICE por ZM mide mejor las oportunidades accesibles.
+- **Mapa estático:** si el mapa cambiara por año, el ICE saltaría solo porque la ZM creció.
+- **2010 como principal:** cae dentro de la ventana en que la cohorte tenía 14 años (2003–2012). La de 2020 incluye municipios que se volvieron metropolitanos después, y esa expansión puede ser consecuencia de la propia complejidad, lo que la vuelve un control posterior al tratamiento.
+- **Recalcular:** el ICE es relativo a toda la red. Fusionar los municipios de una ZM cambia la RCA, las ubicuidades y el PCI de todas las ramas, y con ello el ICE de todas las unidades, no solo el de las metropolitanas.
+- **Escala de la ZM:** con un tratamiento de ZM y la población del municipio, el control de escala no correspondería al nivel del tratamiento y el argumento de D20 ($\hat\beta \to \theta$) dejaría de valer.
+- **Pliegues y agrupación:** el tratamiento varía a nivel de unidad V2. Por la misma lógica de fuga de D8 y por Abadie et al. (2023), se agrupa al nivel en que se asigna el tratamiento.
+- La suma de UE entre municipios es exacta, porque UE nunca está suprimida en SAIC (`metodologia_ice.md` §3b).
+
+**Reglas de geografía (se fijan antes de calcular):**
+1. Las claves de la delimitación se llevan a la geografía de cada levantamiento de SAIC. Un municipio de SAIC que no aparece en la delimitación porque se creó después hereda la ZM de su padre (`municipios_padre_hijo.csv`). Ningún municipio puede pertenecer a dos ZM; el código lo verifica.
+2. Si en algún año un padre y su hijo quedan en unidades distintas (uno metropolitano y el otro no), se registra en la bitácora y se reporta el número de entrevistados afectados.
+3. En la versión 2020, la definición de unidad incluye las tres categorías de *Metrópolis de México 2020* (zonas metropolitanas, metrópolis municipales y zonas conurbadas). Las de un solo municipio no cambian nada respecto a V1.
+4. Los hijos fuera de la delimitación con padre dentro se declaran uno por uno en `codigo/ice_v2/config_v2.py` (`HIJO_EXISTIA`): heredan la unidad del padre si no existían en la geografía del censo de la delimitación y quedan como unidad propia si existían y la delimitación los dejó fuera. Un caso no declarado detiene el código.
+
+**Costos y amenazas aceptados:**
+- **Potencia:** hay menos grupos y el error estándar será mayor. Es probable que la escala de la ZM explique todavía más varianza del ICE, de modo que $\tilde E$ tenga menos variación independiente. Un $\hat\beta$ no significativo se reporta como falta de variación independiente (como en D20), no como ausencia de asociación.
+- La delimitación se basa en conmutación laboral y continuidad urbana medidas en 2010 (o 2020), no en el año exacto a los 14 de cada persona.
+- Para quienes no viven en una ZM, V1 y V2 coinciden en la unidad, pero no en el valor, porque la red cambió. Por eso V2 no es una simple reasignación del ICE municipal a los metropolitanos.
+- Hereda la verificación pendiente V1 (homologación del SCIAN).
+
+**Diagnósticos obligatorios:**
+- **Prueba de identidad:** con una delimitación en la que cada municipio es su propia unidad, el código debe reproducir exactamente el ICE V1.
+- Número de unidades V2 en el núcleo por año; número de ZM y de entrevistados de la cohorte 1 cuyo origen está en una ZM (sin ponderar y ponderado).
+- Spearman entre ICE V1 e ICE V2 a nivel unidad y a nivel persona.
+- $R^2$ del ICE V2 sobre el log de la población de la unidad, y varianza de $\tilde E$ (fase 1), comparados con V1.
+- Número de grupos para pliegues y agrupación.
+
+**Datos (17/10/2026):**
+- **Fuentes** (`data/raw/ice_v2/`, entregadas por David el 17/10/2026):
+  - `delimitacion_ZM_2010.pdf`: *Delimitación de las zonas metropolitanas de México 2010*, Anexo estadístico, Cuadro A1 (SEDESOL–CONAPO–INEGI). Se leyeron 59 ZM y 367 municipios con 63,836,779 habitantes. Cada ZM suma exactamente la población que reporta el cuadro.
+  - `delimitacion_ZM_2020.xlsx`: *Metrópolis de México 2020* (SEDATU–CONAPO–INEGI). Son 92 unidades y 421 municipios: 48 zonas metropolitanas (345 municipios), 22 metrópolis municipales y 22 zonas conurbadas (54 municipios).
+  - Pendiente: registrar la fecha de consulta y la URL de cada archivo.
+- **Diferencias entre mapas:** 32 municipios metropolitanos en 2010 no lo son en 2020 y 86 lo son solo en 2020. Seis ZM de 2010 se reparten en más de una unidad de 2020 y cuatro unidades de 2020 juntan dos ZM de 2010.
+- En el cuadro de 2010, la población de Nextlalpan, Tultepec y Tultitlán difiere de `poblacion_municipal.csv` (INEGI), pero las diferencias suman cero entre los tres. Los tres están en la ZM del Valle de México, así que no cambia la pertenencia.
+- **Prueba de identidad superada:** con unidades de un solo municipio se reproduce el ICE V1 en los 12,292 municipio-año (máx. $|\Delta| = 1.8\times10^{-14}$).
+- **Regla 2:** en 2020, Coatetelco (17034) y Xoxocotla (17035) están en la zona metropolitana de Cuernavaca, pero en 2003–2013 su territorio pertenecía a Miacatlán y Puente de Ixtla, que quedan fuera. Hay 2 entrevistados con origen en esos dos municipios.
+- **Muestra de análisis (n = 5,072), vista previa con las reglas de D15 y D20** (`outputs/ice_v2/diagnosticos_persona_zm.csv`):
+
+| | ZM 2010 | ZM 2020 |
+|---|---|---|
+| Personas con origen en una unidad metropolitana | 2,724 (57.8% ponderado) | 3,344 (65.2%) |
+| Unidades metropolitanas con entrevistados | 57 | 85 |
+| Grupos para pliegues y agrupación (V1: 667) | 534 | 533 |
+| Grupo más grande | Valle de México, 445 (8.8%) | Valle de México, 431 (8.5%) |
+| Correlación ICE V1–V2 (todos / solo metropolitanos) | 0.91 / 0.55 | 0.90 / 0.56 |
+| $R^2$ del ICE sobre log población (V1: 0.833) | 0.803 | 0.803 |
+
+  - Solo con la población, la escala de la unidad explica *menos* varianza del ICE V2 que la del municipio en V1 (0.80 contra 0.83). **Pero con toda la X, en la fase 1 del DML, el ICE V2 es más predecible** (ver abajo), así que lo previsto en "Costos" se cumple: $\tilde E$ tiene menos variación independiente.
+  - Dentro de las ZM, el ICE V2 se parece poco al municipal (correlación de 0.55). V2 no es un cambio marginal para la población metropolitana.
+
+
+**Implementación (17/10/2026):**
+- `02_preparar_base_dml.R` agrega, por delimitación, `unidad_zm2010`/`unidad_zm2020` (rol `grupo_v2`), `icezm14_2010`/`icezm14_2020` (`tratamiento_v2`), `log_pob14_zm2010`/`log_pob14_zm2020` (`escala_v2`) y `en_nucleo14_*`. Los roles son propios para que 03–05 de V1 no las tomen. Las columnas de V1 de la base quedan idénticas celda por celda.
+- `03_dml.py --ice v2_zm2010|v2_zm2020` cambia solo el tratamiento, la escala de la especificación principal (`log_pob14_<d>` en lugar de `log_pob14`; la total no lleva ninguna) y el grupo de pliegues y agrupación (`unidad_<d>` × UPM). Escribe en `data/clean/03_resultados_ice_v2_<d>/`. Con `--ice v1` se reproduce la corrida de V1 (repetición 0: máx. $|\Delta|$ en predicciones de $5\times10^{-14}$).
+
+**Resultados (17/10/2026; 20 repeticiones, XGBoost elegido en las dos funciones auxiliares en todas las versiones):**
+
+| | V1 municipal | V2 ZM 2010 | V2 ZM 2020 (alternativa) |
+|---|---|---|---|
+| $\hat\beta$ condicional (SE) | 5.09 (2.63) | 3.82 (2.05) | 4.65 (2.07) |
+| z; p | 1.93; 0.053 | 1.87; 0.062 | 2.25; 0.025 |
+| IC 95% | [−0.07, 10.24] | [−0.19, 7.83] | [0.60, 8.71] |
+| $\hat\beta$ total (SE) | 1.21 (0.82) | 1.48 (0.74) | 1.65 (0.73) |
+| z; p (total) | 1.47; 0.143 | 2.02; 0.044 | 2.26; 0.024 |
+| Cociente condicional/total | 4.21 | 2.57 | 2.82 |
+| $R^2$ de $\hat e(X)$, principal | 0.862 | 0.902 | 0.917 |
+| Var($\tilde E$), principal | 0.138 | 0.098 | 0.082 |
+| Efecto mínimo detectable, principal | 6.96 | 5.93 | 5.76 |
+| Grupos (pliegues y agrupación) | 667 | 534 | 533 |
+
+- $\hat\beta$ está en percentiles de destino por una DE del ICE de cada versión, estandarizado en la muestra. Las magnitudes se comparan como efectos por DE, no en unidades del ICE.
+- **Lectura:**
+  - La asociación condicional a la escala sigue siendo positiva y de magnitud parecida, con la misma significancia frágil que V1 (p = 0.06 con el mapa 2010).
+  - La asociación total sube y pasa a ser significativa al 5% con los dos mapas.
+  - El cociente baja de 4.2 a 2.6: con el ICE del mercado laboral local, la escala de la ZM y la complejidad se separan menos que a nivel municipio.
+  - A pesar de la menor Var($\tilde E$), el SE baja (de 2.63 a 2.05), probablemente por la menor dispersión del score entre grupos. *Inferido, no verificado.*
+- **Cautela:** el resultado más fuerte es el del mapa 2020, que es la alternativa por su riesgo de control posterior al tratamiento. No se promueve a principal. Ninguna versión cambia la conclusión de V1 sobre la fragilidad del condicional.
 
 ---
 

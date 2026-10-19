@@ -1,0 +1,368 @@
+cve_mun,unidad,nom_unidad,tipo,nom_mun,pob2010,mc,cf
+01001,ZM10_01,Zona metropolitana de Aguascalientes,Zona metropolitana,Aguascalientes,797010,1,1
+01005,ZM10_01,Zona metropolitana de Aguascalientes,Zona metropolitana,Jesús María,99590,1,1
+01011,ZM10_01,Zona metropolitana de Aguascalientes,Zona metropolitana,San Francisco de los Romo,35769,0,0
+02003,ZM10_02,Zona metropolitana de Tijuana,Zona metropolitana,Tecate,101079,0,0
+02004,ZM10_02,Zona metropolitana de Tijuana,Zona metropolitana,Tijuana,1559683,1,0
+02005,ZM10_02,Zona metropolitana de Tijuana,Zona metropolitana,Playas de Rosarito,90668,0,0
+02002,ZM10_03,Zona metropolitana de Mexicali,Zona metropolitana,Mexicali,936826,1,0
+05017,ZM10_04,Zona metropolitana de La Laguna,Zona metropolitana,Matamoros,107160,1,1
+05035,ZM10_04,Zona metropolitana de La Laguna,Zona metropolitana,Torreón,639629,1,1
+10007,ZM10_04,Zona metropolitana de La Laguna,Zona metropolitana,Gómez Palacio,327985,1,1
+10012,ZM10_04,Zona metropolitana de La Laguna,Zona metropolitana,Lerdo,141043,1,1
+05004,ZM10_05,Zona metropolitana de Saltillo,Zona metropolitana,Arteaga,22544,0,0
+05027,ZM10_05,Zona metropolitana de Saltillo,Zona metropolitana,Ramos Arizpe,75461,1,1
+05030,ZM10_05,Zona metropolitana de Saltillo,Zona metropolitana,Saltillo,725123,1,1
+05006,ZM10_06,Zona metropolitana de Monclova-Frontera,Zona metropolitana,Castaños,25892,0,0
+05010,ZM10_06,Zona metropolitana de Monclova-Frontera,Zona metropolitana,Frontera,75215,1,1
+05018,ZM10_06,Zona metropolitana de Monclova-Frontera,Zona metropolitana,Monclova,216206,1,1
+05022,ZM10_07,Zona metropolitana de Piedras Negras,Zona metropolitana,Nava,27928,1,1
+05025,ZM10_07,Zona metropolitana de Piedras Negras,Zona metropolitana,Piedras Negras,152806,1,1
+06002,ZM10_08,Zona metropolitana de Colima-Villa de Álvarez,Zona metropolitana,Colima,146904,1,1
+06003,ZM10_08,Zona metropolitana de Colima-Villa de Álvarez,Zona metropolitana,Comala,20888,0,0
+06004,ZM10_08,Zona metropolitana de Colima-Villa de Álvarez,Zona metropolitana,Coquimatlán,19385,0,0
+06005,ZM10_08,Zona metropolitana de Colima-Villa de Álvarez,Zona metropolitana,Cuauhtémoc,27107,0,0
+06010,ZM10_08,Zona metropolitana de Colima-Villa de Álvarez,Zona metropolitana,Villa de Álvarez,119956,1,1
+06001,ZM10_09,Zona metropolitana de Tecomán,Zona metropolitana,Armería,28695,1,1
+06009,ZM10_09,Zona metropolitana de Tecomán,Zona metropolitana,Tecomán,112726,1,1
+07012,ZM10_10,Zona metropolitana de Tuxtla Gutiérrez,Zona metropolitana,Berriozábal,43179,0,0
+07027,ZM10_10,Zona metropolitana de Tuxtla Gutiérrez,Zona metropolitana,Chiapa de Corzo,87603,1,1
+07101,ZM10_10,Zona metropolitana de Tuxtla Gutiérrez,Zona metropolitana,Tuxtla Gutiérrez,553374,1,1
+08037,ZM10_11,Zona metropolitana de Juárez,Zona metropolitana,Juárez,1332131,1,0
+08002,ZM10_12,Zona metropolitana de Chihuahua,Zona metropolitana,Aldama,22302,0,0
+08004,ZM10_12,Zona metropolitana de Chihuahua,Zona metropolitana,Aquiles Serdán,10688,0,0
+08019,ZM10_12,Zona metropolitana de Chihuahua,Zona metropolitana,Chihuahua,819543,1,0
+09002,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Azcapotzalco,414711,1,1
+09003,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Coyoacán,620416,1,1
+09004,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Cuajimalpa de Morelos,186391,1,1
+09005,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Gustavo A. Madero,1185772,1,1
+09006,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Iztacalco,384326,1,1
+09007,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Iztapalapa,1815786,1,1
+09008,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,La Magdalena Contreras,239086,1,1
+09009,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Milpa Alta,130582,1,1
+09010,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Álvaro Obregón,727034,1,1
+09011,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tláhuac,360265,1,1
+09012,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tlalpan,650567,1,1
+09013,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Xochimilco,415007,1,1
+09014,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Benito Juárez,385439,1,1
+09015,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Cuauhtémoc,531831,1,1
+09016,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Miguel Hidalgo,372889,1,1
+09017,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Venustiano Carranza,430978,1,1
+13069,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tizayuca,97461,0,0
+15002,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Acolman,136558,1,1
+15009,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Amecameca,48421,0,0
+15010,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Apaxco,27521,0,0
+15011,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Atenco,56243,1,1
+15013,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Atizapán de Zaragoza,489937,1,1
+15015,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Atlautla,27663,0,0
+15016,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Axapusco,25559,0,0
+15017,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Ayapango,8864,0,0
+15020,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Coacalco de Berriozábal,278064,1,1
+15022,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Cocotitlán,12142,0,0
+15023,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Coyotepec,39030,1,1
+15024,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Cuautitlán,140059,1,1
+15025,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Chalco,310130,1,1
+15028,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Chiautla,26191,1,1
+15029,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Chicoloapan,175053,1,1
+15030,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Chiconcuac,22819,1,1
+15031,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Chimalhuacán,614453,1,1
+15033,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Ecatepec de Morelos,1656107,1,1
+15034,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Ecatzingo,9369,0,0
+15035,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Huehuetoca,100023,0,0
+15036,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Hueypoxtla,39864,0,0
+15037,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Huixquilucan,242167,1,1
+15038,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Isidro Fabela,10308,0,0
+15039,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Ixtapaluca,467361,1,1
+15044,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Jaltenco,26328,1,1
+15046,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Jilotzingo,17970,0,0
+15050,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Juchitepec,23497,0,0
+15053,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Melchor Ocampo,50240,1,1
+15057,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Naucalpan de Juárez,833779,1,1
+15058,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Nezahualcóyotl,1110565,1,1
+15059,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Nextlalpan,34374,1,1
+15060,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Nicolás Romero,366602,1,1
+15061,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Nopaltepec,8895,0,0
+15065,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Otumba,34232,0,0
+15068,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Ozumba,27207,0,0
+15069,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Papalotla,4147,1,1
+15070,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,La Paz,253845,1,1
+15075,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,San Martín de las Pirámides,24851,0,0
+15081,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tecámac,364579,1,1
+15083,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Temamatla,11206,0,0
+15084,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Temascalapa,35987,0,0
+15089,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tenango del Aire,10578,0,0
+15091,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Teoloyucan,63115,1,1
+15092,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Teotihuacán,53010,1,1
+15093,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tepetlaoxtoc,27944,1,1
+15094,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tepetlixpa,18327,0,0
+15095,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tepotzotlán,88559,1,1
+15096,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tequixquiac,33907,0,0
+15099,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Texcoco,235151,1,1
+15100,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tezoyuca,35199,1,1
+15103,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tlalmanalco,46130,0,0
+15104,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tlalnepantla de Baz,664225,1,1
+15108,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tultepec,91808,1,1
+15109,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tultitlán,524074,1,1
+15112,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Villa del Carbón,44881,0,0
+15120,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Zumpango,159647,1,1
+15121,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Cuautitlán Izcalli,511675,1,1
+15122,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Valle de Chalco Solidaridad,357645,1,1
+15125,ZM10_13,Zona metropolitana del Valle de México,Zona metropolitana,Tonanitla,10216,1,1
+11020,ZM10_14,Zona metropolitana de León,Zona metropolitana,León,1436480,1,0
+11037,ZM10_14,Zona metropolitana de León,Zona metropolitana,Silao,173024,0,0
+11025,ZM10_15,Zona metropolitana de San Francisco del Rincón,Zona metropolitana,Purísima del Rincón,68795,1,1
+11031,ZM10_15,Zona metropolitana de San Francisco del Rincón,Zona metropolitana,San Francisco del Rincón,113570,1,1
+11021,ZM10_16,Zona metropolitana de Moroleón-Uriangato,Zona metropolitana,Moroleón,49364,1,1
+11041,ZM10_16,Zona metropolitana de Moroleón-Uriangato,Zona metropolitana,Uriangato,59305,1,1
+12001,ZM10_17,Zona metropolitana de Acapulco,Zona metropolitana,Acapulco de Juárez,789971,1,0
+12021,ZM10_17,Zona metropolitana de Acapulco,Zona metropolitana,Coyuca de Benítez,73460,0,0
+13022,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,Epazoyucan,13830,0,0
+13039,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,Mineral del Monte,13864,0,0
+13048,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,Pachuca de Soto,267862,1,1
+13051,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,Mineral de la Reforma,127404,1,1
+13052,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,San Agustín Tlaxiaca,32057,0,0
+13082,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,Zapotlán de Juárez,18036,0,0
+13083,ZM10_18,Zona metropolitana de Pachuca,Zona metropolitana,Zempoala,39143,0,0
+13016,ZM10_19,Zona metropolitana de Tulancingo,Zona metropolitana,Cuautepec de Hinojosa,54500,1,1
+13056,ZM10_19,Zona metropolitana de Tulancingo,Zona metropolitana,Santiago Tulantepec de Lugo Guerrero,33495,1,1
+13077,ZM10_19,Zona metropolitana de Tulancingo,Zona metropolitana,Tulancingo de Bravo,151584,1,1
+13010,ZM10_20,Zona metropolitana de Tula,Zona metropolitana,Atitalaquia,26904,0,0
+13013,ZM10_20,Zona metropolitana de Tula,Zona metropolitana,Atotonilco de Tula,31078,0,0
+13070,ZM10_20,Zona metropolitana de Tula,Zona metropolitana,Tlahuelilpan,17153,0,0
+13074,ZM10_20,Zona metropolitana de Tula,Zona metropolitana,Tlaxcoapan,26758,0,0
+13076,ZM10_20,Zona metropolitana de Tula,Zona metropolitana,Tula de Allende,103919,1,0
+14039,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Guadalajara,1495189,1,1
+14044,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Ixtlahuacán de los Membrillos,41060,0,0
+14051,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Juanacatlán,13218,0,0
+14070,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,El Salto,138226,1,1
+14097,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Tlajomulco de Zúñiga,416626,1,1
+14098,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Tlaquepaque,608114,1,1
+14101,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Tonalá,478689,1,1
+14120,ZM10_21,Zona metropolitana de Guadalajara,Zona metropolitana,Zapopan,1243756,1,1
+14067,ZM10_22,Zona metropolitana de Puerto Vallarta,Zona metropolitana,Puerto Vallarta,255681,1,1
+18020,ZM10_22,Zona metropolitana de Puerto Vallarta,Zona metropolitana,Bahía de Banderas,124205,1,1
+14063,ZM10_23,Zona metropolitana de Ocotlán,Zona metropolitana,Ocotlán,92967,1,1
+14066,ZM10_23,Zona metropolitana de Ocotlán,Zona metropolitana,Poncitlán,48408,1,1
+15005,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Almoloya de Juárez,147653,1,1
+15018,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Calimaya,47033,1,1
+15027,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Chapultepec,9676,0,0
+15051,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Lerma,134799,1,1
+15054,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Metepec,214162,1,1
+15055,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Mexicaltzingo,11712,1,1
+15062,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Ocoyoacac,61805,0,0
+15067,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Otzolotepec,78146,1,1
+15072,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Rayón,12748,0,0
+15073,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,San Antonio la Isla,22152,0,0
+15076,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,San Mateo Atenco,72579,1,1
+15087,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Temoaya,90010,0,0
+15106,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Toluca,819561,1,1
+15115,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Xonacatlán,46331,0,0
+15118,ZM10_24,Zona metropolitana de Toluca,Zona metropolitana,Zinacantepec,167759,1,1
+16022,ZM10_25,Zona metropolitana de Morelia,Zona metropolitana,Charo,21723,0,0
+16053,ZM10_25,Zona metropolitana de Morelia,Zona metropolitana,Morelia,729279,1,1
+16088,ZM10_25,Zona metropolitana de Morelia,Zona metropolitana,Tarímbaro,78623,1,1
+16043,ZM10_26,Zona metropolitana de Zamora-Jacona,Zona metropolitana,Jacona,64011,1,1
+16108,ZM10_26,Zona metropolitana de Zamora-Jacona,Zona metropolitana,Zamora,186102,1,1
+11023,ZM10_27,Zona metropolitana de La Piedad-Pénjamo,Zona metropolitana,Pénjamo,149936,1,1
+16069,ZM10_27,Zona metropolitana de La Piedad-Pénjamo,Zona metropolitana,La Piedad,99576,1,1
+17007,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Cuernavaca,365168,1,1
+17008,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Emiliano Zapata,83485,1,1
+17009,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Huitzilac,17340,0,0
+17011,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Jiutepec,196953,1,1
+17018,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Temixco,108126,1,1
+17020,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Tepoztlán,41629,1,1
+17024,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Tlaltizapán,48881,0,0
+17028,ZM10_28,Zona metropolitana de Cuernavaca,Zona metropolitana,Xochitepec,63382,1,1
+17002,ZM10_29,Zona metropolitana de Cuautla,Zona metropolitana,Atlatlahucan,18895,0,0
+17004,ZM10_29,Zona metropolitana de Cuautla,Zona metropolitana,Ayala,78866,1,1
+17006,ZM10_29,Zona metropolitana de Cuautla,Zona metropolitana,Cuautla,175207,1,1
+17026,ZM10_29,Zona metropolitana de Cuautla,Zona metropolitana,Tlayacapan,16543,0,0
+17029,ZM10_29,Zona metropolitana de Cuautla,Zona metropolitana,Yautepec,97827,0,0
+17030,ZM10_29,Zona metropolitana de Cuautla,Zona metropolitana,Yecapixtla,46809,1,1
+18008,ZM10_30,Zona metropolitana de Tepic,Zona metropolitana,Xalisco,49102,1,1
+18017,ZM10_30,Zona metropolitana de Tepic,Zona metropolitana,Tepic,380249,1,1
+19006,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Apodaca,523370,1,1
+19009,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Cadereyta Jiménez,86445,0,0
+19010,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Carmen,16092,1,1
+19018,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,García,143668,1,1
+19019,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,San Pedro Garza García,122659,1,1
+19021,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Gral. Escobedo,357937,1,1
+19026,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Guadalupe,678006,1,1
+19031,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Juárez,256970,1,1
+19039,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Monterrey,1135550,1,1
+19045,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Salinas Victoria,32660,1,1
+19046,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,San Nicolás de los Garza,443273,1,1
+19048,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Santa Catarina,268955,1,1
+19049,ZM10_31,Zona metropolitana de Monterrey,Zona metropolitana,Santiago,40469,1,1
+20067,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Oaxaca de Juárez,263357,1,1
+20083,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Agustín de las Juntas,8089,1,1
+20087,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Agustín Yatareni,4075,1,1
+20091,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Andrés Huayápam,4879,1,1
+20107,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Antonio de la Cal,21456,1,1
+20115,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Bartolo Coyotepec,8684,1,1
+20157,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Jacinto Amilpas,13860,1,1
+20174,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Ánimas Trujano,3759,1,1
+20227,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Lorenzo Cacaotepec,13704,1,1
+20293,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Pablo Etla,15535,1,1
+20338,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Villa de Etla,9280,0,0
+20350,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,San Sebastián Tutla,16241,1,1
+20375,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santa Cruz Amilpas,10120,1,1
+20385,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santa Cruz Xoxocotlán,77833,1,1
+20390,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santa Lucía del Camino,47356,1,1
+20399,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santa María Atzompa,27465,1,1
+20403,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santa María Coyotepec,2772,1,1
+20409,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santa María del Tule,8165,1,1
+20519,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Santo Domingo Tomaltepec,2790,1,1
+20539,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Soledad Etla,5025,0,0
+20553,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Tlalixtac de Cabrera,9417,1,1
+20565,ZM10_32,Zona metropolitana de Oaxaca,Zona metropolitana,Villa de Zaachila,34101,0,0
+20079,ZM10_33,Zona metropolitana de Tehuantepec,Zona metropolitana,Salina Cruz,82371,0,0
+20124,ZM10_33,Zona metropolitana de Tehuantepec,Zona metropolitana,San Blas Atempa,17094,1,1
+20515,ZM10_33,Zona metropolitana de Tehuantepec,Zona metropolitana,Santo Domingo Tehuantepec,61872,1,1
+21001,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Acajete,60353,0,0
+21015,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Amozoc,100964,1,1
+21034,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Coronango,34596,1,1
+21041,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Cuautlancingo,79153,1,1
+21048,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Chiautzingo,18762,0,0
+21060,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Domingo Arenas,6946,0,0
+21074,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Huejotzingo,63457,0,0
+21090,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Juan C. Bonilla,18540,1,1
+21106,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Ocoyucan,25720,1,1
+21114,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Puebla,1539819,1,1
+21119,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Andrés Cholula,100439,1,1
+21122,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Felipe Teotlalcingo,9426,0,0
+21125,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Gregorio Atzompa,8170,1,1
+21132,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Martín Texmelucan,141112,0,0
+21136,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Miguel Xoxtla,11598,1,1
+21140,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Pedro Cholula,120459,1,1
+21143,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Salvador el Verde,28419,0,0
+21163,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Tepatlaxco de Hidalgo,16275,0,0
+21181,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Tlaltenango,6269,0,0
+29015,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Ixtacuixtla de Mariano Matamoros,35162,0,0
+29017,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Mazatecochco de José María Morelos,9740,1,1
+29019,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Tepetitla de Lardizábal,18725,0,0
+29022,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Acuamanala de Miguel Hidalgo,5711,1,1
+29023,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Nativitas,23621,1,1
+29025,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Pablo del Monte,69615,1,1
+29027,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Tenancingo,11763,1,1
+29028,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Teolocholco,21671,1,1
+29029,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Tepeyanco,11048,1,1
+29032,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Tetlatlahuca,12410,1,1
+29041,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Papalotla de Xicohténcatl,26997,1,1
+29042,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Xicohtzinco,12255,1,1
+29044,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Zacatelco,38654,1,1
+29051,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Jerónimo Zacualpan,3581,1,1
+29053,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Juan Huactzinco,6821,1,1
+29054,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,San Lorenzo Axocomanitla,5045,1,1
+29056,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Santa Ana Nopalucan,6857,0,0
+29057,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Santa Apolonia Teacalco,4349,1,1
+29058,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Santa Catarina Ayometla,7992,1,1
+29059,ZM10_34,Zona metropolitana de Puebla-Tlaxcala,Zona metropolitana,Santa Cruz Quilehtla,6296,1,1
+21149,ZM10_35,Zona metropolitana de Tehuacán,Zona metropolitana,Santiago Miahuatlán,21993,1,1
+21156,ZM10_35,Zona metropolitana de Tehuacán,Zona metropolitana,Tehuacán,274906,1,1
+22006,ZM10_36,Zona metropolitana de Querétaro,Zona metropolitana,Corregidora,143073,1,1
+22008,ZM10_36,Zona metropolitana de Querétaro,Zona metropolitana,Huimilpan,35554,0,0
+22011,ZM10_36,Zona metropolitana de Querétaro,Zona metropolitana,El Marqués,116458,1,1
+22014,ZM10_36,Zona metropolitana de Querétaro,Zona metropolitana,Querétaro,801940,1,1
+23003,ZM10_37,Zona metropolitana de Cancún,Zona metropolitana,Isla Mujeres,16203,0,0
+23005,ZM10_37,Zona metropolitana de Cancún,Zona metropolitana,Benito Juárez,661176,1,0
+24028,ZM10_38,Zona metropolitana de San Luis Potosí-Soledad de Graciano Sánchez,Zona metropolitana,San Luis Potosí,772604,1,1
+24035,ZM10_38,Zona metropolitana de San Luis Potosí-Soledad de Graciano Sánchez,Zona metropolitana,Soledad de Graciano Sánchez,267839,1,1
+24011,ZM10_39,Zona metropolitana de Rioverde-Ciudad Fernández,Zona metropolitana,Ciudad Fernández,43528,1,1
+24024,ZM10_39,Zona metropolitana de Rioverde-Ciudad Fernández,Zona metropolitana,Ríoverde,91924,1,1
+26025,ZM10_40,Zona metropolitana de Guaymas,Zona metropolitana,Empalme,54131,0,0
+26029,ZM10_40,Zona metropolitana de Guaymas,Zona metropolitana,Guaymas,149299,1,0
+27004,ZM10_41,Zona metropolitana de Villahermosa,Zona metropolitana,Centro,640359,1,1
+27013,ZM10_41,Zona metropolitana de Villahermosa,Zona metropolitana,Nacajuca,115066,1,1
+28003,ZM10_42,Zona metropolitana de Tampico,Zona metropolitana,Altamira,212001,1,1
+28009,ZM10_42,Zona metropolitana de Tampico,Zona metropolitana,Ciudad Madero,197216,1,1
+28038,ZM10_42,Zona metropolitana de Tampico,Zona metropolitana,Tampico,297554,1,1
+30123,ZM10_42,Zona metropolitana de Tampico,Zona metropolitana,Pánuco,97290,1,1
+30133,ZM10_42,Zona metropolitana de Tampico,Zona metropolitana,Pueblo Viejo,55358,1,1
+28032,ZM10_43,Zona metropolitana de Reynosa-Río Bravo,Zona metropolitana,Reynosa,608891,1,0
+28033,ZM10_43,Zona metropolitana de Reynosa-Río Bravo,Zona metropolitana,Río Bravo,118259,0,0
+28022,ZM10_44,Zona metropolitana de Matamoros,Zona metropolitana,Matamoros,489193,1,0
+28027,ZM10_45,Zona metropolitana de Nuevo Laredo,Zona metropolitana,Nuevo Laredo,384033,1,0
+29001,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Amaxac de Guerrero,9875,1,1
+29002,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Apetatitlán de Antonio Carvajal,13361,1,1
+29005,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Apizaco,76492,1,1
+29009,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Cuaxomulco,5066,1,1
+29010,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Chiautempan,66149,1,1
+29018,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Contla de Juan Cuamatzi,35084,1,1
+29024,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Panotla,25128,1,1
+29026,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Santa Cruz Tlaxcala,17968,1,1
+29031,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Tetla de la Solidaridad,28760,1,1
+29033,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Tlaxcala,89795,1,1
+29035,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Tocatlán,5589,1,1
+29036,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Totolac,20625,1,1
+29038,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Tzompantepec,14611,1,1
+29039,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Xaloztoc,21769,1,1
+29043,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Yauhquemecan,33081,1,1
+29048,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,La Magdalena Tlaltelulco,16834,1,1
+29049,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,San Damián Texoloc,5064,1,1
+29050,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,San Francisco Tetlanohcan,9880,1,1
+29060,ZM10_46,Zona metropolitana de Tlaxcala-Apizaco,Zona metropolitana,Santa Isabel Xiloxoxtla,4436,1,1
+30011,ZM10_47,Zona metropolitana de Veracruz,Zona metropolitana,Alvarado,51955,0,0
+30028,ZM10_47,Zona metropolitana de Veracruz,Zona metropolitana,Boca del Río,138058,1,1
+30090,ZM10_47,Zona metropolitana de Veracruz,Zona metropolitana,Jamapa,10376,0,0
+30105,ZM10_47,Zona metropolitana de Veracruz,Zona metropolitana,Medellín,59126,0,0
+30193,ZM10_47,Zona metropolitana de Veracruz,Zona metropolitana,Veracruz,552156,1,1
+30026,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Banderilla,21546,1,1
+30038,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Coatepec,86696,0,0
+30065,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Emiliano Zapata,61718,0,0
+30087,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Xalapa,457928,1,1
+30093,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Jilotepec,15313,0,0
+30136,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Rafael Lucio,7023,0,0
+30182,ZM10_48,Zona metropolitana de Xalapa,Zona metropolitana,Tlalnelhuayocan,16311,1,1
+30033,ZM10_49,Zona metropolitana de Poza Rica,Zona metropolitana,Cazones de Herrera,23483,0,0
+30040,ZM10_49,Zona metropolitana de Poza Rica,Zona metropolitana,Coatzintla,48351,1,1
+30124,ZM10_49,Zona metropolitana de Poza Rica,Zona metropolitana,Papantla,158599,0,0
+30131,ZM10_49,Zona metropolitana de Poza Rica,Zona metropolitana,Poza Rica de Hidalgo,193311,1,1
+30175,ZM10_49,Zona metropolitana de Poza Rica,Zona metropolitana,Tihuatlán,89774,1,1
+30022,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Atzacan,20063,0,0
+30030,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Camerino Z. Mendoza,41778,1,1
+30074,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Huiloapan de Cuauhtémoc,6750,1,1
+30081,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Ixhuatlancillo,21150,1,1
+30085,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Ixtaczoquitlán,65385,1,1
+30099,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Maltrata,16898,0,0
+30101,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Mariano Escobedo,33941,1,1
+30115,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Nogales,34688,1,1
+30118,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Orizaba,120995,1,1
+30135,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Rafael Delgado,20245,1,1
+30138,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Río Blanco,40634,1,1
+30185,ZM10_50,Zona metropolitana de Orizaba,Zona metropolitana,Tlilapan,4879,0,0
+30048,ZM10_51,Zona metropolitana de Minatitlán,Zona metropolitana,Cosoleacaque,117725,1,1
+30059,ZM10_51,Zona metropolitana de Minatitlán,Zona metropolitana,Chinameca,15214,1,1
+30089,ZM10_51,Zona metropolitana de Minatitlán,Zona metropolitana,Jáltipan,39673,0,0
+30108,ZM10_51,Zona metropolitana de Minatitlán,Zona metropolitana,Minatitlán,157840,1,1
+30120,ZM10_51,Zona metropolitana de Minatitlán,Zona metropolitana,Oteapan,14965,1,1
+30199,ZM10_51,Zona metropolitana de Minatitlán,Zona metropolitana,Zaragoza,10720,0,0
+30039,ZM10_52,Zona metropolitana de Coatzacoalcos,Zona metropolitana,Coatzacoalcos,305260,1,1
+30082,ZM10_52,Zona metropolitana de Coatzacoalcos,Zona metropolitana,Ixhuatlán del Sureste,14903,0,0
+30206,ZM10_52,Zona metropolitana de Coatzacoalcos,Zona metropolitana,Nanchital de Lázaro Cárdenas del Río,27094,1,1
+30014,ZM10_53,Zona metropolitana de Córdoba,Zona metropolitana,Amatlán de los Reyes,42268,1,1
+30044,ZM10_53,Zona metropolitana de Córdoba,Zona metropolitana,Córdoba,196541,1,1
+30068,ZM10_53,Zona metropolitana de Córdoba,Zona metropolitana,Fortín,59761,1,1
+30196,ZM10_53,Zona metropolitana de Córdoba,Zona metropolitana,Yanga,17462,0,0
+30003,ZM10_54,Zona metropolitana de Acayucan,Zona metropolitana,Acayucan,83817,1,1
+30116,ZM10_54,Zona metropolitana de Acayucan,Zona metropolitana,Oluta,14784,0,0
+30145,ZM10_54,Zona metropolitana de Acayucan,Zona metropolitana,Soconusco,14395,1,1
+31013,ZM10_55,Zona metropolitana de Mérida,Zona metropolitana,Conkal,9143,0,0
+31041,ZM10_55,Zona metropolitana de Mérida,Zona metropolitana,Kanasín,78709,1,1
+31050,ZM10_55,Zona metropolitana de Mérida,Zona metropolitana,Mérida,830732,1,1
+31100,ZM10_55,Zona metropolitana de Mérida,Zona metropolitana,Ucú,3469,0,0
+31101,ZM10_55,Zona metropolitana de Mérida,Zona metropolitana,Umán,50993,1,1
+32017,ZM10_56,Zona metropolitana de Zacatecas-Guadalupe,Zona metropolitana,Guadalupe,159991,1,1
+32032,ZM10_56,Zona metropolitana de Zacatecas-Guadalupe,Zona metropolitana,Morelos,11493,0,0
+32056,ZM10_56,Zona metropolitana de Zacatecas-Guadalupe,Zona metropolitana,Zacatecas,138176,1,1
+11007,ZM10_57,Zona metropolitana de Celaya,Zona metropolitana,Celaya,468469,1,0
+11009,ZM10_57,Zona metropolitana de Celaya,Zona metropolitana,Comonfort,77794,0,0
+11044,ZM10_57,Zona metropolitana de Celaya,Zona metropolitana,Villagrán,55782,0,0
+15006,ZM10_58,Zona metropolitana de Tianguistenco,Zona metropolitana,Almoloya del Río,10886,1,1
+15012,ZM10_58,Zona metropolitana de Tianguistenco,Zona metropolitana,Atizapán,10299,1,1
+15019,ZM10_58,Zona metropolitana de Tianguistenco,Zona metropolitana,Capulhuac,34101,1,1
+15043,ZM10_58,Zona metropolitana de Tianguistenco,Zona metropolitana,Xalatlaco,26865,1,1
+15098,ZM10_58,Zona metropolitana de Tianguistenco,Zona metropolitana,Texcalyacac,5111,0,0
+15101,ZM10_58,Zona metropolitana de Tianguistenco,Zona metropolitana,Tianguistenco,70682,1,1
+21054,ZM10_59,Zona metropolitana de Teziutlán,Zona metropolitana,Chignautla,30254,1,1
+21174,ZM10_59,Zona metropolitana de Teziutlán,Zona metropolitana,Teziutlán,92246,1,1

@@ -1,0 +1,47 @@
+repetición 1/20 lista (203 s)
+repetición 2/20 lista (399 s)
+repetición 3/20 lista (597 s)
+repetición 4/20 lista (796 s)
+repetición 5/20 lista (993 s)
+repetición 6/20 lista (1189 s)
+repetición 7/20 lista (1384 s)
+repetición 8/20 lista (1582 s)
+repetición 9/20 lista (1778 s)
+repetición 10/20 lista (1979 s)
+repetición 11/20 lista (2178 s)
+repetición 12/20 lista (2383 s)
+repetición 13/20 lista (2577 s)
+repetición 14/20 lista (2780 s)
+repetición 15/20 lista (2984 s)
+repetición 16/20 lista (3181 s)
+repetición 17/20 lista (3374 s)
+repetición 18/20 lista (3568 s)
+repetición 19/20 lista (3763 s)
+repetición 20/20 lista (3957 s)
+    espec nuisance aprendiz        ecm       r2   r2_min   r2_max
+principal        e   lineal   0.233438 0.766562 0.741443 0.797223
+principal        e       rf   0.118858 0.881142 0.870811 0.886801
+principal        e      xgb   0.083158 0.916842 0.906968 0.922299
+principal        m   lineal 503.039837 0.396895 0.384992 0.409040
+principal        m       rf 461.611608 0.446564 0.438819 0.455919
+principal        m      xgb 455.727477 0.453619 0.446184 0.462241
+    total        e   lineal   0.825036 0.174964 0.146448 0.201903
+    total        e       rf   0.786556 0.213444 0.183576 0.238421
+    total        e      xgb   0.772630 0.227370 0.205204 0.253652
+    total        m   lineal 503.442529 0.396412 0.383645 0.409266
+    total        m       rf 461.358067 0.446868 0.441986 0.452422
+    total        m      xgb 455.831935 0.453493 0.446154 0.464305
+    espec nuisance aprendiz
+principal        e      xgb
+principal        m      xgb
+    total        e      xgb
+    total        m      xgb
+    espec         combo aprendiz_m aprendiz_e  var_d_residual  se_beta0_2v  efecto_minimo_detectable
+principal       elegido        xgb        xgb        0.082151     2.056525                  5.761530
+principal lineal/lineal     lineal     lineal        0.241287     1.000258                  2.802307
+principal         rf/rf         rf         rf        0.116366     1.776421                  4.976794
+principal       xgb/xgb        xgb        xgb        0.082151     2.056525                  5.761530
+    total       elegido        xgb        xgb        0.773544     0.815068                  2.283483
+    total lineal/lineal     lineal     lineal        0.827320     0.826124                  2.314456
+    total         rf/rf         rf         rf        0.786775     0.835271                  2.340083
+    total       xgb/xgb        xgb        xgb        0.773544     0.815068                  2.283483

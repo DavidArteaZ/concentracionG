@@ -13,6 +13,9 @@
 | Carpeta | Contenido |
 |---|---|
 | `codigo/R/` | Scripts del proyecto, numerados en orden de ejecución |
+| `codigo/ice_v1/` | Pipeline del ICE municipal (V1); datos en `data/raw/ice_v1/`, `data/clean/ice_v1/` y `outputs/ice_v1/` |
+| `codigo/ice_v2/` | ICE por zona metropolitana (V2, D25); datos en `data/raw/ice_v2/`, `data/clean/ice_v2/` y `outputs/ice_v2/` |
+| `codigo/modelo/` | DML en Python (`03_dml.py`, `04_supresion_influencia.py`, `05_robustez.py`) |
 | `codigo/` | `Informe de movilidad social en México 2025.do` (programa del CEEY que se replica) |
 | `data/raw/` | Datos originales, nunca se modifican |
 | `data/clean/` | Bases generadas por los scripts y carpetas de diagnóstico de cada script |
@@ -268,9 +271,10 @@ Fuente de las cifras publicadas: presentación del Informe de Movilidad Social e
 ### Insumos
 
 - `data/clean/01_generar_ires_quintiles_esru.rds` (script 01).
-- `data/clean/ice/ice_para_dml.csv` y `data/clean/ice/municipios_padre_hijo.csv` (`codigo/ice`, módulos 07 y 05).
+- `data/clean/ice_v1/ice_para_dml.csv` y `data/clean/ice_v1/municipios_padre_hijo.csv` (`codigo/ice_v1`, módulos 07 y 05).
+- `data/clean/ice_v2/ice_zm_para_dml.csv` y `data/clean/ice_v2/pob_unidad_conapo.csv` (`codigo/ice_v2`, módulo 02; D25).
 - `data/raw/pobproy_conapo.csv` (CONAPO, población municipal por sexo y año, 1990–2040).
-- `data/raw/ice/poblacion_municipal.csv` (censos INEGI 2000, 2005, 2010; robustez).
+- `data/raw/ice_v1/poblacion_municipal.csv` (censos INEGI 2000, 2005, 2010; robustez).
 - `data/raw/ESRU_mun.dta` (municipio actual, CEEY, D22).
 
 ### Pasos
@@ -279,6 +283,7 @@ Fuente de las cifras publicadas: presentación del Informe de Movilidad Social e
 2. D21: los municipios sin ICE en algún año censal (02006, 07123, 07124; 8 personas) reciben la clave del padre (`cve_ice`) para ICE, población, pliegues y agrupación.
 3. D15: `anio14 = 2023 − edad + 14`; `ice14` interpolado entre 2003/2008/2013; `ice14_cercano`, `ice14_2003` y las 33 especificaciones alternativas (`ice14_<esp>`) interpoladas.
 4. D20 (modificada el 13/10/2026): `log_pob14` = log de la población CONAPO del año exacto a los 14. Robustez: `log_pob14_censo` (censos interpolados en log; 2011–2012 con 2010), `log_ue14`, `tam_soloaga14`.
+4b. D25 (17/10/2026): para cada delimitación (`zm2010`, `zm2020`), `unidad_<d>` (ZM o municipio no metropolitano de `cve_ice`; se verifica que no cambie entre t0 y t1), `icezm14_<año>` (ICE V2 interpolado como en D15), `log_pob14_<d>` (log de la población CONAPO de la unidad en el año a los 14) y `en_nucleo14_<d>`. En el diccionario tienen roles propios (`tratamiento_v2`, `escala_v2`, `grupo_v2`), así que 03–05 de V1 no las usan. Las columnas de V1 de la base no cambian (verificado celda por celda contra la base del 13/10/2026).
 5. "No sabe" → `NA` con una tabla explícita de códigos por variable (`codigos_no_sabe.csv`). No hay regla general de 8: en p28 el 8 y el 9 son categorías, en p42 el 8 es un nivel educativo. `p46 = 99` (no documentado) → `NA`. Sí/No → 1/0. Los `NA` por pase de pregunta (p. ej. p42 si el padre no asistió) se dejan como `NA`.
 6. Roles y tipos en `diccionario_variables_02.csv`. X principal sin agua (`ac_or6_na`) ni electricidad (`ac_or10_na`) ni p26c (D6); siguen dentro de `irec_or_na`. Auditoría T4 con `stop()`.
 7. Y de robustez (D9), Z (4.2), mediadores (4.3) y migración (D14).
@@ -294,8 +299,55 @@ Fuente de las cifras publicadas: presentación del Informe de Movilidad Social e
 - R² ponderado de `ice14` sobre `log_pob14`: 0.833. Lineal sobre toda la X principal: 0.88; sin escala: 0.48.
 - Correlación `log_pob14` (CONAPO) vs `log_pob14_censo`: 0.9997.
 - La corrida en Windows (R 4.3.2) y una corrida en Linux (R 4.3.3, mismas versiones de dplyr y haven) dan la base idéntica celda por celda.
+- D25 (17/10/2026): 534 unidades de origen con `zm2010` y 533 con `zm2020`; R² ponderado de `icezm14_2010` sobre `log_pob14_zm2010`: 0.803 (`zm2020`: 0.803); correlación ponderada `ice14`–`icezm14_2010`: 0.897.
 
 ### Pendientes y advertencias
 
 - **Edad:** 1,147 personas con 25 años contra ~450 por edad en el resto (18.5% ponderado); exceso también en 30. Los pesos reproducen los grupos quinquenales (25–29: 48.7% vs. 51% CONAPO 2023), no la edad simple. Robustez: `ice14_2003` y excluir edad = 25.
 - Correr el script en una sesión de R nueva (la `sessionInfo` de la primera corrida muestra missMDA y FactoMineR cargados de la sesión del script 01).
+
+---
+
+## ICE V2 por zona metropolitana. `codigo/ice_v2/` (D25)
+
+**Qué hace:** recalcula el ICE con cada zona metropolitana como una sola unidad de la red, con el mismo algoritmo y los mismos parámetros que V1. Las funciones de V1 se cargan por ruta (`_v1.py`), no se copian.
+
+### Orden de ejecución (desde la raíz)
+
+1. `python -m codigo.ice_v1.run_all`, o como mínimo el módulo 01 de V1, que genera `data/clean/ice_v1/saic_largo.csv.gz`.
+2. `python codigo/ice_v2/01_delimitaciones.py`. Requiere `pdftotext` (poppler; en Windows: `conda install -c conda-forge poppler`).
+3. `python codigo/ice_v2/02_ice_zm.py`.
+4. `python codigo/ice_v2/03_diagnosticos_persona.py` (vista previa; requiere la base del script 02).
+5. `Rscript codigo/R/02_preparar_base_dml.R`.
+6. `python codigo/modelo/03_dml.py --fase 1 --ice v2_zm2010`, luego `--fase 2 --ice v2_zm2010`. Lo mismo con `v2_zm2020`.
+
+### Insumos
+
+- `data/raw/ice_v2/delimitacion_ZM_2010.pdf`: Cuadro A1 de *Delimitación de las zonas metropolitanas de México 2010*.
+- `data/raw/ice_v2/delimitacion_ZM_2020.xlsx`: *Metrópolis de México 2020*.
+- La URL y la fecha de consulta de ambos archivos están pendientes.
+- De V1: `saic_largo.csv.gz`, `municipios_padre_hijo.csv`, `ice_municipal.csv` (para la prueba de identidad) y `poblacion_municipal.csv`. Además, `data/raw/pobproy_conapo.csv`.
+
+### Verificaciones que detienen el código
+
+- La lectura de 2010 debe dar 59 ZM, 367 municipios y 63,836,779 habitantes, y cada ZM debe sumar la población que reporta el cuadro.
+- La de 2020 debe dar 92 unidades y 421 municipios, con los conteos por tipo.
+- Todo hijo fuera de la delimitación con padre dentro debe estar declarado en `HIJO_EXISTIA`.
+- El núcleo de cada año y especificación debe ser conexo.
+- **Prueba de identidad:** con unidades de un municipio se reproduce `ice_municipal.csv` (máx. |Δ| < 1e-8; observado: 1.8e-14).
+
+### Salidas
+
+- `data/clean/ice_v2/`: `delimitacion_zm2010.csv`, `delimitacion_zm2020.csv`, `unidades_zm.csv`, `ice_zm_unidad.csv`, `pci_rama_zm.csv`, `ice_zm_para_dml.csv` y `pob_unidad_conapo.csv`.
+- `outputs/ice_v2/`: `diagnosticos_zm.csv`, `diagnosticos_persona_zm.csv`, `unidades_muestra_zm.csv` y `logs/`.
+
+### DML con V2 (`03_dml.py --ice`)
+
+- `v2_zm2010` y `v2_zm2020` cambian solo tres cosas:
+  - el tratamiento (`icezm14_<año>`, estandarizado con pesos);
+  - la escala en X de la especificación principal (`log_pob14_<d>` en lugar de `log_pob14`; la total no lleva ninguna);
+  - el grupo de pliegues y de agrupación (`unidad_<d>` × UPM).
+- Escriben en `data/clean/03_resultados_ice_v2_<d>/`, nunca en `03_resultados/`. `entorno_fase1.json` registra la versión, el tratamiento, los grupos y las variables agregadas o quitadas.
+- `--ice v1` (la opción por omisión) reproduce V1: la repetición 0 de la fase 1 coincide con la corrida del 15/10/2026 (máx. |Δ| en predicciones de 5e-14).
+- 04 y 05 siguen leyendo solo `03_resultados/` (V1).
+
