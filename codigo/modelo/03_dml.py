@@ -38,13 +38,23 @@ Decisiones implementadas:
        SE = sqrt(mediana(SE_r^2 + (beta_r - beta_mediana)^2))
        (Chernozhukov et al., 2018, sección 3.4).
 
+Versión del ICE (--ice; D25):
+  v1          ICE municipal (principal del paper). Salida: data/clean/03_resultados/
+  v2_zm2010   ICE V2 por zona metropolitana, delimitación 2010 (principal de la
+              robustez). D = icezm14_2010; escala en X = log_pob14_zm2010 en lugar
+              de log_pob14; pliegues y agrupación por unidad_zm2010 (x UPM).
+              Salida: data/clean/03_resultados_ice_v2_zm2010/
+  v2_zm2020   Igual con la delimitación 2020. Salida: data/clean/03_resultados_ice_v2_zm2020/
+  Todo lo demás (X, aprendices, rejillas, semillas, repeticiones) es igual en
+  las tres versiones. entorno_fase1.json registra la versión usada.
+
 Uso (desde la raíz del proyecto):
-  python codigo/modelo/03_dml.py --fase 1
-  python codigo/modelo/03_dml.py --fase 2
-  Opcional: --n-rep 2 para una prueba corta (escribe en 03_resultados_prueba/).
+  python codigo/modelo/03_dml.py --fase 1 [--ice v1|v2_zm2010|v2_zm2020]
+  python codigo/modelo/03_dml.py --fase 2 [--ice ...]
+  Opcional: --n-rep 2 para una prueba corta (escribe en <carpeta>_prueba/).
 
 Insumos:  data/clean/02_base_dml.csv, data/clean/02_resultados/diccionario_variables_02.csv
-Salidas:  data/clean/03_resultados/
+Salidas:  data/clean/03_resultados/ (v1) o data/clean/03_resultados_ice_<versión>/
 """
 import argparse
 import json
@@ -88,6 +98,35 @@ ESPECIFICACIONES = {
     "principal": [],             # variables que se QUITAN de la X principal
     "total": ["log_pob14"],
 }
+AGREGAR = {"principal": [], "total": []}   # variables que se AGREGAN a la X principal
+
+# Versiones del ICE (D25). v1 deja los valores de arriba sin cambios.
+VERSIONES_ICE = {
+    "v1": dict(d="ice14", grupo="cve_ice", escala="log_pob14",
+               carpeta="03_resultados"),
+    "v2_zm2010": dict(d="icezm14_2010", grupo="unidad_zm2010", escala="log_pob14_zm2010",
+                      carpeta="03_resultados_ice_v2_zm2010"),
+    "v2_zm2020": dict(d="icezm14_2020", grupo="unidad_zm2020", escala="log_pob14_zm2020",
+                      carpeta="03_resultados_ice_v2_zm2020"),
+}
+ICE = "v1"
+
+
+def configurar_ice(version):
+    """Fija tratamiento, escala, pliegues y agrupación de la versión del ICE.
+    En V2 la escala del municipio (log_pob14) sale de X y entra la de la unidad;
+    la especificación total no lleva ninguna de las dos."""
+    global ICE, D_VAR, GRUPO_PLIEGUES, CLUSTERS, ESPECIFICACIONES, AGREGAR
+    v = VERSIONES_ICE[version]
+    ICE, D_VAR, GRUPO_PLIEGUES = version, v["d"], v["grupo"]
+    CLUSTERS = (v["grupo"], "upm_muestra")
+    if version == "v1":
+        ESPECIFICACIONES = {"principal": [], "total": ["log_pob14"]}
+        AGREGAR = {"principal": [], "total": []}
+    else:
+        ESPECIFICACIONES = {"principal": ["log_pob14"], "total": ["log_pob14"]}
+        AGREGAR = {"principal": [v["escala"]], "total": []}
+    return v["carpeta"]
 
 # Rejillas pequeñas y fijas (T8). XGBoost elige el número de árboles con
 # parada temprana en los pliegues internos.
@@ -116,14 +155,16 @@ def cargar():
     return base, dicc
 
 
-def matriz_x(base, dicc, quitar):
+def matriz_x(base, dicc, quitar, agregar=()):
     """X con las nominales en dummies (más una dummy de faltante). Los NA de
     las numéricas se dejan como NaN: XGBoost y random forest los manejan de
-    forma nativa; la regresión lineal imputa la mediana con indicador."""
+    forma nativa; la regresión lineal imputa la mediana con indicador.
+    agregar: variables continuas que no son de la X principal (escala V2, D25)."""
     xp = dicc[dicc.rol == "X_principal"]
     xp = xp[~xp.variable.isin(quitar)]
     nominales = xp.loc[xp.tipo == "nominal", "variable"].tolist()
-    x = base[xp.variable.tolist()].copy()
+    assert not set(agregar) & set(xp.variable)
+    x = base[xp.variable.tolist() + list(agregar)].copy()
     for v in nominales:
         x[v] = x[v].astype("Int64").astype(str).replace("<NA>", np.nan)
     x = pd.get_dummies(x, columns=nominales, dummy_na=True, dtype=float)
@@ -273,7 +314,7 @@ def fase1(n_rep, salida):
             fold[te] = k
         pliegues.append(pd.DataFrame({"index": base["index"], "rep": r, "fold": fold}))
         for espec, quitar in ESPECIFICACIONES.items():
-            x = matriz_x(base, dicc, quitar)
+            x = matriz_x(base, dicc, quitar, AGREGAR[espec])
             for nuis, obj in objetivos.items():
                 for apr in APRENDICES:
                     oof = np.full(len(y), np.nan)
@@ -338,9 +379,13 @@ def fase1(n_rep, salida):
     resumen.to_csv(salida / "diagnostico_nuisances.csv", index=False)
     elegidos.to_csv(salida / "aprendices_elegidos.csv", index=False)
     pot.to_csv(salida / "potencia.csv", index=False)
-    json.dump(dict(n=len(y), n_rep=n_rep, n_folds=N_FOLDS, semilla=SEMILLA,
+    json.dump(dict(ice=ICE, tratamiento=D_VAR, grupo_pliegues=GRUPO_PLIEGUES,
+                   clusters=list(CLUSTERS), x_agregadas=AGREGAR,
+                   x_quitadas=ESPECIFICACIONES, n_grupos=int(base[GRUPO_PLIEGUES].nunique()),
+                   n=len(y), n_rep=n_rep, n_folds=N_FOLDS, semilla=SEMILLA,
                    media_ice14=mu_d, de_ice14=sd_d,
-                   n_x={e: matriz_x(base, dicc, q).shape[1] for e, q in ESPECIFICACIONES.items()},
+                   n_x={e: matriz_x(base, dicc, q, AGREGAR[e]).shape[1]
+                        for e, q in ESPECIFICACIONES.items()},
                    python=sys.version, plataforma=platform.platform(),
                    numpy=np.__version__, pandas=pd.__version__,
                    sklearn=sklearn.__version__, xgboost=xgboost.__version__),
@@ -450,8 +495,11 @@ if __name__ == "__main__":
     ap = argparse.ArgumentParser()
     ap.add_argument("--fase", type=int, choices=[1, 2], required=True)
     ap.add_argument("--n-rep", type=int, default=N_REP)
+    ap.add_argument("--ice", choices=list(VERSIONES_ICE), default="v1")
     args = ap.parse_args()
-    carpeta = "03_resultados" if args.n_rep == N_REP else "03_resultados_prueba"
+    carpeta = configurar_ice(args.ice)
+    if args.n_rep != N_REP:
+        carpeta += "_prueba"
     salida = RAIZ / "data" / "clean" / carpeta
     if args.fase == 1:
         fase1(args.n_rep, salida)

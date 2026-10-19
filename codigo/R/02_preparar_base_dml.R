@@ -15,6 +15,13 @@
 #   4. Escala del municipio de origen (D20): log de población en el año a los
 #      14 según CONAPO (principal, 13/10/2026); censos del INEGI interpolados,
 #      log de UE totales y categorías de Soloaga et al. (robustez).
+#   4b. ICE V2 por zona metropolitana (D25), como robustez: ICE de la unidad
+#      (ZM o municipio no metropolitano) interpolado al año a los 14, log de
+#      población CONAPO de la unidad y clave de la unidad para pliegues y
+#      agrupación, con las delimitaciones 2010 (principal de la robustez) y
+#      2020. Las variables V2 llevan su propio rol en el diccionario
+#      (tratamiento_v2, escala_v2, grupo_v2) para que ningún script de V1 las
+#      tome por accidente.
 #   5. Recodifica los predictores de origen: "no sabe" -> NA con una tabla
 #      explícita de códigos por variable (D11), sí/no -> 1/0, p22 = 999 -> NA
 #      (T5), hacinamiento continuo (D12).
@@ -27,7 +34,8 @@
 # Qué NO hace:
 #   - No recalcula el IRE ni los percentiles (vienen del script 01).
 #   - No calcula ni modifica el ICE (protocolo de V1): solo lo lee de
-#     data/clean/ice/ice_para_dml.csv.
+#     data/clean/ice_v1/ice_para_dml.csv y, el V2, de
+#     data/clean/ice_v2/ice_zm_para_dml.csv (codigo/ice_v2, D25).
 #   - No codifica variables nominales en dummies ni estandariza el ICE. Eso
 #     se hace en el DML (Python), con los tipos de diccionario_variables_02.csv.
 #   - No construye la formalidad municipal (D18): sus fuentes aún no están en
@@ -35,10 +43,12 @@
 #
 # Insumos:
 #   data/clean/01_generar_ires_quintiles_esru.rds        (script 01)
-#   data/clean/ice/ice_para_dml.csv                      (codigo/ice, módulo 07)
-#   data/clean/ice/municipios_padre_hijo.csv             (codigo/ice, módulo 05)
+#   data/clean/ice_v1/ice_para_dml.csv                   (codigo/ice_v1, módulo 07)
+#   data/clean/ice_v1/municipios_padre_hijo.csv          (codigo/ice_v1, módulo 05)
+#   data/clean/ice_v2/ice_zm_para_dml.csv                (codigo/ice_v2, módulo 02; D25)
+#   data/clean/ice_v2/pob_unidad_conapo.csv              (codigo/ice_v2, módulo 02; D25)
 #   data/raw/pobproy_conapo.csv                          (CONAPO, 1990-2040)
-#   data/raw/ice/poblacion_municipal.csv                 (censos INEGI)
+#   data/raw/ice_v1/poblacion_municipal.csv              (censos INEGI)
 #   data/raw/ESRU_mun.dta                                (CEEY, D22)
 #
 # Salidas:
@@ -81,13 +91,13 @@ dir.create(dir_res, recursive = TRUE, showWarnings = FALSE)
 # ==========================================
 esru <- readRDS(here("data", "clean", "01_generar_ires_quintiles_esru.rds"))
 
-ice <- read.csv(here("data", "clean", "ice", "ice_para_dml.csv"),
+ice <- read.csv(here("data", "clean", "ice_v1", "ice_para_dml.csv"),
                 colClasses = c(cve_mun = "character"))
-padre_hijo <- read.csv(here("data", "clean", "ice", "municipios_padre_hijo.csv"),
+padre_hijo <- read.csv(here("data", "clean", "ice_v1", "municipios_padre_hijo.csv"),
                        colClasses = c(cve_mun_hijo = "character",
                                       cve_mun_padre = "character",
                                       otros_padres = "character"))
-pob <- read.csv(here("data", "raw", "ice", "poblacion_municipal.csv"),
+pob <- read.csv(here("data", "raw", "ice_v1", "poblacion_municipal.csv"),
                 colClasses = c(CVEGEO = "character"), check.names = FALSE)
 # CONAPO: una fila por municipio, sexo y año; CLAVE sin el 0 inicial en las
 # entidades 1-9. Se suman hombres y mujeres.
@@ -105,6 +115,15 @@ conapo <- conapo %>%
   summarise(pob = sum(POB_TOTAL), n_filas = n(), .groups = "drop")
 stopifnot(all(conapo$n_filas == 2))
 mun_actual <- read_dta(here("data", "raw", "ESRU_mun.dta")) %>% zap_labels()
+# ICE V2 por zona metropolitana (D25): claves en la geografía de cada
+# levantamiento (como ice_para_dml.csv) y población de la unidad por municipio
+# de la geografía 2023 y año.
+ice_zm <- read.csv(here("data", "clean", "ice_v2", "ice_zm_para_dml.csv"),
+                   colClasses = c(cve_mun = "character"))
+pob_zm <- read.csv(here("data", "clean", "ice_v2", "pob_unidad_conapo.csv"),
+                   colClasses = c(cve_mun = "character"))
+stopifnot(!anyDuplicated(ice_zm[c("cve_mun", "anio")]),
+          !anyDuplicated(pob_zm[c("cve_mun", "anio")]))
 
 stopifnot(!anyDuplicated(ice[c("cve_mun", "anio")]))
 stopifnot(!anyDuplicated(pob$CVEGEO))
@@ -250,6 +269,37 @@ stopifnot(all(!is.na(d2$log_pob14)), all(!is.na(d2$log_pob14_censo)),
           all(!is.na(d2$log_ue14)))
 
 # ==========================================
+# 6b. ICE V2 por zona metropolitana (D25, robustez)
+# ==========================================
+# Misma regla que V1: unidad de cve_ice (padre en D21), ICE interpolado entre
+# los años censales adyacentes (D15) y población CONAPO de la unidad en el año
+# exacto a los 14 (D20). El mapa es estático: la unidad no cambia entre t0 y t1.
+DELIM_ZM <- c("zm2010", "zm2020")
+valor_zm <- function(tabla, cve, anio, columna) {
+  tabla[[columna]][match(paste(cve, anio), paste(tabla$cve_mun, tabla$anio))]
+}
+for (dz in DELIM_ZM) {
+  sufijo <- sub("^zm", "", dz)                               # "2010", "2020"
+  u0 <- valor_zm(ice_zm, d2$cve_ice, d2$t0_ice, paste0("unidad_", dz))
+  u1 <- valor_zm(ice_zm, d2$cve_ice, d2$t1_ice, paste0("unidad_", dz))
+  stopifnot(all(!is.na(u0)), all(u0 == u1))
+  d2[[paste0("unidad_", dz)]] <- u0
+  d2[[paste0("icezm14_", sufijo)]] <- interpolar(
+    d2$anio14, d2$t0_ice, d2$t1_ice,
+    valor_zm(ice_zm, d2$cve_ice, d2$t0_ice, paste0("ice_", dz)),
+    valor_zm(ice_zm, d2$cve_ice, d2$t1_ice, paste0("ice_", dz)))
+  d2[[paste0("log_pob14_", dz)]] <- valor_zm(pob_zm, d2$cve_ice, d2$anio14,
+                                             paste0("log_pob_", dz))
+  # La unidad de la población (geografía 2023) debe ser la misma que la del ICE.
+  stopifnot(all(valor_zm(pob_zm, d2$cve_ice, d2$anio14, paste0("unidad_", dz)) == u0))
+  d2[[paste0("en_nucleo14_", dz)]] <-
+    valor_zm(ice_zm, d2$cve_ice, d2$t0_ice, paste0("en_nucleo_", dz)) %in% c(TRUE, "True") &
+    valor_zm(ice_zm, d2$cve_ice, d2$t1_ice, paste0("en_nucleo_", dz)) %in% c(TRUE, "True")
+  stopifnot(all(!is.na(d2[[paste0("icezm14_", sufijo)]])),
+            all(!is.na(d2[[paste0("log_pob14_", dz)]])))
+}
+
+# ==========================================
 # 7. Recodificación de predictores de origen (D10-D13, D17, T5)
 # ==========================================
 # Códigos de "no sabe" / "no especificado" por variable, tomados del
@@ -384,6 +434,11 @@ ids      <- c("index", "cve_or", "cve_actual", "hijo_d21", "anio14",
               "q_or_c1_na", "q_or_c1_ceey", "irec_or_imp", "pct_or_c1_imp",
               "algun_ns_or")
 pesos    <- "factor"
+# D25: variables del ICE V2 por ZM, con roles propios (no entran en V1).
+trat_v2   <- paste0("icezm14_", sub("^zm", "", DELIM_ZM))
+escala_v2 <- paste0("log_pob14_", DELIM_ZM)
+grupos_v2 <- paste0("unidad_", DELIM_ZM)
+aux_v2    <- paste0("en_nucleo14_", DELIM_ZM)
 
 # Tipo de cada variable para el DML (las nominales se convierten en dummies
 # en Python; las ordinales y continuas entran como números).
@@ -413,7 +468,11 @@ roles <- bind_rows(
   data.frame(variable = mediad, rol = "mediador"),
   data.frame(variable = grupos, rol = "grupo"),
   data.frame(variable = pesos, rol = "peso"),
-  data.frame(variable = ids, rol = "auxiliar")
+  data.frame(variable = ids, rol = "auxiliar"),
+  data.frame(variable = trat_v2, rol = "tratamiento_v2"),
+  data.frame(variable = escala_v2, rol = "escala_v2"),
+  data.frame(variable = grupos_v2, rol = "grupo_v2"),
+  data.frame(variable = aux_v2, rol = "auxiliar")
 )
 roles$tipo <- sapply(roles$variable, tipo_de)
 # Z repite variables de X a propósito (sección 4.2).
@@ -454,13 +513,21 @@ resumen <- data.frame(
                 "anio14 = 2011-2012 (población de 2010 en la robustez censal)",
                 "migró de municipio (ponderado, %)",
                 "R2 de ice14 sobre log_pob14 (MCO ponderado)",
-                "correlación log_pob14 (CONAPO) vs log_pob14_censo"),
+                "correlación log_pob14 (CONAPO) vs log_pob14_censo",
+                "D25: unidades de origen (zm2010)", "D25: unidades de origen (zm2020)",
+                "D25: R2 de icezm14_2010 sobre log_pob14_zm2010 (MCO ponderado)",
+                "D25: R2 de icezm14_2020 sobre log_pob14_zm2020 (MCO ponderado)",
+                "D25: correlación ice14 vs icezm14_2010 (ponderada)"),
   valor = c(nrow(base), n_distinct(base$cve_ice), n_distinct(base$upm_muestra),
             sum(base$hijo_d21), sum(!base$en_nucleo14),
             sum(base$anio14 > max(ANIOS_POB)),
             100 * weighted.mean(base$migro, base$factor),
             summary(lm(ice14 ~ log_pob14, data = base, weights = factor))$r.squared,
-            cor(base$log_pob14, base$log_pob14_censo))
+            cor(base$log_pob14, base$log_pob14_censo),
+            n_distinct(base$unidad_zm2010), n_distinct(base$unidad_zm2020),
+            summary(lm(icezm14_2010 ~ log_pob14_zm2010, data = base, weights = factor))$r.squared,
+            summary(lm(icezm14_2020 ~ log_pob14_zm2020, data = base, weights = factor))$r.squared,
+            cov.wt(cbind(base$ice14, base$icezm14_2010), wt = base$factor, cor = TRUE)$cor[1, 2])
 )
 print(resumen)
 

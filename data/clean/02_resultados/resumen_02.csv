@@ -8,3 +8,8 @@
 "migró de municipio (ponderado, %)",29.6993920678901
 "R2 de ice14 sobre log_pob14 (MCO ponderado)",0.832987198611652
 "correlación log_pob14 (CONAPO) vs log_pob14_censo",0.99965933851604
+"D25: unidades de origen (zm2010)",534
+"D25: unidades de origen (zm2020)",533
+"D25: R2 de icezm14_2010 sobre log_pob14_zm2010 (MCO ponderado)",0.802783044253082
+"D25: R2 de icezm14_2020 sobre log_pob14_zm2020 (MCO ponderado)",0.802584037781841
+"D25: correlación ice14 vs icezm14_2010 (ponderada)",0.897447711353499

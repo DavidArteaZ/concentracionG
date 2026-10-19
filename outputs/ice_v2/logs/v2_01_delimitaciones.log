@@ -1,0 +1,16 @@
+# v2_01_delimitaciones | 2026-10-17T20:22:36
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+2010: 59 ZM, 367 municipios, población 63,836,779
+2010: municipios cuya población del cuadro difiere de poblacion_municipal.csv: 3
+      15059 Nextlalpan: cuadro 34,374 vs. archivo 31,691
+      15108 Tultepec: cuadro 91,808 vs. archivo 131,567
+      15109 Tultitlán: cuadro 524,074 vs. archivo 486,998
+      suma de diferencias: 0; ZM: [13]
+2020: 92 unidades, 421 municipios; por tipo:
+                      u    m
+TIPOMET                     
+Metrópoli municipal  22   22
+Zona conurbada       22   54
+Zona metropolitana   48  345
+Municipios en 2010 y no en 2020: 32; en 2020 y no en 2010: 86
+ZM 2010 repartidas en más de una unidad 2020: 6; unidades 2020 que juntan más de una ZM 2010: 4

@@ -1,0 +1,27 @@
+# v2_02_ice_zm | 2026-10-17T20:22:37
+# Python 3.13.16 | numpy 2.5.3 | pandas 3.0.5
+Parámetros de V1: U_MIN=30, D_MIN=5, P_MIN=10, RCA >= 1.0
+[identidad 2003] unidades 2447 (0 multimunicipales, 0 en el núcleo); núcleo 2085 unidades x 261 ramas; brecha λ2-λ3 0.2223; Spearman ICE~log pob 0.779
+[identidad 2008] unidades 2455 (0 multimunicipales, 0 en el núcleo); núcleo 2205 unidades x 269 ramas; brecha λ2-λ3 0.2102; Spearman ICE~log pob 0.798
+[identidad 2013] unidades 2456 (0 multimunicipales, 0 en el núcleo); núcleo 2266 unidades x 267 ramas; brecha λ2-λ3 0.2096; Spearman ICE~log pob 0.808
+[identidad 2018] unidades 2465 (0 multimunicipales, 0 en el núcleo); núcleo 2320 unidades x 269 ramas; brecha λ2-λ3 0.2085; Spearman ICE~log pob 0.820
+[identidad 2023] unidades 2469 (0 multimunicipales, 0 en el núcleo); núcleo 2337 unidades x 271 ramas; brecha λ2-λ3 0.2054; Spearman ICE~log pob 0.818
+[zm2010 2003] unidades 2139 (55 multimunicipales, 55 en el núcleo); núcleo 1778 unidades x 258 ramas; brecha λ2-λ3 0.2236; Spearman ICE~log pob 0.764; Spearman V1-V2 (no metropolitanos) 0.9950
+[zm2010 2008] unidades 2147 (55 multimunicipales, 55 en el núcleo); núcleo 1897 unidades x 264 ramas; brecha λ2-λ3 0.2054; Spearman ICE~log pob 0.782; Spearman V1-V2 (no metropolitanos) 0.9949
+[zm2010 2013] unidades 2148 (55 multimunicipales, 55 en el núcleo); núcleo 1958 unidades x 263 ramas; brecha λ2-λ3 0.2087; Spearman ICE~log pob 0.793; Spearman V1-V2 (no metropolitanos) 0.9957
+[zm2010 2018] unidades 2156 (55 multimunicipales, 55 en el núcleo); núcleo 2011 unidades x 267 ramas; brecha λ2-λ3 0.2011; Spearman ICE~log pob 0.804; Spearman V1-V2 (no metropolitanos) 0.9968
+[zm2010 2023] unidades 2159 (56 multimunicipales, 56 en el núcleo); núcleo 2027 unidades x 268 ramas; brecha λ2-λ3 0.1993; Spearman ICE~log pob 0.800; Spearman V1-V2 (no metropolitanos) 0.9973
+[zm2020 2003] 17034 no existe en SAIC 2003; su territorio va con su padre 17015 (M_17015), no con ZM20_17.1.02
+[zm2020 2003] 17035 no existe en SAIC 2003; su territorio va con su padre 17017 (M_17017), no con ZM20_17.1.02
+[zm2020 2003] unidades 2120 (70 multimunicipales, 70 en el núcleo); núcleo 1762 unidades x 258 ramas; brecha λ2-λ3 0.2220; Spearman ICE~log pob 0.770; Spearman V1-V2 (no metropolitanos) 0.9948
+[zm2020 2008] 17034 no existe en SAIC 2008; su territorio va con su padre 17015 (M_17015), no con ZM20_17.1.02
+[zm2020 2008] 17035 no existe en SAIC 2008; su territorio va con su padre 17017 (M_17017), no con ZM20_17.1.02
+[zm2020 2008] unidades 2128 (70 multimunicipales, 70 en el núcleo); núcleo 1880 unidades x 264 ramas; brecha λ2-λ3 0.2040; Spearman ICE~log pob 0.785; Spearman V1-V2 (no metropolitanos) 0.9947
+[zm2020 2013] 17034 no existe en SAIC 2013; su territorio va con su padre 17015 (M_17015), no con ZM20_17.1.02
+[zm2020 2013] 17035 no existe en SAIC 2013; su territorio va con su padre 17017 (M_17017), no con ZM20_17.1.02
+[zm2020 2013] unidades 2129 (70 multimunicipales, 70 en el núcleo); núcleo 1940 unidades x 263 ramas; brecha λ2-λ3 0.2067; Spearman ICE~log pob 0.795; Spearman V1-V2 (no metropolitanos) 0.9958
+[zm2020 2018] unidades 2136 (70 multimunicipales, 70 en el núcleo); núcleo 1991 unidades x 267 ramas; brecha λ2-λ3 0.2005; Spearman ICE~log pob 0.809; Spearman V1-V2 (no metropolitanos) 0.9967
+[zm2020 2023] unidades 2138 (72 multimunicipales, 72 en el núcleo); núcleo 2006 unidades x 268 ramas; brecha λ2-λ3 0.1982; Spearman ICE~log pob 0.803; Spearman V1-V2 (no metropolitanos) 0.9973
+
+Prueba de identidad superada: 12,292 municipio-año, máx. |ICE - ICE V1| = 1.78e-14
+ice_zm_para_dml.csv: 12,292 filas | pob_unidad_conapo.csv: 59,400 filas

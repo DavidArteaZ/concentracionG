@@ -1,0 +1,14 @@
+    espec  beta_mano  beta_doubleml  se_hc_mano  se_doubleml  dif_beta   dif_se_rel
+principal   2.930066       2.930066    1.063431     1.063431       0.0 2.220446e-16
+    total   1.095068       1.095068    0.365768     0.365768       0.0 0.000000e+00
+    espec         combo aprendiz_m aprendiz_e  n_rep     beta    se_2v   se_mun    se_hc  ic95_inf  ic95_sup        z  reps_con_ajuste_2v  g_mun  g_upm
+principal       elegido        xgb        xgb     20 3.818130 2.046361 2.071376 1.916736 -0.192664  7.828924 1.865814                   0    534   1308
+principal lineal/lineal     lineal     lineal     20 1.693827 1.046711 1.019073 1.498188 -0.357688  3.745342 1.618238                   0    534   1308
+principal         rf/rf         rf         rf     20 3.298412 1.598524 1.619434 1.560776  0.165362  6.431462 2.063411                   0    534   1308
+principal       xgb/xgb        xgb        xgb     20 3.818130 2.046361 2.071376 1.916736 -0.192664  7.828924 1.865814                   0    534   1308
+    total       elegido        xgb        xgb     20 1.483622 0.735208 0.732553 0.745424  0.042642  2.924602 2.017963                   0    534   1308
+    total lineal/lineal     lineal     lineal     20 0.943143 0.720041 0.720035 0.754151 -0.468110  2.354397 1.309847                   0    534   1308
+    total         rf/rf         rf         rf     20 1.489443 0.722555 0.720329 0.730832  0.073262  2.905623 2.061356                   0    534   1308
+    total       xgb/xgb        xgb        xgb     20 1.483622 0.735208 0.732553 0.745424  0.042642  2.924602 2.017963                   0    534   1308
+ beta_principal  beta_total  cociente
+        3.81813    1.483622   2.57352
