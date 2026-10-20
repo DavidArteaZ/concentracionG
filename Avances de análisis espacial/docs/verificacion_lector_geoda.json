@@ -1,0 +1,129 @@
+{
+  "verificado": true,
+  "GDAL_instalado_en_GeoDa": "3.13.1",
+  "municipios": 2478,
+  "columnas": {
+    "CVEGEO": {
+      "faltantes_reconocidos": 0,
+      "ceros_validos": 0,
+      "datos_disponibles": 2478
+    },
+    "CVE_ENT": {
+      "faltantes_reconocidos": 0,
+      "ceros_validos": 0,
+      "datos_disponibles": 2478
+    },
+    "CVE_MUN": {
+      "faltantes_reconocidos": 0,
+      "ceros_validos": 0,
+      "datos_disponibles": 2478
+    },
+    "NOMGEO": {
+      "faltantes_reconocidos": 0,
+      "ceros_validos": 0,
+      "datos_disponibles": 2478
+    },
+    "cam_pct": {
+      "faltantes_reconocidos": 1822,
+      "ceros_validos": 0,
+      "datos_disponibles": 656
+    },
+    "asc_pct": {
+      "faltantes_reconocidos": 1822,
+      "ceros_validos": 228,
+      "datos_disponibles": 656
+    },
+    "des_pct": {
+      "faltantes_reconocidos": 1822,
+      "ceros_validos": 246,
+      "datos_disponibles": 656
+    },
+    "per_pct": {
+      "faltantes_reconocidos": 1822,
+      "ceros_validos": 184,
+      "datos_disponibles": 656
+    },
+    "mov_abs": {
+      "faltantes_reconocidos": 1822,
+      "ceros_validos": 0,
+      "datos_disponibles": 656
+    },
+    "sal_q1": {
+      "faltantes_reconocidos": 2175,
+      "ceros_validos": 102,
+      "datos_disponibles": 303
+    },
+    "ing_pc": {
+      "faltantes_reconocidos": 1793,
+      "ceros_validos": 0,
+      "datos_disponibles": 685
+    },
+    "eci_2023": {
+      "faltantes_reconocidos": 9,
+      "ceros_validos": 0,
+      "datos_disponibles": 2469
+    },
+    "ue_2023": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 0,
+      "datos_disponibles": 2472
+    },
+    "ue_top5": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 0,
+      "datos_disponibles": 2472
+    },
+    "pct_top5": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 0,
+      "datos_disponibles": 2472
+    },
+    "den_top5": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 0,
+      "datos_disponibles": 2472
+    },
+    "area_km2": {
+      "faltantes_reconocidos": 0,
+      "ceros_validos": 0,
+      "datos_disponibles": 2478
+    },
+    "pct_top5n": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 2424,
+      "datos_disponibles": 2472
+    },
+    "pct_top10n": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 2362,
+      "datos_disponibles": 2472
+    },
+    "pct_top10": {
+      "faltantes_reconocidos": 6,
+      "ceros_validos": 0,
+      "datos_disponibles": 2472
+    }
+  },
+  "tipos_OGR": {
+    "CVEGEO": 4,
+    "CVE_ENT": 4,
+    "CVE_MUN": 4,
+    "NOMGEO": 4,
+    "cam_pct": 2,
+    "asc_pct": 2,
+    "des_pct": 2,
+    "per_pct": 2,
+    "mov_abs": 2,
+    "sal_q1": 2,
+    "ing_pc": 2,
+    "eci_2023": 2,
+    "ue_2023": 2,
+    "ue_top5": 2,
+    "pct_top5": 2,
+    "den_top5": 2,
+    "area_km2": 2,
+    "pct_top5n": 2,
+    "pct_top10n": 2,
+    "pct_top10": 2
+  }
+}
