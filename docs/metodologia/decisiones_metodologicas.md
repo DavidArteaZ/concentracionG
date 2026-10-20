@@ -637,8 +637,39 @@ $$\tilde{Y}_i = \beta_0\,\tilde{E}_i + \sum_z \beta_z\,(\tilde{E}_i \times Z_{iz
   - La asociación condicional a la escala sigue siendo positiva y de magnitud parecida, con la misma significancia frágil que V1 (p = 0.06 con el mapa 2010).
   - La asociación total sube y pasa a ser significativa al 5% con los dos mapas.
   - El cociente baja de 4.2 a 2.6: con el ICE del mercado laboral local, la escala de la ZM y la complejidad se separan menos que a nivel municipio.
-  - A pesar de la menor Var($\tilde E$), el SE baja (de 2.63 a 2.05), probablemente por la menor dispersión del score entre grupos. *Inferido, no verificado.*
+  - A pesar de la menor Var($\tilde E$), el SE baja (de 2.63 a 2.05). La descomposición del 19/10/2026 (abajo) muestra por qué: la varianza del score cae más que $J^2$.
 - **Cautela:** el resultado más fuerte es el del mapa 2020, que es la alternativa por su riesgo de control posterior al tratamiento. No se promueve a principal. Ninguna versión cambia la conclusión de V1 sobre la fragilidad del condicional.
+
+**Verificaciones de la inferencia (19/10/2026).** `codigo/ice_v2/04_verificaciones_dml.py`, salidas en `outputs/ice_v2/verificaciones/`. Usan las predicciones fuera de pliegue guardadas y rehacen solo la etapa final, sin reajustar los nuisances: miden la sensibilidad de la etapa final, no la del ajuste completo.
+
+1. **Descomposición del SE** (principal, mediana de 20 repeticiones; $SE = \sqrt{\Omega}/J$, $J=\sum w\tilde d^2$):
+
+| | V1 | V2 ZM 2010 | V2 ZM 2020 |
+|---|---|---|---|
+| $J$ | 699 | 495 | 417 |
+| $\Omega$ heterocedástica ($\times10^6$) | 1.82 | 0.84 | 0.64 |
+| Efecto de diseño ($\Omega_{2v}/\Omega_{hc}$) | 1.82 | 1.14 | 1.09 |
+| Var del residuo de $Y$ | 454 | 457 | 454 |
+
+   - La caída de $J$ (−29%) sube el SE en un factor de 1.41. La caída de $\Omega$ lo baja en un factor de 0.54. Neto: 0.76.
+   - $\Omega$ cae por dos vías. Primero, la heterocedástica cae 54%, más que Var($\tilde E$) (−29%): en V1, los residuos grandes del tratamiento coincidían con residuos grandes del resultado (observaciones de alto apalancamiento), y en V2 no. Segundo, la correlación del score dentro de grupo casi desaparece (efecto de diseño de 1.82 a 1.14), aunque V2 tiene menos grupos.
+   - El residuo de $Y$ no cambia, así que la ganancia de precisión viene solo del tratamiento.
+2. **Wild cluster bootstrap** (WCR con $H_0:\theta=0$, pesos de Webb por unidad de primer nivel, t con varianza en dos dimensiones, B = 9999 por repetición; se reporta la mediana del p entre repeticiones y el rango):
+
+| | V1 | V2 ZM 2010 | V2 ZM 2020 |
+|---|---|---|---|
+| Principal: p normal / p wild | 0.055 / 0.080 | 0.056 / 0.061 | 0.020 / 0.025 |
+| Rango p wild, principal | 0.056–0.104 | 0.016–0.234 | 0.008–0.119 |
+| Total: p normal / p wild | 0.134 / 0.140 | 0.036 / 0.068 | 0.025 / 0.039 |
+
+   - Con el mapa 2010, la asociación total deja de ser significativa al 5% con el bootstrap (p = 0.068). La lectura de que la total "pasa a ser significativa" solo se sostiene con el mapa 2020.
+   - El rango entre repeticiones es amplio: con el mapa 2010, el p del condicional va de 0.02 a 0.23 según la partición en pliegues.
+3. **Influencia por ZM** (quitar una unidad a la vez de la etapa final):
+   - V2 ZM 2010, principal: quitar Cuautla (37 personas) baja $\hat\beta$ de 3.82 a 2.57 (z = 1.47). Quitar el Valle de México (445 personas) lo sube a 4.15 (z = 1.82). Ninguna otra unidad lo mueve más de 0.7.
+   - V2 ZM 2020, principal: con ninguna unidad quitada z baja de 2.0. Quitar Cuautla da 4.01 (z = 2.00).
+   - V2 ZM 2010, total: quitar Puebla-Tlaxcala da z = 1.71; quitar el Valle de México da z = 1.49 (el SE sube de 0.74 a 0.91).
+   - V1, principal, mismas personas: quitar Puebla-Tlaxcala baja $\hat\beta$ de 5.09 a 3.83; quitar el Valle de México lo sube a 5.86.
+   - El Valle de México no domina el condicional en ninguna versión, pero una ZM pequeña (Cuautla en V2 2010, Puebla-Tlaxcala en V1) mueve $\hat\beta$ en alrededor de 25%.
 
 ---
 
