@@ -1,0 +1,21 @@
+campo,descripcion,unidad
+CVEGEO,Clave municipal completa: entidad (2) + municipio (3),Texto de 5 digitos
+CVE_ENT,Clave de entidad federativa,Texto de 2 digitos
+CVE_MUN,Clave municipal dentro de la entidad,Texto de 3 digitos
+NOMGEO,Nombre municipal original,Texto
+cam_pct,Cambio promedio ponderado: percentil de destino menos percentil de origen,Puntos percentiles (-100 a 100)
+asc_pct,Porcentaje ponderado que asciende de quintil,Porcentaje (0 a 100)
+des_pct,Porcentaje ponderado que desciende de quintil,Porcentaje (0 a 100)
+per_pct,Porcentaje ponderado que permanece en el mismo quintil,Porcentaje (0 a 100)
+mov_abs,Promedio ponderado del valor absoluto del cambio de percentil,Puntos percentiles (0 a 100)
+sal_q1,"Probabilidad ponderada de salir del quintil 1, condicionado a origen en quintil 1",Probabilidad (0 a 1)
+ing_pc,Promedio ponderado del ingreso per capita del hogar imputado por la fuente (ingc_pc),Pesos por persona del hogar (variable ingc_pc de la fuente)
+eci_2023,"ECI municipal 2023: ice, especificacion base",Indice estandarizado
+ue_2023,Unidades economicas 2023: suma exclusiva de registros Rama municipales del SAIC,Unidades economicas
+ue_top5,UE en hasta cinco ramas presentes con mayor PCI disponible; las ramas sin PCI se excluyen del ordenamiento,Unidades economicas
+pct_top5,100 * ue_top5 / ue_2023,Porcentaje (0 a 100)
+den_top5,ue_top5 / area_km2,Unidades economicas por km2
+area_km2,"Superficie municipal calculada en proyeccion Albers equivalente, GRS80",km2
+pct_top5n,"100 * UE municipales en las cinco ramas de mayor PCI nacional disponible en 2023 / ue_2023; referencia fija nacional, ramas ausentes aportan cero",Porcentaje (0 a 100)
+pct_top10n,"100 * UE municipales en las diez ramas de mayor PCI nacional disponible en 2023 / ue_2023; referencia fija nacional, ramas ausentes aportan cero",Porcentaje (0 a 100)
+pct_top10,100 * UE en hasta diez ramas presentes con mayor PCI disponible de cada municipio / ue_2023; se excluyen ramas sin PCI del ordenamiento,Porcentaje (0 a 100)
