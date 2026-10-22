@@ -1,0 +1,9 @@
+{
+  "transformacion": "percentil ponderado entre personas, rango medio, 0-100",
+  "tratamiento_original": "ice14",
+  "media_pct": 50.0,
+  "de_pct": 28.86745860443194,
+  "min_pct": 0.011528773140796039,
+  "max_pct": 99.95282458903999,
+  "valores_unicos": 2369
+}
